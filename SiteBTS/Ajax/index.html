@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <meta charset="utf-8">
+</head>
+ 
+<body>
+
+Email :
+<form>
+	<input type="email" name="email" inputmode="submit" id="email">
+</form>
+ 
+<br>
+ <button class="btn btn-primary" id="btn">Valider</button>
+ <div id="result"></div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+<!-- Etape 5, auto complete -->
+
+   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script> 
+$( document ).ready(function() {
+      $( "#email" ).autocomplete({
+            source: "http://localhost/Ajax/autocomplete.php"
+      });
+ });
+</script>
+
+
+<!-- Etape 2/3-->
+<script>
+	$( document) .ready(function(){
+		$('#btn').click(function(){
+
+			var email=$('#email').val();
+			alert(email);
+			$.ajax({
+				type:"GET",
+				url: "http://localhost/Ajax/index.php?email="+email,
+				success: function(data){
+					$("#result").html(data);
+				},
+			    error:function(httpObj, textStatus){ 
+			    if(httpObj.status==401){
+			      alert("mauvais email");
+			    }
+				}
+			});
+		});
+	});
+
+</script>
+</body>
+</html>

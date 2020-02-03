@@ -1,0 +1,13 @@
+{
+"require": {
+"php": "7.1.*",
+"ext-mbstring": "*",
+"ext-mysqli": "*",
+"ext-json": "*",
+"ext-pdo": "*",
+"ext-pdo_mysql": "*",
+"slim/slim": "3.8.*",
+"zircote/swagger-php": "^2.0",
+"firebase/php-jwt": "^5.0"
+}        
+}

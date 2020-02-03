@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+
+<title>Sélecteurs CSS</title>
+<title>Jquery</title>
+</head>
+<body>
+Ce texte est affiché en HTML <br>
+<span id="texteJQ"></span>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+<script src="jq-laVache.js"></script>
+</body>
+
+<body>
+<form>
+Nom d'utilisateur
+<input type="text" name="nom"><br />
+Mot de passe
+<input type="password" name="pass"><br />
+Sexe :
+<input type="radio" name="sexe" value="H">Homme 
+<input type="radio" name="sexe" value="F">Femme <br />
+Commentaires : 
+<textarea rows="3" name="commentaires" id='textarea'>Tapez vos commentaires ici</textarea><br />
+<img src="chat.jpg"><br />
+<input type="submit" value="Envoyer">
+<input type="reset" value="Annuler">
+</form>
+
+<ul class="rouge">
+<li class="impair">premier élément de la liste à puces</li>
+<li class="pair">deuxième élément de la liste à puces</li>
+<li class="impair">troisième élément de la liste à puces</li>
+</ul>
+<div>
+<ul class="bleu">
+<li class="impair">premier élément de la liste à puces</li>
+<li class="pair">deuxième élément de la liste à puces</li>
+<li class="impair">troisième élément de la liste à
+puces</li>
+</ul>
+</div>
+    <span id="wiwi">salut les vaches</span>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+<script>
+$(function() {
+// Le code jQuery sera tapé ici
+$('textarea').css('background-color', 'green');
+$('li').css('color', 'blue');
+remove(id='wiwi');
+$("input[type=text].nom").val('Tavenaux');
+$("input[type=password].pass").val('mdp');
+});
+</script>
+</body>
+
+
+</html>

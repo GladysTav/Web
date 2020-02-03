@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Site</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body style="width: 100%">
+	<h1>Exo : Moteur de recherche</h1><br>
+<br>
+<table style="margin-left: 20px; background-color: white;">
+	<caption><b>Moteur de recherche</b></caption>
+	<form action="http://univcergy.phpnet.org/CCI/form.php" method="get">
+		<tr>
+			<td>
+				Mots clefs
+			</td>
+			<td>
+				<input type="text" name="motclef" class="form-control">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Cat&eacute;gorie
+			</td>
+			<td>
+				<select name="categorie" class="form-control">
+					<option value="jouet">Jouet</option>
+					<option value="location">Location</option>
+					<option value="voiture">Voiture</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				D&eacute;partements
+			</td>
+			<td>
+				<select name="dept" class="form-control">
+					<option value="bretagne">Bretagne</option>
+					<option value="val d oise">Val d'Oise</option>
+					<option value="centre">Centre</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center">
+				<button class="btn btn-success btn-lg">Rechercher</button>
+			</td>
+		</tr>
+	</table>
+</form>
+
+</body>
+</html>

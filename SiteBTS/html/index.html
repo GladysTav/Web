@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="wawa">
+  <meta name="author" content="wawa">
+  <title>HTML5: index.html</title>
+  <!-- Exercice 4 -->
+  <script> 
+  function showValue(newValue){ document.getElementById("range").innerHTML=newValue ;} 
+  </script>
+</head>
+
+<!-- Exercice 1 --><br>
+
+<a href="enregistrementClient.html">Enregistrement des clients </a>
+<br>
+
+<!-- Exercice 2 --><br>
+
+<table>
+	<caption>Tableau</caption>
+	<thead>
+		<tr>
+			<th>Colonne 1</th>
+			<th>Colonne 2</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Element1</td>
+			<td>Element1</td>
+		</tr>
+	</tbody><tbody>
+		<tr>
+			<td>Element2</td>
+			<td>Element2</td>
+		</tr>
+	</tbody><tbody>
+		<tr>
+			<td>Element3</td>
+			<td>Element3</td>
+		</tr>
+	</tbody><tbody>
+		<tr>
+			<td>Element4</td>
+			<td>Element4</td>
+		</tr>
+	</tbody><tbody>
+		<tr>
+			<td>Element5</td>
+			<td>Element5</td>
+		</tr>
+	</tbody>
+</table>
+
+<!-- Exercice 3 --> <br>
+
+<form>
+	<input type="charset" name="login" placeholder="Login ?"> <br>
+	<input type="charset" name="mdp" placeholder="Password ?"><br><br>
+	<fieldset><legend>Information personnelle <br><input type="charset" name="infos"></legend></fieldset><br>
+	<input type="email" name="email" placeholder="Email ?" autofocus="email">
+	<input type="url" name="url" placeholder="URL du site ?">
+	<ul>
+		<li>
+			<input type="radio" name="news" value="news" checked>S'abonner à la newsletter
+		</li>
+		<li>
+			<input type="radio" name="news" value="news2">Recevoir la newsletter par mail
+		</li>
+	</ul>
+	<input type="charset" name="nom" required placeholder="Nom ?">
+	<input type="charset" name="prenom" required placeholder="Prenom ?">
+</form>
+
+<!-- Exercice 4 -->
+
+<fieldset>
+	<legend>Formulaire de commande</legend>
+
+	<form>
+		<label for="TruC">Entrez le choix: </label>
+		<input list="truc" type="text" id="TruC">
+		<datalist id="truc">
+			<option value="valeur 1">
+			<option value="valeur 2">
+			<option value="valeur 3">
+		</datalist> <br>
+		Entre 0 et 15 : 
+		<input type="number" name="number" min=0 max=15><br>
+		Ou :  
+		<input type="range" name="number" min=0 max=15 placeholder="Entre 0 et 15 (range)" onchange="showValue(value)"><span id="range"></span>> <br>
+		Date d'envoi ?
+		<input type="date" name="date">
+		Couleur ?
+		<input type="color" name="color">
+	</form>
+</fieldset>
+
+
+<!-- Exercice 5 --> <br><br><br>
+<fieldset>
+	<legend>Page de description du produit</legend>
+	<textarea rows="20" cols="200">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas turpis erat, vel accumsan neque consectetur id. Donec imperdiet, diam sed feugiat condimentum, felis odio dignissim nibh, quis ullamcorper erat elit nec ipsum. Proin elementum dignissim enim, nec scelerisque elit fringilla a. Donec nunc elit, iaculis vitae rutrum ut, rutrum eget enim. Vestibulum commodo mauris vehicula ullamcorper fringilla. Maecenas id convallis dolor, a malesuada nunc. Nullam sagittis lorem ac libero efficitur, vel interdum massa imperdiet. Cras a consequat dolor.
+
+		Sed et elementum ligula, at mollis ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras laoreet velit vitae nibh rhoncus elementum. Duis in sem hendrerit diam iaculis placerat. Aliquam convallis erat et odio viverra fringilla. Aenean at tincidunt felis. Phasellus pellentesque sem a dolor accumsan molestie. Suspendisse in turpis efficitur, semper libero vitae, gravida purus. Nunc lacinia dapibus nisi sed feugiat.
+
+		Donec eu porta velit, tincidunt varius ipsum. Vivamus maximus augue est, at aliquet sem dignissim a. Sed eleifend commodo semper. Vivamus et mi at libero malesuada vulputate ac et ante. Integer iaculis lacus non nunc porttitor laoreet. Sed malesuada sollicitudin enim facilisis vestibulum. Phasellus venenatis fermentum erat a luctus. Curabitur quis lectus ut nibh sodales venenatis non in leo. Mauris pharetra, massa sed congue venenatis, mauris quam suscipit dui, vitae fermentum sem ante eget quam. Nunc convallis, odio sed luctus placerat, ipsum sapien sodales lacus, cursus auctor ipsum metus in dui. Donec suscipit tortor id eros accumsan, vitae luctus velit vulputate.
+	</textarea>
+	<br>
+	<header>Titre 
+		<figure><img src="Astral_Game.png"><figcaption>Logo</figcaption></figure>
+	</header>
+	<footer>Footer</footer>
+	<aside>Pub<br>Pub</aside>
+</fieldset>
+
+
+<!-- Exercice 6 --><br>
+
+<video src="The girl with all the gifts.mkv" controls poster='Astral_Game.png' width=’320’ height=’180’ loop></video>
+<br>
+<audio src="D:\Musiques\Berywam - O Fortuna (Carl Orff) - Beatbox.mp3"></audio>
+<br>
+

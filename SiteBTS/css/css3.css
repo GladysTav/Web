@@ -1,0 +1,75 @@
+/* Etape 1 */
+h1{color : green; margin: 3em 1em;background-color:#E7A8D3;}
+
+p{margin-top:15em; color:blue; font-size:1em;background-color:#E7A8D3;}
+span{font-size:1em; margin: 3em 1em;background-color:#E7A8D3;}
+ul{margin: 3em 1em;background-color: #5BF472;}
+body{margin: 3em 1em;background-color:#E7A8D3;}
+txt{margin: 3em 1em;}
+div{margin: 3em 1em; min-width: 15em; min-height: 15em; margin: 15em 15em 0em 0em; max-height: 10em; max-width: 10 em;}
+maBaliseHTML{
+	h1{color : green;
+		}; 
+		p{margin-top:15em;
+		}
+	}
+.maClasse{
+	color:blue;
+}
+
+.cache {
+	margin: 10px;
+    position:relative;
+    width: 20px;
+    height: 20px;
+    border: 1px;
+}
+
+.cache:hover .cache-cache {
+	opacity: 1;
+}
+
+.cache-cache {
+	 opacity:0;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    height: 30px;
+    color: white;
+     -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+         -ms-transition: all 0.2s ease;
+          -o-transition: all 0.2s ease;
+             transition: all 0.2s ease;
+}
+
+/* Etape 7 */
+
+.navbar {
+    list-style-position: left;
+    list-style-type: circle;
+    margin: 0 0 0 0;
+}
+li a {
+    display: block;
+    float: left;
+    text-align : left;
+    vertical-align: left;
+    vertical-align: baseline;
+    margin: 0 0 0 0;
+}
+
+
+/* Etape 8 */
+.zoom {
+    width: 100%;
+    height: 100%;
+    margin: 0 0 0 0;
+}
+
+
+.zoom:hover {
+    width: 1000px;
+    height: 300px;
+    margin: 0 0 0 0;
+}

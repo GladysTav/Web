@@ -1,0 +1,9 @@
+applications:
+- name: petitBiscuit
+  memory: 128M
+  instances: 1
+  random-route: true
+  buildpack: php_buildpack
+#  services:
+#  - Compose-for-MySQL-tj
+ 
