@@ -26,8 +26,10 @@
 		{
 			print("<h1>Formulaire</h1><br>");
 			print('<form action="#">');
+			print('<fieldset> <legend>Veuillez sélectionner vos intérêts</legend>');
 			foreach ($loisirs as $key => $value) {
-				print('<input type="radio" name="loisir" value="'.$key.'">'.$value.'<br>');
+
+				print('<div><input type="checkbox" id="'.$key.'" name="loisir[]" value="'.$key.'"><label for="'.$key.'">'.$value.'</label></div>');
 			}
 			print("<button class='btn btn-success btn-lg'>GO !</button></form>");
 			print("</form>");
@@ -35,17 +37,23 @@
 		else
 		{
 			if(isset($_GET['loisir']) AND $_GET['loisir']!=""){
-				print("Ton loisir favori est ".$loisirs[$_GET['loisir']]);
+				$euh = array();
+				foreach ($_GET['loisir'] as $key => $value) {
+					array_push($euh,$loisirs[$value]);
+				}
+				print('Tu aimes les loisirs : '.implode(' - ', $euh));
 			}
 			else
 			{
-				print("<h1>Formulaire</h1><br>");
-				print('<form action="#">');
-				foreach ($loisirs as $key => $value) {
-					print('<input type="radio" name="loisir" value="'.$key.'">'.$value.'<br>');
-				}
-				print("<button class='btn btn-success btn-lg'>GO !</button></form>");
-				print("</form>");
+			print("<h1>Formulaire</h1><br>");
+			print('<form action="#">');
+			print('<fieldset> <legend>Veuillez sélectionner vos intérêts</legend>');
+			foreach ($_GET['loisir'] as $key => $value) {
+
+				print('<div><input type="checkbox" id="'.$key.'" name="loisir[]" value="'.$key.'"><label for="'.$key.'">'.$value.'</label></div>');
+			}
+			print("<button class='btn btn-success btn-lg'>GO !</button></form>");
+			print("</form>");
 			} 
 		} 
 	?>
