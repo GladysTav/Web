@@ -1,0 +1,90 @@
+.msl-use, .msl-otp-resend {
+	font-size: 10px;
+	padding-right: 6px;
+	padding-bottom: 5px;
+	padding-top: 2px;
+	float: right;
+}
+
+.msl-message {
+	font-size: 11px;
+	padding: 2px;
+	width: auto;
+	text-align: center;
+	margin: 4px 4px 4px 0;
+}
+
+.msl-message .text-success {
+	background: #ceedd4;
+}
+
+.msl-container.msl-use-pw .msl-use-pw {
+	display: inline-block;
+}
+
+.msl-container.msl-use-otp .msl-use-otp {
+	display: inline-block;
+}
+
+.msl-container.msl-use-pw .msl-use-otp {
+	display: none;
+}
+
+.msl-container.msl-use-otp .msl-use-pw {
+	display: none;
+}
+
+.msl-container .add-on + input.msl-username, .msl-container .add-on + input.msl-password {
+	width: 134px;
+}
+
+.sella-label {
+	display: inline-block !important;
+	margin-bottom: 5px !important;
+}
+
+.sella-group {
+	padding-bottom: 20px;
+}
+
+.sella-group .msl-username {
+	padding: 20px 10px !important;
+	border-radius: 5px !important;
+}
+
+.sella-group .msl-password {
+	padding: 20px 10px !important;
+	border-radius: 5px !important;
+}
+
+.sella-container {
+	width: 100% ;
+}
+
+.sella-btn {
+	width: 100%;
+	padding: 10px !important;
+}
+
+.sella-list-item {
+	position: relative;
+	display: block;
+	padding: 15px;
+	border: 1px solid rgba(0,0,0,.125);
+}
+
+.sella-register {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.sella-reset {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.sella-list {
+	list-style: none;
+	padding-top: 20px;
+	margin-left: -38px;
+}

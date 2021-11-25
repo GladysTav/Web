@@ -1,0 +1,49 @@
+#
+#<?php die('Forbidden.'); ?>
+#Date: 2019-03-27 04:38:26 UTC
+#Software: Joomla Platform 13.1.0 Stable [ Curiosity ] 24-Apr-2013 00:00 GMT
+
+#Fields: datetime	priority clientip	category	message
+2019-03-27T04:38:26+00:00	WARNING ::1	jerror	There was no store selected or the selected store was not found. Showing products from all stores.
+2019-03-27T08:39:03+00:00	CRITICAL ::1	error	Uncaught \Throwable of type JDatabaseExceptionExecuting thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/libraries/joomla/database/driver.php(1695): JDatabaseDriverMysqli->execute()
+#1 /Users/codeacious3/Sites/sellacious/libraries/sellacious/helper/product.php(2340): JDatabaseDriver->loadObjectList()
+#2 /Users/codeacious3/Sites/sellacious/modules/mod_sellacious_specialcatsproducts/mod_sellacious_specialcatsproducts.php(60): SellaciousHelperProduct->getModProducts(Object(Joomla\Registry\Registry), 'specialcatsprod...')
+#3 /Users/codeacious3/Sites/sellacious/libraries/src/Helper/ModuleHelper.php(200): include('/Users/codeacio...')
+#4 /Users/codeacious3/Sites/sellacious/libraries/src/Document/Renderer/Html/ModuleRenderer.php(98): Joomla\CMS\Helper\ModuleHelper::renderModule(Object(stdClass), Array)
+#5 /Users/codeacious3/Sites/sellacious/libraries/src/Document/Renderer/Html/ModulesRenderer.php(47): Joomla\CMS\Document\Renderer\Html\ModuleRenderer->render(Object(stdClass), Array, NULL)
+#6 /Users/codeacious3/Sites/sellacious/libraries/src/Document/HtmlDocument.php(491): Joomla\CMS\Document\Renderer\Html\ModulesRenderer->render('position-3', Array, NULL)
+#7 /Users/codeacious3/Sites/sellacious/libraries/src/Document/HtmlDocument.php(783): Joomla\CMS\Document\HtmlDocument->getBuffer('modules', 'position-3', Array)
+#8 /Users/codeacious3/Sites/sellacious/libraries/src/Document/HtmlDocument.php(557): Joomla\CMS\Document\HtmlDocument->_renderTemplate()
+#9 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(1044): Joomla\CMS\Document\HtmlDocument->render(false, Array)
+#10 /Users/codeacious3/Sites/sellacious/libraries/src/Application/SiteApplication.php(778): Joomla\CMS\Application\CMSApplication->render()
+#11 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(202): Joomla\CMS\Application\SiteApplication->render()
+#12 /Users/codeacious3/Sites/sellacious/index.php(49): Joomla\CMS\Application\CMSApplication->execute()
+#13 {main}
+2019-03-27T08:40:03+00:00	CRITICAL ::1	error	Uncaught \Throwable of type JDatabaseExceptionExecuting thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/libraries/joomla/database/driver.php(1695): JDatabaseDriverMysqli->execute()
+#1 /Users/codeacious3/Sites/sellacious/libraries/sellacious/helper/product.php(2340): JDatabaseDriver->loadObjectList()
+#2 /Users/codeacious3/Sites/sellacious/modules/mod_sellacious_specialcatsproducts/mod_sellacious_specialcatsproducts.php(60): SellaciousHelperProduct->getModProducts(Object(Joomla\Registry\Registry), 'specialcatsprod...')
+#3 /Users/codeacious3/Sites/sellacious/libraries/src/Helper/ModuleHelper.php(200): include('/Users/codeacio...')
+#4 /Users/codeacious3/Sites/sellacious/libraries/src/Document/Renderer/Html/ModuleRenderer.php(98): Joomla\CMS\Helper\ModuleHelper::renderModule(Object(stdClass), Array)
+#5 /Users/codeacious3/Sites/sellacious/libraries/src/Document/Renderer/Html/ModulesRenderer.php(47): Joomla\CMS\Document\Renderer\Html\ModuleRenderer->render(Object(stdClass), Array, NULL)
+#6 /Users/codeacious3/Sites/sellacious/libraries/src/Document/HtmlDocument.php(491): Joomla\CMS\Document\Renderer\Html\ModulesRenderer->render('position-3', Array, NULL)
+#7 /Users/codeacious3/Sites/sellacious/libraries/src/Document/HtmlDocument.php(783): Joomla\CMS\Document\HtmlDocument->getBuffer('modules', 'position-3', Array)
+#8 /Users/codeacious3/Sites/sellacious/libraries/src/Document/HtmlDocument.php(557): Joomla\CMS\Document\HtmlDocument->_renderTemplate()
+#9 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(1044): Joomla\CMS\Document\HtmlDocument->render(false, Array)
+#10 /Users/codeacious3/Sites/sellacious/libraries/src/Application/SiteApplication.php(778): Joomla\CMS\Application\CMSApplication->render()
+#11 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(202): Joomla\CMS\Application\SiteApplication->render()
+#12 /Users/codeacious3/Sites/sellacious/index.php(49): Joomla\CMS\Application\CMSApplication->execute()
+#13 {main}
+2019-03-27T08:40:05+00:00	CRITICAL ::1	error	Uncaught \Throwable of type JDatabaseExceptionExecuting thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/libraries/joomla/database/driver.php(1695): JDatabaseDriverMysqli->execute()
+#1 /Users/codeacious3/Sites/sellacious/libraries/sellacious/helper/product.php(2340): JDatabaseDriver->loadObjectList()
+#2 /Users/codeacious3/Sites/sellacious/modules/mod_sellacious_specialcatsproducts/mod_sellacious_specialcatsproducts.php(60): SellaciousHelperProduct->getModProducts(Object(Joomla\Registry\Registry), 'specialcatsprod...')
+#3 /Users/codeacious3/Sites/sellacious/libraries/src/Helper/ModuleHelper.php(200): include('/Users/codeacio...')
+#4 /Users/codeacious3/Sites/sellacious/libraries/src/Document/Renderer/Html/ModuleRenderer.php(98): Joomla\CMS\Helper\ModuleHelper::renderModule(Object(stdClass), Array)
+#5 /Users/codeacious3/Sites/sellacious/libraries/src/Document/Renderer/Html/ModulesRenderer.php(47): Joomla\CMS\Document\Renderer\Html\ModuleRenderer->render(Object(stdClass), Array, NULL)
+#6 /Users/codeacious3/Sites/sellacious/libraries/src/Document/HtmlDocument.php(491): Joomla\CMS\Document\Renderer\Html\ModulesRenderer->render('position-3', Array, NULL)
+#7 /Users/codeacious3/Sites/sellacious/libraries/src/Document/HtmlDocument.php(783): Joomla\CMS\Document\HtmlDocument->getBuffer('modules', 'position-3', Array)
+#8 /Users/codeacious3/Sites/sellacious/libraries/src/Document/HtmlDocument.php(557): Joomla\CMS\Document\HtmlDocument->_renderTemplate()
+#9 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(1044): Joomla\CMS\Document\HtmlDocument->render(false, Array)
+#10 /Users/codeacious3/Sites/sellacious/libraries/src/Application/SiteApplication.php(778): Joomla\CMS\Application\CMSApplication->render()
+#11 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(202): Joomla\CMS\Application\SiteApplication->render()
+#12 /Users/codeacious3/Sites/sellacious/index.php(49): Joomla\CMS\Application\CMSApplication->execute()
+#13 {main}

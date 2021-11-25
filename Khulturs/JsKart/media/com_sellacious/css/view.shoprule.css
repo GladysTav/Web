@@ -1,0 +1,19 @@
+.filters_note {
+	margin: 0 0 10px;
+	border: 1px solid #ccc;
+	padding: 8px 12px;
+}
+
+#jform_params_note {
+	margin: 0;
+}
+
+#jform_params_note > br {
+	display: none;
+}
+
+h3.fgroup {
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0;
+}

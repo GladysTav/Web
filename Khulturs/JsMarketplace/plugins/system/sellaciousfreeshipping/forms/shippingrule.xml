@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="basic" label="PLG_SYSTEM_SELLACIOUSFREESHIPPING_FIELDSET_BASIC">
+		<fields name="freerule">
+			<field
+				name="shipping_freerule"
+				type="fieldgroup"
+				label="PLG_SYSTEM_SELLACIOUSFREESHIPPING_SHIPPING_FREERULE_LABEL"
+				description="PLG_SYSTEM_SELLACIOUSFREESHIPPING_SHIPPING_FREERULE_DESC"
+			/>
+			<field
+				name="state"
+				type="radio"
+				class="btn-group-yesno"
+				label="PLG_SYSTEM_SELLACIOUSFREESHIPPING_FIELD_PUBLISHED_LABEL"
+				description="PLG_SYSTEM_SELLACIOUSFREESHIPPING_FIELD_PUBLISHED_DESC"
+				default="0"
+			>
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			<field
+				name="amount_min"
+				type="money"
+				label="PLG_SYSTEM_SELLACIOUSFREESHIPPING_FIELD_AMOUNT_MIN_LABEL"
+				description="PLG_SYSTEM_SELLACIOUSFREESHIPPING_FIELD_AMOUNT_MIN_DESC"
+				default="0.00"
+				validate="money"
+				sign="GEZ"
+			/>
+			<field
+				name="amount_max"
+				type="money"
+				label="PLG_SYSTEM_SELLACIOUSFREESHIPPING_FIELD_AMOUNT_MAX_LABEL"
+				description="PLG_SYSTEM_SELLACIOUSFREESHIPPING_FIELD_AMOUNT_MAX_DESC"
+				default="0.00"
+				validate="money"
+				sign="GEZ"
+			/>
+			<field
+				name="id"
+				type="hidden"
+			/>
+		</fields>
+	</fieldset>
+</form>

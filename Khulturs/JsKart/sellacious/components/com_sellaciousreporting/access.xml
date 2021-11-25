@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<access component="com_sellaciousreporting">
+	<section name="component">
+
+		<actions name="report" title="COM_SELLACIOUS_ACTIONS_ADVANCEREPORTING">
+			<action name="reports.manage" title="COM_SELLACIOUSREPORTING_ACTION_MANAGE_LABEL" description="COM_SELLACIOUSREPORTING_ACTION_MANAGE_DESC"/>
+			<action name="report.create" title="COM_SELLACIOUSREPORTING_ACTION_CREATE_LABEL" description="COM_SELLACIOUSREPORTING_ACTION_CREATE_DESC"/>
+			<action name="report.edit" title="COM_SELLACIOUSREPORTING_ACTION_EDIT_LABEL" description="COM_SELLACIOUSREPORTING_ACTION_EDIT_DESC"/>
+			<action name="report.edit.own" title="COM_SELLACIOUSREPORTING_ACTION_EDIT_OWN_LABEL" description="COM_SELLACIOUSREPORTING_ACTION_EDIT_OWN_DESC"/>
+			<action name="report.list" title="COM_SELLACIOUSREPORTING_ACTION_LIST_LABEL" description="COM_SELLACIOUSREPORTING_ACTION_LIST_DESC"/>
+			<action name="report.list.own" title="COM_SELLACIOUSREPORTING_ACTION_LIST_OWN_LABEL" description="COM_SELLACIOUSREPORTING_ACTION_LIST_OWN_DESC"/>
+		</actions>
+
+	</section>
+</access>

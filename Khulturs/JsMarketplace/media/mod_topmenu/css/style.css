@@ -1,0 +1,212 @@
+.mainmenu {
+	width: 190px;
+	float: left;
+	z-index: 210;
+	text-align: left;
+	height: 36px;
+	position: relative;
+}
+
+.mainmenu ul {
+	height: 36px;
+	background: #f57224;
+	margin-right: 10px;
+}
+
+.mainmenu .nav > li {
+	position: relative;
+}
+
+.mainmenu ul li ul {
+	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+	-moz-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+.mainmenu ul li.item-101 {
+	position: relative;
+}
+
+.mainmenu ul li ul li:not(:last-child) {
+	border-bottom: 1px solid #dedede;
+}
+
+.mainmenu:hover ul li a.parent-main {
+	color: #424242;
+}
+
+.mainmenu .nav > li {
+	width: 100%;
+}
+
+.mainmenu ul li:first-child a.parent-main {
+	font-size: 15px;
+	font-weight: 500;
+	text-transform: uppercase;
+	line-height: 1.5;
+	color: #ffffff;
+}
+
+.mainmenu ul li a {
+	opacity: .85;
+	font-size: 13px;
+	color: #ffffff;
+	letter-spacing: 0;
+	padding: 7px 0 7px 7px !important;
+	line-height: 1;
+	width: 100%;
+	height: 100%;
+	display: block;
+	font-weight: 400;
+	text-transform: initial;
+}
+
+.mainmenu ul li ul li a {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: inline-block;
+	white-space: normal;
+	width: 172px;
+	font-size: 13px;
+	line-height: 27px;
+	color: #757575;
+	cursor: pointer;
+	height: 32px;
+}
+
+.mainmenu .nav > li > ul.nav-child > li:first-child > ul.nav-child,
+.parent-ul ul li:first-child ul li,
+.mainmenu .nav > li > ul.nav-child > li > ul.nav-child > li:first-child > ul.nav-child {
+	display: block;
+	text-align: left;
+	-webkit-animation: slowfadeInUp 600ms;
+	animation: slowfadeInUp 600ms;
+}
+
+.parent-ul ul li:not(:first-child) ul li {
+	opacity: 0;
+}
+
+.parent-ul ul li:not(:first-child):hover ul li {
+	opacity: 1;
+}
+
+.mainmenu .nav > li > ul.nav-child > li > ul.nav-child {
+	background: #eaeaea;
+}
+
+.mainmenu .nav > li > ul.nav-child > li > ul.nav-child li {
+	border-bottom: 0;
+	margin-left: 5px;
+}
+
+.mainmenu .nav > li > ul.nav-child > li > ul.nav-child li:hover {
+	background: #ffffff;
+}
+
+.mainmenu .nav > li > ul.nav-child > li > ul.nav-child li:hover a {
+	color: #222222;
+}
+
+.mainmenu .nav > li > ul.nav-child > li > ul.nav-child li a {
+	color: #555555;
+}
+
+.mainmenu .nav li ul ul, .mainmenu .nav li ul {
+	position: absolute;
+	max-width: 190px;
+	width: 190px;
+	background: #ffffff;
+	display: none;
+	padding: 0;
+	min-height: 400px;
+	height: auto;
+	list-style: none;
+	margin: 0;
+}
+
+.mainmenu ul li a.parent-main:after {
+	content: '\f107';
+	font-family: FontAwesome;
+	right: 10px;
+	position: absolute;
+	font-size: 24px;
+	color: #ffffff;
+	opacity: 0.8;
+	line-height: 0.9;
+}
+
+.mainmenu .nav > li > a {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: inline-block;
+	white-space: nowrap;
+	width: 172px;
+	font-size: 13px;
+	line-height: 27px;
+	color: #757575;
+	cursor: pointer;
+}
+
+.mainmenu .nav li ul li:hover {
+	background: #e9e9e9;
+	background-color: #eaeaea;
+	color: #222222;
+	font-weight: 500
+}
+
+.mainmenu .nav li:hover a {
+	color: #1a9cb7;
+}
+
+.mainmenu .nav li:hover .nav-child li a {
+	color: #222222;
+}
+
+.mainmenu .nav li ul ul {
+	left: 100%;
+	top: 0;
+}
+
+.mainmenu .nav li ul {
+	left: 0;
+	top: 33px;
+}
+
+.mainmenu ul.nav-child ul.nav-child {
+	background: #ffffff;
+	-webkit-box-shadow: 5px 3px 12px rgba(0, 0, 0, .175);
+	-moz-box-shadow: 5px 3px 12px rgba(0, 0, 0, .175);
+	box-shadow: 5px 3px 12px rgba(0, 0, 0, .175);
+}
+
+.mainmenu .nav > li > ul.nav-child > li > ul.nav-child > li:hover > ul.nav-child {
+
+}
+
+.mainmenu .nav > li:hover > ul.nav-child,
+.mainmenu .nav > li > ul.nav-child > li:hover > ul.nav-child,
+.mainmenu .nav > li > ul.nav-child > li > ul.nav-child > li:hover > ul.nav-child {
+	display: block;
+	text-align: left;
+	-webkit-animation: slowfadeInUp 600ms;
+	animation: slowfadeInUp 600ms;
+}
+
+@media (min-width: 1200px) and (max-width: 1550px) {
+	.mainmenu {
+		width: 170px;
+
+	}
+
+	.mainmenu ul li:first-child a.parent-main {
+		font-size: 13px;
+		line-height: 1.8;
+	}
+
+	.mainmenu ul li a.parent-main:after {
+		right: 14px;
+	}
+}
+
+

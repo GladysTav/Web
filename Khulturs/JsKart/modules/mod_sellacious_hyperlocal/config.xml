@@ -1,0 +1,147 @@
+<form>
+	<fields name="mod_sellacious_hyperlocal">
+		<fieldset name="mod_sellacious_hyperlocal" label="MOD_SELLACIOUS_HYPERLOCAL_FIELDSET_CONFIG">
+
+			<field
+				name="enabled"
+				type="radioswitch"
+				label="MOD_SELLACIOUS_HYPERLOCAL_FIELD_ENABLED_LABEL"
+				description="MOD_SELLACIOUS_HYPERLOCAL_FIELD_ENABLED_DESC"
+				default="1"
+			>
+				<option value="0">JDISABLED</option>
+				<option value="1">JENABLED</option>
+			</field>
+
+			<field
+				name="google_api_key"
+				type="text"
+				label="MOD_SELLACIOUS_HYPERLOCAL_FIELD_GOOGLE_API_KEY_LABEL"
+				description="MOD_SELLACIOUS_HYPERLOCAL_FIELD_GOOGLE_API_KEY_DESC"
+				class="inputbox medium-input form-control"
+				showon="enabled:1"
+			/>
+
+			<field
+				name="browser_detect"
+				type="radio"
+				class="btn-group btn-group-yesno"
+				label="MOD_SELLACIOUS_HYPERLOCAL_BROWSER_DETECT_LABEL"
+				description="MOD_SELLACIOUS_HYPERLOCAL_BROWSER_DETECT_DESC"
+				default="1"
+				showon="enabled:1"
+			>
+				<option value="0">MOD_SELLACIOUS_HYPERLOCAL_BROWSER_DETECT_OPTION_NONE</option>
+				<option value="1">MOD_SELLACIOUS_HYPERLOCAL_BROWSER_DETECT_OPTION_MANUAL</option>
+				<option value="2">MOD_SELLACIOUS_HYPERLOCAL_BROWSER_DETECT_OPTION_AUTO</option>
+			</field>
+
+			<field
+
+				name="address_autocomplete"
+				type="radio"
+				class="btn-group btn-group-yesno"
+				label="MOD_SELLACIOUS_HYPERLOCAL_ADDRESS_AUTOCOMPLETE_LABEL"
+				description="MOD_SELLACIOUS_HYPERLOCAL_ADDRESS_AUTOCOMPLETE_DESC"
+				default="db"
+				showon="enabled:1"
+			>
+				<option value="google">MOD_SELLACIOUS_HYPERLOCAL_ADDRESS_AUTOCOMPLETE_OPTION_GOOGLE_API</option>
+				<option value="db">MOD_SELLACIOUS_HYPERLOCAL_ADDRESS_AUTOCOMPLETE_OPTION_DATABASE</option>
+			</field>
+
+			<field
+				name="hyperlocal_type"
+				type="radio"
+				class="btn-group"
+				label="MOD_SELLACIOUS_HYPERLOCAL_FIELD_HYPERLOCAL_TYPE_LABEL"
+				description="MOD_SELLACIOUS_HYPERLOCAL_FIELD_HYPERLOCAL_TYPE_DESC"
+				default="1"
+				showon="enabled:1"
+			>
+				<option value="1">MOD_SELLACIOUS_HYPERLOCAL_TYPE_BY_RADIUS</option>
+				<option value="2">MOD_SELLACIOUS_HYPERLOCAL_TYPE_BY_REGION</option>
+			</field>
+
+			<field
+				name="location_type"
+				type="hidden"
+				class="btn-group"
+				label="MOD_SELLACIOUS_HYPERLOCAL_FIELD_LOCATION_TYPE_LABEL"
+				description="MOD_SELLACIOUS_HYPERLOCAL_FIELD_LOCATION_TYPE_DESC"
+				default="1"
+				showon="enabled:1"
+			>
+				<option value="1">MOD_SELLACIOUS_HYPERLOCAL_LOCATION_TYPE_BY_STORE_LOCATION</option>
+				<option value="2">MOD_SELLACIOUS_HYPERLOCAL_LOCATION_TYPE_BY_SHIPPABLE_LOCATION</option>
+			</field>
+
+			<field
+				name="distance_filter"
+				type="radioswitch"
+				class="btn-group btn-group-yesno"
+				label="MOD_SELLACIOUS_HYPERLOCAL_DISTANCE_FILTER_LABEL"
+				description="MOD_SELLACIOUS_HYPERLOCAL_DISTANCE_FILTER_DESC"
+				default="0"
+				showon="enabled:1[AND]hyperlocal_type:1"
+			>
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+
+			<field
+				name="distance_unit"
+				type="list"
+				label="MOD_SELLACIOUS_HYPERLOCAL_DISTANCE_UNIT_LABEL"
+				description="MOD_SELLACIOUS_HYPERLOCAL_DISTANCE_UNIT_DESC"
+				showon="enabled:1[AND]hyperlocal_type:1"
+				class="small-input"
+			>
+				<option value="m">Meter</option>
+				<option value="f">Foot</option>
+				<option value="y">Yard</option>
+				<option value="k">Kilometre</option>
+				<option value="i">Mile</option>
+				<option value="n">Nautical Mile</option>
+			</field>
+
+			<field
+				name="distance_default"
+				type="number"
+				label="MOD_SELLACIOUS_HYPERLOCAL_DISTANCE_DEFAULT_LABEL"
+				description="MOD_SELLACIOUS_HYPERLOCAL_DISTANCE_DEFAULT_DESC"
+				class="inputbox small-input"
+				showon="enabled:1[AND]hyperlocal_type:1"
+			/>
+
+			<field
+				name="distance_max"
+				type="number"
+				label="MOD_SELLACIOUS_HYPERLOCAL_DISTANCE_MAX_LABEL"
+				description="MOD_SELLACIOUS_HYPERLOCAL_DISTANCE_MAX_DESC"
+				default="200"
+				min="1"
+				class="inputbox small-input"
+				showon="enabled:1[AND]hyperlocal_type:1[AND]distance_filter:1"
+			/>
+
+			<field
+				name="address_components"
+				type="checkboxes"
+				label="MOD_SELLACIOUS_HYPERLOCAL_ADDRESS_COMPONENTS_LABEL"
+				description="MOD_SELLACIOUS_HYPERLOCAL_ADDRESS_COMPONENTS_DESC"
+				default="city"
+				showon="enabled:1[AND]hyperlocal_type:2"
+			>
+				<option value="country">MOD_SELLACIOUS_HYPERLOCAL_ADDRESS_COMPONENT_COUNTRY</option>
+				<option value="state">MOD_SELLACIOUS_HYPERLOCAL_ADDRESS_COMPONENT_STATE</option>
+				<option value="district">MOD_SELLACIOUS_HYPERLOCAL_ADDRESS_COMPONENT_DISTRICT</option>
+				<option value="city">MOD_SELLACIOUS_HYPERLOCAL_ADDRESS_COMPONENT_CITY</option>
+				<option value="locality">MOD_SELLACIOUS_HYPERLOCAL_ADDRESS_COMPONENT_LOCALITY</option>
+				<option value="sublocality">MOD_SELLACIOUS_HYPERLOCAL_ADDRESS_COMPONENT_SUBLOCALITY</option>
+				<option value="zip">MOD_SELLACIOUS_HYPERLOCAL_ADDRESS_COMPONENT_ZIP</option>
+			</field>
+
+		</fieldset>
+	</fields>
+</form>

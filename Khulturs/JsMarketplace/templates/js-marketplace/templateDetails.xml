@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" type="template" client="site" method="upgrade">
+   <name>js-marketplace</name>
+   <creationDate>July 19, 2019</creationDate>
+   <author>Sellacious</author>
+   <authorEmail>contact@sellacious.com</authorEmail>
+   <authorUrl>http://www.sellacious.com</authorUrl>
+   <copyright>Copyright (C) 2016 - 2018 Sellacious</copyright>
+   <license>http://www.gnu.org/licenses/gpl-2.0.html GPLv2 or later</license>
+   <version>1.7.3</version>
+   <description>js-marketplace - eCommerce Template</description>
+   <updateservers>
+      <server type="extension" priority="1" name="js-marketplace">http://sellacious.com/release/templates/js-marketplace.xml</server>
+   </updateservers>
+   <files>
+      <folder>css</folder>
+      <folder>scss</folder>
+      <folder>html</folder>
+      <folder>astroid</folder>
+      <folder>images</folder>
+      <folder>js</folder>
+      <folder>language</folder>
+      <folder>frontend</folder>
+      <filename>index.php</filename>
+      <filename>templateDetails.xml</filename>
+      <filename>template_preview.png</filename>
+      <filename>template_thumbnail.png</filename>
+      <filename>component.php</filename>
+      <filename>error.php</filename>
+   </files>
+   <positions>
+      <position>topbar-1</position>
+      <position>topbar-2</position>
+      <position>lang-switch-top</position>
+      <position>header</position>
+      <position>logo</position>
+      <position>component-left</position>
+      <position>left-bottom</position>
+      <position>left-bottom-2</position>
+      <position>logo-md</position>
+      <position>menu</position>
+      <position>search</position>
+      <position>cart</position>
+      <position>top-right-last</position>
+      <position>related-products-detailpage</position>
+      <position>recently-viewed-product-top</position>
+      <position>subscribe-footer</position>
+      <position>categoryviewmenu</position>
+      <position>payment-methods</position>
+      <position>delievery-service</position>
+      <position>footer-about</position>
+      <position>footer-about-two</position>
+      <position>verified</position>
+      <position>social-foot</position>
+      <position>copyright</position>
+      <position>pagebuilder</position>
+      <position>internal-header</position>
+      <position>backlink</position>
+      <position>Product-detail-bottom</position>
+      <position>seller-product</position>
+      <position>Product-detail-bottom-two</position>
+      <position>page-search</position>
+      <position>title</position>
+      <position>menu-footer-one</position>
+      <position>menu-footer-two</position>
+      <position>languge-switcher-footer</position>
+      <position>header-submenu</position>
+      <position>hero-section</position>
+      <position>follow-us-title</position>
+      <position>categories-home</position>
+      <position>language-switcher</position>
+      <position>astroid-top-contact</position>
+      <position>astroid-top-social</position>
+      <position>astroid-content-left</position>
+      <position>astroid-home-page</position>
+      <position>astroid-header</position>
+      <position>astroid-footer</position>
+      <position>content-top</position>
+      <position>content-bottom</position>
+      <position>breadcrumbs</position>
+      <position>position-1</position>
+      <position>position-2</position>
+      <position>position-3</position>
+      <position>position-4</position>
+      <position>position-5</position>
+      <position>position-6</position>
+      <position>position-7</position>
+      <position>position-8</position>
+      <position>position-9</position>
+      <position>position-10</position>
+      <position>left</position>
+      <position>right</position>
+      <position>bottom-1</position>
+      <position>bottom-2</position>
+      <position>bottom-3</position>
+      <position>bottom-4</position>
+      <position>footer-1</position>
+      <position>footer-2</position>
+      <position>footer-3</position>
+      <position>footer-4</position>
+      <position>fullwidth</position>
+      <position>offcanvas</position>
+      <position>debug</position>
+   </positions>
+   <languages folder="language/en-GB">
+      <language tag="en-GB">en-GB.tpl_js-marketplace.ini</language>
+      <language tag="en-GB">en-GB.tpl_js-marketplace.sys.ini</language>
+   </languages>
+   <config>
+      <fields name="params">
+         <fieldset name="basic" addfieldpath="/libraries/astroid/framework/fields">
+            <field name="astroid" type="astroidmanagerlink"/>
+         </fieldset>
+      </fields>
+   </config>
+</extension>

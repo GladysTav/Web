@@ -1,0 +1,39 @@
+.item_slot_section input[type="text"].delivery_date {
+	margin: 0;
+}
+
+.item_slot_section .pick_date li {
+	list-style: none;
+}
+
+.item_slot_section .pick_date {
+	margin: 0;
+}
+
+.item_slot_section .btn.btn-date {
+	white-space: normal;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 1em;
+	height: 100%;
+	color: inherit;
+	font: inherit;
+	text-transform: uppercase;
+}
+
+.item_slot_section ul.pick_date > li > .btn.btn-date {
+	margin-bottom: 10px;
+}
+
+.item_slot_section .weekday, .item_slot_section .date {
+	display: block;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+.item_slot_section .date .input-group-addon.btn.btn-date {
+	border-radius: 4px !important;
+	border: 1px solid #bbbbbb !important;
+	display: inline-block !important;
+	width: inherit;
+}

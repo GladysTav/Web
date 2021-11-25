@@ -1,0 +1,174 @@
+/**
+ * @version     1.7.3
+ * @package     sellacious
+ *
+ * @copyright   Copyright (C) 2012-2019 Bhartiy Web Technologies. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @author      Izhar Aazmi <info@bhartiy.com> - http://www.bhartiy.com
+ */
+
+.mod_usercurrency_module {
+	display: inline-block;
+	position: relative;
+	z-index: 9999;
+	width: 100%;
+}
+
+.mod_usercurrency_module .mod_usercurrency_title {
+	display: inline-block;
+}
+
+.mod_usercurrency_module #mod_usercurrency_block {
+	display: inline-block;
+	margin: 0;
+	width: 100%;
+}
+
+.mod_usercurrency_module #mod_usercurrency_block .mod_usercurrency {
+	margin-left: 10px;
+	position: relative;
+	width: auto;
+	z-index: 1001;
+}
+
+/* -------------
+ * Selects
+ * ------------- */
+.jqTransformSelectWrapper {
+	width: 45px;
+	position: relative;
+	height: 31px;
+	float: left;
+	color: #a8b2b7;
+}
+
+.jqTransformSelectWrapper div:after {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin-left: 0.255em;
+	vertical-align: 0.255em;
+	content: "";
+	position: absolute;
+	right: 27px;
+	top: 8px;
+	border-top: 0.3em solid;
+	border-right: 0.3em solid transparent;
+	border-bottom: 0;
+	border-left: 0.3em solid transparent;
+}
+
+.jqTransformSelectWrapper div span {
+
+	font-size: 12px;
+	float: none;
+	position: absolute;
+	white-space: nowrap;
+	height: 31px;
+	line-height: 15px;
+	padding: 5px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.jqTransformSelectWrapper a.jqTransformSelectOpen {
+	display: block;
+	position: absolute;
+	right: 0px;
+	width: 31px;
+	height: 31px;
+}
+
+.jqTransformSelectWrapper ul {
+	position: absolute;
+	top: 30px;
+	left: 0px;
+	list-style: none;
+	background-color: #ffffff;
+	border: solid 1px #ffffff;
+	display: none;
+	margin: 0px;
+	padding: 0px;
+	height: 300px;
+	overflow: auto;
+	overflow-y: auto;
+	z-index: 10;
+	width: 120px !important;
+	box-shadow: 0 1px 8px rgba(0, 0, 0, .15);
+}
+
+.jqTransformSelectWrapper ul a {
+	display: block;
+	padding: 0;
+	text-decoration: none;
+	color: #333333;
+	background-color: #ffffff;
+	font-size: 12px;
+	line-height: 1.6;
+	border-bottom: 1px solid rgba(51, 51, 51, 0.03);
+	padding: 6px;
+	text-indent: 8px;
+}
+
+.jqTransformSelectWrapper ul a.selected {
+	background: #ededed;
+	color: #333333;
+}
+
+.jqTransformSelectWrapper ul a:hover, .jqTransformSelectWrapper ul a.selected:hover {
+	background: #f57224;
+	color: #ffffff;
+}
+
+/*Select dropdown */
+.mod_usercurrency .select2-container {
+	width: 100%;
+}
+
+.mod_usercurrency div.select2-container .select2-choice {
+	border: 0;
+	height: 18px;
+	background: transparent;
+	line-height: 18px;
+	color: #a8b2b7;
+}
+
+.mod_usercurrency div.select2-container .select2-choice span.select2-arrow {
+	background-color: transparent;
+}
+
+.mod_usercurrency .select2-container .select2-choice .select2-arrow {
+	top: -5px;
+	right: 110px;
+}
+
+.mod_usercurrency .select2-dropdown-open .select2-choice {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+/* -------------
+ * Hidden - used to hide the original form elements
+ * ------------- */
+.jqTransformHidden {
+	display: none;
+}
+
+/* OFFCANVAS currency Module */
+.astroid-offcanvas .mod_usercurrency div.select2-container .select2-choice {
+	background: #f8f7f7;
+	color: #000000;
+	font-size: 16px;
+	line-height: 35px;
+	height: 35px;
+}
+
+.astroid-offcanvas .mod_usercurrency_module #mod_usercurrency_block {
+	width: 100px;
+}
+
+.astroid-offcanvas .mod_usercurrency .select2-container .select2-choice .select2-arrow {
+	top: 3px;
+	left: 70px;
+}

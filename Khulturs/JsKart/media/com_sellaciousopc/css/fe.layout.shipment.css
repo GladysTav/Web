@@ -1,0 +1,26 @@
+#cart-opc-shippingform #shippingform-editor {
+	padding: 28px 0;
+}
+
+#cart-opc-shippingform #shipment-form .shipping-methods .radio,
+#cart-opc-shippingform #shipment-form .shipping-methods .checkbox {
+	padding-left: 0;
+	margin-bottom: 0;
+	min-height: unset;
+}
+
+#cart-opc-shippingform #shipment-form .shipping-methods .radio input[type="radio"],
+#cart-opc-shippingform #shipment-form .shipping-methods .checkbox input[type="checkbox"] {
+	position: unset;
+	margin: 0;
+}
+#cart-opc-shippingform #shipment-form .shipping-methods .radio input[type="radio"] {
+	width:20px;
+	vertical-align: middle;
+	box-shadow: none;
+}
+#cart-opc-shippingform .form-horizontal .shipment_form .control-label {
+    text-align: left;
+    float: none;
+    width: auto;
+}

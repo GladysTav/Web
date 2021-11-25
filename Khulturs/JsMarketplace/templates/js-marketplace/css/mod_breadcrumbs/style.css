@@ -1,0 +1,48 @@
+/*Breadcrumbs*/
+.mybredcrmb .breadcrumb {
+	background-color: transparent;
+	padding-left: 0;
+	margin-left: -4px;
+	height: 48px;
+	vertical-align: middle;
+	display: contents;
+	white-space: nowrap;
+}
+
+.mybredcrmb .breadcrumb li {
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 14px;
+	font-weight: 400;
+	height: 48px;
+	letter-spacing: 0.2px;
+	color:  #8a8a8a;
+	max-width: 500px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.mybredcrmb .breadcrumb li a{
+	color: #00aed5;
+}
+
+.mybredcrmb .breadcrumb li .divider img {
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+}
+
+@media (max-width: 992px){
+	#headerinternal .mybredcrmb ul li:not(:last-child) {
+		display: none;
+	}
+
+}
+
+.divider {
+	margin-right: 3px;
+}

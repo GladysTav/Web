@@ -1,0 +1,115 @@
+/**
+ * @version     2.1.4
+ * @package     SP Page Builder Addons for Sellacious
+ *
+ * @copyright   Copyright (C) 2016. Bhartiy Web Technologies. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @author      Bhavika Matariya <info@bhartiy.com> - http://www.bhartiy.com
+ */
+
+#product-images-container {
+	text-align: center;
+	padding: 0;
+	margin-bottom: 40px;
+
+	display: block;
+}
+
+.image-detail {
+	padding: 0;
+	background: #ffffff;
+	overflow: hidden;
+}
+
+.products-slider-detail {
+	padding: 6px 0 0;
+	background: #eaeaea;
+}
+
+.products-slider-detail a {
+	display: block;
+	background: #ffffff;
+	border: 4px solid #ffffff;
+}
+
+.products-slider-detail span.thumb-img {
+	display: block;
+	height: 60px;
+	width: 60px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: auto;
+}
+
+.productdetail-img .owl-theme .owl-nav {
+	position: absolute;
+	top: 5px;
+	right: 0;
+	margin-top: 0;
+}
+
+.productdetail-img .owl-theme .owl-nav .owl-prev {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.productdetail-img .owl-theme .owl-nav .next {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.productdetail-img .owl-theme .owl-nav [class*='owl-'] {
+	font-size: 18px;
+	line-height: 1;
+	margin: 0;
+	padding: 0 5px;
+	opacity: .5;
+	border-radius: 0;
+}
+
+.products-slider-detail.onethumb {
+	display: none !important;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+	.image-detail .product-img {
+		min-width: auto !important;
+		height: 400px !important;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.product-single .productdetail-img {
+		max-width: 600px;
+		margin: auto;
+		width: 100%;
+	}
+
+	.image-detail .product-img {
+		height: 500px !important;
+		min-width: auto !important;
+	}
+
+	.zoomContainer {
+		overflow: hidden;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.image-detail .product-img {
+		height: 480px !important;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.image-detail .product-img {
+		height: 380px !important;
+	}
+}
+
+@media only screen and (max-width: 380px) {
+	.image-detail .product-img {
+		height: 360px !important;
+	}
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="checkoutform">
+		<fieldset name="gst" label="PLG_SYSTEM_SELLACIOUSGST_GST_LABEL">
+			<fields name="gst">
+				<field
+					name="gst_num"
+					type="text"
+					label="PLG_SYSTEM_SELLACIOUSGST_SELLER_GST_NUM_LABEL"
+					description="PLG_SYSTEM_SELLACIOUSGST_SELLER_GST_NUM_DESC"
+					class="inputbox medium-input"
+				/>
+			</fields>
+		</fieldset>
+	</fields>
+</form>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.7" method="upgrade">
+	<name>Sellacious Hyperlocal Package</name>
+	<packagename>sellacious_hyperlocal</packagename>
+	<author>Aditya Chakraborty</author>
+	<creationDate>July 19, 2019</creationDate>
+	<authorEmail>info@bhartiy.com</authorEmail>
+	<authorUrl>www.bhartiy.com</authorUrl>
+	<copyright>Copyright (C) 2012-2019 Bhartiy Web Technologies. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>1.7.4-alpha2</version>
+	<url>http://www.sellacious.com</url>
+	<packager>Bhartiy Web Technologies</packager>
+	<packagerurl>http://www.sellacious.com</packagerurl>
+	<description>Sellacious Hyperlocal Package</description>
+	<scriptfile>installer.php</scriptfile>
+	<files folder="extensions">
+		<file type="plugin" group="system" id="sellacioushyperlocal">plg_system_sellacioushyperlocal.zip</file>
+		<file type="plugin" group="system" id="sellaciousreportsdelivery">plg_system_sellaciousreportsdelivery.zip</file>
+		<file type="module" id="mod_sellacious_hyperlocal" client="site">mod_sellacious_hyperlocal.zip</file>
+		<file type="component" id="com_sellaciousdelivery">com_sellaciousdelivery.zip</file>
+	</files>
+</extension>

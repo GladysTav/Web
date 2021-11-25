@@ -1,0 +1,33 @@
+/**
+ * @version     2.1.4
+ * @package     SP Page Builder Addons for Sellacious
+ *
+ * @copyright   Copyright (C) 2016. Bhartiy Web Technologies. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @author      Bhavika Matariya <info@bhartiy.com> - http://www.bhartiy.com
+ */
+
+.btn-wishlist.fa-heart:before {
+	color: red;
+}
+
+button.btn-compare h5:first-child {
+	display: block;
+}
+
+button.btn-compare h5:last-child {
+	display: none;
+}
+
+button.btn-compare.checked:before {
+	content: "\f15b";
+	color: #ff0000;
+}
+
+button.btn-compare.checked h5:first-child {
+	display: none;
+}
+
+button.btn-compare.checked h5:last-child {
+	display: block;
+}

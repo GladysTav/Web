@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_SELLACIOUS_USER_REVIEWS_VIEW_DEFAULT_TITLE">
+		<message>
+			<![CDATA[COM_SELLACIOUS_USER_REVIEWS_VIEW_DEFAULT_DESC]]>
+		</message>
+	</layout>
+	<fields name="request">
+		<fieldset name="request">
+			<field
+				name="reviews_by"
+				type="list"
+				label="COM_SELLACIOUS_USER_REVIEWS_MENU_REVIEWS_BY_LABEL"
+				description="COM_SELLACIOUS_USER_REVIEWS_REVIEWS_BY_DESC"
+				default=""
+			>
+				<option value="">JALL</option>
+				<option value="product">COM_SELLACIOUS_USER_REVIEWS_REVIEWS_BY_PRODUCT</option>
+				<option value="seller">COM_SELLACIOUS_USER_REVIEWS_REVIEWS_BY_SELLER</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>

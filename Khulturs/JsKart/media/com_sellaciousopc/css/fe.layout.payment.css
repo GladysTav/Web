@@ -1,0 +1,13 @@
+#payment-methods .radio {
+	padding: 0;
+}
+
+#payment-methods .radio input[type="radio"],
+#payment-methods .radio input[type="checkbox"] {
+	margin: 2px 0 0 0;
+	position: unset;
+}
+
+#payment-methods .payment-method p {
+	font-size: 13px;
+}

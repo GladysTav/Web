@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="basic" label="COM_SELLACIOUS_PROFILE_FIELDSET_BASIC">
+		<field
+			name="id"
+			type="hidden"
+			readonly="true"
+		/>
+		<field
+			name="name"
+			type="text"
+			description="COM_SELLACIOUS_PROFILE_USER_FIELD_NAME_DESC"
+			label="COM_SELLACIOUS_PROFILE_USER_FIELD_NAME_LABEL"
+			class="inputbox"
+			size="30"
+			required="true"
+		/>
+		<field
+			name="username"
+			type="text"
+			label="COM_SELLACIOUS_PROFILE_USER_FIELD_USERNAME_LABEL"
+			description="COM_SELLACIOUS_PROFILE_USER_FIELD_USERNAME_DESC"
+			class="inputbox"
+			required="true"
+			size="30"
+		/>
+		<field
+			name="email"
+			type="email"
+			label="COM_SELLACIOUS_PROFILE_USER_FIELD_EMAIL_LABEL"
+			description="COM_SELLACIOUS_PROFILE_USER_FIELD_EMAIL_DESC"
+			class="inputbox medium-input validate-email"
+			required="true"
+			size="30"
+			fieldtype="email"
+			validate="email"
+		/>
+
+		<fields name="profile">
+			<field
+				name="mobile"
+				type="tel"
+				label="COM_SELLACIOUS_PROFILE_FIELD_MOBILE_LABEL"
+				description="COM_SELLACIOUS_PROFILE_FIELD_MOBILE_DESC"
+				message="COM_SELLACIOUS_REGISTER_UNIQUE_MOBILE_ERROR"
+				class="inputbox medium-input"
+				size="30"
+				validate="mobile"
+				unique="true"
+				fieldtype="tel"
+			/>
+		</fields>
+
+		<field
+			name="password"
+			type="password"
+			label="JGLOBAL_PASSWORD"
+			description="COM_SELLACIOUS_PROFILE_USER_FIELD_PASSWORD_DESC"
+			class="validate-password inputbox"
+			filter="raw"
+			layout="sellacious.form.field.password"
+			autocomplete="new-password"
+			validate="password"
+			size="30"
+		/>
+		<field
+			name="password2"
+			type="password"
+			label="COM_SELLACIOUS_PROFILE_USER_FIELD_PASSWORD2_LABEL"
+			description="COM_SELLACIOUS_PROFILE_USER_FIELD_PASSWORD2_DESC"
+			layout="sellacious.form.field.password"
+			autocomplete="new-password"
+			class="validate-password inputbox"
+			filter="raw"
+			size="30"
+			validate="equals"
+			field="password"
+		/>
+		<field
+			name="avatar"
+			type="uploader"
+			label="COM_SELLACIOUS_PROFILE_FIELD_USER_AVATAR_LABEL"
+			description="COM_SELLACIOUS_PROFILE_FIELD_USER_AVATAR_DESC"
+			tableName="user"
+			context="avatar"
+			recordId="0"
+			uploadLimit="1"
+			maxSize="5 MB"
+			extensions="jpg,png,jpeg,gif"
+			showPublish="false"
+			showRename="false"
+			showRemove="true"
+		/>
+	</fieldset>
+
+	<fields name="params">
+		<fieldset name="basic" label="COM_SELLACIOUS_PROFILE_FIELDSET_BASIC">
+			<field
+				name="timezone"
+				type="timezone"
+				label="COM_SELLACIOUS_PROFILE_USER_FIELD_TIMEZONE_LABEL"
+				description="COM_SELLACIOUS_PROFILE_USER_FIELD_TIMEZONE_DESC"
+				class="medium-input"
+			>
+				<option value="">JOPTION_USE_DEFAULT</option>
+			</field>
+		</fieldset>
+	</fields>
+
+	<fields name="profile">
+		<fieldset name="basic" label="COM_SELLACIOUS_PROFILE_FIELDSET_BASIC">
+			<field
+				name="website"
+				type="text"
+				label="COM_SELLACIOUS_PROFILE_FIELD_WEBSITE_LABEL"
+				description="COM_SELLACIOUS_PROFILE_FIELD_WEBSITE_DESC"
+				class="inputbox medium-input"
+				size="60"
+				validate="url"
+			/>
+			<field
+				name="currency"
+				type="sql"
+				query="SELECT `code_3` AS `value`, CONCAT(`code_3`, ' - ', `title`) AS `currency` FROM #__sellacious_currencies WHERE `state` = 1 ORDER BY `code_3`"
+				label="COM_SELLACIOUS_PROFILE_FIELD_CURRENCY_LABEL"
+				description="COM_SELLACIOUS_PROFILE_FIELD_CURRENCY_DESC"
+				class="medium-input"
+			>
+				<option value=""/>
+			</field>
+		</fieldset>
+	</fields>
+
+	<fields name="client">
+		<fieldset name="basic" label="COM_SELLACIOUS_PROFILE_FIELDSET_BASIC">
+			<field
+				name="category_id"
+				type="hidden"
+				readonly="true"
+			/>
+		</fieldset>
+	</fields>
+
+	<fieldset name="captcha">
+		<field
+			name="agree_tnc"
+			type="userTermsAgreement"
+			label="COM_SELLACIOUS_PROFILE_FIELD_AGREE_TNC_LABEL"
+			description="COM_SELLACIOUS_PROFILE_FIELD_AGREE_TNC_DESC"
+			required="true"
+		/>
+		<field
+			name="captcha"
+			type="captcha"
+			label="COM_SELLACIOUS_CAPTCHA_LABEL"
+			description="COM_SELLACIOUS_CAPTCHA_DESC"
+			validate="captcha"
+		/>
+	</fieldset>
+</form>

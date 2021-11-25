@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="prices">
+		<fieldset name="prices" label="COM_SELLACIOUS_PRODUCT_FIELDSET_PRICES">
+
+			<field
+				type="fieldgroup"
+				label="COM_SELLACIOUS_PRICE_HANDLER_FIELDGROUP_BASIC_LABEL"
+				showon="seller.pricing_type:basic"
+			/>
+			<field
+				type="fieldgroup"
+				label="COM_SELLACIOUS_PRICE_HANDLER_FIELDGROUP_FLAT_LABEL"
+				showon="seller.pricing_type:flat"
+			/>
+			<field
+				type="fieldgroup"
+				label="COM_SELLACIOUS_PRICE_HANDLER_FIELDGROUP_DYNAMIC_LABEL"
+				showon="seller.pricing_type:dynamic"
+			/>
+
+			<field
+				name="fallback"
+				type="productPrice"
+				label="COM_SELLACIOUS_PRODUCT_FIELD_PRICE_FALLBACK_LABEL"
+				description="COM_SELLACIOUS_PRODUCT_FIELD_PRICE_FALLBACK_DESC"
+				required="true"
+				showon="seller.pricing_type:basic[OR]seller.pricing_type:flat[OR]seller.pricing_type:dynamic"
+			/>
+
+			<field
+				name="product"
+				type="productPrices"
+				label="COM_SELLACIOUS_PRODUCT_FIELD_PRICES_LABEL"
+				description="COM_SELLACIOUS_PRODUCT_FIELD_PRICES_DESC"
+				showon="seller.pricing_type:dynamic"
+			/>
+
+			<field
+				name="variants"
+				type="variantPrices"
+				label="COM_SELLACIOUS_PRODUCT_FIELD_VARIANT_PRICES_LABEL"
+				description="COM_SELLACIOUS_PRODUCT_FIELD_VARIANT_PRICES_DESC"
+				showon="seller.pricing_type:basic[OR]seller.pricing_type:flat[OR]seller.pricing_type:dynamic"
+			/>
+
+		</fieldset>
+	</fields>
+</form>

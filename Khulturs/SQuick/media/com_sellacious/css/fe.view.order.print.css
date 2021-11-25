@@ -1,0 +1,271 @@
+@media not print {
+	div.print-page {
+		width: 840px;
+	}
+	[dir=ltr] div.print-page {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	[dir=rtl] div.print-page {
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+[dir] div.fieldset {
+	border: 1px solid #dedede;
+	padding: 8px;
+	margin-top: 16px;
+	margin-bottom: 6px;
+}
+
+[dir=ltr] .order-info {
+	margin-right: 10px;
+}
+
+[dir=rtl] .order-info {
+	margin-left: 10px;
+}
+
+[dir] .order-info tr {
+	border-bottom: 1px solid #dedede;
+}
+
+.order-info td {
+	line-height: 1.9;
+}
+
+[dir] .order-info td {
+	padding: 5px;
+}
+
+.order-total span {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+[dir] #address-viewer {
+	padding: 0;
+}
+
+[dir=ltr] #address-viewer {
+	margin-left: 10px;
+	text-align: left;
+}
+
+[dir=rtl] #address-viewer {
+	margin-right: 10px;
+	text-align: right;
+}
+
+#address-viewer .address_label {
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+[dir] #address-viewer .address_label {
+	background: #efefef;
+	padding: 3px;
+}
+
+[dir] #address-billing-text, [dir] #address-shipping-text {
+	margin-bottom: 10px;
+	padding: 0;
+}
+
+.address_name {
+	font-size: 15px;
+	font-weight: bold;
+	color: #000000;
+	line-height: 1.8;
+	width: 230px;
+}
+
+[dir] .address_name {
+	margin-bottom: 10px;
+}
+
+[dir=ltr] .address_mobile {
+	margin-left: 15px;
+}
+
+[dir=rtl] .address_mobile {
+	margin-right: 15px;
+}
+
+.address_mobile i.fa {
+	font-size: 95%;
+}
+
+button.btn-action {
+	white-space: nowrap;
+	width: 100px;
+}
+
+[dir] button.btn-action {
+	background: transparent;
+	margin: 2px;
+	border: 1px solid #c9c9c9;
+	border-radius: 4px;
+}
+
+[dir=ltr] button.btn-action {
+	padding: 3px 3px 3px 6px;
+}
+
+[dir=rtl] button.btn-action {
+	padding: 3px 6px 3px 3px;
+}
+
+.btn-action {
+	color: #aeaeae;
+}
+
+.btn-action span {
+	line-height: 1.3;
+	color: #000000;
+}
+
+.btn-action:before {
+	font-size: 20px;
+	line-height: 1.6;
+}
+
+[dir=ltr] .btn-action:before {
+	float: left;
+	margin-right: 5px;
+}
+
+[dir=rtl] .btn-action:before {
+	float: right;
+	margin-left: 5px;
+}
+
+[dir=ltr] .btn-action {
+	-webkit-box-shadow: 1px 1px 1px 1px #dfdfdf;
+	-moz-box-shadow: 1px 1px 1px 1px #dfdfdf;
+	box-shadow: 1px 1px 1px 1px #dfdfdf;
+}
+
+[dir=rtl] .btn-action {
+	-webkit-box-shadow: -1px 1px 1px 1px #dfdfdf;
+	-moz-box-shadow: -1px 1px 1px 1px #dfdfdf;
+	box-shadow: -1px 1px 1px 1px #dfdfdf;
+}
+
+[dir=ltr] .btn-action:hover {
+	-webkit-box-shadow: 1px 1px 1px 1px #c3c3c2;
+	-moz-box-shadow: 1px 1px 1px 1px #c3c3c2;
+	box-shadow: 1px 1px 1px 1px #c3c3c2;
+}
+
+[dir=rtl] .btn-action:hover {
+	-webkit-box-shadow: -1px 1px 1px 1px #c3c3c2;
+	-moz-box-shadow: -1px 1px 1px 1px #c3c3c2;
+	box-shadow: -1px 1px 1px 1px #c3c3c2;
+}
+
+[dir=ltr] .order-actions td + td {
+	border-left: 1px solid #dfdfdf;
+}
+
+[dir=rtl] .order-actions td + td {
+	border-right: 1px solid #dfdfdf;
+}
+
+[dir] .order-items {
+	margin-top: 15px;
+}
+
+[dir] .order-items > tr + tr {
+	border-top: 1px solid #dedede;
+}
+
+[dir] .order-items > tbody > tr {
+	border-bottom: 1px solid #dfdfdf;
+}
+
+.order-items > thead > tr {
+	height: 30px;
+	text-transform: uppercase;
+	line-height: 2.0;
+}
+
+[dir] .order-items > thead > tr {
+	padding: 4px;
+	background: #f5f5f5;
+	border: 1px solid #cedede;
+}
+
+.order-items td {
+	line-height: 1.6;
+}
+
+[dir] .order-items td {
+	padding: 5px;
+}
+
+[dir] .shoprule-info > tbody > tr + tr {
+	border-top: 1px solid #dfdfdf;
+}
+
+.shoprule-info > thead > tr {
+	height: 30px;
+	text-transform: uppercase;
+	line-height: 2.0;
+}
+
+[dir] .shoprule-info > thead > tr {
+	padding: 4px;
+	background: #f5f5f5;
+	border: 1px solid #cedede;
+}
+
+.shoprule-info td {
+	line-height: 1.4;
+}
+
+[dir] .shoprule-info td {
+	padding: 3px;
+}
+
+.item-total {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.dark-link,
+.dark-link:hover,
+.dark-link:active,
+.dark-link:focus,
+.dark-link:visited {
+	color: #333333;
+}
+
+[dir] .oi-status tr + tr {
+	border-top: 1px solid #dfdfdf;
+}
+
+.oi-status td {
+	color: #000000;
+	font-size: 11px;
+	line-height: .9;
+}
+
+[dir] .oi-status td {
+	background: #f9f9f9;
+}
+
+.thin-line {
+	line-height: 0.4;
+}
+
+[dir] .thin-line {
+	padding: 0;
+}
+
+[dir] .bg-color-dark {
+	background: #dedede;
+}

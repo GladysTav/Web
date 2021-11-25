@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="short_codes" label="PLG_SYSTEM_SELLACIOUSGST_FIELDSET_TAB_SHORTCODES_LABEL">
+		<field
+			name="product_gst_shortcodes"
+			type="note"
+			class="padding-10"
+			heading="h5"
+			label=""
+			description="PLG_SYSTEM_SELLACIOUSGST_FIELDSET_PRODUCT_GST_SHORTCODES_NOTE"
+		/>
+		<field
+			name="seller_gst_shortcodes"
+			type="note"
+			class="padding-10"
+			heading=""
+			label=""
+			description="PLG_SYSTEM_SELLACIOUSGST_FIELDSET_SHORTCODES_SELLER_NOTE"
+		/>
+		<field
+			name="global_gst_shortcodes"
+			type="note"
+			class="padding-10"
+			heading="h5"
+			label="PLG_SYSTEM_SELLACIOUSGST_FIELDSET_SHORTCODES_LABEL"
+			description="PLG_SYSTEM_SELLACIOUSGST_FIELDSET_SHORTCODES_NOTE"
+		/>
+	</fieldset>
+</form>

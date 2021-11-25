@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset
+		name="basic"
+		label="COM_SELLACIOUSTEMPLATES_TEMPLATE_FIELDSET_BASIC"
+		addfieldpath="/sellacious/components/com_sellacious/models/fields">
+		<field
+			name="id"
+			type="hidden"
+			default="0"
+			readonly="true"
+		/>
+		<field
+			name="alias"
+			type="hidden"
+			default=""
+			readonly="true"
+		/>
+		<field
+			name="state"
+			type="hidden"
+			default="1"
+			readonly="true"
+		/>
+		<field
+			name="context"
+			type="hidden"
+			readonly="true"
+			required="true"
+		/>
+		<field
+			name="title"
+			type="hidden"
+			filter="string"
+			readonly="true"
+			required="true"
+		/>
+		<field
+			name="body"
+			type="editor"
+			label="COM_SELLACIOUSTEMPLATES_TEMPLATE_FIELD_BODY_LABEL"
+			filter="raw"
+			editor="ckinlineeditor4"
+		/>
+	</fieldset>
+	<fieldset name="preview" label="COM_SELLACIOUSTEMPLATES_TEMPLATE_FIELDSET_PREVIEW">
+		<field
+			name="preview"
+			type="templatepreview"
+			label="COM_SELLACIOUSTEMPLATES_TEMPLATE_FIELD_PREVIEW_LABEL"
+		/>
+	</fieldset>
+</form>

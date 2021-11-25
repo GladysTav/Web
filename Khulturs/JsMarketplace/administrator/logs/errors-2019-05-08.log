@@ -1,0 +1,40 @@
+#
+#<?php die('Forbidden.'); ?>
+#Date: 2019-05-08 12:45:33 UTC
+#Software: Joomla Platform 13.1.0 Stable [ Curiosity ] 24-Apr-2013 00:00 GMT
+
+#Fields: datetime	priority clientip	category	message
+2019-05-08T12:45:33+00:00	CRITICAL ::1	error	Uncaught \Throwable of type Joomla\CMS\Component\Exception\MissingComponentException thrown. Stack trace: #0 /Users/codeacious3/Sites/lab-jsmarketplace/libraries/src/Application/SiteApplication.php(194): Joomla\CMS\Component\ComponentHelper::renderComponent(NULL)
+#1 /Users/codeacious3/Sites/lab-jsmarketplace/libraries/src/Application/SiteApplication.php(233): Joomla\CMS\Application\SiteApplication->dispatch()
+#2 /Users/codeacious3/Sites/lab-jsmarketplace/libraries/src/Application/CMSApplication.php(196): Joomla\CMS\Application\SiteApplication->doExecute()
+#3 /Users/codeacious3/Sites/lab-jsmarketplace/index.php(49): Joomla\CMS\Application\CMSApplication->execute()
+#4 {main}
+2019-05-08T12:47:31+00:00	WARNING ::1	jerror	The user checking in does not match the user who checked out the item.
+2019-05-08T12:52:05+00:00	CRITICAL ::1	error	Uncaught \Throwable of type JDatabaseExceptionExecuting thrown. Stack trace: #0 /Users/codeacious3/Sites/lab-jsmarketplace/libraries/src/Table/Nested.php(1779): JDatabaseDriverMysqli->execute()
+#1 /Users/codeacious3/Sites/lab-jsmarketplace/libraries/src/Table/Nested.php(639): Joomla\CMS\Table\Nested->_runQuery(Object(JDatabaseQueryMysqli), 'JLIB_DATABASE_E...')
+#2 /Users/codeacious3/Sites/lab-jsmarketplace/administrator/components/com_menus/tables/menu.php(31): Joomla\CMS\Table\Nested->delete(1090, false)
+#3 /Users/codeacious3/Sites/lab-jsmarketplace/libraries/src/MVC/Model/AdminModel.php(858): MenusTableMenu->delete(1090)
+#4 /Users/codeacious3/Sites/lab-jsmarketplace/libraries/src/MVC/Controller/AdminController.php(132): Joomla\CMS\MVC\Model\AdminModel->delete(Array)
+#5 /Users/codeacious3/Sites/lab-jsmarketplace/libraries/src/MVC/Controller/BaseController.php(710): Joomla\CMS\MVC\Controller\AdminController->delete()
+#6 /Users/codeacious3/Sites/lab-jsmarketplace/administrator/components/com_menus/menus.php(18): Joomla\CMS\MVC\Controller\BaseController->execute('delete')
+#7 /Users/codeacious3/Sites/lab-jsmarketplace/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#8 /Users/codeacious3/Sites/lab-jsmarketplace/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#9 /Users/codeacious3/Sites/lab-jsmarketplace/libraries/src/Application/AdministratorApplication.php(101): Joomla\CMS\Component\ComponentHelper::renderComponent('com_menus')
+#10 /Users/codeacious3/Sites/lab-jsmarketplace/libraries/src/Application/AdministratorApplication.php(159): Joomla\CMS\Application\AdministratorApplication->dispatch()
+#11 /Users/codeacious3/Sites/lab-jsmarketplace/libraries/src/Application/CMSApplication.php(196): Joomla\CMS\Application\AdministratorApplication->doExecute()
+#12 /Users/codeacious3/Sites/lab-jsmarketplace/administrator/index.php(51): Joomla\CMS\Application\CMSApplication->execute()
+#13 {main}
+2019-05-08T12:52:17+00:00	CRITICAL ::1	error	Uncaught \Throwable of type JDatabaseExceptionExecuting thrown. Stack trace: #0 /Users/codeacious3/Sites/lab-jsmarketplace/libraries/src/Table/Nested.php(1779): JDatabaseDriverMysqli->execute()
+#1 /Users/codeacious3/Sites/lab-jsmarketplace/libraries/src/Table/Nested.php(639): Joomla\CMS\Table\Nested->_runQuery(Object(JDatabaseQueryMysqli), 'JLIB_DATABASE_E...')
+#2 /Users/codeacious3/Sites/lab-jsmarketplace/administrator/components/com_menus/tables/menu.php(31): Joomla\CMS\Table\Nested->delete(1185, false)
+#3 /Users/codeacious3/Sites/lab-jsmarketplace/libraries/src/MVC/Model/AdminModel.php(858): MenusTableMenu->delete(1185)
+#4 /Users/codeacious3/Sites/lab-jsmarketplace/libraries/src/MVC/Controller/AdminController.php(132): Joomla\CMS\MVC\Model\AdminModel->delete(Array)
+#5 /Users/codeacious3/Sites/lab-jsmarketplace/libraries/src/MVC/Controller/BaseController.php(710): Joomla\CMS\MVC\Controller\AdminController->delete()
+#6 /Users/codeacious3/Sites/lab-jsmarketplace/administrator/components/com_menus/menus.php(18): Joomla\CMS\MVC\Controller\BaseController->execute('delete')
+#7 /Users/codeacious3/Sites/lab-jsmarketplace/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#8 /Users/codeacious3/Sites/lab-jsmarketplace/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#9 /Users/codeacious3/Sites/lab-jsmarketplace/libraries/src/Application/AdministratorApplication.php(101): Joomla\CMS\Component\ComponentHelper::renderComponent('com_menus')
+#10 /Users/codeacious3/Sites/lab-jsmarketplace/libraries/src/Application/AdministratorApplication.php(159): Joomla\CMS\Application\AdministratorApplication->dispatch()
+#11 /Users/codeacious3/Sites/lab-jsmarketplace/libraries/src/Application/CMSApplication.php(196): Joomla\CMS\Application\AdministratorApplication->doExecute()
+#12 /Users/codeacious3/Sites/lab-jsmarketplace/administrator/index.php(51): Joomla\CMS\Application\CMSApplication->execute()
+#13 {main}

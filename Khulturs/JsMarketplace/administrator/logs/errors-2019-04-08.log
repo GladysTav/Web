@@ -1,0 +1,61 @@
+#
+#<?php die('Forbidden.'); ?>
+#Date: 2019-04-08 05:00:19 UTC
+#Software: Joomla Platform 13.1.0 Stable [ Curiosity ] 24-Apr-2013 00:00 GMT
+
+#Fields: datetime	priority clientip	category	message
+2019-04-08T05:00:19+00:00	CRITICAL -	error	Uncaught \Throwable of type JDatabaseExceptionConnecting thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/libraries/joomla/database/driver/mysqli.php(439): JDatabaseDriverMysqli->connect()
+#1 /Users/codeacious3/Sites/sellacious/libraries/src/Table/Table.php(245): JDatabaseDriverMysqli->getTableColumns('#__extensions', false)
+#2 /Users/codeacious3/Sites/sellacious/libraries/src/Table/Table.php(164): Joomla\CMS\Table\Table->getFields()
+#3 /Users/codeacious3/Sites/sellacious/libraries/src/Table/Extension.php(32): Joomla\CMS\Table\Table->__construct('#__extensions', Array, Object(JDatabaseDriverMysqli))
+#4 /Users/codeacious3/Sites/sellacious/libraries/src/Table/Table.php(312): Joomla\CMS\Table\Extension->__construct(Object(JDatabaseDriverMysqli))
+#5 /Users/codeacious3/Sites/sellacious/libraries/sellacious/helper/helper.php(206): Joomla\CMS\Table\Table::getInstance('Extension')
+#6 /Users/codeacious3/Sites/sellacious/libraries/sellacious/helper/helper.php(168): SellaciousHelper->detectVersion()
+#7 /Users/codeacious3/Sites/sellacious/libraries/sellacious/loader.php(25): SellaciousHelper::getInstance()
+#8 /Users/codeacious3/Sites/sellacious/libraries/loader.php(226): include_once('/Users/codeacio...')
+#9 /Users/codeacious3/Sites/sellacious/sellacious/cli/application.php(36): JLoader::import('sellacious.load...')
+#10 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CliApplication.php(119): SellaciousCliApplication->__construct()
+#11 /Users/codeacious3/Sites/sellacious/sellacious/cli/sellacious_cache.php(148): Joomla\CMS\Application\CliApplication::getInstance('SellaciousCache...')
+#12 {main}
+2019-04-08T05:04:11+00:00	CRITICAL -	error	Uncaught \Throwable of type Error thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/sellacious/cli/sellacious_importer.php(156): SellaciousImporterCli->rebuildCache(NULL)
+#1 /Users/codeacious3/Sites/sellacious/sellacious/cli/sellacious_importer.php(79): SellaciousImporterCli->doImport()
+#2 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CliApplication.php(143): SellaciousImporterCli->doExecute()
+#3 /Users/codeacious3/Sites/sellacious/sellacious/cli/sellacious_importer.php(231): Joomla\CMS\Application\CliApplication->execute()
+#4 {main}
+2019-04-08T06:03:49+00:00	CRITICAL -	error	Uncaught \Throwable of type Error thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/sellacious/cli/sellacious_importer.php(156): SellaciousImporterCli->rebuildCache(NULL)
+#1 /Users/codeacious3/Sites/sellacious/sellacious/cli/sellacious_importer.php(79): SellaciousImporterCli->doImport()
+#2 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CliApplication.php(143): SellaciousImporterCli->doExecute()
+#3 /Users/codeacious3/Sites/sellacious/sellacious/cli/sellacious_importer.php(231): Joomla\CMS\Application\CliApplication->execute()
+#4 {main}
+2019-04-08T07:50:06+00:00	CRITICAL ::1	error	Uncaught \Throwable of type Exception thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(621): Joomla\CMS\MVC\Controller\BaseController->getView('login', 'json', 'loginView', Array)
+#1 /Users/codeacious3/Sites/sellacious/sellacious/components/com_login/controller.php(42): Joomla\CMS\MVC\Controller\BaseController->display(false, NULL)
+#2 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(710): LoginController->display()
+#3 /Users/codeacious3/Sites/sellacious/sellacious/components/com_login/login.php(21): Joomla\CMS\MVC\Controller\BaseController->execute('')
+#4 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#5 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#6 /Users/codeacious3/Sites/sellacious/sellacious/includes/libraries/application.php(205): Joomla\CMS\Component\ComponentHelper::renderComponent('com_login')
+#7 /Users/codeacious3/Sites/sellacious/sellacious/includes/libraries/application.php(250): JApplicationSellacious->dispatch()
+#8 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(196): JApplicationSellacious->doExecute()
+#9 /Users/codeacious3/Sites/sellacious/sellacious/index.php(43): Joomla\CMS\Application\CMSApplication->execute()
+#10 {main}
+2019-04-08T08:09:24+00:00	CRITICAL ::1	error	Uncaught \Throwable of type Joomla\CMS\Router\Exception\RouteNotFoundException thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/components/com_sellacious/router.php(1364): SellaciousRouter->parseCategoriesSegments(Array, Array)
+#1 /Users/codeacious3/Sites/sellacious/components/com_sellacious/router.php(409): SellaciousRouter->parseProductSegments(Array, Array)
+#2 /Users/codeacious3/Sites/sellacious/libraries/src/Router/SiteRouter.php(437): SellaciousRouter->parse(Array)
+#3 /Users/codeacious3/Sites/sellacious/libraries/src/Router/Router.php(482): Joomla\CMS\Router\SiteRouter->parseSefRoute(Object(Joomla\CMS\Uri\Uri))
+#4 /Users/codeacious3/Sites/sellacious/libraries/src/Router/Router.php(227): Joomla\CMS\Router\Router->_parseSefRoute(Object(Joomla\CMS\Uri\Uri))
+#5 /Users/codeacious3/Sites/sellacious/libraries/src/Router/SiteRouter.php(138): Joomla\CMS\Router\Router->parse(Object(Joomla\CMS\Uri\Uri))
+#6 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(1074): Joomla\CMS\Router\SiteRouter->parse(Object(Joomla\CMS\Uri\Uri))
+#7 /Users/codeacious3/Sites/sellacious/libraries/src/Application/SiteApplication.php(796): Joomla\CMS\Application\CMSApplication->route()
+#8 /Users/codeacious3/Sites/sellacious/libraries/src/Application/SiteApplication.php(218): Joomla\CMS\Application\SiteApplication->route()
+#9 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(196): Joomla\CMS\Application\SiteApplication->doExecute()
+#10 /Users/codeacious3/Sites/sellacious/index.php(49): Joomla\CMS\Application\CMSApplication->execute()
+#11 {main}
+2019-04-08T10:12:13+00:00	CRITICAL -	error	Uncaught \Throwable of type Error thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/sellacious/cli/sellacious_importer.php(156): SellaciousImporterCli->rebuildCache(NULL)
+#1 /Users/codeacious3/Sites/sellacious/sellacious/cli/sellacious_importer.php(79): SellaciousImporterCli->doImport()
+#2 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CliApplication.php(143): SellaciousImporterCli->doExecute()
+#3 /Users/codeacious3/Sites/sellacious/sellacious/cli/sellacious_importer.php(231): Joomla\CMS\Application\CliApplication->execute()
+#4 {main}
+2019-04-08T10:17:20+00:00	WARNING ::1	jerror	Username and password do not match or you do not have an account yet.
+2019-04-08T10:29:18+00:00	WARNING ::1	jerror	Username and password do not match or you do not have an account yet.
+2019-04-08T10:29:23+00:00	WARNING ::1	jerror	Username and password do not match or you do not have an account yet.
+2019-04-08T13:19:21+00:00	WARNING ::1	jerror	Empty password not allowed

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="client" label="COM_SELLACIOUS_CATEGORY_FIELDSET_CLIENT">
+		<fields name="params">
+			<fields name="preverify">
+				<field
+					name="email"
+					type="radio"
+					label="COM_SELLACIOUS_CATEGORY_FIELD_PREVERIFY_EMAIL_LABEL"
+					description="COM_SELLACIOUS_CATEGORY_FIELD_PREVERIFY_EMAIL_DESC"
+					default="0"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="mobile"
+					type="radio"
+					label="COM_SELLACIOUS_CATEGORY_FIELD_PREVERIFY_MOBILE_LABEL"
+					description="COM_SELLACIOUS_CATEGORY_FIELD_PREVERIFY_MOBILE_DESC"
+					default="0"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+			</fields>
+
+			<field
+				name="category_price_markup"
+				type="rates"
+				label="COM_SELLACIOUS_CATEGORY_FIELD_CATEGORY_PRICE_MARKUP_LABEL"
+				description="COM_SELLACIOUS_CATEGORY_FIELD_CATEGORY_PRICE_MARKUP_DESC"
+				required="true"
+				validate="rates"
+				currency="global"
+			/>
+		</fields>
+	</fieldset>
+
+	<fieldset name="tnc" label="COM_SELLACIOUS_CATEGORY_FIELDSET_TNC" width="12">
+		<fields name="params">
+			<field
+				name="tnc_body"
+				type="editor"
+				label="COM_SELLACIOUS_CATEGORY_FIELD_TNC_BODY_LABEL"
+				description="COM_SELLACIOUS_CATEGORY_FIELD_TNC_BODY_DESC"
+				multiple="true"
+				group="client"
+				height="300"
+				filter="raw"
+			/>
+		</fields>
+	</fieldset>
+
+	<fieldset name="params" label="COM_SELLACIOUS_CATEGORY_FIELDSET_PARAMS">
+		<field
+			name="global_fields"
+			type="formFields"
+			label="COM_SELLACIOUS_USER_FIELD_GLOBAL_FIELDS_LABEL"
+			description="COM_SELLACIOUS_USER_FIELD_GLOBAL_FIELDS_DESC"
+			context="user"
+			multiple="true"
+			showall="false"
+			readonly="true"
+			global="true"
+		/>
+		<field
+			name="core_fields"
+			type="formFields"
+			label="COM_SELLACIOUS_USER_FIELD_PROFILE_FIELDS_LABEL"
+			description="COM_SELLACIOUS_USER_FIELD_PROFILE_FIELDS_DESC"
+			context="user"
+			multiple="true"
+			showall="false"
+			tags="true"
+		/>
+
+		<field
+			type="fieldgroup"
+			label="COM_SELLACIOUS_PROFILE_FIELD_HIDE_SHOW_GROUP_LABEL"
+			description="COM_SELLACIOUS_PROFILE_FIELD_HIDE_SHOW_GROUP_DESC"
+		/>
+
+		<fields name="params">
+			<field
+				name="profile_fields"
+				type="CheckMatrix"
+				label="COM_SELLACIOUS_PROFILE_FIELD_HIDE_SHOW_GROUP_LABEL"
+				description="COM_SELLACIOUS_PROFILE_FIELD_HIDE_SHOW_GROUP_DESC"
+				pivot="column"
+			>
+				<column value="register">COM_SELLACIOUS_PROFILE_HIDE_SHOW_OPTION_REGISTER</column>
+				<column value="profile">COM_SELLACIOUS_PROFILE_HIDE_SHOW_OPTION_PROFILE</column>
+				<column value="admin">COM_SELLACIOUS_PROFILE_HIDE_SHOW_OPTION_ADMIN</column>
+
+				<row value="username">COM_SELLACIOUS_PROFILE_USER_FIELD_USERNAME_LABEL</row>
+				<row value="name">COM_SELLACIOUS_PROFILE_USER_FIELD_NAME_LABEL</row>
+				<row value="email">COM_SELLACIOUS_PROFILE_USER_FIELD_EMAIL_LABEL</row>
+				<row value="password">COM_SELLACIOUS_PROFILE_USER_FIELD_PASSWORD_LABEL</row>
+				<row value="params.timezone">COM_SELLACIOUS_PROFILE_USER_FIELD_TIMEZONE_LABEL</row>
+				<row value="client.client_type">COM_SELLACIOUS_PROFILE_FIELD_CLIENT_TYPE_LABEL</row>
+				<row value="client.business_name">COM_SELLACIOUS_PROFILE_FIELD_BUSINESS_NAME_LABEL</row>
+				<row value="client.org_reg_no">COM_SELLACIOUS_PROFILE_FIELD_ORG_REG_NO_LABEL</row>
+				<row value="client.org_certificate">COM_SELLACIOUS_PROFILE_FIELD_ORG_CERTIFICATE_LABEL</row>
+				<row value="profile.avatar">COM_SELLACIOUS_PROFILE_FIELD_CLIENT_AVATAR_LABEL</row>
+				<row value="profile.mobile">COM_SELLACIOUS_PROFILE_FIELD_MOBILE_LABEL</row>
+				<row value="profile.website">COM_SELLACIOUS_PROFILE_FIELD_WEBSITE_LABEL</row>
+				<row value="profile.currency">COM_SELLACIOUS_PROFILE_FIELD_CURRENCY_LABEL</row>
+				<row value="address">COM_SELLACIOUS_PROFILE_FIELDSET_ADDRESS</row>
+				<row value="tnc">COM_SELLACIOUS_PROFILE_FIELD_CLIENT_TNC_LABEL</row>
+			</field>
+		</fields>
+
+	</fieldset>
+</form>

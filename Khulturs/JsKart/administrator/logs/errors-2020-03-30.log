@@ -1,0 +1,79 @@
+#
+#<?php die('Forbidden.'); ?>
+#Date: 2020-03-30 03:36:25 UTC
+#Software: Joomla Platform 13.1.0 Stable [ Curiosity ] 24-Apr-2013 00:00 GMT
+
+#Fields: datetime	priority clientip	category	message
+2020-03-30T03:36:25+00:00	CRITICAL ::1	error	Uncaught \Throwable of type RuntimeException thrown. Stack trace: #0 /Users/codeacious3/Sites/jskartv2/libraries/src/MVC/Controller/BaseController.php(710): LoginController->display()
+#1 /Users/codeacious3/Sites/jskartv2/administrator/components/com_login/login.php(22): Joomla\CMS\MVC\Controller\BaseController->execute('')
+#2 /Users/codeacious3/Sites/jskartv2/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#3 /Users/codeacious3/Sites/jskartv2/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#4 /Users/codeacious3/Sites/jskartv2/libraries/src/Application/AdministratorApplication.php(101): Joomla\CMS\Component\ComponentHelper::renderComponent('com_login')
+#5 /Users/codeacious3/Sites/jskartv2/libraries/src/Application/AdministratorApplication.php(159): Joomla\CMS\Application\AdministratorApplication->dispatch()
+#6 /Users/codeacious3/Sites/jskartv2/libraries/src/Application/CMSApplication.php(196): Joomla\CMS\Application\AdministratorApplication->doExecute()
+#7 /Users/codeacious3/Sites/jskartv2/administrator/index.php(51): Joomla\CMS\Application\CMSApplication->execute()
+#8 {main}
+2020-03-30T03:50:24+00:00	CRITICAL ::1	error	Uncaught \Throwable of type RuntimeException thrown. Stack trace: #0 /Users/codeacious3/Sites/jskartv2/libraries/src/MVC/Controller/BaseController.php(710): LoginController->display()
+#1 /Users/codeacious3/Sites/jskartv2/administrator/components/com_login/login.php(22): Joomla\CMS\MVC\Controller\BaseController->execute('')
+#2 /Users/codeacious3/Sites/jskartv2/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#3 /Users/codeacious3/Sites/jskartv2/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#4 /Users/codeacious3/Sites/jskartv2/libraries/src/Application/AdministratorApplication.php(101): Joomla\CMS\Component\ComponentHelper::renderComponent('com_login')
+#5 /Users/codeacious3/Sites/jskartv2/libraries/src/Application/AdministratorApplication.php(159): Joomla\CMS\Application\AdministratorApplication->dispatch()
+#6 /Users/codeacious3/Sites/jskartv2/libraries/src/Application/CMSApplication.php(196): Joomla\CMS\Application\AdministratorApplication->doExecute()
+#7 /Users/codeacious3/Sites/jskartv2/administrator/index.php(51): Joomla\CMS\Application\CMSApplication->execute()
+#8 {main}
+2020-03-30T04:04:23+00:00	CRITICAL ::1	error	Uncaught \Throwable of type RuntimeException thrown. Stack trace: #0 /Users/codeacious3/Sites/jskartv2/libraries/src/MVC/Controller/BaseController.php(710): LoginController->display()
+#1 /Users/codeacious3/Sites/jskartv2/administrator/components/com_login/login.php(22): Joomla\CMS\MVC\Controller\BaseController->execute('')
+#2 /Users/codeacious3/Sites/jskartv2/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#3 /Users/codeacious3/Sites/jskartv2/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#4 /Users/codeacious3/Sites/jskartv2/libraries/src/Application/AdministratorApplication.php(101): Joomla\CMS\Component\ComponentHelper::renderComponent('com_login')
+#5 /Users/codeacious3/Sites/jskartv2/libraries/src/Application/AdministratorApplication.php(159): Joomla\CMS\Application\AdministratorApplication->dispatch()
+#6 /Users/codeacious3/Sites/jskartv2/libraries/src/Application/CMSApplication.php(196): Joomla\CMS\Application\AdministratorApplication->doExecute()
+#7 /Users/codeacious3/Sites/jskartv2/administrator/index.php(51): Joomla\CMS\Application\CMSApplication->execute()
+#8 {main}
+2020-03-30T04:18:23+00:00	CRITICAL ::1	error	Uncaught \Throwable of type RuntimeException thrown. Stack trace: #0 /Users/codeacious3/Sites/jskartv2/libraries/src/MVC/Controller/BaseController.php(710): LoginController->display()
+#1 /Users/codeacious3/Sites/jskartv2/administrator/components/com_login/login.php(22): Joomla\CMS\MVC\Controller\BaseController->execute('')
+#2 /Users/codeacious3/Sites/jskartv2/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#3 /Users/codeacious3/Sites/jskartv2/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#4 /Users/codeacious3/Sites/jskartv2/libraries/src/Application/AdministratorApplication.php(101): Joomla\CMS\Component\ComponentHelper::renderComponent('com_login')
+#5 /Users/codeacious3/Sites/jskartv2/libraries/src/Application/AdministratorApplication.php(159): Joomla\CMS\Application\AdministratorApplication->dispatch()
+#6 /Users/codeacious3/Sites/jskartv2/libraries/src/Application/CMSApplication.php(196): Joomla\CMS\Application\AdministratorApplication->doExecute()
+#7 /Users/codeacious3/Sites/jskartv2/administrator/index.php(51): Joomla\CMS\Application\CMSApplication->execute()
+#8 {main}
+2020-03-30T04:32:23+00:00	CRITICAL ::1	error	Uncaught \Throwable of type RuntimeException thrown. Stack trace: #0 /Users/codeacious3/Sites/jskartv2/libraries/src/MVC/Controller/BaseController.php(710): LoginController->display()
+#1 /Users/codeacious3/Sites/jskartv2/administrator/components/com_login/login.php(22): Joomla\CMS\MVC\Controller\BaseController->execute('')
+#2 /Users/codeacious3/Sites/jskartv2/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#3 /Users/codeacious3/Sites/jskartv2/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#4 /Users/codeacious3/Sites/jskartv2/libraries/src/Application/AdministratorApplication.php(101): Joomla\CMS\Component\ComponentHelper::renderComponent('com_login')
+#5 /Users/codeacious3/Sites/jskartv2/libraries/src/Application/AdministratorApplication.php(159): Joomla\CMS\Application\AdministratorApplication->dispatch()
+#6 /Users/codeacious3/Sites/jskartv2/libraries/src/Application/CMSApplication.php(196): Joomla\CMS\Application\AdministratorApplication->doExecute()
+#7 /Users/codeacious3/Sites/jskartv2/administrator/index.php(51): Joomla\CMS\Application\CMSApplication->execute()
+#8 {main}
+2020-03-30T04:46:23+00:00	CRITICAL ::1	error	Uncaught \Throwable of type RuntimeException thrown. Stack trace: #0 /Users/codeacious3/Sites/jskartv2/libraries/src/MVC/Controller/BaseController.php(710): LoginController->display()
+#1 /Users/codeacious3/Sites/jskartv2/administrator/components/com_login/login.php(22): Joomla\CMS\MVC\Controller\BaseController->execute('')
+#2 /Users/codeacious3/Sites/jskartv2/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#3 /Users/codeacious3/Sites/jskartv2/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#4 /Users/codeacious3/Sites/jskartv2/libraries/src/Application/AdministratorApplication.php(101): Joomla\CMS\Component\ComponentHelper::renderComponent('com_login')
+#5 /Users/codeacious3/Sites/jskartv2/libraries/src/Application/AdministratorApplication.php(159): Joomla\CMS\Application\AdministratorApplication->dispatch()
+#6 /Users/codeacious3/Sites/jskartv2/libraries/src/Application/CMSApplication.php(196): Joomla\CMS\Application\AdministratorApplication->doExecute()
+#7 /Users/codeacious3/Sites/jskartv2/administrator/index.php(51): Joomla\CMS\Application\CMSApplication->execute()
+#8 {main}
+2020-03-30T04:47:03+00:00	WARNING ::1	jerror	JUser: :_load: Unable to load user with ID: 86
+2020-03-30T04:47:03+00:00	WARNING ::1	jerror	JUser: :_load: Unable to load user with ID: 320
+2020-03-30T05:10:14+00:00	WARNING ::1	jerror	JUser: :_load: Unable to load user with ID: 86
+2020-03-30T05:10:14+00:00	WARNING ::1	jerror	JUser: :_load: Unable to load user with ID: 320
+2020-03-30T06:06:12+00:00	WARNING ::1	jerror	JUser: :_load: Unable to load user with ID: 86
+2020-03-30T06:06:12+00:00	WARNING ::1	jerror	JUser: :_load: Unable to load user with ID: 320
+2020-03-30T06:10:09+00:00	WARNING ::1	jerror	JUser: :_load: Unable to load user with ID: 86
+2020-03-30T06:10:09+00:00	WARNING ::1	jerror	JUser: :_load: Unable to load user with ID: 320
+2020-03-30T06:10:11+00:00	WARNING ::1	jerror	JUser: :_load: Unable to load user with ID: 86
+2020-03-30T06:10:11+00:00	WARNING ::1	jerror	JUser: :_load: Unable to load user with ID: 320
+2020-03-30T08:39:45+00:00	CRITICAL ::1	error	Uncaught \Throwable of type RuntimeException thrown. Stack trace: #0 /Users/codeacious3/Sites/jskartv2/libraries/src/MVC/Controller/BaseController.php(710): LoginController->display()
+#1 /Users/codeacious3/Sites/jskartv2/administrator/components/com_login/login.php(22): Joomla\CMS\MVC\Controller\BaseController->execute('')
+#2 /Users/codeacious3/Sites/jskartv2/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#3 /Users/codeacious3/Sites/jskartv2/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#4 /Users/codeacious3/Sites/jskartv2/libraries/src/Application/AdministratorApplication.php(101): Joomla\CMS\Component\ComponentHelper::renderComponent('com_login')
+#5 /Users/codeacious3/Sites/jskartv2/libraries/src/Application/AdministratorApplication.php(159): Joomla\CMS\Application\AdministratorApplication->dispatch()
+#6 /Users/codeacious3/Sites/jskartv2/libraries/src/Application/CMSApplication.php(196): Joomla\CMS\Application\AdministratorApplication->doExecute()
+#7 /Users/codeacious3/Sites/jskartv2/administrator/index.php(51): Joomla\CMS\Application\CMSApplication->execute()
+#8 {main}

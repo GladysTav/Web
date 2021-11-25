@@ -1,0 +1,149 @@
+input#hyperlocation {
+	width: 100%;
+}
+
+.distance_filter {
+	margin-bottom: 10px;
+}
+
+.distance_filter .ui-slider {
+	margin: 5px;
+	width: 100%;
+}
+
+#update-radius {
+	margin-top: 5px;
+}
+
+.distance_filter .ui-slider .ui-slider-handle {
+	border-radius: 100%;
+	background: #004b8d;
+	border-color: #004b8d;
+}
+.get-loc-form {
+	position: relative;
+}
+
+.hyperlocal-countries-ul
+{
+	margin-bottom: 10px;
+}
+.ui_one #detect-location, .ui_two #detect-location, .ui_one #reset-location, .ui_two #reset-location {
+	background: transparent;
+	color: #004b8d;
+	border: 0;
+	font-size: 25px;
+	margin-top: -10px;
+}
+.hyperlocal-countries-ul, .hyperlocal-menu {
+	list-style-type: none;
+	margin-left: 0;
+}
+
+.hyperlocal-menu  {
+	margin-left: 0;
+}
+
+.hyperlocal-countries {
+	position: absolute;
+	top: 30px;
+	left: 0;
+	z-index: 1000;
+	float: left;
+	margin: 2px 0 0;
+	list-style: none;
+	display: none;
+	font-size: 14px;
+	text-align: left;
+	background-color: #fff;
+	border: 1px solid rgba(0,0,0,.15);
+	border-radius: 8px;
+	max-width: 250px;
+	min-width: 200px;
+	padding: 5px 10px 10px;
+	animation-name: fadeIn;
+	animation-duration: .3s;
+	-webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+	box-shadow: 0 6px 12px rgba(0,0,0,.175);
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+
+.ui_two .hyperlocal-countries {
+	padding: 5px  10px;
+}
+
+.country-detail-li-main {
+	position: relative;
+	min-height: 30px;
+}
+
+.country-detail-li-main:hover .hyperlocal-countries {
+	display: block;
+}
+
+.image-country {
+	height: 20px;
+	width: 20px;
+	align-items: center;
+	display: inline-block;
+	font-size: 24px;
+	justify-content: center;
+	transition: .3s cubic-bezier(.25,.8,.5,1);
+	vertical-align: middle;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.main-img-loc {
+	display: table-cell;
+	vertical-align: top;
+	padding-right: 5px;
+	width: 20px;
+}
+
+.main-add {
+	display: table-cell;
+	width: calc(100% - 30px);
+	vertical-align: top;
+}
+
+.country-detail-li {
+	padding: 5px 0;
+}
+
+.country-detail-li:hover a {
+	text-decoration: none;
+}
+
+.country-detail-li .country-name {
+	font-size: 16px;
+	padding: 10px;
+}
+
+.select-yourloc-box {
+	background: #f5f5f5;
+	padding: 12px;
+	color: #333;
+	text-align: left;
+	line-height: 1.2;
+}
+
+.select-yourloc-box p {
+	margin-bottom: 0;
+}
+
+.select-yourloc-box:hover p {
+	text-decoration: underline;
+	cursor: pointer;
+}
+.back-loc {
+	margin-top: 8px;
+	font-weight: 500;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.back-loc:hover {
+	color: #333;
+}

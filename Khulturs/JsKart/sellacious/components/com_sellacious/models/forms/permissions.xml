@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="permissions" label="COM_SELLACIOUS_CONFIG_FIELDSET_ACCESS_LABEL">
+		<field
+			name="user_group"
+			type="GroupedCategoryList"
+			label="COM_SELLACIOUS_PERMISSIONS_FIELD_USERGROUP_LABEL"
+			desc="COM_SELLACIOUS_PERMISSIONS_FIELD_USERGROUP_DESC"
+			onchange="this.form.submit();"
+			class="select-small"
+			showall="true"
+			types="client|seller|manufacturer|staff"
+		>
+			<option value="1">COM_SELLACIOUS_PERMISSIONS_FIELD_USERGROUP_OPTION_PUBLIC</option>
+		</field>
+		<field
+			name="component"
+			type="accessComponentList"
+			label="COM_SELLACIOUS_PERMISSIONS_FIELD_COMPONENT_LABEL"
+			desc="COM_SELLACIOUS_PERMISSIONS_FIELD_COMPONENT_DESC"
+			onchange="this.form.submit();"
+			class="select-small"
+		>
+			<option value="">COM_SELLACIOUS_PERMISSIONS_FIELD_COMPONENT_OPTION_ROOT</option>
+		</field>
+		<field
+			type="fieldgroup"
+			label="COM_SELLACIOUS_CONFIG_FIELDSET_ACCESS_LABEL"
+		/>
+
+		<field
+			name="set"
+			type="radio"
+			label="COM_SELLACIOUS_CATEGORY_FIELD_ACCESS_LABEL"
+			description="COM_SELLACIOUS_CATEGORY_FIELD_ACCESS_DESC"
+			default="3"
+		>
+			<option value="3">COM_SELLACIOUS_CATEGORY_FIELD_ACCESS_CUSTOM</option>
+			<option value="2">COM_SELLACIOUS_CATEGORY_FIELD_ACCESS_COPY</option>
+		</field>
+
+		<field
+			name="src"
+			type="groupedCategoryList"
+			label="COM_SELLACIOUS_CATEGORY_FIELD_ACCESS_SRC_LABEL"
+			description="COM_SELLACIOUS_CATEGORY_FIELD_ACCESS_SRC_DESC"
+			types="client|seller|staff|manufacturer"
+			showon="set:2"
+			class="medium-input"
+		>
+			<option value="1">COM_SELLACIOUS_PERMISSIONS_FIELD_USERGROUP_OPTION_PUBLIC</option>
+		</field>
+
+		<field
+			name="rules"
+			type="GroupRules"
+			validate="SellaciousRules"
+			component=""
+			section="component"
+			showon="set:3"
+		/>
+	</fieldset>
+</form>

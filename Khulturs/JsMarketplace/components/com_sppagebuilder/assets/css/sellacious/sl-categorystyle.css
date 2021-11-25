@@ -1,0 +1,235 @@
+/**
+ * @version     2.2.0
+ * @package     SP Page Builder Addons for Sellacious
+ *
+ * @copyright   Copyright (C) 2016. Bhartiy Web Technologies. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @author      Bhavika Matariya <info@bhartiy.com> - http://www.bhartiy.com
+ */
+
+/* ========== Category Image ========= */
+.sppb-addon-category-image .category-image {
+	background: #ffffff;
+	display: block;
+}
+
+.sppb-addon-category-image .category-image span.catimage {
+	display: block;
+	min-height: 300px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	border: 10px solid #ffffff;
+}
+
+/* ========== Category Title ========= */
+.sppb-addon-category-title .category-title h2 {
+	margin: 0 0 15px;
+	font-size: 26px;
+	line-height: 32px;
+	letter-spacing: 1px;
+}
+
+/* ========== Category Specifications ========= */
+.moreinfo-box {
+	margin-bottom: 30px;
+	background: #f5f5f5;
+}
+
+.moreinfo-box > h3 {
+	margin: 0;
+	padding: 15px;
+	background: #ffffff;
+	box-shadow: 0 3px 16px -1px #dddddd;
+	-moz-box-shadow: 0 3px 16px -1px #dddddd;
+	-webkit-box-shadow: 0 3px 16px -1px #dddddd;
+	-ms-box-shadow: 0 3px 16px -1px #dddddd;
+	-o-box-shadow: 0 3px 16px -1px #dddddd;
+	font-size: 16px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	position: relative;
+	z-index: 999;
+}
+
+.specificationgroup {
+	padding: 18px 25px 10px;
+}
+
+.specificationgroup h4 {
+	padding: 0 40px 0 0;
+	margin: 0 0 15px;
+	color: #555555;
+	font-size: 14px;
+	letter-spacing: 2px;
+	font-weight: bold;
+	border-bottom: 1px dashed #cccccc;
+	padding-bottom: 8px;
+	display: inline-block;
+}
+
+.dl-leftside {
+	margin: 0;
+}
+
+.dl-leftside dd {
+	margin: 5px 0 15px;
+}
+
+/* ========== Sub Category ========= */
+.sppb-addon-category-subcategories {
+	padding: 35px 0;
+}
+
+.sl-catbox {
+	min-width: 250px;
+	max-width: 274px;
+	height: 200px;
+	width: 25%;
+	float: left;
+	margin: 0 5px 10px;
+	overflow: hidden;
+	position: relative;
+}
+
+.sl-catbox > a {
+	display: block;
+}
+
+.sl-catbox a:hover {
+	text-decoration: none;
+}
+
+.sl-catbox h6 {
+	line-height: 20px;
+	margin: 0;
+	text-align: center;
+	overflow: hidden;
+	padding: 30px 5px;
+	background: rgba(0, 0, 0, 0.35);
+	display: block;
+	letter-spacing: 1px;
+	color: #ffffff;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	font-size: 16px;
+}
+
+.sl-catbox:hover h6 {
+	opacity: 0;
+}
+
+.sl-catbox .image-wrap span.product-img {
+	min-height: 200px;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: block;
+}
+
+.sl-catbox .item-counts-strip {
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	color: #ffffff;
+	background: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	line-height: .9;
+	padding: 5px 8px;
+}
+
+.sl-catbox .item-counts-strip .tip-left {
+	left: 10px;
+	text-align: left;
+	float: left;
+}
+
+.sl-catbox .item-counts-strip .tip-right {
+	right: 20px;
+	text-align: right;
+	float: right;
+}
+
+.sl-catbox .item-counts-strip span {
+	clear: left;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 8px;
+	color: #ffffff;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+	.sl-catbox {
+		min-width: 280px;
+		max-width: 302px;
+		width: 33%;
+	}
+}
+
+@media (min-width: 768px) {
+	.dl-leftside dt {
+		width: 180px !important;
+		margin: 0 !important;
+		white-space: normal !important;
+	}
+
+	.dl-leftside dd {
+		margin-left: 200px !important;
+	}
+}
+
+@media (max-width: 991px) {
+	.sl-catbox {
+		min-width: 320px;
+		max-width: 350px;
+		width: 50%;
+		height: 205px;
+	}
+}
+
+@media (max-width: 767px) {
+	.sl-catbox {
+		min-width: auto;
+		max-width: none;
+		width: 48%;
+	}
+}
+
+@media (max-width: 620px) {
+	.sl-catbox {
+		width: 46%;
+		height: auto;
+	}
+
+	.sl-catbox .image-box {
+		height: 170px;
+	}
+}
+
+@media (max-width: 500px) {
+	.sl-catbox {
+		width: 80%;
+		margin: 0 auto 10px;
+		height: 230px;
+		float: none;
+	}
+
+	.sl-catbox .image-box {
+		height: auto;
+	}
+}
+
+@media (max-width: 380px) {
+	.sl-catbox {
+		width: 100%;
+	}
+}
+

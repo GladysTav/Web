@@ -1,0 +1,17 @@
+#
+#<?php die('Forbidden.'); ?>
+#Date: 2019-03-05 07:23:27 UTC
+#Software: Joomla Platform 13.1.0 Stable [ Curiosity ] 24-Apr-2013 00:00 GMT
+
+#Fields: datetime	priority clientip	category	message
+2019-03-05T07:23:27+00:00	CRITICAL ::1	error	Uncaught \Throwable of type Exception thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(621): Joomla\CMS\MVC\Controller\BaseController->getView('login', 'json', 'loginView', Array)
+#1 /Users/codeacious3/Sites/sellacious/sellacious/components/com_login/controller.php(42): Joomla\CMS\MVC\Controller\BaseController->display(false, NULL)
+#2 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(710): LoginController->display()
+#3 /Users/codeacious3/Sites/sellacious/sellacious/components/com_login/login.php(21): Joomla\CMS\MVC\Controller\BaseController->execute('')
+#4 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#5 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#6 /Users/codeacious3/Sites/sellacious/sellacious/includes/libraries/application.php(205): Joomla\CMS\Component\ComponentHelper::renderComponent('com_login')
+#7 /Users/codeacious3/Sites/sellacious/sellacious/includes/libraries/application.php(250): JApplicationSellacious->dispatch()
+#8 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(196): JApplicationSellacious->doExecute()
+#9 /Users/codeacious3/Sites/sellacious/sellacious/index.php(43): Joomla\CMS\Application\CMSApplication->execute()
+#10 {main}

@@ -1,0 +1,68 @@
+.sidemenu {
+    background-color: #272727;
+    padding: 8px 0;
+    position: relative;
+    background-image: url(bg.png);
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    background-size: contain;
+}
+.sidemenu .nav>li {
+    position: relative;
+}
+.sidemenu .nav>li>a {
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 1px;
+    padding: 7px 20px;
+	display: block;
+	font-weight: bold;
+}
+.sidemenu .nav li a{
+    border: 1px solid transparent;
+    border-width: 1px 0;
+}
+.sidemenu .nav li a:focus,
+.sidemenu .nav li a:hover,
+.sidemenu .nav li:hover>a,
+.sidemenu .nav li:focus>a{
+    background: none;
+    color: #fff;
+    border-color: #484848;
+}
+.sidemenu ul.nav-child {
+    position: absolute;
+    left: 100%;
+    min-width: 220px;
+    top: 0;
+    background: #1f1f1f;
+    padding: 0;
+    display: none;
+    list-style: none;
+}
+.sidemenu ul.nav-child ul.nav-child {
+    background: #111;
+}
+.sidemenu .nav>li:hover>ul.nav-child,
+.sidemenu .nav>li>ul.nav-child>li:hover>ul.nav-child {
+    display: block;
+    -webkit-animation: slowfadeInUp 600ms;
+    animation: slowfadeInUp 600ms;
+}
+@keyframes slowfadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 30%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.sidemenu ul.nav-child li a {
+	font-size: 14px;
+    display: block;
+    color: #f1f1f1;
+    padding: 7px 20px;
+}

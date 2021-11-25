@@ -1,0 +1,345 @@
+/**
+ * @version     1.7.4
+ * @package     Sellacious Toolbar Module
+ *
+ * @copyright   Copyright (C) 2012-2019 Bhartiy Web Technologies. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @author      Aditya Chakraborty <info@bhartiy.com> - http://www.bhartiy.com
+ */
+
+body.hasToolbar.toolbarTop {
+	padding-top: 30px;
+}
+
+body.hasToolbar.toolbarBottom {
+	padding-bottom: 30px;
+}
+
+.mod-sellacious-toolbar {
+	position: fixed !important;
+	left: 0;
+	width: 100%;
+	min-width: 600px;
+	z-index: 99999;
+	transition: width 0.3s;
+	height: 30px;
+}
+
+.mod-sellacious-toolbar.top {
+	top: 0;
+	bottom: unset !important;
+}
+
+.mod-sellacious-toolbar.bottom {
+	bottom: 0;
+	top: unset !important;
+}
+
+.mod-sellacious-toolbar.bottom .navbar {
+	margin-bottom: 0;
+}
+
+li.dropdown:hover > .dropdown-menu {
+	display: block;
+}
+
+a.brand {
+	padding: 0 !important;
+	display: inline-block;
+}
+
+a.brand img {
+	max-height: 20px;
+	width: auto;
+}
+
+.mod-sellacious-toolbar .logout-button,
+.mod-sellacious-toolbar form.toolbar-logout-form .logout-button {
+	display: inline;
+}
+
+.mod-sellacious-toolbar .logout-button .btn.btn-primary {
+	background: none;
+	border: none;
+	box-shadow: none;
+	text-shadow: none;
+	padding: 0;
+	margin: 0;
+	text-transform: capitalize;
+	letter-spacing: 0;
+	font-size: 13px;
+	font-weight: 400;
+	color: #e8eef1;
+}
+
+.mod-sellacious-toolbar .btn.dropdown-toggle {
+	background: none;
+	color: #e8eef1;
+	border: none;
+	box-shadow: none;
+	text-shadow: none;
+}
+
+.mod-sellacious-toolbar .user-avatar {
+	height: 16px;
+	vertical-align: top;
+	margin-left: 5px;
+	display: inline-block;
+}
+
+.mod-sellacious-toolbar .dropdown-menu {
+	background-color: #232e33;
+	list-style: none;
+	border-radius: 0;
+	padding: 8px 0;
+	max-width: 160px;
+	margin-top: 0;
+}
+
+.mod-sellacious-toolbar .dropdown-menu > li > a {
+	color: #e8eef1;
+	font-size: 13px;
+	line-height: 18px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.mod-sellacious-toolbar .dropdown-menu > li > a:before {
+	display: none;
+}
+
+.mod-sellacious-toolbar .dropdown-menu > li > a:hover {
+	color: #e8eef1;
+	background-image: linear-gradient(to bottom,#005e8d,#004d74) !important;
+}
+
+.mod-sellacious-toolbar .dropdown-menu .divider {
+	background-color: transparent;
+	border: 1px dotted #eee;
+	height: 0;
+}
+
+.mod-sellacious-toolbar .main-nav li > a > i {
+	margin-right: .25em;
+}
+
+.mod-sellacious-toolbar.bottom .dropdown-menu {
+	top: unset;
+	bottom: 28px;
+}
+
+.mod-sellacious-toolbar .notifications {
+	background-color: red;
+	padding: 2px 6px 3px 5px;
+	color: #fff;
+	font-size: 10px;
+	top: -0.6em;
+	left: 2px;
+	border-radius: 100%;
+}
+
+.mod-sellacious-toolbar .logout-link {
+	color: #fff;
+}
+
+.mod-sellacious-toolbar .logout-link:hover {
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+ .mod-sellacious-toolbar {
+	 min-width: auto;
+ }
+}
+
+.toolbar .toolbar-inner {
+	background-color: #232e33;
+	background-image: none;
+	min-height: 30px;
+	border-radius: 0;
+	opacity: 1;
+	padding: 0 15px 0 0;
+}
+
+.toolbar .toolbar-nav {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.toolbar .toolbar-nav > li,
+.toolbar .toolbar-nav .dropdown-menu li {
+	display: inline-block;
+	border-bottom: none;
+}
+.toolbar .toolbar-nav .dropdown-menu li {
+	width: 159px;
+}
+.toolbar .toolbar-nav .dropdown-menu li a {
+	padding: 5px 14px;
+	display: inline-block;
+	width: 160px;
+	box-sizing: border-box;
+}
+.toolbar .toolbar-nav .dropdown-menu li a:hover {
+
+}
+/*.toolbar .toolbar-nav .dropdown-menu li:last-of-type a {
+	padding-top: 0;
+}*/
+
+.toolbar .toolbar-nav .dropdown-menu form,
+.toolbar .toolbar-nav .login-menu form {
+	margin: 0;
+}
+
+
+.toolbar .toolbar-nav > li > a:not(.brand) {
+	display: inline-block;
+	padding: 7px 15px 4px;
+	margin-top: 0;
+	color: #e8eef1;
+	font-size: 13px;
+	line-height: 18px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.toolbar .toolbar-nav > li > a:hover,
+.toolbar .toolbar-nav > li > a:focus {
+	background-color: #111111;
+	color: #e8eef1;
+	text-decoration: none;
+}
+
+.toolbar .toolbar-nav > li > a:before {
+	display: none;
+}
+
+.toolbar .toolbar-nav .profile-menu a {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.toolbar .toolbar-nav .dropdown-menu:before,
+.toolbar .toolbar-nav .login-menu:before {
+	content: '';
+	display: inline-block;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-bottom: 7px solid #ccc;
+	border-bottom-color: rgba(0,0,0,0.2);
+	position: absolute;
+	top: -7px;
+	left: 11px;
+}
+.toolbar .toolbar-nav .dropdown-menu:after,
+.toolbar .toolbar-nav .login-menu:after {
+	content: '';
+	display: inline-block;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-bottom: 6px solid #fff;
+	position: absolute;
+	top: -6px;
+	left: 12px;
+}
+.mod-sellacious-toolbar.bottom .toolbar .toolbar-nav .dropdown-menu:before,
+.mod-sellacious-toolbar.bottom .toolbar .toolbar-nav .dropdown-menu:after,
+.mod-sellacious-toolbar.bottom .toolbar .toolbar-nav .login-menu:before,
+.mod-sellacious-toolbar.bottom .toolbar .toolbar-nav .login-menu:after {
+	top: unset;
+	bottom: -6px;
+	border-bottom: none;
+	border-top: 6px solid #fff;
+}
+
+
+.toolbar .toolbar-nav .profile-menu .dropdown-menu:before,
+.toolbar .toolbar-nav .toolbar-login-button .login-menu:before {
+	left: unset;
+	right: 15px;
+}
+.toolbar .toolbar-nav .profile-menu .dropdown-menu:after,
+.toolbar .toolbar-nav .toolbar-login-button .login-menu:after {
+	left: unset;
+	right: 16px;
+}
+.toolbar .toolbar-nav .logout-link:hover {
+	background: #005783;
+}
+
+
+@media (max-width: 992px) {
+	.toolbar .toolbar-nav > li:not(.profile-menu) > a span {
+		display: none;
+	}
+	.mod-sellacious-toolbar .notifications {
+		left: -6px;
+	}
+}
+
+@media (max-width: 600px) {
+	.toolbar .toolbar-nav > li.profile-menu > a span {
+		display: none;
+	}
+}
+
+@media (max-width: 450px) and (min-width: 375px){
+	.toolbar .toolbar-nav > li > a {
+		padding: 7px 10px 4px;
+	}
+}
+
+@media (max-width: 374px) {
+	.toolbar .toolbar-nav > li > a {
+		padding: 7px 6px 4px;
+	}
+}
+
+
+/*Login form*/
+.mod-sellacious-toolbar .toolbar-login-button {
+	position: relative;
+}
+
+.mod-sellacious-toolbar .toolbar-login-button .login-menu {
+	max-width: 225px;
+	min-width: 160px;
+	padding: 10px;
+	background: #232e33;
+	position: absolute;
+	z-index: 1000;
+	float: left;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+	top: 28px;
+	bottom: unset;
+	right: 0;
+	left: auto;
+	display: none;
+}
+
+.mod-sellacious-toolbar.bottom .toolbar-login-button .login-menu {
+	top: unset;
+	bottom: 28px;
+}
+
+.mod-sellacious-toolbar .toolbar-login-button .login-menu input {
+	margin-bottom: 10px !important;
+	width: 100%;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	height: unset;
+}
+.mod-sellacious-toolbar .toolbar-login-button .login-menu input[type="submit"] {
+	margin-bottom: 0 !important;
+	padding: 4px 6px;
+	width: auto;
+	color: #333;
+}
+.mod-sellacious-toolbar .toolbar-login-button .login-menu .register-link {
+	color: #fff;
+	font-size: 14px;
+	line-height: 20px;
+	margin-left: 10px;
+}

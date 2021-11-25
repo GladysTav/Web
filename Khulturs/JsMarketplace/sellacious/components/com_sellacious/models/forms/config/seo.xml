@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset
+		name="com_sellacious_seo"
+		label="COM_SELLACIOUS_CONFIG_FIELDSET_LAYOUT_SUBSET_SEO_SETTINGS_LABEL">
+		<fields name="jconfig">
+			<field
+				name="sef"
+				type="radio"
+				label="COM_SELLACIOUS_CONFIG_FIELD_SEF_URL_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_SEF_URL_DESC"
+				class="btn-group btn-group-yesno"
+				default="1"
+				filter="integer"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+
+			<field
+				name="sef_rewrite"
+				type="radio"
+				label="COM_SELLACIOUS_CONFIG_FIELD_SEF_REWRITE_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_SEF_REWRITE_DESC"
+				class="btn-group btn-group-yesno"
+				default="0"
+				filter="integer"
+				showon="sef:1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+
+			<field
+				name="sef_suffix"
+				type="radio"
+				label="COM_SELLACIOUS_CONFIG_FIELD_SEF_SUFFIX_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_SEF_SUFFIX_DESC"
+				class="btn-group btn-group-yesno"
+				default="0"
+				filter="integer"
+				showon="sef:1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+
+			<field
+				name="unicodeslugs"
+				type="radio"
+				label="COM_SELLACIOUS_CONFIG_FIELD_UNICODESLUGS_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_UNICODESLUGS_DESC"
+				class="btn-group btn-group-yesno"
+				default="0"
+				filter="integer"
+				showon="sef:1"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+
+			<field
+				name="sitename_pagetitles"
+				type="list"
+				label="COM_SELLACIOUS_CONFIG_FIELD_SITENAME_PAGETITLES_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_SITENAME_PAGETITLES_DESC"
+				default="0"
+				filter="integer"
+				class="tiny-input"
+			>
+				<option value="2">COM_SELLACIOUS_CONFIG_FIELD_VALUE_AFTER</option>
+				<option value="1">COM_SELLACIOUS_CONFIG_FIELD_VALUE_BEFORE</option>
+				<option value="0">JNO</option>
+			</field>
+		</fields>
+		<fields name="com_sellacious">
+			<field
+				name="google_analytics"
+				type="radio"
+				label="COM_SELLACIOUS_CONFIG_FIELD_GOOGLE_ANALYTICS_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_GOOGLE_ANALYTICS_DESC"
+				class="btn-group btn-group-yesno"
+				default="1"
+			>
+				<option value="1">COM_SELLACIOUS_CONFIG_CODE</option>
+				<option value="2">COM_SELLACIOUS_CONFIG_SCRIPT</option>
+			</field>
+			<field
+				name="ga_code"
+				type="text"
+				label="COM_SELLACIOUS_CONFIG_FIELD_GA_CODE_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_GA_CODE_DESC"
+				class="inputbox medium-input"
+			/>
+			<field
+				name="ga_script"
+				type="textarea"
+				label="COM_SELLACIOUS_CONFIG_FIELD_GA_SCRIPT_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_GA_SCRIPT_DESC"
+				filter="raw"
+				cols="60"
+				rows="10"
+			/>
+			<field
+				name="facebook_pixel"
+				type="radio"
+				label="COM_SELLACIOUS_CONFIG_FIELD_FACEBOOK_PIXEL_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_FACEBOOK_PIXEL_DESC"
+				class="btn-group btn-group-yesno"
+				default="1"
+			>
+				<option value="1">COM_SELLACIOUS_CONFIG_CODE</option>
+				<option value="2">COM_SELLACIOUS_CONFIG_SCRIPT</option>
+			</field>
+			<field
+				name="fb_pixel_code"
+				type="text"
+				label="COM_SELLACIOUS_CONFIG_FIELD_FB_PIXEL_CODE_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_FB_PIXEL_CODE_DESC"
+				class="inputbox medium-input"
+			/>
+			<field
+				name="fb_pixel_script"
+				type="textarea"
+				label="COM_SELLACIOUS_CONFIG_FIELD_FB_PIXEL_SCRIPT_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_FB_PIXEL_SCRIPT_DESC"
+				filter="raw"
+				cols="60"
+				rows="10"
+			/>
+			<field
+				name="misc_script"
+				type="textarea"
+				label="COM_SELLACIOUS_CONFIG_FIELD_MISC_SCRIPT_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_MISC_SCRIPT_DESC"
+				filter="raw"
+				cols="60"
+				rows="10"
+			/>
+		</fields>
+	</fieldset>
+</form>

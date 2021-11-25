@@ -1,0 +1,54 @@
+
+#address-modals .ctech-modal-dialog {
+	margin: 40px auto;
+}
+
+div[id^="address-form"] .ctech-modal-header,
+div[id^="address-form"] .ctech-modal-footer {
+	padding: 10px 10px;
+}
+
+div[id^="address-form"] .controls input[type="text"],
+div[id^="address-form"] .controls input[type="email"],
+div[id^="address-form"] .controls input[type="password"],
+div[id^="address-form"] .controls input[type="tel"],
+div[id^="address-form"] .controls input[type="number"],
+div[id^="address-form"] .controls textarea,
+div[id^="address-form"] .controls .select2-container .select2-choice {
+	margin-bottom: 0;
+}
+
+#address-items .address-action .edit-address,
+#address-items .address-action .remove-address {
+	background: transparent;
+	line-height: 1;
+	padding: 5px 7px;
+	font-size: 16px;
+}
+
+#address-items .address-action .edit-address:focus,
+#address-items .address-action .remove-address:focus {
+	outline: unset;
+	-webkit-box-shadow: unset;
+	-moz-box-shadow: unset;
+	box-shadow: unset;
+}
+
+.address-item:hover {
+	background: #fff;
+}
+
+#address-editor .opc-address-form-content .control-group .address-residential {
+	padding-left: 0;
+}
+
+@media (max-width: 768px) {
+	#address-editor .opc-address-form-content .control-group {
+		margin-bottom: 10px;
+	}
+
+	#address-editor .opc-address-form-content .control-group .address-residential > label {
+		width: calc(100% - 25px);
+		padding-left: 0;
+	}
+}

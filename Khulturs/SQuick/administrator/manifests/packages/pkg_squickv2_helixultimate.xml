@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.7" method="upgrade">
+	<name>SQuick-v2.0 Template Package</name>
+	<author>Bhartiy Web Technologies</author>
+	<creationDate>April 16, 2020</creationDate>
+	<packagename>squickv2_helixultimate</packagename>
+	<version>2.0.0-beta1</version>
+	<url>http://www.sellacious.com</url>
+	<packager>Bhartiy Web Technologies</packager>
+	<packagerurl>http://www.sellacious.com</packagerurl>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<description><![CDATA[Starter Template for Sellacious ECommerce Software - for Joomla]]></description>
+	<scriptfile>installer.php</scriptfile>
+	<blockChildUninstall>true</blockChildUninstall>
+	<files folder="extensions">
+		<file type="plugin" group="system" id="helixultimate">plg_system_helixultimate.zip</file>
+		<file type="template" id="tpl_squickv2">tpl_squickv2.zip</file>
+	</files>
+</extension>

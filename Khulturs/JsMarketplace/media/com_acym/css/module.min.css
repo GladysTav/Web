@@ -1,0 +1,9 @@
+/**
+ * @package    AcyMailing for Joomla
+ * @version    6.0.2
+ * @author     acyba.com
+ * @copyright  (C) 2009-2018 ACYBA S.A.R.L. All rights reserved.
+ * @license    GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+ */
+
+div.acym_module_error{color:#400;background-color:#fdd;padding:1em!important;margin-bottom:10px}div.acym_module_success{color:#130;background-color:#dfc;padding:1em!important;z-index:10;margin-bottom:10px}.acym_module_form input{max-width:90%}

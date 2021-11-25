@@ -1,0 +1,162 @@
+.color-picker {
+	width: auto;
+}
+
+.color-picker .color-picker-container .vc-chrome {
+	top: 10px;
+    left: 11px;
+    position: absolute;
+    z-index: 123;
+}
+
+.color-picker .color-picker-container {
+	background: transparent;
+}
+.color-picker .color-picker-container .current-color {
+	width: 17px;
+	height: 18px;
+	display: inline-block;
+}
+
+.color-selector {
+	display: flex;
+}
+
+.color-selector .editor {
+	padding: 0 10px;
+}
+
+.color-selector .editor .color-property {
+	margin-right: 10px;
+}
+
+.color-selector .editor .color-property label {
+	padding-left: 5px;
+	border-right: 1px solid #ccc;
+	line-height: 2;
+	margin-right: 0px;
+	min-width: 200px;
+	margin-bottom:0px;
+}
+
+.color-property .input-group-addon:last-child {
+   border: 0px solid #ccc;
+}
+
+.color-property .ctech-d-flex {
+	display: flex;
+	margin-bottom:5px;
+	border: 1px solid #ccc;
+}
+
+.color-property .input-group span.input-group-addon {
+    padding: 3px 2px;
+}
+
+.element-template {
+	min-width :140px;
+}
+
+.element-template button ,
+.element-template div,
+.element-template span{
+	max-width: 135px;
+	min-width: 135px;
+}
+
+.element-template div {
+	padding: 5px;
+}
+
+@media (max-width: 1024px) {
+    .color-selector .editor {
+	    padding: 0 5px 0 0px;
+    }
+    .ctech-wrapper .hasTooltip .ctech-btn-sm,
+    .ctech-wrapper .hasTooltip .ctech-btn-group-sm > .ctech-btn {
+        padding: 4px 4px;
+    }
+    .color-selector {
+		display: block;
+	}
+    .element-template {
+        margin-bottom: 5px;
+    }
+    .color-selector .editor .color-property label {
+        flex: 1;
+    }
+    .element-template button ,
+    .element-template div,
+    .element-template span,
+    .element-template ul li a{
+	    min-width: 160px;
+    }
+    .vc-chrome {
+        width: 195px !important;
+    }
+    .controls .refresh{
+	    position: absolute;
+        top: 0px;
+        left: 50%;
+    }
+    .controls .cancel{
+	    position: absolute;
+        top: 0px;
+        left: 60%;
+    }
+    .controls .refresh{
+	    position: absolute;
+        top: 0px;
+        left: 70%;
+    }     
+    .controls .pencil{
+	    position: absolute;
+        top: 0px;
+        left: 60%;
+    }
+    .color-save-btn {
+	    border: 1px solid #000;
+    }
+    .color-picker .color-picker-container .vc-chrome {
+        top: 180px;
+        left: -195px;
+        position: absolute;
+        z-index: 123;
+    }
+}
+
+@media (min-width: 1100px) {
+    .minicolors input{
+	    text-align: left;
+	    max-width:135px;
+	    min-width:135px;
+    }
+    .pencil {
+	    margin-left:10px;
+    }
+    .element-template {
+	    text-align: center;
+    }
+    .element-template ul li a{
+        min-width: 140px;
+    }
+    .color-picker .color-picker-container .vc-chrome {
+        top: -192px;
+        left: 20px;
+        position: absolute;
+        z-index: 123;
+    }
+    .color-save-btn {
+        border: 1px solid #000;
+        position: absolute;
+        right: 4px;
+        bottom: 6px;
+        padding: 0px 12px;
+	}
+}
+
+.ctech-wrapper .unclickable {
+	pointer-events: none;
+	cursor: not-allowed;
+	opacity: 0.5;
+}

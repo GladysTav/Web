@@ -1,0 +1,76 @@
+/**
+ * @version     2.2.0
+ * @package     SP Page Builder Addons for Sellacious
+ *
+ * @copyright   Copyright (C) 2016. Bhartiy Web Technologies. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @author      Bhavika Matariya <info@bhartiy.com> - http://www.bhartiy.com
+ */
+
+.variant-picker {
+	margin: 0 -10px;
+}
+
+
+.variant-choice {
+	min-width: 150px;
+	width: 50%;
+	float: left;
+	padding: 5px 10px;
+}
+.variant-choice h5 {
+	margin: 0 0 5px;
+}
+.variant-choice .radio {
+	margin: 0;
+}
+.variant-choice label input {
+	margin: 0;
+	padding: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+.variant-choice .radio label {
+	border: 1px dotted #cccccc;
+	padding: 8px;
+	margin-bottom: 4px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	font-size: 12px;
+	line-height: 1.2;
+	letter-spacing: 1px;
+}
+.variant-choice label.varaint-options.unavailable-option {
+	background-color: #e6e6e6;
+	opacity: 0.7;
+	border-color: #ccc;
+	cursor: not-allowed;
+}
+.variant-choice .radio label.colors-option {
+	padding: 2px;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	overflow: hidden;
+}
+.variant-choice .radio label.colors-option span {
+	display: block;
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+@media (max-width: 600px) {
+	.variant-choice {
+		width: 100%;
+	}
+}

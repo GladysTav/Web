@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="product" label="COM_SELLACIOUS_CATEGORY_FIELDSET_CUSTOM_FIELDS">
+		<field
+			name="global_fields"
+			type="formFields"
+			label="COM_SELLACIOUS_PRODUCT_FIELD_GLOBAL_FIELDS_LABEL"
+			description="COM_SELLACIOUS_PRODUCT_FIELD_GLOBAL_FIELDS_DESC"
+			context="product"
+			multiple="true"
+			showall="false"
+			readonly="true"
+			global="true"
+		/>
+		<field
+			name="core_fields"
+			type="formFields"
+			label="COM_SELLACIOUS_PRODUCT_FIELD_CORE_FIELDS_LABEL"
+			description="COM_SELLACIOUS_PRODUCT_FIELD_CORE_FIELDS_DESC"
+			context="product"
+			multiple="true"
+			showall="false"
+			tags="true"
+		/>
+		<field
+			name="variant_fields"
+			type="formFields"
+			label="COM_SELLACIOUS_PRODUCT_FIELD_VARIANT_FIELDS_LABEL"
+			description="COM_SELLACIOUS_PRODUCT_FIELD_VARIANT_FIELDS_DESC"
+			context="product"
+			multiple="true"
+			showall="false"
+			tags="true"
+		/>
+
+		<fields name="params">
+			<field
+				type="fieldgroup"
+				name="shop_fieldgroup_product_unique_field"
+				label="COM_SELLACIOUS_CONFIG_FIELDSET_SHOP_SUBSET_PRODUCT_UNIQUE_FIELD_LABEL"
+			/>
+
+			<field
+				name="unique_field_custom_note"
+				type="note"
+				label="COM_SELLACIOUS_CONFIG_FIELD_PRODUCT_UNIQUE_FIELD_CUSTOM_NOTE_LABEL"
+				class="alert alert-warning"
+				heading="p"
+			/>
+			<field
+				name="product_unique_field"
+				type="formFields"
+				label="COM_SELLACIOUS_CONFIG_FIELD_PRODUCT_UNIQUE_FIELD_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_PRODUCT_UNIQUE_FIELD_DESC"
+				context="product"
+				showall="false"
+				tags="true"
+				default=""
+				limit_types="text,number"
+			>
+				<option value="">COM_SELLACIOUS_CONFIG_FIELD_PRODUCT_UNIQUE_FIELD_SETTING_OPTION_GLOBAL</option>
+				<option value="local_sku">COM_SELLACIOUS_CONFIG_FIELD_PRODUCT_UNIQUE_FIELD_OPTION_LOCAL_SKU</option>
+				<option value="manufacturer_sku">COM_SELLACIOUS_CONFIG_FIELD_PRODUCT_UNIQUE_FIELD_OPTION_MANUFACTURER_SKU</option>
+			</field>
+		</fields>
+	</fieldset>
+</form>

@@ -1,0 +1,144 @@
+.sidemenu {
+    width: 200px;
+    float: left;
+    z-index: 210;
+    text-align: left;
+    height: 36px;
+    position: relative;
+}
+
+.sidemenu ul {
+    height: 50px;
+}
+
+.sidemenu .nav>li {
+position: relative;
+}
+
+.sidemenu:hover, .sidemenu:hover ul li.item-101 {
+    background: #fff;
+}
+
+.sidemenu ul li.item-101 {
+    position: relative;
+}
+
+.sidemenu ul li a.parent-main:after {
+    content: '\f107';
+    font-family: FontAwesome;
+    right: 48px;
+    position: absolute;
+    font-size: 24px;
+    color: #fff;
+    line-height: 25px;
+    opacity: 0.8;
+}
+
+.sidemenu:hover ul li a.parent-main {
+    color: #424242;
+}
+
+.sidemenu .nav>li {
+    width: 100%;
+}
+
+.sidemenu ul li:first-child  a {
+    opacity: .85;
+    margin-left: 20px;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 0;
+}
+
+.sidemenu .nav>li>a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    white-space: nowrap;
+    width: 172px;
+    font-size: 13px;
+    line-height: 27px;
+    color: #757575;
+    cursor: pointer;
+}
+
+.sidemenu ul ul li   a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    white-space: normal;
+    width: 172px;
+    font-size: 13px;
+    line-height: 27px;
+    color: #757575;
+    cursor: pointer;
+    height: 25px;
+}
+
+.sidemenu .nav li:hover {
+    background: #e9e9e9;
+}
+
+.sidemenu .nav li:hover:after {
+    margin-right: 4px;
+    color: #1a9cb7;
+    font-size: 20px;
+    font-family: 'FontAwesome';
+    content: "\f105";
+    font-weight: 400;
+    line-height: 30px;
+    position: absolute;
+    right: 3px;
+}
+
+.sidemenu .nav li.item-101 :hover:after {
+    content: '';
+}
+
+.sidemenu .nav li:hover a{
+    color: #1a9cb7;
+}
+
+.sidemenu .nav li:hover .nav-child li a {
+    color: #757575;
+}
+
+.sidemenu .nav li ul ul, .sidemenu .nav li ul {
+    position: absolute;
+    max-width: 200px;
+    width: 200px;
+    background: #fff;
+    display: none;
+    padding: 8px 0 12px;
+    min-height: 300px;
+    height:auto;
+    list-style: none;
+    margin: 0;
+}
+
+.sidemenu .nav li ul ul {
+    left: 100%;
+    top: 0;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,.25);
+}
+
+.sidemenu .nav li ul {
+    left: 0;
+    top: 33px;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,.25);
+}
+
+.sidemenu ul.nav-child ul.nav-child {
+    background: #fff;
+}
+
+.sidemenu .nav>li:hover>ul.nav-child,
+.sidemenu .nav>li>ul.nav-child>li:hover>ul.nav-child,
+.sidemenu .nav>li>ul.nav-child>li>ul.nav-child>li:hover>ul.nav-child{
+    display: block;
+    text-align: left;
+    -webkit-animation: slowfadeInUp 600ms;
+    animation: slowfadeInUp 600ms;
+}
+
+

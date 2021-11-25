@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="system" method="upgrade">
+	<name>plg_system_sellaciouscattemplates</name>
+	<author>Bhavika Matariya</author>
+	<creationDate>May 21, 2018</creationDate>
+	<copyright>Copyright (C) 2016 Bhartiy Web Technologies. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@bhartiy.com</authorEmail>
+	<authorUrl>www.bhartiy.com</authorUrl>
+	<version>2.2.0</version>
+	<description>PLG_SYSTEM_SELLACIOUSCATTEMPLATES_XML_DESCRIPTION</description>
+	<files>
+		<folder>forms</folder>
+		<folder>language</folder>
+		<filename plugin="sellaciouscattemplates">sellaciouscattemplates.php</filename>
+	</files>
+	<config>
+	</config>
+</extension>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.8" client="site" type="language" method="upgrade">
+	<name>Polish (PL)</name>
+	<tag>pl-PL</tag>
+	<version>3.9.1.1</version>
+	<creationDate>listopad 2018</creationDate>
+	<author>Polskie Centrum Joomla!</author>
+	<authorEmail>zwiastun@joomla.pl</authorEmail>
+	<authorUrl>https://www.joomla.pl</authorUrl>
+	<copyright>(C) 2005 - 2018 Open Source Matters. All right reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<description>Język witryny Joomla 3.9.1 - https://www.joomla.pl</description>
+	<files>
+		<folder>/</folder>
+		<filename file="meta">install.xml</filename>
+	</files>
+	<params />
+</extension>

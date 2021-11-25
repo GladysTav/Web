@@ -1,0 +1,69 @@
+#
+#<?php die('Forbidden.'); ?>
+#Date: 2019-05-01 03:53:19 UTC
+#Software: Joomla Platform 13.1.0 Stable [ Curiosity ] 24-Apr-2013 00:00 GMT
+
+#Fields: datetime	priority clientip	category	message
+2019-05-01T03:53:19+00:00	CRITICAL ::1	error	Uncaught \Throwable of type Exception thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(621): Joomla\CMS\MVC\Controller\BaseController->getView('login', 'json', 'loginView', Array)
+#1 /Users/codeacious3/Sites/sellacious/sellacious/components/com_login/controller.php(42): Joomla\CMS\MVC\Controller\BaseController->display(false, NULL)
+#2 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(710): LoginController->display()
+#3 /Users/codeacious3/Sites/sellacious/sellacious/components/com_login/login.php(21): Joomla\CMS\MVC\Controller\BaseController->execute('')
+#4 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#5 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#6 /Users/codeacious3/Sites/sellacious/sellacious/includes/libraries/application.php(205): Joomla\CMS\Component\ComponentHelper::renderComponent('com_login')
+#7 /Users/codeacious3/Sites/sellacious/sellacious/includes/libraries/application.php(250): JApplicationSellacious->dispatch()
+#8 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(196): JApplicationSellacious->doExecute()
+#9 /Users/codeacious3/Sites/sellacious/sellacious/index.php(43): Joomla\CMS\Application\CMSApplication->execute()
+#10 {main}
+2019-05-01T04:03:51+00:00	WARNING ::1	jerror	Username and password do not match or you do not have an account yet.
+2019-05-01T04:03:55+00:00	WARNING ::1	jerror	Username and password do not match or you do not have an account yet.
+2019-05-01T04:05:59+00:00	WARNING ::1	jerror	Username and password do not match or you do not have an account yet.
+2019-05-01T04:29:38+00:00	WARNING ::1	jerror	Username and password do not match or you do not have an account yet.
+2019-05-01T07:31:18+00:00	CRITICAL ::1	error	Uncaught \Throwable of type Exception thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(621): Joomla\CMS\MVC\Controller\BaseController->getView('login', 'json', 'loginView', Array)
+#1 /Users/codeacious3/Sites/sellacious/sellacious/components/com_login/controller.php(42): Joomla\CMS\MVC\Controller\BaseController->display(false, NULL)
+#2 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(710): LoginController->display()
+#3 /Users/codeacious3/Sites/sellacious/sellacious/components/com_login/login.php(21): Joomla\CMS\MVC\Controller\BaseController->execute('')
+#4 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#5 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#6 /Users/codeacious3/Sites/sellacious/sellacious/includes/libraries/application.php(205): Joomla\CMS\Component\ComponentHelper::renderComponent('com_login')
+#7 /Users/codeacious3/Sites/sellacious/sellacious/includes/libraries/application.php(250): JApplicationSellacious->dispatch()
+#8 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(196): JApplicationSellacious->doExecute()
+#9 /Users/codeacious3/Sites/sellacious/sellacious/index.php(43): Joomla\CMS\Application\CMSApplication->execute()
+#10 {main}
+2019-05-01T07:32:42+00:00	WARNING ::1	jerror	Username and password do not match or you do not have an account yet.
+2019-05-01T07:39:30+00:00	WARNING ::1	jerror	You are not allowed to access the sellacious backend.
+2019-05-01T08:11:35+00:00	WARNING ::1	jerror	Username and password do not match or you do not have an account yet.
+2019-05-01T08:51:03+00:00	WARNING ::1	jerror	JInstaller: :Install: Error SQL Duplicate column name 'location'
+2019-05-01T08:51:03+00:00	WARNING ::1	jerror	Extension Update: SQL error processing query: DB function failed with error number 1060 <br /><span style="color: red;">Duplicate column name 'location'</span><br />SQL = <pre>ALTER TABLE `#__sellacious_products` ADD `location` VARCHAR(100) NOT NULL AFTER `primary_video_url`;</pre>
+2019-05-01T08:51:03+00:00	WARNING ::1	jerror	Package Update: There was an error installing an extension: com_sellacious.zip
+2019-05-01T12:32:23+00:00	CRITICAL ::1	error	Uncaught \Throwable of type JException thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/libraries/legacy/error/error.php(277): JError::raise(1, 404, 'Article not fou...', NULL, true)
+#1 /Users/codeacious3/Sites/sellacious/components/com_content/models/article.php(155): JError::raiseError(404, 'Article not fou...')
+#2 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/View/HtmlView.php(425): ContentModelArticle->getItem()
+#3 /Users/codeacious3/Sites/sellacious/components/com_content/views/article/view.html.php(42): Joomla\CMS\MVC\View\HtmlView->get('Item')
+#4 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(672): ContentViewArticle->display()
+#5 /Users/codeacious3/Sites/sellacious/components/com_content/controller.php(118): Joomla\CMS\MVC\Controller\BaseController->display(true, Array)
+#6 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(710): ContentController->display()
+#7 /Users/codeacious3/Sites/sellacious/components/com_content/content.php(43): Joomla\CMS\MVC\Controller\BaseController->execute('')
+#8 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#9 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#10 /Users/codeacious3/Sites/sellacious/libraries/src/Application/SiteApplication.php(194): Joomla\CMS\Component\ComponentHelper::renderComponent('com_content')
+#11 /Users/codeacious3/Sites/sellacious/libraries/src/Application/SiteApplication.php(233): Joomla\CMS\Application\SiteApplication->dispatch()
+#12 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(196): Joomla\CMS\Application\SiteApplication->doExecute()
+#13 /Users/codeacious3/Sites/sellacious/index.php(49): Joomla\CMS\Application\CMSApplication->execute()
+#14 {main}
+2019-05-01T12:32:28+00:00	CRITICAL ::1	error	Uncaught \Throwable of type JException thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/libraries/legacy/error/error.php(277): JError::raise(1, 404, 'Article not fou...', NULL, true)
+#1 /Users/codeacious3/Sites/sellacious/components/com_content/models/article.php(155): JError::raiseError(404, 'Article not fou...')
+#2 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/View/HtmlView.php(425): ContentModelArticle->getItem()
+#3 /Users/codeacious3/Sites/sellacious/components/com_content/views/article/view.html.php(42): Joomla\CMS\MVC\View\HtmlView->get('Item')
+#4 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(672): ContentViewArticle->display()
+#5 /Users/codeacious3/Sites/sellacious/components/com_content/controller.php(118): Joomla\CMS\MVC\Controller\BaseController->display(true, Array)
+#6 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(710): ContentController->display()
+#7 /Users/codeacious3/Sites/sellacious/components/com_content/content.php(43): Joomla\CMS\MVC\Controller\BaseController->execute('')
+#8 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#9 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#10 /Users/codeacious3/Sites/sellacious/libraries/src/Application/SiteApplication.php(194): Joomla\CMS\Component\ComponentHelper::renderComponent('com_content')
+#11 /Users/codeacious3/Sites/sellacious/libraries/src/Application/SiteApplication.php(233): Joomla\CMS\Application\SiteApplication->dispatch()
+#12 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(196): Joomla\CMS\Application\SiteApplication->doExecute()
+#13 /Users/codeacious3/Sites/sellacious/index.php(49): Joomla\CMS\Application\CMSApplication->execute()
+#14 {main}
+2019-05-01T12:47:35+00:00	WARNING 192.168.2.32	jerror	Username and password do not match or you do not have an account yet.

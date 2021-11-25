@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="basic">
+		<fieldset name="basic" label="PLG_SYSTEM_SELLACIOUSGST_PRODUCT_FIELDSET_BASIC">
+			<fields name="gst">
+				<field
+					name="hsn_sac"
+					type="text"
+					label="PLG_SYSTEM_SELLACIOUSGST_PRODUCT_HSN_SAC_LABEL"
+					description="PLG_SYSTEM_SELLACIOUSGST_PRODUCT_HSN_SAC_DESC"
+					class="inputbox medium-input"
+				/>
+			</fields>
+		</fieldset>
+	</fields>
+</form>

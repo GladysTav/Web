@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="shoprule">
+		<fieldset name="shoprule" label="PLG_SELLACIOUSRULES_FIELDSET_SHOPRULE">
+			<field
+				name="tax_rules"
+				type="ShopRules"
+				class_type="tax"
+				label="PLG_SELLACIOUSRULES_SHOPRULE_FIELD_TAX_RULES_LABEL"
+				description="PLG_SELLACIOUSRULES_SHOPRULE_FIELD_TAX_RULES_DESC"
+				class="medium-input"
+				multiple="true"
+			/>
+			<field
+				name="discount_rules"
+				type="ShopRules"
+				class_type="discount"
+				label="PLG_SELLACIOUSRULES_SHOPRULE_FIELD_DISCOUNT_RULES_LABEL"
+				description="PLG_SELLACIOUSRULES_SHOPRULE_FIELD_DISCOUNT_RULES_DESC"
+				class="medium-input"
+				multiple="true"
+			/>
+		</fieldset>
+	</fields>
+</form>

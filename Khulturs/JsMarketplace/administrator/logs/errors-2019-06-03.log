@@ -1,0 +1,13 @@
+#
+#<?php die('Forbidden.'); ?>
+#Date: 2019-06-03 07:49:11 UTC
+#Software: Joomla Platform 13.1.0 Stable [ Curiosity ] 24-Apr-2013 00:00 GMT
+
+#Fields: datetime	priority clientip	category	message
+2019-06-03T07:49:11+00:00	WARNING 192.168.2.53	jerror	Empty password not allowed.
+2019-06-03T07:49:16+00:00	WARNING 192.168.2.53	jerror	Username and password do not match or you do not have an account yet.
+2019-06-03T08:53:43+00:00	CRITICAL ::1	error	Uncaught \Throwable of type Joomla\CMS\Component\Exception\MissingComponentException thrown. Stack trace: #0 /Users/codeacious3/Sites/lab-jsmarketplace/sellacious/includes/libraries/application.php(205): Joomla\CMS\Component\ComponentHelper::renderComponent('com_sellacioust...')
+#1 /Users/codeacious3/Sites/lab-jsmarketplace/sellacious/includes/libraries/application.php(250): JApplicationSellacious->dispatch()
+#2 /Users/codeacious3/Sites/lab-jsmarketplace/libraries/src/Application/CMSApplication.php(196): JApplicationSellacious->doExecute()
+#3 /Users/codeacious3/Sites/lab-jsmarketplace/sellacious/index.php(43): Joomla\CMS\Application\CMSApplication->execute()
+#4 {main}

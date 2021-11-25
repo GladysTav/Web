@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="params">
+		<fieldset name="filters" label="COM_SELLACIOUS_FIELDSET_FILTERS">
+			<fields name="client">
+				<field
+					name="guest_setting"
+					type="radio"
+					label="PLG_SELLACIOUSRULES_CLIENT_FIELD_GUEST_SETTING_LABEL"
+					description="PLG_SELLACIOUSRULES_CLIENT_FIELD_GUEST_SETTING_DESC"
+					default="0"
+					onchange="this.form.submit();"
+				>
+					<option value="1">PLG_SELLACIOUSRULES_CLIENT_GUEST_SETTING_REGISTERED</option>
+					<option value="2">PLG_SELLACIOUSRULES_CLIENT_GUEST_SETTING_GUEST</option>
+					<option value="0">PLG_SELLACIOUSRULES_CLIENT_GUEST_SETTING_BOTH</option>
+				</field>
+				<field
+					name="categories"
+					type="categoryList"
+					label="PLG_SELLACIOUSRULES_CLIENT_FIELD_CATEGORY_LABEL"
+					description="PLG_SELLACIOUSRULES_CLIENT_FIELD_CATEGORY_DESC"
+					group="client"
+					class="inputbox w100p"
+					multiple="true"
+					show_all="true"
+				/>
+			</fields>
+		</fieldset>
+	</fields>
+</form>

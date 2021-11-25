@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.7" method="upgrade">
+	<name>Sellacious Importer Package</name>
+	<packagename>sellacious_importer</packagename>
+	<author>Izhar Aazmi</author>
+	<creationDate>April 08, 2020</creationDate>
+	<authorEmail>info@bhartiy.com</authorEmail>
+	<authorUrl>www.bhartiy.com</authorUrl>
+	<copyright>Copyright (C) 2012-2020 Bhartiy Web Technologies. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>2.0.0-beta1</version>
+	<url>http://www.sellacious.com</url>
+	<packager>Bhartiy Web Technologies</packager>
+	<packagerurl>http://www.sellacious.com</packagerurl>
+	<description>Sellacious Importer Package</description>
+	<scriptfile>installer.php</scriptfile>
+	<files folder="extensions">
+		<file type="component" id="com_importer">com_importer.zip</file>
+
+		<file type="plugin" group="system" id="sellaciousimporter">plg_system_sellaciousimporter.zip</file>
+
+		<file type="library" id="sellacious_importer">lib_sellacious_importer.zip</file>
+	</files>
+</extension>

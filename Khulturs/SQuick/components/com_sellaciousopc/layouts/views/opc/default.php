@@ -1,0 +1,75 @@
+<?php
+/**
+ * @version     2.0.0
+ * @package     sellacious
+ *
+ * @copyright   Copyright (C) 2012-2020 Bhartiy Web Technologies. All rights reserved.
+ * @license     SPL Sellacious Private License; see http://www.sellacious.com/spl.html
+ * @author      Aditya Chakraborty <info@bhartiy.com> - http://www.bhartiy.com
+ */
+// No direct access
+defined('_JEXEC') or die;
+
+JHtml::_('behavior.framework');
+JHtml::_('jquery.framework');
+JHtml::_('bootstrap.framework');
+JHtml::_('behavior.formvalidator');
+JHtml::_('ctech.bootstrap');
+JHtml::_('ctech.select2');
+
+JHtml::_('stylesheet', 'com_sellacious/font-awesome.min.css', null, true);
+
+JHtml::_('script', 'media/com_sellacious/js/plugin/serialize-object/jquery.serialize-object.min.js', false, false);
+JHtml::_('script', 'com_sellaciousopc/util.opc.js', false, true);
+JHtml::_('script', 'com_sellaciousopc/fe.view.opc.js', false, true);
+JHtml::_('script', 'com_sellacious/fe.view.sellacious.js', false, true);
+
+JHtml::_('stylesheet', 'com_sellacious/fe.component.css', null, true);
+JHtml::_('stylesheet', 'com_sellacious/font-awesome.min.css', null, true);
+JHtml::_('stylesheet', 'com_sellacious/fe.view.cart.aio.css', null, true);
+JHtml::_('stylesheet', 'com_sellacious/fe.view.cart.css', false, true);
+JHtml::_('stylesheet', 'com_sellaciousopc/fe.view.opc.css', null, true);
+
+JHtml::_('script', 'media/com_sellacious/js/plugin/datepicker/dcalendar.picker.js', false, false);
+JHtml::_('stylesheet', 'media/com_sellacious/js/plugin/datepicker/dcalendar.picker.css', null, false);
+
+JText::script('COM_SELLACIOUSOPC_USER_CONFIRM_ADDRESS_REMOVE_MESSAGE');
+JText::script('COM_SELLACIOUSOPC_CART_CONFIRM_LOGOUT_ACTION_MESSAGE');
+JText::script('COM_SELLACIOUSOPC_USER_CONFIRM_ADDRESS_REMOVE_MESSAGE');
+JText::script('COM_SELLACIOUSOPC_CART_CONFIRM_CLEAR_CART_ACTION_MESSAGE');
+JText::script('COM_SELLACIOUSOPC_CART_ADDRESSES_EMPTY_MESSAGE');
+JText::script('COM_SELLACIOUSOPC_CART_ADDRESS_BILLING_EMPTY_MESSAGE');
+JText::script('COM_SELLACIOUSOPC_CART_ADDRESS_SHIPPING_EMPTY_MESSAGE');
+JText::script('COM_SELLACIOUSOPC_CART_GRAND_TOTAL_LABEL');
+
+JText::script('COM_SELLACIOUSOPC_CART_AIO_LOGIN_PROGRESS');
+JText::script('COM_SELLACIOUSOPC_CART_AIO_REGISTRATION_PROGRESS');
+JText::script('COM_SELLACIOUSOPC_CART_AIO_GUEST_CHECKOUT_INIT_PROGRESS');
+JText::script('COM_SELLACIOUSOPC_CART_REDIRECT_WAIT_MESSAGE');
+JText::script('COM_SELLACIOUSOPC_CART_ORDER_PAYMENT_INIT_FAILURE');
+
+$user = JFactory::getUser();
+$columns = $this->sections;
+?>
+<h1><?php echo JText::_("COM_SELLACIOUSOPC_CART_TITLE");?></h1>
+
+<div class="cart-opc-container w100p" id="cart-opc-container">
+	<?php
+	$data = array(
+		"columns" => $columns,
+		"cart" => $this->cart
+	);
+
+	echo JLayoutHelper::render('com_sellaciousopc.cartopc.cart', $data, '', array('debug' => 0));?>
+</div>
+	<!-- We use modal in this same page, so create new instance of opc -->
+<?php
+$options = array(
+	'size'     => 'large',
+	'header'   => false,
+	'v-centered' => true
+);
+
+echo JHtml::_('ctechBootstrap.modal', 'modal-cart', '', '', '', $options);
+
+echo JHtml::_('form.token');

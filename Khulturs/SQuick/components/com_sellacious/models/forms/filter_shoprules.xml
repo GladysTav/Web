@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="filter">
+		<field
+			name="seller_uid"
+			type="productsellers"
+			label="COM_SELLACIOUS_SHOPRULE_FIELD_SELLER_LABEL"
+			onchange="this.form.submit();"
+			class="inputbox"
+		>
+			<option value="">COM_SELLACIOUS_COUPON_OPTION_SELECT_SELLER</option>
+			<option value="0" class="red">COM_SELLACIOUS_COUPON_FIELD_SELLER_OPTION_SITE_WIDE</option>
+		</field>
+	</fields>
+</form>

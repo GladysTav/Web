@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.1" method="upgrade" client="sellacious">
+	<name>com_sellacioustemplates</name>
+	<author>Aditya Chakraborty</author>
+	<creationDate>April 08, 2020</creationDate>
+	<copyright>Copyright (C) 2012-2020 Bhartiy Web Technologies. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@bhartiy.com</authorEmail>
+	<authorUrl>www.bhartiy.com</authorUrl>
+	<version>2.0.0-beta1</version>
+	<scriptfile>script.php</scriptfile>
+	<description>COM_SELLACIOUSTEMPLATES_XML_DESCRIPTION</description>
+	<install>
+		<sql>
+			<file driver="mysqli" charset="utf8">sql/com_sellacioustemplates.install.mysqli.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysqli" charset="utf8">sql/com_sellacioustemplates.uninstall.mysqli.sql</file>
+		</sql>
+	</uninstall>
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysqli</schemapath>
+		</schemas>
+	</update>
+	<sellacious>
+		<files folder="sellacious">
+			<filename>sellacioustemplates.php</filename>
+			<filename>config.xml</filename>
+			<filename>access.xml</filename>
+			<filename>controller.php</filename>
+			<folder>controllers</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<folder>layouts</folder>
+			<folder>language</folder>
+		</files>
+	</sellacious>
+	<media folder="media" destination="com_sellacioustemplates">
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>images</folder>
+	</media>
+	<administration>
+		<files folder="administrator">
+			<folder>language</folder>
+			<folder>sql</folder>
+		</files>
+	</administration>
+</extension>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<access component="com_sellacioustemplates">
+	<section name="component">
+		<actions name="template" title="COM_SELLACIOUSTEMPLATES_ACTIONS_TEMPLATE">
+			<action name="template.list" title="COM_SELLACIOUSTEMPLATES_ACTION_TEMPLATE_LIST_LABEL" description="COM_SELLACIOUSTEMPLATES_ACTION_TEMPLATE_LIST_DESC"/>
+			<action name="template.edit" title="COM_SELLACIOUSTEMPLATES_ACTION_TEMPLATE_EDIT_LABEL" description="COM_SELLACIOUSTEMPLATES_ACTION_TEMPLATE_EDIT_DESC"/>
+		</actions>
+	</section>
+</access>

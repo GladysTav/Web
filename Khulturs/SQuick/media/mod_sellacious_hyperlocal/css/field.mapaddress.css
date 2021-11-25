@@ -1,0 +1,78 @@
+.fma-frame {
+	height: calc(100vh - (35px + 35px));
+	width: 50%;
+	position: fixed !important;
+	right: 0;
+	top: 35px;
+	bottom: 35px;
+	z-index: 1100;
+	transform: translate3d(100%, 0px, 0px);
+	transition: all 0.5s ease-in-out;
+}
+
+.fma-backdrop {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 10;
+	display: none;
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.fma-frame.in {
+	transform: translate3d(0px, 0px, 0px);
+}
+
+.fma-frame.in ~ .fma-backdrop {
+	display: block;
+}
+
+.fma-input {
+	max-width: 350px;
+	float: left;
+	width: calc(100% - 100px) !important;
+	min-width: unset;
+}
+
+.fma-trigger {
+	display: block;
+	float: left;
+	text-decoration: none;
+	cursor: pointer;
+	padding: 4px 7px;
+	border: 1px solid #cccccc;
+	border-left: 0;
+	width: auto;
+}
+
+.fma-trigger:hover,
+.fma-trigger:focus {
+	text-decoration: none;
+	color: #000000;
+}
+
+.fma-trigger .fa {
+	margin-right: 4px;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+	.fma-frame {
+		width: 60%;
+	}
+}
+
+@media (min-width: 601px) and (max-width: 991px) {
+	.fma-frame {
+		width: 70%;
+	}
+}
+
+@media (max-width: 600px) {
+	.fma-frame {
+		width: 80%;
+	}
+}

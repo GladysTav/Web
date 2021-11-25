@@ -1,0 +1,265 @@
+/**
+ * @version     2.1.4
+ * @package     SP Page Builder Addons for Sellacious
+ *
+ * @copyright   Copyright (C) 2016. Bhartiy Web Technologies. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @author      Bhavika Matariya <info@bhartiy.com> - http://www.bhartiy.com
+ */
+
+.product-rating {
+	margin-bottom: 6px;
+}
+
+span.rating {
+	overflow: hidden;
+	display: inline-block;
+	font-size: 0;
+	position: relative;
+	margin: 1px 5px -3px;
+	height: 22px;
+}
+
+.rating-input {
+	float: right;
+	width: 16px;
+	height: 16px;
+	padding: 0;
+	margin: 0 0 0 -16px;
+	display: none;
+}
+
+.rating:hover .rating-star:hover:before,
+.rating:hover .rating-star:hover ~ .rating-star:before,
+.rating-input:checked ~ .rating-star:before {
+	content: '\f005';
+}
+
+.rating-star,
+.rating:hover .rating-star {
+	position: relative;
+	float: right;
+	width: 18px;
+	height: 16px;
+	margin: 1px;
+	display: block;
+}
+
+.rating-star:before,
+.rating:hover .rating-star:before {
+	font-family: FontAwesome, serif;
+	display: inline-block;
+	content: '\f006';
+	color: #f3a832;
+	font-size: 18px;
+}
+
+.ratingmeter {
+	text-align: center;
+	padding: 0 15px;
+}
+
+.ratingaverage {
+	margin-top: 25px;
+}
+
+.star-lg {
+	background: url('images/star-lg.png') no-repeat;
+	width: 65px;
+	height: 62px;
+	font-weight: bold;
+	text-align: center;
+	margin: 5px auto 0 auto;
+	padding-top: 21px;
+	color: #ffffff;
+}
+
+table.rating-statistics {
+	padding: 25px 2px 20px;
+	display: inline-block;
+}
+
+.rating-statistics .rating-progress {
+	width: 150px;
+}
+
+.rating-statistics .progress-bar {
+	background: #36a5b2;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-ms-border-radius: 8px;
+}
+
+.rating-statistics td {
+	padding: 0 5px;
+}
+
+.rating-statistics .progress {
+	margin: 0;
+	max-width: 150px;
+	max-height: 9px;
+	background: #ffffff;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-ms-border-radius: 8px;
+	overflow: hidden;
+	box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+	-ms-box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+	-o-box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.reviewform {
+	background: #ececec;
+	padding: 20px;
+	min-height: 300px;
+}
+
+.revformarea .formfield {
+	position: relative;
+	margin-bottom: 5px;
+}
+
+.revformarea .formfield input,
+.revformarea .formfieldinput input,
+.revformarea .formfieldinput textarea {
+	width: 100%;
+	border: 1px solid #efefef;
+	box-shadow: 0 0 10px 0px #dddddd;
+	-moz-box-shadow: 0 0 10px 0px #dddddd;
+	-webkit-box-shadow: 0 0 10px 0px #dddddd;
+	-ms-box-shadow: 0 0 10px 0px #dddddd;
+	-o-box-shadow: 0 0 10px 0px #dddddd;
+
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-ms-border-radius: 100px;
+	-o-border-radius: 100px;
+
+	padding: 12px 22px 10px;
+	height: auto;
+}
+
+.revformarea .formfield input:focus,
+.revformarea .formfield input:focus:invalid:focus,
+.revformarea .formfieldinput input:focus,
+.revformarea .formfieldinput textarea:focus {
+	outline: 0;
+	border-color: #d4d4d4 !important;
+	-webkit-box-shadow: 0 0px 12px 0px #cccccc !important;
+	-moz-box-shadow: 0 0px 12px 0px #cccccc !important;
+	-ms-box-shadow: 0 0px 12px 0px #cccccc !important;
+	box-shadow: 0 0px 12px 0px #cccccc !important;
+	color: #222222;
+}
+
+.revformarea .formfield label {
+	position: absolute;
+	top: 13px;
+	left: 22px;
+	font-size: 13px;
+	font-weight: normal;
+	color: #999999;
+	margin: 0;
+	line-height: 1.4;
+	transition: all 0.25s linear 0s;
+	-moz-transition: all 0.25s linear 0s;
+	-webkit-transition: all 0.25s linear 0s;
+	-ms-transition: all 0.25s linear 0s;
+	-o-transition: all 0.25s linear 0s;
+}
+
+.revformarea .formfield label.gone,
+.revformarea .formfield input:focus ~ label {
+	top: 3px;
+	left: 22px;
+	font-size: 10px;
+}
+
+.revformarea .col-sm-6 .formfield {
+	margin: 5px 2px;
+}
+
+.formfieldstar {
+	margin: 5px 2px;
+}
+
+.revformarea .formfieldinput {
+	margin-bottom: 8px;
+}
+
+.revformarea .formfieldinput textarea {
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+	padding: 15px 22px;
+}
+
+.btn.reviewbtn {
+	padding: 8px 22px;
+	border: none;
+	margin-top: 5px;
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-ms-border-radius: 100px;
+	-o-border-radius: 100px;
+	transition: all 0.25s linear 0s;
+	-moz-transition: all 0.25s linear 0s;
+	-webkit-transition: all 0.25s linear 0s;
+	-ms-transition: all 0.25s linear 0s;
+	-o-transition: all 0.25s linear 0s;
+}
+
+.reviewslist .row {
+	background: #ffffff;
+	position: relative;
+	z-index: 99;
+	box-shadow: 0px 0px 15px 0px #dddddd;
+	-moz-box-shadow: 0px 0px 15px 0px #dddddd;
+	-webkit-box-shadow: 0px 0px 15px 0px #dddddd;
+	-ms-box-shadow: 0px 0px 15px 0px #dddddd;
+	-o-box-shadow: 0px 0px 15px 0px #dddddd;
+}
+
+.reviewauthor {
+	text-align: center;
+	padding: 8px 8px 10px;
+}
+
+.reviewauthor h4.pr-author {
+	padding: 0;
+	margin: 4px 0 2px;
+	text-transform: uppercase;
+	font-size: 13px;
+	letter-spacing: 2px;
+	font-weight: bold;
+	color: #555555;
+}
+
+.reviewauthor h5.pr-date {
+	margin: 0;
+	font-size: 13px;
+	color: #888888;
+}
+
+.reviewtyped {
+	padding: 15px 25px;
+	min-height: 98px;
+	background: #f9f9f9;
+}
+
+.reviewtyped h3.pr-title {
+	margin: 4px 0 2px;
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 1px;
+	font-weight: bold;
+}

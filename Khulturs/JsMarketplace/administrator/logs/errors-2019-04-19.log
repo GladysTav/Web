@@ -1,0 +1,97 @@
+#
+#<?php die('Forbidden.'); ?>
+#Date: 2019-04-19 04:21:10 UTC
+#Software: Joomla Platform 13.1.0 Stable [ Curiosity ] 24-Apr-2013 00:00 GMT
+
+#Fields: datetime	priority clientip	category	message
+2019-04-19T04:21:10+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-19T04:27:54+00:00	INFO ::1	jerror	Please login or register to access the requested page.
+2019-04-19T04:35:35+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-19T04:36:49+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-19T05:26:01+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-19T07:39:37+00:00	CRITICAL ::1	error	Uncaught \Throwable of type RuntimeException thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(710): LoginController->display()
+#1 /Users/codeacious3/Sites/sellacious/administrator/components/com_login/login.php(22): Joomla\CMS\MVC\Controller\BaseController->execute('')
+#2 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#3 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#4 /Users/codeacious3/Sites/sellacious/libraries/src/Application/AdministratorApplication.php(101): Joomla\CMS\Component\ComponentHelper::renderComponent('com_login')
+#5 /Users/codeacious3/Sites/sellacious/libraries/src/Application/AdministratorApplication.php(159): Joomla\CMS\Application\AdministratorApplication->dispatch()
+#6 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(196): Joomla\CMS\Application\AdministratorApplication->doExecute()
+#7 /Users/codeacious3/Sites/sellacious/administrator/index.php(51): Joomla\CMS\Application\CMSApplication->execute()
+#8 {main}
+2019-04-19T07:48:34+00:00	CRITICAL ::1	error	Uncaught \Throwable of type Exception thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(621): Joomla\CMS\MVC\Controller\BaseController->getView('login', 'json', 'loginView', Array)
+#1 /Users/codeacious3/Sites/sellacious/sellacious/components/com_login/controller.php(42): Joomla\CMS\MVC\Controller\BaseController->display(false, NULL)
+#2 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(710): LoginController->display()
+#3 /Users/codeacious3/Sites/sellacious/sellacious/components/com_login/login.php(21): Joomla\CMS\MVC\Controller\BaseController->execute('')
+#4 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#5 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#6 /Users/codeacious3/Sites/sellacious/sellacious/includes/libraries/application.php(205): Joomla\CMS\Component\ComponentHelper::renderComponent('com_login')
+#7 /Users/codeacious3/Sites/sellacious/sellacious/includes/libraries/application.php(250): JApplicationSellacious->dispatch()
+#8 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(196): JApplicationSellacious->doExecute()
+#9 /Users/codeacious3/Sites/sellacious/sellacious/index.php(43): Joomla\CMS\Application\CMSApplication->execute()
+#10 {main}
+2019-04-19T07:53:36+00:00	CRITICAL ::1	error	Uncaught \Throwable of type RuntimeException thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(710): LoginController->display()
+#1 /Users/codeacious3/Sites/sellacious/administrator/components/com_login/login.php(22): Joomla\CMS\MVC\Controller\BaseController->execute('')
+#2 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#3 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#4 /Users/codeacious3/Sites/sellacious/libraries/src/Application/AdministratorApplication.php(101): Joomla\CMS\Component\ComponentHelper::renderComponent('com_login')
+#5 /Users/codeacious3/Sites/sellacious/libraries/src/Application/AdministratorApplication.php(159): Joomla\CMS\Application\AdministratorApplication->dispatch()
+#6 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(196): Joomla\CMS\Application\AdministratorApplication->doExecute()
+#7 /Users/codeacious3/Sites/sellacious/administrator/index.php(51): Joomla\CMS\Application\CMSApplication->execute()
+#8 {main}
+2019-04-19T08:02:34+00:00	CRITICAL ::1	error	Uncaught \Throwable of type Exception thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(621): Joomla\CMS\MVC\Controller\BaseController->getView('login', 'json', 'loginView', Array)
+#1 /Users/codeacious3/Sites/sellacious/sellacious/components/com_login/controller.php(42): Joomla\CMS\MVC\Controller\BaseController->display(false, NULL)
+#2 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(710): LoginController->display()
+#3 /Users/codeacious3/Sites/sellacious/sellacious/components/com_login/login.php(21): Joomla\CMS\MVC\Controller\BaseController->execute('')
+#4 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#5 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#6 /Users/codeacious3/Sites/sellacious/sellacious/includes/libraries/application.php(205): Joomla\CMS\Component\ComponentHelper::renderComponent('com_login')
+#7 /Users/codeacious3/Sites/sellacious/sellacious/includes/libraries/application.php(250): JApplicationSellacious->dispatch()
+#8 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(196): JApplicationSellacious->doExecute()
+#9 /Users/codeacious3/Sites/sellacious/sellacious/index.php(43): Joomla\CMS\Application\CMSApplication->execute()
+#10 {main}
+2019-04-19T08:07:37+00:00	CRITICAL ::1	error	Uncaught \Throwable of type RuntimeException thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(710): LoginController->display()
+#1 /Users/codeacious3/Sites/sellacious/administrator/components/com_login/login.php(22): Joomla\CMS\MVC\Controller\BaseController->execute('')
+#2 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#3 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#4 /Users/codeacious3/Sites/sellacious/libraries/src/Application/AdministratorApplication.php(101): Joomla\CMS\Component\ComponentHelper::renderComponent('com_login')
+#5 /Users/codeacious3/Sites/sellacious/libraries/src/Application/AdministratorApplication.php(159): Joomla\CMS\Application\AdministratorApplication->dispatch()
+#6 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(196): Joomla\CMS\Application\AdministratorApplication->doExecute()
+#7 /Users/codeacious3/Sites/sellacious/administrator/index.php(51): Joomla\CMS\Application\CMSApplication->execute()
+#8 {main}
+2019-04-19T08:21:37+00:00	CRITICAL ::1	error	Uncaught \Throwable of type RuntimeException thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(710): LoginController->display()
+#1 /Users/codeacious3/Sites/sellacious/administrator/components/com_login/login.php(22): Joomla\CMS\MVC\Controller\BaseController->execute('')
+#2 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#3 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#4 /Users/codeacious3/Sites/sellacious/libraries/src/Application/AdministratorApplication.php(101): Joomla\CMS\Component\ComponentHelper::renderComponent('com_login')
+#5 /Users/codeacious3/Sites/sellacious/libraries/src/Application/AdministratorApplication.php(159): Joomla\CMS\Application\AdministratorApplication->dispatch()
+#6 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(196): Joomla\CMS\Application\AdministratorApplication->doExecute()
+#7 /Users/codeacious3/Sites/sellacious/administrator/index.php(51): Joomla\CMS\Application\CMSApplication->execute()
+#8 {main}
+2019-04-19T08:35:37+00:00	CRITICAL ::1	error	Uncaught \Throwable of type RuntimeException thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(710): LoginController->display()
+#1 /Users/codeacious3/Sites/sellacious/administrator/components/com_login/login.php(22): Joomla\CMS\MVC\Controller\BaseController->execute('')
+#2 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#3 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#4 /Users/codeacious3/Sites/sellacious/libraries/src/Application/AdministratorApplication.php(101): Joomla\CMS\Component\ComponentHelper::renderComponent('com_login')
+#5 /Users/codeacious3/Sites/sellacious/libraries/src/Application/AdministratorApplication.php(159): Joomla\CMS\Application\AdministratorApplication->dispatch()
+#6 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(196): Joomla\CMS\Application\AdministratorApplication->doExecute()
+#7 /Users/codeacious3/Sites/sellacious/administrator/index.php(51): Joomla\CMS\Application\CMSApplication->execute()
+#8 {main}
+2019-04-19T08:43:06+00:00	INFO ::1	jerror	Please login or register to access the requested page.
+2019-04-19T08:49:38+00:00	CRITICAL ::1	error	Uncaught \Throwable of type RuntimeException thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(710): LoginController->display()
+#1 /Users/codeacious3/Sites/sellacious/administrator/components/com_login/login.php(22): Joomla\CMS\MVC\Controller\BaseController->execute('')
+#2 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#3 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#4 /Users/codeacious3/Sites/sellacious/libraries/src/Application/AdministratorApplication.php(101): Joomla\CMS\Component\ComponentHelper::renderComponent('com_login')
+#5 /Users/codeacious3/Sites/sellacious/libraries/src/Application/AdministratorApplication.php(159): Joomla\CMS\Application\AdministratorApplication->dispatch()
+#6 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(196): Joomla\CMS\Application\AdministratorApplication->doExecute()
+#7 /Users/codeacious3/Sites/sellacious/administrator/index.php(51): Joomla\CMS\Application\CMSApplication->execute()
+#8 {main}
+2019-04-19T09:03:37+00:00	CRITICAL ::1	error	Uncaught \Throwable of type RuntimeException thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(710): LoginController->display()
+#1 /Users/codeacious3/Sites/sellacious/administrator/components/com_login/login.php(22): Joomla\CMS\MVC\Controller\BaseController->execute('')
+#2 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#3 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#4 /Users/codeacious3/Sites/sellacious/libraries/src/Application/AdministratorApplication.php(101): Joomla\CMS\Component\ComponentHelper::renderComponent('com_login')
+#5 /Users/codeacious3/Sites/sellacious/libraries/src/Application/AdministratorApplication.php(159): Joomla\CMS\Application\AdministratorApplication->dispatch()
+#6 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(196): Joomla\CMS\Application\AdministratorApplication->doExecute()
+#7 /Users/codeacious3/Sites/sellacious/administrator/index.php(51): Joomla\CMS\Application\CMSApplication->execute()
+#8 {main}

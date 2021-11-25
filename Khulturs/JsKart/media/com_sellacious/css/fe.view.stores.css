@@ -1,0 +1,147 @@
+.store-wrap {
+	width: 100%;
+	position: relative;
+}
+
+[dir] .store-wrap {
+	cursor: default;
+}
+
+[dir=ltr] .store-wrap {
+	float: left;
+}
+
+[dir=rtl] .store-wrap {
+	float: right;
+}
+
+.store-wrap .store-box {
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+[dir] .store-wrap .store-box {
+	background-color: #ffffff;
+	border: 1px solid #e2e2e2;
+	cursor: default;
+}
+
+.store-wrap .store-box .image-box {
+	vertical-align: middle;
+	height: 220px;
+	overflow: hidden;
+	position: relative;
+}
+
+[dir] .store-wrap .store-box .image-box {
+	background: #ffffff;
+	border: 3px solid #ffffff;
+	text-align: center;
+}
+
+.store-wrap .store-box .image-box a {
+	display: block;
+	height: 100%;
+}
+
+.store-wrap .store-box .image-box img {
+	display: inline-block;
+	max-height: 100%;
+	width: auto;
+	transition: all 0s linear 0.25s;
+	-moz-transition: all 0s linear 0.25s;
+	-ms-transition: all 0s linear 0.25s;
+}
+
+[dir] .store-wrap .store-box .image-box img {
+	-webkit-transition: all 0s linear 0.25s;
+}
+
+.store-wrap .store-box:hover .image-box img {
+	opacity: 0.4;
+}
+
+[dir] .store-wrap .store-box .store-info-box {
+	padding: 10px;
+	text-align: center;
+	border-top: 1px solid #e2e2e2;
+}
+
+.favorite-remove-store {
+	position: absolute;
+	top: 15px;
+	font-size: 16px;
+}
+
+[dir=ltr] .favorite-remove-store {
+	right: 15px;
+}
+
+[dir=rtl] .favorite-remove-store {
+	left: 15px;
+}
+
+[dir] .favorite-stores-heading {
+	margin: 20px;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.favorite-stores-heading h2 {
+	font: 22px/24px PTSans-bold;
+	color: #333333;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+[dir] .favorite-stores-heading h2 {
+	margin: 0;
+	padding-bottom: 10px;
+	width: 295px;
+}
+
+.favorite-stores-heading h2 span {
+	font: 13px/20px PTSans-Regular;
+	color: #999999;
+	vertical-align: 15%;
+	text-transform: uppercase;
+}
+
+[dir=ltr] .favorite-stores-heading h2 span {
+	padding-left: 5px;
+	float: right;
+	position: absolute;
+}
+
+[dir=rtl] .favorite-stores-heading h2 span {
+	padding-right: 5px;
+	float: left;
+	position: absolute;
+}
+
+.store-wrap .store-box .store-title {
+	font-size: 14px;
+	line-height: 20px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	font-weight: bold;
+}
+
+.store-wrap .store-box .store-title a,
+.store-wrap .store-box .store-title a:hover {
+	color: #222222;
+	text-decoration: none;
+}
+
+@media (max-width: 580px) {
+	.store-wrap .store-box {
+		width: 100%;
+	}
+}
+
+[dir=rtl] .favorite-stores-heading h2 {
+	font-size: 1.8rem;
+	font-weight: bold;
+}

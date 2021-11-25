@@ -1,0 +1,134 @@
+#
+#<?php die('Forbidden.'); ?>
+#Date: 2019-04-13 04:00:34 UTC
+#Software: Joomla Platform 13.1.0 Stable [ Curiosity ] 24-Apr-2013 00:00 GMT
+
+#Fields: datetime	priority clientip	category	message
+2019-04-13T04:00:34+00:00	CRITICAL ::1	error	Uncaught \Throwable of type Exception thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(621): Joomla\CMS\MVC\Controller\BaseController->getView('login', 'json', 'loginView', Array)
+#1 /Users/codeacious3/Sites/sellacious/sellacious/components/com_login/controller.php(42): Joomla\CMS\MVC\Controller\BaseController->display(false, NULL)
+#2 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(710): LoginController->display()
+#3 /Users/codeacious3/Sites/sellacious/sellacious/components/com_login/login.php(21): Joomla\CMS\MVC\Controller\BaseController->execute('')
+#4 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#5 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#6 /Users/codeacious3/Sites/sellacious/sellacious/includes/libraries/application.php(205): Joomla\CMS\Component\ComponentHelper::renderComponent('com_login')
+#7 /Users/codeacious3/Sites/sellacious/sellacious/includes/libraries/application.php(250): JApplicationSellacious->dispatch()
+#8 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(196): JApplicationSellacious->doExecute()
+#9 /Users/codeacious3/Sites/sellacious/sellacious/index.php(43): Joomla\CMS\Application\CMSApplication->execute()
+#10 {main}
+2019-04-13T04:14:27+00:00	CRITICAL ::1	error	Uncaught \Throwable of type Exception thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(621): Joomla\CMS\MVC\Controller\BaseController->getView('login', 'json', 'loginView', Array)
+#1 /Users/codeacious3/Sites/sellacious/sellacious/components/com_login/controller.php(42): Joomla\CMS\MVC\Controller\BaseController->display(false, NULL)
+#2 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(710): LoginController->display()
+#3 /Users/codeacious3/Sites/sellacious/sellacious/components/com_login/login.php(21): Joomla\CMS\MVC\Controller\BaseController->execute('')
+#4 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#5 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#6 /Users/codeacious3/Sites/sellacious/sellacious/includes/libraries/application.php(205): Joomla\CMS\Component\ComponentHelper::renderComponent('com_login')
+#7 /Users/codeacious3/Sites/sellacious/sellacious/includes/libraries/application.php(250): JApplicationSellacious->dispatch()
+#8 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(196): JApplicationSellacious->doExecute()
+#9 /Users/codeacious3/Sites/sellacious/sellacious/index.php(43): Joomla\CMS\Application\CMSApplication->execute()
+#10 {main}
+2019-04-13T04:28:28+00:00	CRITICAL ::1	error	Uncaught \Throwable of type Exception thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(621): Joomla\CMS\MVC\Controller\BaseController->getView('login', 'json', 'loginView', Array)
+#1 /Users/codeacious3/Sites/sellacious/sellacious/components/com_login/controller.php(42): Joomla\CMS\MVC\Controller\BaseController->display(false, NULL)
+#2 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(710): LoginController->display()
+#3 /Users/codeacious3/Sites/sellacious/sellacious/components/com_login/login.php(21): Joomla\CMS\MVC\Controller\BaseController->execute('')
+#4 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#5 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#6 /Users/codeacious3/Sites/sellacious/sellacious/includes/libraries/application.php(205): Joomla\CMS\Component\ComponentHelper::renderComponent('com_login')
+#7 /Users/codeacious3/Sites/sellacious/sellacious/includes/libraries/application.php(250): JApplicationSellacious->dispatch()
+#8 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(196): JApplicationSellacious->doExecute()
+#9 /Users/codeacious3/Sites/sellacious/sellacious/index.php(43): Joomla\CMS\Application\CMSApplication->execute()
+#10 {main}
+2019-04-13T04:42:27+00:00	CRITICAL ::1	error	Uncaught \Throwable of type Exception thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(621): Joomla\CMS\MVC\Controller\BaseController->getView('login', 'json', 'loginView', Array)
+#1 /Users/codeacious3/Sites/sellacious/sellacious/components/com_login/controller.php(42): Joomla\CMS\MVC\Controller\BaseController->display(false, NULL)
+#2 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(710): LoginController->display()
+#3 /Users/codeacious3/Sites/sellacious/sellacious/components/com_login/login.php(21): Joomla\CMS\MVC\Controller\BaseController->execute('')
+#4 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#5 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#6 /Users/codeacious3/Sites/sellacious/sellacious/includes/libraries/application.php(205): Joomla\CMS\Component\ComponentHelper::renderComponent('com_login')
+#7 /Users/codeacious3/Sites/sellacious/sellacious/includes/libraries/application.php(250): JApplicationSellacious->dispatch()
+#8 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(196): JApplicationSellacious->doExecute()
+#9 /Users/codeacious3/Sites/sellacious/sellacious/index.php(43): Joomla\CMS\Application\CMSApplication->execute()
+#10 {main}
+2019-04-13T04:56:27+00:00	CRITICAL ::1	error	Uncaught \Throwable of type Exception thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(621): Joomla\CMS\MVC\Controller\BaseController->getView('login', 'json', 'loginView', Array)
+#1 /Users/codeacious3/Sites/sellacious/sellacious/components/com_login/controller.php(42): Joomla\CMS\MVC\Controller\BaseController->display(false, NULL)
+#2 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(710): LoginController->display()
+#3 /Users/codeacious3/Sites/sellacious/sellacious/components/com_login/login.php(21): Joomla\CMS\MVC\Controller\BaseController->execute('')
+#4 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#5 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#6 /Users/codeacious3/Sites/sellacious/sellacious/includes/libraries/application.php(205): Joomla\CMS\Component\ComponentHelper::renderComponent('com_login')
+#7 /Users/codeacious3/Sites/sellacious/sellacious/includes/libraries/application.php(250): JApplicationSellacious->dispatch()
+#8 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(196): JApplicationSellacious->doExecute()
+#9 /Users/codeacious3/Sites/sellacious/sellacious/index.php(43): Joomla\CMS\Application\CMSApplication->execute()
+#10 {main}
+2019-04-13T05:10:33+00:00	CRITICAL ::1	error	Uncaught \Throwable of type Exception thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(621): Joomla\CMS\MVC\Controller\BaseController->getView('login', 'json', 'loginView', Array)
+#1 /Users/codeacious3/Sites/sellacious/sellacious/components/com_login/controller.php(42): Joomla\CMS\MVC\Controller\BaseController->display(false, NULL)
+#2 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(710): LoginController->display()
+#3 /Users/codeacious3/Sites/sellacious/sellacious/components/com_login/login.php(21): Joomla\CMS\MVC\Controller\BaseController->execute('')
+#4 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#5 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#6 /Users/codeacious3/Sites/sellacious/sellacious/includes/libraries/application.php(205): Joomla\CMS\Component\ComponentHelper::renderComponent('com_login')
+#7 /Users/codeacious3/Sites/sellacious/sellacious/includes/libraries/application.php(250): JApplicationSellacious->dispatch()
+#8 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(196): JApplicationSellacious->doExecute()
+#9 /Users/codeacious3/Sites/sellacious/sellacious/index.php(43): Joomla\CMS\Application\CMSApplication->execute()
+#10 {main}
+2019-04-13T09:16:21+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.
+2019-04-13T09:19:49+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.
+2019-04-13T09:19:49+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.
+2019-04-13T09:20:09+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.
+2019-04-13T09:21:19+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.
+2019-04-13T09:21:33+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.
+2019-04-13T09:23:18+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.
+2019-04-13T09:24:06+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.
+2019-04-13T09:25:05+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.
+2019-04-13T09:27:27+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.
+2019-04-13T10:14:35+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-13T10:15:05+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-13T10:16:38+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-13T10:16:39+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-13T10:16:53+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-13T10:17:01+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-13T10:34:12+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-13T10:34:30+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-13T10:36:37+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-13T10:37:26+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-13T10:38:15+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-13T10:39:57+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-13T10:40:04+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-13T10:58:37+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-13T10:58:37+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-13T10:58:42+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-13T10:58:46+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-13T10:58:49+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-13T10:58:51+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-13T11:12:45+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-13T11:12:55+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-13T11:30:50+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-13T11:31:05+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.
+2019-04-13T11:31:24+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-13T11:31:29+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-13T11:31:39+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-13T11:32:56+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-13T11:33:31+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-13T11:35:50+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-13T12:05:16+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-13T12:05:23+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-13T12:34:55+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-13T12:35:24+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-13T12:35:27+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-13T12:42:08+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-13T12:42:08+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-13T12:42:16+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-13T12:42:16+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-13T12:44:39+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-13T12:56:27+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.
+2019-04-13T12:56:42+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.
+2019-04-13T12:57:02+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.
+2019-04-13T12:57:52+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.
+2019-04-13T12:58:20+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.
+2019-04-13T12:58:56+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.
+2019-04-13T12:59:05+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.
+2019-04-13T12:59:05+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.
+2019-04-13T12:59:21+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.
+2019-04-13T13:00:58+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.
+2019-04-13T13:01:44+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.
+2019-04-13T13:03:03+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.
+2019-04-13T13:12:30+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.

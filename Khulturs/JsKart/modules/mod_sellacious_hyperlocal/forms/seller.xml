@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="seller">
+		<fields name="params">
+			<fieldset name="seller">
+				<field
+					name="shipping_distance"
+					type="hidden"
+					label="MOD_SELLACIOUS_HYPERLOCAL_FIELD_SHIPPING_DISTANCE_LABEL"
+					description="MOD_SELLACIOUS_HYPERLOCAL_FIELD_SHIPPING_DISTANCE_DESC"
+					class="inputbox medium-input"
+				/>
+			</fieldset>
+		</fields>
+	</fields>
+</form>

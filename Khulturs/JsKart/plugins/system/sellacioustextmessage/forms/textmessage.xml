@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="handlers">
+		<fields name="text">
+			<fieldset name="text" label="PLG_SYSTEM_SELLACIOUSTEXTMESSAGE_FIELDSET_TEXT">
+				<field
+					name="message_type"
+					type="hidden"
+					default="text"
+					readonly="true"
+				/>
+				<field
+					name="state"
+					type="radio"
+					label="COM_SELLACIOUS_EMAILTEMPLATE_FIELD_STATE_LABEL"
+					default="1"
+				>
+					<option value="1">JENABLED</option>
+					<option value="0">JDISABLED</option>
+				</field>
+				<field
+					name="send_actual_recipient"
+					type="radio"
+					label="PLG_SYSTEM_SELLACIOUSTEXTMESSAGE_FIELD_SEND_ACTUAL_RECIPIENT_LABEL"
+					description="PLG_SYSTEM_SELLACIOUSTEXTMESSAGE_FIELD_SEND_ACTUAL_RECIPIENT_DESC"
+					class="inputbox"
+					default="1">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="recipients"
+					type="text"
+					label="PLG_SYSTEM_SELLACIOUSTEXTMESSAGE_FIELD_RECIPIENTS_LABEL"
+					description="PLG_SYSTEM_SELLACIOUSTEXTMESSAGE_FIELD_RECIPIENTS_DESC"
+					message="PLG_SYSTEM_SELLACIOUSTEXTMESSAGE_FIELD_RECIPIENTS_MSG"
+					class="inputbox"
+					multiple="true"
+				/>
+				<field
+					name="body"
+					type="textarea"
+					label="PLG_SYSTEM_SELLACIOUSTEXTMESSAGE_FIELD_MESSAGE_BODY_LABEL"
+					description="PLG_SYSTEM_SELLACIOUSTEXTMESSAGE_FIELD_MESSAGE_BODY_DESC"
+					filter="string"
+					cols="60"
+					rows="5"
+				/>
+			</fieldset>
+		</fields>
+	</fields>
+</form>

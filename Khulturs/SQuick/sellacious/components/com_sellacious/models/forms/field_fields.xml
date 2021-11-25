@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="basic">
+		<field
+			name="context"
+			type="list"
+			label="COM_SELLACIOUS_FIELD_FIELD_CONTEXT_LABEL"
+			description="COM_SELLACIOUS_FIELD_FIELD_CONTEXT_DESC"
+			class="w100p"
+			required="true"
+			onchange="Joomla.submitbutton('field.setType');"
+		>
+			<option value="">COM_SELLACIOUS_OPTION_SELECT</option>
+			<option value="product">COM_SELLACIOUS_FIELD_FIELD_CONTEXT_PRODUCT</option>
+			<option value="user">COM_SELLACIOUS_FIELD_FIELD_CONTEXT_USER</option>
+			<option value="queryform">COM_SELLACIOUS_FIELD_FIELD_CONTEXT_QUERYFORM</option>
+			<option value="paymentmethod">COM_SELLACIOUS_FIELD_FIELD_CONTEXT_PAYMENTMETHOD</option>
+			<option value="checkoutform">COM_SELLACIOUS_FIELD_FIELD_CONTEXT_CHECKOUTFORM</option>
+			<option value="form">COM_SELLACIOUS_FIELD_FIELD_CONTEXT_FORM</option>
+			<option value="shippingmethod">COM_SELLACIOUS_FIELD_FIELD_CONTEXT_SHIPPINGMETHOD</option>
+		</field>
+		<field
+			name="parent_id"
+			type="FieldParent"
+			label="COM_SELLACIOUS_FIELD_FIELD_PARENT_LABEL"
+			description="COM_SELLACIOUS_FIELD_FIELD_PARENT_DESC"
+			onchange="Joomla.submitbutton('field.setType');"
+			class="w100p"
+			default="1"
+		>
+			<option value="1">COM_SELLACIOUS_FIELD_SELECT_FIELD_GROUP</option>
+		</field>
+		<field
+			name="title"
+			type="text"
+			label="COM_SELLACIOUS_FIELD_FIELD_NAME_LABEL"
+			description="COM_SELLACIOUS_FIELD_FIELD_NAME_DESC"
+			class="inputbox"
+			required="true"
+			/>
+		<field
+			name="alias"
+			type="text"
+			label="JFIELD_ALIAS_LABEL"
+			description="JFIELD_ALIAS_DESC"
+			class="inputbox"
+			/>
+		<field
+			name="description"
+			type="text"
+			label="COM_SELLACIOUS_FIELD_FIELD_DESCRIPTION_LABEL"
+			description="COM_SELLACIOUS_FIELD_FIELD_DESCRIPTION_DESC"
+			class="inputbox"
+			/>
+		<field
+			name="message"
+			type="text"
+			label="COM_SELLACIOUS_FIELD_FIELD_MESSAGE_LABEL"
+			class="inputbox"
+			description="COM_SELLACIOUS_FIELD_FIELD_MESSAGE_DESC"
+		/>
+		<field
+			name="class"
+			type="text"
+			label="COM_SELLACIOUS_FIELD_FIELD_CLASS_LABEL"
+			description="COM_SELLACIOUS_FIELD_FIELD_CLASS_DESC"
+			class="inputbox"
+			default="inputbox"
+		/>
+		<field
+			name="state"
+			type="radioswitch"
+			label="COM_SELLACIOUS_FIELD_FIELD_STATUS_LABEL"
+			description="COM_SELLACIOUS_FIELD_FIELD_STATUS_DESC"
+			required="true"
+			default="0"
+			>
+			<option	value="1" class="radio-inline">JENABLED</option>
+			<option	value="0" class="radio-inline">JDISABLED</option>
+		</field>
+		<field
+			name="required"
+			type="radioswitch"
+			label="COM_SELLACIOUS_FIELD_FIELD_REQUIRED_LABEL"
+			description="COM_SELLACIOUS_FIELD_FIELD_REQUIRED_DESC"
+			default="false"
+			required="true"
+			trueValue="true"
+			falseValue="false"
+		>
+			<option value="true">JYES</option>
+			<option value="false">JNO</option>
+		</field>
+		<field
+			name="global"
+			type="radioswitch"
+			label="COM_SELLACIOUS_FIELD_FIELD_GLOBAL_LABEL"
+			description="COM_SELLACIOUS_FIELD_FIELD_GLOBAL_DESC"
+			default="0"
+		/>
+	</fieldset>
+</form>

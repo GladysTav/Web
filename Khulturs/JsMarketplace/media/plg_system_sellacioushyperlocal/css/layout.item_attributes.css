@@ -1,0 +1,66 @@
+body {
+	position: relative;
+}
+
+.slot_section input[type="text"].delivery_date {
+	margin: 0;
+}
+
+.slot_section .pick_date li {
+	list-style: none;
+}
+
+.slot_section .pick_date {
+	margin: 0;
+}
+
+.slot_section .btn.btn-date {
+	white-space: normal;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 1em;
+	height: 100%;
+	color: inherit;
+	font: inherit;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.slot_section .weekday, .slot_section .date {
+	display: block;
+	text-transform: uppercase;
+	font-weight: 400;
+	margin: 5px auto;
+	text-align: center;
+}
+
+.slot_section .date .input-group-addon.btn.btn-date {
+	padding: 4px 12px !important;
+	border-radius: 4px !important;
+	border: 1px solid #bbbbbb !important;
+	display: inline-block !important;
+	width: inherit;
+	margin-bottom: 0;
+	font-size: 13px;
+	line-height: 1em;
+}
+
+.slot_section .slot_section {
+	min-height: 70px;
+}
+
+.slot_section .delivery_slot {
+	width: 145px;.grid-layout .product-box
+}
+
+.slot_section .slot_picker {
+	text-align: center;
+}
+
+.slot_section .slot_picker .select2-container .select2-choice > .select2-chosen {
+	margin-right: 20px;
+}
+
+.slot_section .slot_picker .select2-container {
+	font-size: 12px;
+}

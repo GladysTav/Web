@@ -1,0 +1,32 @@
+<form>
+    <field name="country_image"
+           type="media"
+           default=""
+           label="MOD_SELLACIOUS_HYPERLOCAL_COUNTRY_IMAGE_TITLE"
+           description="MOD_SELLACIOUS_HYPERLOCAL_COUNTRY_IMAGE_DESC"
+    />
+    <field
+            name="location_name"
+            type="text"
+            label="MOD_SELLACIOUS_HYPERLOCAL_MENU_NAME_TITLE"
+            description="MOD_SELLACIOUS_HYPERLOCAL_MENU_NAME_DESC"
+    />
+    <field
+            name="location_state"
+            type="text"
+            label="MOD_SELLACIOUS_HYPERLOCAL_MENU_STATE_TITLE"
+            description="MOD_SELLACIOUS_HYPERLOCAL_MENU_STATE_DESC"
+    />
+    <field
+            name="latitude"
+            type="text"
+            label="MOD_SELLACIOUS_HYPERLOCAL_MENU_LATITUDE_TITLE"
+            description="MOD_SELLACIOUS_HYPERLOCAL_MENU_LATITUDE_DESC"
+    />
+    <field
+            name="longitude"
+            type="text"
+            label="MOD_SELLACIOUS_HYPERLOCAL_MENU_LONGITUDE_TITLE"
+            description="MOD_SELLACIOUS_HYPERLOCAL_MENU_LONGITUDE_DESC"
+    />
+</form>

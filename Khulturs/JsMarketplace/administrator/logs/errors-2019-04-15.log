@@ -1,0 +1,31 @@
+#
+#<?php die('Forbidden.'); ?>
+#Date: 2019-04-15 04:52:06 UTC
+#Software: Joomla Platform 13.1.0 Stable [ Curiosity ] 24-Apr-2013 00:00 GMT
+
+#Fields: datetime	priority clientip	category	message
+2019-04-15T04:52:06+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.
+2019-04-15T05:12:36+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-15T05:14:03+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.
+2019-04-15T05:14:08+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.
+2019-04-15T05:15:30+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.
+2019-04-15T05:52:12+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.
+2019-04-15T05:52:33+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-15T05:52:43+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-15T05:52:46+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-15T06:07:46+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.
+2019-04-15T08:14:04+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-15T12:25:27+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-15T12:25:41+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-15T12:29:55+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-15T12:31:37+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-15T12:49:01+00:00	WARNING ::1	jerror	COM_SELLACIOUS_PRODUCT_NOT_SELLER_SELLING
+2019-04-15T12:50:44+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.
+2019-04-15T12:50:44+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.
+2019-04-15T12:50:55+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.
+2019-04-15T12:51:10+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-15T12:51:28+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-15T12:51:41+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.
+2019-04-15T12:53:03+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.
+2019-04-15T12:53:13+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.
+2019-04-15T12:53:26+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>mod_sellacious_login</name>
+	<author>Izhar Aazmi</author>
+	<creationDate>April 07, 2020</creationDate>
+	<copyright>Copyright (C) 2012-2020 Bhartiy Web Technologies. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@bhartiy.com</authorEmail>
+	<authorUrl>www.bhartiy.com</authorUrl>
+	<version>2.0.0-beta1</version>
+	<description>MOD_SELLACIOUS_LOGIN_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_sellacious_login">mod_sellacious_login.php</filename>
+		<folder>language</folder>
+		<folder>tmpl</folder>
+		<filename>helper.php</filename>
+	</files>
+	<media folder="media" destination="mod_sellacious_login">
+		<folder>js</folder>
+		<folder>css</folder>
+	</media>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/administrator/components/com_menus/models/fields">
+				<field
+					name="login"
+					type="modal_menu"
+					label="MOD_SELLACIOUS_LOGIN_FIELD_LOGIN_REDIRECTURL_LABEL"
+					description="MOD_SELLACIOUS_LOGIN_FIELD_LOGIN_REDIRECTURL_DESC"
+					disable="separator,alias,heading,url"
+					select="true"
+					new="true"
+					edit="true"
+					clear="true"
+					>
+					<option value="">JDEFAULT</option>
+				</field>
+
+				<field
+					name="logout"
+					type="modal_menu"
+					label="MOD_SELLACIOUS_LOGIN_FIELD_LOGOUT_REDIRECTURL_LABEL"
+					description="MOD_SELLACIOUS_LOGIN_FIELD_LOGOUT_REDIRECTURL_DESC"
+					disable="separator,alias,heading,url"
+					select="true"
+					new="true"
+					edit="true"
+					clear="true"
+					>
+					<option value="">JDEFAULT</option>
+				</field>
+
+				<field
+					name="pretext"
+					type="textarea"
+					label="MOD_SELLACIOUS_LOGIN_FIELD_PRE_TEXT_LABEL"
+					description="MOD_SELLACIOUS_LOGIN_FIELD_PRE_TEXT_DESC"
+					filter="safehtml"
+					cols="50"
+					rows="5"
+				/>
+				<field
+					name="pretext_tr"
+					type="radio"
+					label="MOD_SELLACIOUS_LOGIN_FIELD_PRE_TEXT_TR_LABEL"
+					description="MOD_SELLACIOUS_LOGIN_FIELD_PRE_TEXT_TR_DESC"
+					class="btn-group btn-group-yesno"
+					default="0"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="posttext"
+					type="textarea"
+					label="MOD_SELLACIOUS_LOGIN_FIELD_POST_TEXT_LABEL"
+					description="MOD_SELLACIOUS_LOGIN_FIELD_POST_TEXT_DESC"
+					filter="safehtml"
+					cols="50"
+					rows="5"
+				/>
+				<field
+					name="posttext_tr"
+					type="radio"
+					label="MOD_SELLACIOUS_LOGIN_FIELD_POST_TEXT_TR_LABEL"
+					description="MOD_SELLACIOUS_LOGIN_FIELD_POST_TEXT_TR_DESC"
+					class="btn-group btn-group-yesno"
+					default="0"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+				/>
+				<field
+					name="moduleclass_sfx"
+					type="textarea"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
+					rows="3"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,39 @@
+.ctech-wrapper .preverify-wrapper .preverify-input-group {
+	position: relative;
+}
+
+.ctech-wrapper .preverify-wrapper .preverify-input-group input {
+	padding-right: 65px;
+}
+
+.ctech-wrapper .preverify-wrapper .preverify-input-group input[type][disabled] {
+	background-color: whitesmoke;
+}
+
+.ctech-wrapper .preverify-wrapper .preverify-otp-container {
+	display: flex;
+}
+
+.ctech-wrapper .preverify-wrapper .preverify-otp-container button {
+	flex: 1;
+	height: 32px;
+	margin-left: 1px;
+}
+
+.ctech-wrapper .preverify-wrapper .preverify-otp-container input {
+	flex: 3;
+	margin-bottom: 0;
+}
+
+.ctech-wrapper .preverify-wrapper .preverify-send-otp {
+	position: absolute;
+	top: 0;
+	right: 0;
+	line-height: 32px;
+	padding: 0 5px;
+}
+
+.ctech-wrapper .preverify-wrapper .preverify-message-box {
+	margin-bottom: 9px;
+	font-size: 11px;
+}

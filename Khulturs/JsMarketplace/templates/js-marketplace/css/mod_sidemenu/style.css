@@ -1,0 +1,193 @@
+.sidebar-home .sidemenu {
+	padding: 8px 0;
+	position: relative;
+	background-position: center bottom;
+	background-repeat: repeat-x;
+	background-size: contain;
+	width: 200px;
+	height: 344px;
+	box-shadow: 0 0 2px 0 rgba(0, 0, 0, .25);
+	background-color: #ffffff;
+	z-index: 200;
+}
+
+.sidebar-home li.deeper:after {
+	content: '\f105';
+	font-family: FontAwesome;
+	right: 12px;
+	position: absolute;
+	color: #dbdbdb;
+}
+
+.sidebar-home li.deeper li.deeper:after {
+	color: #adadad;
+	margin-top: 8px;
+}
+
+.sidebar-home li.deeper:hover:after, .sidebar-home li.deeper li.deeper:hover:after {
+	color: #f57224;
+}
+
+.sidebar-home .sidemenu .nav > li {
+	width: 100%;
+	padding: 8px 5px;
+	display: flex;
+}
+
+.sidebar-home .sidemenu .nav > li:not(:last-child) {
+	border-bottom: 1px solid rgba(222, 222, 222, 0.19);
+}
+
+.sidebar-home .sidemenu .nav > li > a {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: inline-block;
+	white-space: nowrap;
+	width: 172px;
+	font-size: 13px;
+	line-height: 32px;
+	color: #222222;
+	cursor: pointer;
+}
+
+.sidebar-home .sidemenu .nav li a {
+	border: 1px solid transparent;
+	border-width: 1px 0;
+	text-align: left;
+	line-height: 1.5;
+	flex-basis: calc(100% - 15px);
+}
+
+.sidebar-home .nav li ul li {
+	margin-left: 5px;
+}
+
+.sidebar-home .nav li:hover a {
+	color: #000000;
+	font-weight: 400;
+}
+
+.sidebar-home .nav li ul li:hover {
+	background: #ffffff;
+}
+
+.sidebar-home .sidemenu .nav li:hover a, .sidebar-home .sidemenu .nav li .nav-child li:hover a,
+.sidebar-home .sidemenu .nav li .nav-child li:hover ul li:hover a {
+	color: #f57224;
+	font-weight: 500;
+}
+
+.sidebar-home .sidemenu .nav li .nav-child li a, .sidebar-home .sidemenu .nav li .nav-child li:hover ul li a {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: inline-block;
+	white-space: normal;
+	width: 172px;
+	font-size: 13px;
+	line-height: 27px;
+	cursor: pointer;
+	height: 28px;
+	color: #555555;
+	font-weight: 400;
+}
+
+.sidebar-home .sidemenu ul.nav-child {
+	position: absolute;
+	left: 100%;
+	min-width: 220px;
+	background: #eaeaea;
+	display: none;
+	padding: 8px 0 12px;
+	height: 344px;
+	width: 200px;
+	list-style: none;
+	margin: 0;
+	top: 0;
+	-webkit-box-shadow: 15px -2px 12px rgba(0, 0, 0, .175);
+	-moz-box-shadow: 15px -2px 12px rgba(0, 0, 0, .175);
+	box-shadow: 15px -2px 12px rgba(0, 0, 0, .175);
+}
+
+.sidebar-home ul.nav-child ul.nav-child {
+	background: #ffffff;
+	-webkit-box-shadow: 15px -2px 12px rgba(0, 0, 0, .175);
+	-moz-box-shadow: 15px -2px 12px rgba(0, 0, 0, .175);
+	box-shadow: 15px -2px 12px rgba(0, 0, 0, .175);
+}
+
+.mainmenu .nav > li > ul.nav-child > li:first-child > ul.nav-child
+.sidebar-home .sidemenu ul.nav-child ul.nav-child {
+	background: #ffffff;
+}
+
+.sidebar-home .sidemenu .nav > li:hover > ul.nav-child,
+.sidebar-home .sidemenu .nav > li > ul.nav-child > li:hover > ul.nav-child {
+	display: block;
+	text-align: center;
+	-webkit-animation: slowfadeInUp 600ms;
+	animation: slowfadeInUp 600ms;
+}
+
+.hom.sidebar-home .sidemenu ul {
+	width: 100%;
+}
+
+.hom.sidebar-home .sidemenu ul a {
+	padding-left: 8px;
+	height: 27px;
+	line-height: 27px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: inline-block;
+	white-space: nowrap;
+	width: 172px;
+	font-size: 13px;
+	line-height: 27px;
+	color: #757575;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.sidebar-home .nav > li > ul.nav-child > li:hover > ul.nav-child,
+.sidebar-home .nav > li > ul.nav-child > li:first-child > ul.nav-child {
+	display: block;
+	text-align: left;
+	-webkit-animation: slowfadeInUp 600ms;
+	animation: slowfadeInUp 600ms;
+}
+
+.sidebar-home .nav > li > ul.nav-child > li:first-child {
+	background: #ffffff;
+}
+
+/*FOR ICON ON TOP PARENT */
+
+.deeper img, li img {
+	height: 15px;
+	margin-right: 5px;
+}
+
+/* ARROW ON TOP */
+.arrow-border {
+	width: 100%;
+	height: 28px;
+	position: absolute;
+	overflow: hidden;
+	left: 3px;
+	top: -28px;
+}
+
+.arrow-border:after {
+	content: "";
+	width: 20px;
+	height: 20px;
+	left: 6px;
+	transform: rotate(45deg);
+	position: absolute;
+	background: #fff;
+	top: 18px;
+}
+
+
+
+

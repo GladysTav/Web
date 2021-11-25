@@ -1,0 +1,9 @@
+/**
+ * @package    AcyMailing for Joomla
+ * @version    6.0.2
+ * @author     acyba.com
+ * @copyright  (C) 2009-2018 ACYBA S.A.R.L. All rights reserved.
+ * @license    GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+ */
+
+.site-content-contain .acym_front_page #acyuseractions{padding-top:5px}.site-content-contain .acym_front_page #acyuseractions button{font-size:12px;line-height:1}.acym_front_page .acym_radio_checked,.acym_front_page .acym_radio_unchecked,.acym_front_page .is-hidden{display:none}.acym_front_page fieldset{margin-bottom:1rem}.acym_front_page input[type=radio]{margin:0 5px 0 0}.acym_front_page input[type=radio]+label{display:inline-block;margin-right:5px}.acym_front_page .acym_list{display:block}.acym_front_page .acym_list .acystatus{margin-right:20px;display:inline-block}.acym_front_page .acym_list .list_name{display:inline-block}

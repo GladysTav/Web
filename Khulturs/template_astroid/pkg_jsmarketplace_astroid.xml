@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.7" method="upgrade">
+	<name>JS-Marketplace Template Package</name>
+	<author>Bhartiy Web Technologies</author>
+	<creationDate>July 19, 2019</creationDate>
+	<packagename>jsmarketplace_astroid</packagename>
+	<packager>Bhartiy Web Technologies</packager>
+	<packagerurl>http://www.sellacious.com</packagerurl>
+	<version>1.7.3</version>
+	<url>http://www.sellacious.com</url>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<description><![CDATA[JS-Marketplace - Sellacious E-Commerce Template]]></description>
+	<scriptfile>installer.php</scriptfile>
+	<blockChildUninstall>true</blockChildUninstall>
+	<files folder="extensions">
+		<file type="library" id="astroid" client="site">lib_astroid.zip</file>
+		<file type="plugin" group="system" id="astroid">plg_system_astroid.zip</file>
+		<file type="template" id="tpl_js-marketplace">tpl_js-marketplace.zip</file>
+	</files>
+</extension>

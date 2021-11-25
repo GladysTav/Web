@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="user" method="upgrade">
+	<name>plg_user_cclogin</name>
+	<creationDate>2016-12-16</creationDate>
+	<copyright>2016 Component Creator</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<author>Component Creator</author>
+	<authorEmail>info@component-creator.com</authorEmail>
+	<authorUrl>https://www.component-creator.com</authorUrl>
+	<version>1.0.9</version>
+	<description>PLG_USER_CCLOGIN_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="cclogin">cclogin.php</filename>
+	</files>
+	<languages folder="languages">
+		<language tag="en-GB">en-GB/en-GB.plg_user_cclogin.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_user_cclogin.sys.ini</language>
+	</languages>
+</extension>

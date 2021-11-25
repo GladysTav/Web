@@ -1,0 +1,297 @@
+/**
+ * @version     1.7.3
+ * @package     Sellacious Cart Module
+ *
+ * @copyright   Copyright (C) 2012-2019 Bhartiy Web Technologies. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @author      Bhavika Matariya <info@bhartiy.com> - http://www.bhartiy.com
+ */
+
+.mod-sellacious-cart {
+	cursor: pointer;
+	display: block;
+	float: right;
+	height: 40px;
+	padding: 0;
+	position: relative;
+	text-align: center;
+	margin: 0;
+	color: #333333;
+}
+
+.mod-sellacious-cart .mod-cart-container i {
+	display: inline-block;
+	font-size: 30px;
+	line-height: 40px;
+	color: #ecebeb;
+	width: auto;
+	height: auto;
+	margin: 0;
+}
+
+.mod-sellacious-cart .mod-cart-ul li  .product-thumb {
+	max-width: unset;
+	max-height: unset;
+	float: left;
+	margin-right: 10px;
+	width: 100%;
+	height: auto;
+}
+
+.mod-sellacious-cart .mod-cart-ul li .product_name {
+	margin: 0;
+	height: 28px;
+	color: #212121;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 14px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+}
+
+.mod-sellacious-cart .mod-cart-container span.mod-total-products {
+	border-radius: 100%;
+	color: #ffffff;
+	display: inline-block;
+	font-size: 11px;
+	height: 20px;
+	line-height: 19px;
+	position: absolute;
+	right: 1px;
+	text-align: center;
+	top: 0px;
+	width: 20px;
+	background: #14ACD1;
+}
+
+.mod-sellacious-cart .mod-cart-ul {
+	background: #ffffff;
+	border: 0 none;
+	border-radius: 0;
+	overflow: hidden;
+	padding: 10px 0;
+	text-align: left;
+	top: 100%;
+	width: 320px;
+	display: block;
+	color: #222222;
+	position: absolute;
+	margin: 0;
+	left: 50%;
+	right: auto !important;
+	transform: translate(-50%, 0) !important;
+	-webkit-box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2);
+	-ms-box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2);
+	-o-box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2);
+	box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2);
+}
+
+.mod-sellacious-cart .mod-cart-container .mod-cart-ul li.mod-divider {
+	border-bottom: 1px solid #222222;
+	margin: 15px 0;
+}
+
+.mod-sellacious-cart .mod-cart-ul li {
+	padding: 0 15px;
+	border: none;
+}
+
+.mod-sellacious-cart .mod-cart-ul li.mod-products-list {
+	max-height: 400px;
+	overflow-y: scroll;
+}
+
+.mod-sellacious-cart .mod-cart-ul li.mod-total {
+	float: right;
+	margin-top: 6px;
+	text-align: right;
+}
+
+.mod-sellacious-cart .mod-cart-ul li.mod-cart-show-btn {
+	float: left;
+}
+
+.mod-sellacious-cart .mod-cart-container {
+	padding: 0 12px 0 10px;
+	position: relative;
+}
+
+.mod-sellacious-cart .mod-cart-ul .container {
+	width: 100%;
+	border: none;
+	/*box-shadow: none;*/
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+}
+
+.mod-sellacious-cart .mod-cart-ul li > div {
+	/*padding: 10px 15px;*/
+	/*background: #000000;*/
+	background: #fff;
+	height: 100px;
+	color: #333;
+	margin: 10px 0;
+	white-space: normal;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	border-radius: 2px;
+	-webkit-box-shadow: 0px 0px 1px 0px rgba(0, 63, 84, 0.29);
+	-moz-box-shadow: 0px 0px 1px 0px rgba(0, 63, 84, 0.29);
+	box-shadow: 0px 0px 1px 0px rgba(0, 63, 84, 0.29);
+}
+
+.mod-sellacious-cart .mod-cart-ul li > div:nth-child(odd) {
+	background: #ffffff;
+	height: 80px;
+	padding: 10px ;
+	color: #333;
+	margin: 10px 0;
+	white-space: normal;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	border-radius: 2px;
+	-webkit-box-shadow: 0px 0px 1px 0px rgba(0, 63, 84, 0.29);
+	-moz-box-shadow: 0px 0px 1px 0px rgba(0, 63, 84, 0.29);
+	box-shadow: 0px 0px 1px 0px rgba(0, 63, 84, 0.29);
+}
+
+.mod-sellacious-cart .mod-cart-ul li > div:last-child,
+.mod-sellacious-cart .mod-cart-ul li > div:last-child:hover,
+.mod-sellacious-cart .mod-cart-ul li > div:last-child:focus {
+	background: none;
+	color: #222222;
+}
+
+.mod-sellacious-cart .mod-cart-ul li > div:hover {
+	color: #000;
+}
+
+.mod-sellacious-cart .mod-cart-ul li > div:hover a {
+	color: #000;
+}
+
+.mod-sellacious-cart .mod-cart-ul li .quantity {
+	color: #049b04;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.mod-sellacious-cart .mod-cart-ul .mod-products-list .container:last-child {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	height: auto;
+}
+.mod-sellacious-cart .mod-cart-ul li .product_row {
+	float: left;
+	width: 100%;
+	line-height: 18px;
+	font-size: 13px;
+	margin: 2px 0;
+}
+
+.mod-sellacious-cart .mod-cart-ul .mod-products-list .container {
+	max-width: 100% !important;
+	height: auto;
+	padding: 10px;
+	margin: 8px 0;
+}
+
+.mod-sellacious-cart .mod-cart-ul li.mod-cart-show-btn button {
+	padding: 6px 12px;
+	border: none;
+}
+
+.mod-sellacious-cart .mod-cart-ul li.mod-cart-show-btn button:hover,
+.mod-sellacious-cart .mod-cart-ul li.mod-cart-show-btn button:focus {
+	color: #ffffff;
+	outline: 0;
+}
+
+.mod-sellacious-cart .mod-cart-ul li a {
+	color: #333;
+	overflow: hidden;
+	height: 100%;
+	display: table;
+}
+
+.mod-sellacious-cart .mod-cart-ul li a .prices  {
+	padding: 5px 0 0;
+	font-weight: 400;
+	color: #ff6800;
+}
+
+.mod-sellacious-cart .image-cart {
+	width: 50px;
+	float: left;
+}
+
+.mod-sellacious-cart .pro-title {
+	width: calc(100% - 50px);
+	float: left;
+	padding-left: 10px;
+}
+
+#headerinternal.header-internal .mod-sellacious-cart .mod-cart-container i {
+	display: inline-block;
+	font-size: 30px;
+	line-height: 48px;
+	color: #313131;
+	width: auto;
+	height: auto;
+	margin: 0;
+
+}
+
+#headerinternal.header-internal .mod-sellacious-cart .mod-cart-container span.mod-total-products {
+	top: 3px;
+	width: 20px;
+	background: #00c6ff;
+	border: 1.2px solid #fff;
+}
+
+@media (max-width: 480px) {
+	.mod-sellacious-cart .mod-cart-container {
+		padding: 0 14px 0 2px;
+	}
+
+	.mod-sellacious-cart .mod-cart-container span.mod-total-products {
+		right: 2px;
+	}
+
+}
+
+@media (max-width: 1199px){
+	.mod-sellacious-cart .dropdown-menu {
+		left: -117px;
+	}
+}
+
+@media (max-width: 410px){
+	.mod-sellacious-cart .dropdown-menu {
+		left: -78px;
+	}
+}
+
+.button-fixed-bottom-row .row {
+	margin: 0;
+}
+
+@media (max-width: 1550px) {
+	.mod-sellacious-cart .mod-cart-ul {
+		right: -300% !important;
+		left: unset;
+	}
+}
+
+@media (max-height: 620px) {
+	.modal-body .cart-product-list {
+		max-height: 350px;
+	}
+}

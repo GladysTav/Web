@@ -1,0 +1,222 @@
+/*navigator*/
+.sellacious-navigator {
+	position: fixed;
+	left: 0;
+	bottom: 30px;
+	z-index: 9999;
+}
+.sellacious-navigator .scroll-to-element {
+	cursor: pointer;
+}
+
+.sellacious-navigator .scroll-to-element a {
+	padding: 8px 0;
+	text-align: center;
+	border: 1px solid #ddd;
+	border-top: none;
+	font-size: 18px;
+	display: inline-block;
+	z-index: 100;
+	width: 35px;
+	height: 40px;
+	background: #fff;
+}
+
+.sellacious-navigator .scroll-to-element:first-of-type a {
+	border-top: 1px solid #ddd;
+}
+
+.sellacious-navigator .scroll-to-element .fa,
+.sellacious-navigator .scroll-to-element a{
+	color: rgb(158, 158, 158);
+}
+
+.sellacious-navigator .scroll-to-element span {
+	transition: 0.25s ease-in-out;
+	display: inline-block;
+	width: 150px;
+	position: absolute;
+	left: -150px;
+	padding: 7px;
+	border: 1px solid #ddd;
+	z-index: -1;
+	height: 40px;
+	top: 0;
+}
+
+.sellacious-navigator .scroll-to-element:hover .fa {
+	color: #d75909;
+}
+
+.scroll-to-element {
+	position: relative;
+}
+
+.scroll-to-element.active span,
+.scroll-to-element.active .fa {
+	color: #d75909;
+}
+
+.sellacious-navigator .scroll-to-element:hover span {
+	-webkit-transform: translate(184px,0);
+	-moz-transform: translate(184px,0);
+	-o-transform: translate(184px,0);
+	-ms-transform: translate(184px,0);
+	transform: translate(184px,0);
+	color: #d75909;
+	background: #fff;
+	border-left: none;
+}
+
+.sellacious-navigator .scroll-to-element:hover a {
+	border-right: none;
+}
+
+.sellacious-navigator.full-width .scroll-to-element a {
+	padding: 8px;
+	border: none;
+	font-size: 18px;
+	display: inline-block;
+	z-index: 100;
+	width: 35px;
+	height: 40px;
+	background: rgba(255,255,255, 0.9);
+}
+.sellacious-navigator.full-width .scroll-to-element:first-of-type a,
+.sellacious-navigator.full-width .scroll-to-element:first-of-type span {
+	border-top: 1px solid #ddd;
+}
+.sellacious-navigator.full-width .scroll-to-element:last-of-type a,
+.sellacious-navigator.full-width .scroll-to-element:last-of-type span {
+	border-bottom: 1px solid #ddd;
+}
+.sellacious-navigator.full-width .scroll-to-element span {
+	transition: 0.25s ease-in-out;
+	display: inline-block;
+	width: 100px;
+	left: 35px;
+	position: absolute;
+	padding: 7px;
+	padding-left: 0;
+	border: none;
+	z-index: -1;
+	height: 40px;
+	border-right: 1px solid #ddd;
+	background: rgba(255,255,255, 0.9);
+}
+.sellacious-navigator.full-width .scroll-to-element:hover span {
+	-webkit-transform: unset;
+	-moz-transform: unset;
+	-o-transform: unset;
+	-ms-transform: unset;
+	transform: unset;
+	color: #d75909;
+}
+.sellacious-navigator.full-width .scroll-to-element .fa {
+	font-size: 16px;
+}
+
+/*Fixed top*/
+
+.sellacious-navigator.fixed-top {
+	left: 0;
+	top: 0;
+	bottom: unset;
+	width: 100%;
+	background: #ffffff;
+	border-bottom: 1px solid rgb(235, 235, 235);
+	display: none;
+	z-index: 9999;
+}
+
+.sellacious-navigator.fixed-top .navigator-wrap{
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	overflow: hidden;
+	height: auto;
+	padding: 14px 0;
+}
+
+.sellacious-navigator.fixed-top .scroll-to-element {
+	float: left;
+}
+.sellacious-navigator.fixed-top .scroll-to-element a {
+	display: none;
+}
+
+
+.sellacious-navigator.fixed-top .scroll-to-element span {
+	left: unset;
+	position: unset;
+	border: none;
+	width: unset;
+	height: unset;
+	padding: unset;
+}
+
+.sellacious-navigator.fixed-top .scroll-to-element span:before {
+	content: ' · ';
+	font-weight: 600;
+	font-size: 14px;
+	color: #484848;
+	margin: 0 4px;
+}
+
+.sellacious-navigator.fixed-top .scroll-to-element:first-of-type span:before {
+	content: '';
+}
+
+.sellacious-navigator.fixed-top .scroll-to-element:hover span {
+	-webkit-transform: unset;
+	-moz-transform: unset;
+	-ms-transform: unset;
+	-o-transform: unset;
+	transform: unset;
+}
+
+@media(max-width: 768px) {
+	.sellacious-navigator.fixed-top .navigator-wrap {
+		padding: 7px 0;
+	}
+}
+
+/*Fixed top-centered*/
+
+.fixed-top.centered .navigator-wrap {
+	text-align: center;
+	padding: 0;
+	max-width: unset;
+}
+
+.fixed-top.centered .scroll-to-element {
+	float: unset;
+	display: inline-block;
+	padding: 5px 25px;
+}
+.fixed-top.centered .scroll-to-element span:before {
+	display: none;
+}
+
+.fixed-top.centered .scroll-to-element.active {
+	color: #000;
+}
+
+.active-line {
+	position: absolute;
+	height: 3px;
+	background-color: #d75909;
+	/*top: 42px;*/
+}
+
+@media (min-width: 650px) and (max-width: 991px) {
+	.fixed-top.centered .scroll-to-element {
+		padding: 10px 15px;
+	}
+}
+
+@media (max-width: 649px) {
+	.fixed-top.centered .scroll-to-element {
+		padding: 10px 5px;
+	}
+}

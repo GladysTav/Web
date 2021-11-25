@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" method="upgrade" group="sellaciousrules">
+	<name>PLG_SELLACIOUSRULES_PRODUCT</name>
+	<author>Izhar Aazmi</author>
+	<creationDate>April 08, 2020</creationDate>
+	<copyright>(C) 2012-2020 Bhartiy Web Technologies. All rights reserved.</copyright>
+	<license>GNU/GPL V2+</license>
+	<authorEmail>info@bhartiy.com</authorEmail>
+	<authorUrl>www.bhartiy.com</authorUrl>
+	<version>2.0.0-beta1</version>
+	<description>PLG_SELLACIOUSRULES_PRODUCT_DESCRIPTION</description>
+	<files>
+		<folder>forms</folder>
+		<folder>language</folder>
+		<folder>tmpl</folder>
+		<filename plugin="product">product.php</filename>
+	</files>
+	<media folder="media" destination="plg_sellaciousrules_product">
+		<folder>js</folder>
+	</media>
+	<config>
+		<fields name="plg_sellaciousrules_product">
+			<fieldset
+				name="plg_sellaciousrules_product"
+				label="PLG_SELLACIOUSRULES_PRODUCT_CONFIG_LABEL"
+				description="PLG_SELLACIOUSRULES_PRODUCT_CONFIG_DESC">
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+		<server type="extension" name="Sellacious Updates - plg_sellaciousrules_product">http://sellacious.com/release/updates/v1.6/plg_sellaciousrules_product.xml</server>
+	</updateservers>
+</extension>

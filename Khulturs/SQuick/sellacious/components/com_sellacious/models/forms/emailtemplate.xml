@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="basic" label="COM_SELLACIOUS_EMAILTEMPLATE_FIELDSET_BASIC">
+		<field
+			name="context"
+			type="emailContext"
+			label="COM_SELLACIOUS_EMAILTEMPLATE_FIELD_EMAIL_CONTEXT_LABEL"
+			description="COM_SELLACIOUS_EMAILTEMPLATE_FIELD_EMAIL_CONTEXT_DESC"
+			class="inputbox"
+			required="true"
+			onchange="this.form.submit();"
+		/>
+		<field
+			name="short_codes"
+			type="TemplateVariables"
+			class="padding-10"
+		/>
+	</fieldset>
+	<fields name="handlers">
+		<!-- To be injected here -->
+	</fields>
+</form>

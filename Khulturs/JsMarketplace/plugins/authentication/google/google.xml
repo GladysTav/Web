@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.2" type="plugin" group="authentication" method="upgrade">
+    <name>Authentication - Google login</name>
+    <author>Not Web Design</author>
+    <creationDate>2016</creationDate>
+    <copyright>Copyright (C) 2011 Not Web Design- All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>info@notwebdesign.com</authorEmail>
+    <authorUrl>http://www.notwebdesign.com</authorUrl>
+    <version>1.0.9</version>
+    <description>Authentication using Google account</description>
+    <files>
+        <filename plugin="google">google.php</filename>
+        <filename>index.html</filename>
+        <folder>lib</folder>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="authentication" label="Authentication">
+                <field name="client_id" type="text" label="Client ID" description="" required="true"/>
+                <field name="client_secret" type="text" label="Client Secret" description="" required="true"/>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

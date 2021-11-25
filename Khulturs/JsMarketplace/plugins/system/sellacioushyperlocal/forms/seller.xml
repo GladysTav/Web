@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="seller">
+		<fieldset name="hyperlocal" label="PLG_SYSTEM_SELLACIOUSHYPERLOCAL_FIELDSET_HYPERLOCAL">
+			<field
+				type="note"
+				name="unit_conversion_note"
+				class="alert alert-info"
+				heading="h5"
+				label=""
+				description="PLG_SYSTEM_SELLACIOUSHYPERLOCAL_UNIT_CONVERSION_NOTE_DESC"
+			/>
+			<fields name="hyperlocal">
+				<field
+					name="shipping_location_type"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					label="PLG_SYSTEM_SELLACIOUSHYPERLOCAL_FIELD_SHIPPING_LOCATION_TYPE_LABEL"
+					description="PLG_SYSTEM_SELLACIOUSHYPERLOCAL_FIELD_SHIPPING_LOCATION_TYPE_DESC"
+					default="1"
+				>
+					<option value="1">PLG_SYSTEM_SELLACIOUSHYPERLOCAL_SHIPPING_LOCATION_TYPE_BY_AVAILABILITY</option>
+					<option value="2">PLG_SYSTEM_SELLACIOUSHYPERLOCAL_SHIPPING_LOCATION_TYPE_BY_DISTANCE</option>
+				</field>
+				<field
+					name="shipping_distance"
+					type="unitcombo"
+					label="PLG_SYSTEM_SELLACIOUSHYPERLOCAL_FIELD_SHIPPING_DISTANCE_LABEL"
+					description="PLG_SYSTEM_SELLACIOUSHYPERLOCAL_FIELD_SHIPPING_DISTANCE_DESC"
+					class="inputbox small-input"
+					unit_group="length"
+					clientId="0"
+				/>
+				<field
+					name="id"
+					type="hidden"
+				/>
+			</fields>
+			<fields name="shipping_geo">
+				<field
+					name="shipping_geo_group"
+					type="fieldgroup"
+					label="COM_SELLACIOUS_PROFILE_FIELD_SHIPPING_LOCATIONS_LABEL"
+					description="COM_SELLACIOUS_PROFILE_FIELD_SHIPPING_LOCATIONS_DESC"
+				/>
+				<field
+					name="country"
+					type="location"
+					label="COM_SELLACIOUS_PROFILE_FIELD_SHIPPING_COUNTRIES_LABEL"
+					description="COM_SELLACIOUS_PROFILE_FIELD_SHIPPING_COUNTRIES_DESC"
+					class="w100p"
+					autocomple="off"
+					multiple="true"
+					address_type="shipping"
+					gl_type="country"
+					rel=""
+				/>
+				<field
+					name="state"
+					type="location"
+					label="COM_SELLACIOUS_PROFILE_FIELD_SHIPPING_STATES_LABEL"
+					description="COM_SELLACIOUS_PROFILE_FIELD_SHIPPING_STATES_DESC"
+					class="w100p"
+					autocomple="off"
+					multiple="true"
+					address_type="shipping"
+					gl_type="state"
+					rel=""
+				/>
+				<field
+					name="district"
+					type="location"
+					label="COM_SELLACIOUS_PROFILE_FIELD_SHIPPING_DISTRICTS_LABEL"
+					description="COM_SELLACIOUS_PROFILE_FIELD_SHIPPING_DISTRICTS_DESC"
+					class="w100p"
+					autocomple="off"
+					multiple="true"
+					address_type="shipping"
+					gl_type="district"
+					rel=""
+				/>
+				<field
+					name="zip"
+					type="location"
+					label="COM_SELLACIOUS_PROFILE_FIELD_SHIPPING_ZIPS_LABEL"
+					description="COM_SELLACIOUS_PROFILE_FIELD_SHIPPING_ZIPS_DESC"
+					class="w100p"
+					autocomple="off"
+					multiple="true"
+					address_type="shipping"
+					gl_type="zip"
+					rel=""
+				/>
+			</fields>
+			<field
+				name="seller_timings_group"
+				type="fieldgroup"
+				label="PLG_SYSTEM_SELLACIOUSHYPERLOCAL_FIELD_SELLER_TIMINGS_GROUP_LABEL"
+				description="PLG_SYSTEM_SELLACIOUSHYPERLOCAL_FIELD_SELLER_TIMINGS_GROUP_DESC"
+			/>
+			<field
+				name="timings"
+				type="timings"
+				label="PLG_SYSTEM_SELLACIOUSHYPERLOCAL_FIELD_TIMINGS_LABEL"
+				description="PLG_SYSTEM_SELLACIOUSHYPERLOCAL_FIELD_TIMINGS_DESC"
+				fullwidth="true"
+			/>
+			<field
+				name="delivery_hours"
+				type="timings"
+				label="PLG_SYSTEM_SELLACIOUSHYPERLOCAL_FIELD_DELIVERY_HOURS_LABEL"
+				description="PLG_SYSTEM_SELLACIOUSHYPERLOCAL_FIELD_DELIVERY_HOURS_DESC"
+				fullwidth="true"
+			/>
+			<field
+				name="pickup_hours"
+				type="timings"
+				label="PLG_SYSTEM_SELLACIOUSHYPERLOCAL_FIELD_PICKUP_HOURS_LABEL"
+				description="PLG_SYSTEM_SELLACIOUSHYPERLOCAL_FIELD_PICKUP_HOURS_DESC"
+				fullwidth="true"
+			/>
+
+			<field
+				name="store_group"
+				type="fieldgroup"
+				label="PLG_SYSTEM_SELLACIOUSHYPERLOCAL_FIELD_STORE_GROUP_LABEL"
+				description="PLG_SYSTEM_SELLACIOUSHYPERLOCAL_FIELD_STORE_GROUP_DESC"
+			/>
+
+			<fields name="hyperlocal">
+				<fields name="params">
+					<field
+						name="show_store_availability"
+						type="radio"
+						label="PLG_SYSTEM_SELLACIOUSHYPERLOCAL_FIELD_SHOW_STORE_AVAILABILITY_LABEL"
+						description="PLG_SYSTEM_SELLACIOUSHYPERLOCAL_FIELD_SHOW_STORE_AVAILABILITY_DESC"
+						class="btn-group btn-group-yesno"
+						default="1"
+					>
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+					</field>
+
+					<field
+						name="show_delivery_availability"
+						type="radio"
+						label="PLG_SYSTEM_SELLACIOUSHYPERLOCAL_FIELD_SHOW_DELIVERY_AVAILABILITY_LABEL"
+						description="PLG_SYSTEM_SELLACIOUSHYPERLOCAL_FIELD_SHOW_DELIVERY_AVAILABILITY_DESC"
+						class="btn-group btn-group-yesno"
+						default="1"
+					>
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+					</field>
+
+					<field
+						name="show_pickup_availability"
+						type="radio"
+						label="PLG_SYSTEM_SELLACIOUSHYPERLOCAL_FIELD_SHOW_PICKUP_AVAILABILITY_LABEL"
+						description="PLG_SYSTEM_SELLACIOUSHYPERLOCAL_FIELD_SHOW_PICKUP_AVAILABILITY_DESC"
+						class="btn-group btn-group-yesno"
+						default="1"
+					>
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+					</field>
+
+					<field
+						name="show_store_timings"
+						type="radio"
+						label="PLG_SYSTEM_SELLACIOUSHYPERLOCAL_FIELD_SHOW_STORE_TIMINGS_LABEL"
+						description="PLG_SYSTEM_SELLACIOUSHYPERLOCAL_FIELD_SHOW_STORE_TIMINGS_DESC"
+						class="btn-group btn-group-yesno"
+						default="1"
+					>
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+					</field>
+
+					<field
+						name="show_delivery_timings"
+						type="radio"
+						label="PLG_SYSTEM_SELLACIOUSHYPERLOCAL_FIELD_SHOW_DELIVERY_TIMINGS_LABEL"
+						description="PLG_SYSTEM_SELLACIOUSHYPERLOCAL_FIELD_SHOW_DELIVERY_TIMINGS_DESC"
+						class="btn-group btn-group-yesno"
+						default="1"
+					>
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+					</field>
+
+					<field
+						name="show_pickup_timings"
+						type="radio"
+						label="PLG_SYSTEM_SELLACIOUSHYPERLOCAL_FIELD_SHOW_PICKUP_TIMINGS_LABEL"
+						description="PLG_SYSTEM_SELLACIOUSHYPERLOCAL_FIELD_SHOW_PICKUP_TIMINGS_DESC"
+						class="btn-group btn-group-yesno"
+						default="1"
+					>
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+					</field>
+
+					<field
+						name="slot_window"
+						type="timecombo"
+						label="PLG_SYSTEM_SELLACIOUSHYPERLOCAL_FIELD_TIMINGS_SLOT_WINDOW_LABEL"
+						description="PLG_SYSTEM_SELLACIOUSHYPERLOCAL_FIELD_TIMINGS_SLOT_WINDOW_DESC"
+						class="inputbox tiny-input"
+					/>
+
+					<field
+						name="today_availability"
+						type="list"
+						class="tiny-input w30p"
+						label="PLG_SYSTEM_SELLACIOUSHYPERLOCAL_FIELD_TIMINGS_TODAY_AVAILABILITY_LABEL"
+						description="PLG_SYSTEM_SELLACIOUSHYPERLOCAL_FIELD_TIMINGS_TODAY_AVAILABILITY_DESC"
+						default="12:00 AM"
+					>
+						<option value="12:00 AM">12:00 AM</option>
+						<option value="12:15 AM">12:15 AM</option>
+						<option value="12:30 AM">12:30 AM</option>
+						<option value="12:45 AM">12:45 AM</option>
+						<option value="01:00 AM">01:00 AM</option>
+						<option value="01:15 AM">01:15 AM</option>
+						<option value="01:30 AM">01:30 AM</option>
+						<option value="01:45 AM">01:45 AM</option>
+						<option value="02:00 AM">02:00 AM</option>
+						<option value="02:15 AM">02:15 AM</option>
+						<option value="02:30 AM">02:30 AM</option>
+						<option value="02:45 AM">02:45 AM</option>
+						<option value="03:00 AM">03:00 AM</option>
+						<option value="03:15 AM">03:15 AM</option>
+						<option value="03:30 AM">03:30 AM</option>
+						<option value="03:45 AM">03:45 AM</option>
+						<option value="04:00 AM">04:00 AM</option>
+						<option value="04:15 AM">04:15 AM</option>
+						<option value="04:30 AM">04:30 AM</option>
+						<option value="04:45 AM">04:45 AM</option>
+						<option value="05:00 AM">05:00 AM</option>
+						<option value="05:15 AM">05:15 AM</option>
+						<option value="05:30 AM">05:30 AM</option>
+						<option value="05:45 AM">05:45 AM</option>
+						<option value="06:00 AM">06:00 AM</option>
+						<option value="06:15 AM">06:15 AM</option>
+						<option value="06:30 AM">06:30 AM</option>
+						<option value="06:45 AM">06:45 AM</option>
+						<option value="07:00 AM">07:00 AM</option>
+						<option value="07:15 AM">07:15 AM</option>
+						<option value="07:30 AM">07:30 AM</option>
+						<option value="07:45 AM">07:45 AM</option>
+						<option value="08:00 AM">08:00 AM</option>
+						<option value="08:15 AM">08:15 AM</option>
+						<option value="08:30 AM">08:30 AM</option>
+						<option value="08:45 AM">08:45 AM</option>
+						<option value="09:00 AM">09:00 AM</option>
+						<option value="09:15 AM">09:15 AM</option>
+						<option value="09:30 AM">09:30 AM</option>
+						<option value="09:45 AM">09:45 AM</option>
+						<option value="10:00 AM">10:00 AM</option>
+						<option value="10:15 AM">10:15 AM</option>
+						<option value="10:30 AM">10:30 AM</option>
+						<option value="10:45 AM">10:45 AM</option>
+						<option value="11:00 AM">11:00 AM</option>
+						<option value="11:15 AM">11:15 AM</option>
+						<option value="11:30 AM">11:30 AM</option>
+						<option value="11:45 AM">11:45 AM</option>
+						<option value="12:00 PM">12:00 PM</option>
+						<option value="12:15 PM">12:15 PM</option>
+						<option value="12:30 PM">12:30 PM</option>
+						<option value="12:45 PM">12:45 PM</option>
+						<option value="01:00 PM">01:00 PM</option>
+						<option value="01:15 PM">01:15 PM</option>
+						<option value="01:30 PM">01:30 PM</option>
+						<option value="01:45 PM">01:45 PM</option>
+						<option value="02:00 PM">02:00 PM</option>
+						<option value="02:15 PM">02:15 PM</option>
+						<option value="02:30 PM">02:30 PM</option>
+						<option value="02:45 PM">02:45 PM</option>
+						<option value="03:00 PM">03:00 PM</option>
+						<option value="03:15 PM">03:15 PM</option>
+						<option value="03:30 PM">03:30 PM</option>
+						<option value="03:45 PM">03:45 PM</option>
+						<option value="04:00 PM">04:00 PM</option>
+						<option value="04:15 PM">04:15 PM</option>
+						<option value="04:30 PM">04:30 PM</option>
+						<option value="04:45 PM">04:45 PM</option>
+						<option value="05:00 PM">05:00 PM</option>
+						<option value="05:15 PM">05:15 PM</option>
+						<option value="05:30 PM">05:30 PM</option>
+						<option value="05:45 PM">05:45 PM</option>
+						<option value="06:00 PM">06:00 PM</option>
+						<option value="06:15 PM">06:15 PM</option>
+						<option value="06:30 PM">06:30 PM</option>
+						<option value="06:45 PM">06:45 PM</option>
+						<option value="07:00 PM">07:00 PM</option>
+						<option value="07:15 PM">07:15 PM</option>
+						<option value="07:30 PM">07:30 PM</option>
+						<option value="07:45 PM">07:45 PM</option>
+						<option value="08:00 PM">08:00 PM</option>
+						<option value="08:15 PM">08:15 PM</option>
+						<option value="08:30 PM">08:30 PM</option>
+						<option value="08:45 PM">08:45 PM</option>
+						<option value="09:00 PM">09:00 PM</option>
+						<option value="09:15 PM">09:15 PM</option>
+						<option value="09:30 PM">09:30 PM</option>
+						<option value="09:45 PM">09:45 PM</option>
+						<option value="10:00 PM">10:00 PM</option>
+						<option value="10:15 PM">10:15 PM</option>
+						<option value="10:30 PM">10:30 PM</option>
+						<option value="10:45 PM">10:45 PM</option>
+						<option value="11:00 PM">11:00 PM</option>
+						<option value="11:15 PM">11:15 PM</option>
+						<option value="11:30 PM">11:30 PM</option>
+						<option value="11:45 PM">11:45 PM</option>
+					</field>
+
+					<field
+						name="slot_limit"
+						type="number"
+						label="PLG_SYSTEM_SELLACIOUSHYPERLOCAL_FIELD_TIMINGS_SLOT_LIMIT_LABEL"
+						description="PLG_SYSTEM_SELLACIOUSHYPERLOCAL_FIELD_TIMINGS_SLOT_LIMIT_DESC"
+						default="0"
+						min="0"
+						class="inputbox tiny-input"
+					/>
+
+					<field
+						name="delivery_prep_time"
+						type="timecombo"
+						label="PLG_SYSTEM_SELLACIOUSHYPERLOCAL_FIELD_TIMINGS_DELIVERY_PREP_TIME_LABEL"
+						description="PLG_SYSTEM_SELLACIOUSHYPERLOCAL_FIELD_TIMINGS_DELIVERY_PREP_TIME_DESC"
+						class="inputbox tiny-input"
+					/>
+				</fields>
+			</fields>
+		</fieldset>
+	</fields>
+</form>

@@ -23,7 +23,7 @@ $langues = array(
 	'NoFirst' => 'İlk Sanal Ana Makine, <code> %s </code> dosyasında <code> localhost </code> olmalıdır',
 	'ServerNameInvalid' => 'SunucuAdı <code> %s </code> geçersiz.',
 	'LocalIpInvalid' => 'Yerel IP <code> %s </code> geçersiz.',
-	'VirtualHostName' => 'Lütfen Türkçe karakter , özel karakter , boşluk ve alt çizgi kullanmayınız.',
+	'VirtualHostName' => 'Lütfen boşluk ve alt çizgi kullanmayınız.',
 	'VirtualHostFolder' => 'Sanal Ana Bilgisayar klasörünün  örnek olarak bu şekilde olabilir: C:/wamp/www/project/ yada E:/www/site1/ </i>',
 	'VirtualHostIP' => '<code class="option"> </code> Sanal Ana Bilgisayarı IP ile kullanmak istiyorsanız: <code class="option"> yerel IP </code> 127.x.y.z',
 	'VirtualHostPort' => '<code class="option">If</code>If you want to use "Listen port" other than the default <code class="option">Accepted ports</code> %s',

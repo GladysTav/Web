@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="system" method="upgrade">
+	<name>PLG_SYSTEM_SELLACIOUSGST</name>
+	<author>Aditya Chakraborty</author>
+	<creationDate>April 07, 2020</creationDate>
+	<copyright>Copyright (C) 2012-2020 Bhartiy Web Technologies. All rights reserved.</copyright>
+	<license>GNU/GPL V2+</license>
+	<authorEmail>info@bhartiy.com</authorEmail>
+	<authorUrl>www.bhartiy.com</authorUrl>
+	<version>2.0.0-beta1</version>
+	<description>PLG_SYSTEM_SELLACIOUSGST_DESC</description>
+	<install>
+		<sql>
+			<file driver="mysqli" charset="utf8">sql/plg_system_sellaciousgst.install.mysqli.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysqli" charset="utf8">sql/plg_system_sellaciousgst.uninstall.mysqli.sql</file>
+		</sql>
+	</uninstall>
+	<files>
+		<filename plugin="sellaciousgst">sellaciousgst.php</filename>
+		<folder>language</folder>
+		<folder>forms</folder>
+		<folder>tables</folder>
+		<folder>sql</folder>
+	</files>
+	<config>
+		<fields name="plg_system_sellaciousgst">
+			<fieldset name="com_sellacious_shop" label="PLG_SYSTEM_SELLACIOUSGST_CONFIG_FIELDSET_SHOP_LABEL">
+				<field
+					type="fieldgroup"
+					name="shop_fieldgroup_gst"
+					label="PLG_SYSTEM_SELLACIOUSGST_CONFIG_FIELDSET_SHOP_GST_LABEL"
+				/>
+				<field
+					name="gst_num"
+					type="text"
+					label="PLG_SYSTEM_SELLACIOUSGST_CONFIG_GST_NUM_LABEL"
+					description="PLG_SYSTEM_SELLACIOUSGST_CONFIG_GST_NUM_DESC"
+					class="inputbox medium-input"
+				/>
+				<field
+					name="pan_num"
+					type="text"
+					label="PLG_SYSTEM_SELLACIOUSGST_CONFIG_PAN_NUM_LABEL"
+					description="PLG_SYSTEM_SELLACIOUSGST_CONFIG_PAN_NUM_DESC"
+					class="inputbox medium-input"
+				/>
+				<field
+					name="ask_buyer_gst"
+					type="radioswitch"
+					label="PLG_SYSTEM_SELLACIOUSGST_CONFIG_ASK_BUYER_GST_LABEL"
+					description="PLG_SYSTEM_SELLACIOUSGST_CONFIG_ASK_BUYER_GST_DESC"
+					default="0"
+					class="inputbox medium-input"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+			<fieldset
+				name="com_sellacious_layout"
+				label="PLG_SYSTEM_SELLACIOUSGST_CONFIG_FIELDSET_LAYOUT_LABEL">
+				<field
+					type="fieldgroup"
+					name="layout_fieldgroup_gst"
+					label="PLG_SYSTEM_SELLACIOUSGST_CONFIG_FIELDSET_LAYOUT_GST_LABEL"
+				/>
+				<field
+					name="hsn_sac_display"
+					type="checkboxes"
+					label="PLG_SYSTEM_SELLACIOUSGST_CONFIG_FIELD_HSN_SAC_DISPLAY_LABEL"
+					description="PLG_SYSTEM_SELLACIOUSGST_CONFIG_FIELD_HSN_SAC_DISPLAY_DESC">
+					<option value="product">PLG_SYSTEM_SELLACIOUSGST_CONFIG_FIELD_PAGE_CHOICE_PRODUCT</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

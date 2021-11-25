@@ -13,7 +13,7 @@ $langues = array(
 	'NotCleaned' => 'O arquivo <code>%s</code> não foi entendido. Siga os exemplos de VirtualHost como: dummy-host.example.com',
 	'NoVirtualHost' => 'Não há VirtualHost definida em <code>%s</code><br> Ele deve ter pelo menos o VirtualHost para localhost.',		'NoFirst' => 'The first VirtualHost must be <code>localhost</code> in <code>%s</code> file',
 	'ServerNameInvalid' => 'O ServerName <code>%s</code> é Inválido.',
-	'VirtualHostName' => 'Digite o Nome do <code>Virtual Host</code> Sem characteres especiais (éçëñ) - Sem espaços - Sem underscore(_)',
+	'VirtualHostName' => 'Digite o Nome do <code>Virtual Host</code> Sem espaços - Sem underscore(_)',
 	'VirtualHostFolder' => 'Digite o <code>path</code> Caminho Completo do <code>Diretorio</code> do VirtualHost. <i>Exemplos: C:/wamp/www/projet/ ou E:/www/site1/</i>',
 	'VirtualAlreadyExist' => 'O ServerName <code>%s</code> já existe.',
 	'VirtualHostExists' => 'VirtualHost já definidos:',

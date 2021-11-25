@@ -1,0 +1,42 @@
+#
+#<?php die('Forbidden.'); ?>
+#Date: 2019-04-22 10:04:04 UTC
+#Software: Joomla Platform 13.1.0 Stable [ Curiosity ] 24-Apr-2013 00:00 GMT
+
+#Fields: datetime	priority clientip	category	message
+2019-04-22T10:04:04+00:00	CRITICAL ::1	error	Uncaught \Throwable of type Joomla\CMS\Router\Exception\RouteNotFoundException thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/components/com_sellacious/router.php(409): SellaciousRouter->parseCategoriesSegments(Array, Array)
+#1 /Users/codeacious3/Sites/sellacious/libraries/src/Router/SiteRouter.php(437): SellaciousRouter->parse(Array)
+#2 /Users/codeacious3/Sites/sellacious/libraries/src/Router/Router.php(482): Joomla\CMS\Router\SiteRouter->parseSefRoute(Object(Joomla\CMS\Uri\Uri))
+#3 /Users/codeacious3/Sites/sellacious/libraries/src/Router/Router.php(227): Joomla\CMS\Router\Router->_parseSefRoute(Object(Joomla\CMS\Uri\Uri))
+#4 /Users/codeacious3/Sites/sellacious/libraries/src/Router/SiteRouter.php(138): Joomla\CMS\Router\Router->parse(Object(Joomla\CMS\Uri\Uri))
+#5 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(1074): Joomla\CMS\Router\SiteRouter->parse(Object(Joomla\CMS\Uri\Uri))
+#6 /Users/codeacious3/Sites/sellacious/libraries/src/Application/SiteApplication.php(796): Joomla\CMS\Application\CMSApplication->route()
+#7 /Users/codeacious3/Sites/sellacious/libraries/src/Application/SiteApplication.php(218): Joomla\CMS\Application\SiteApplication->route()
+#8 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(196): Joomla\CMS\Application\SiteApplication->doExecute()
+#9 /Users/codeacious3/Sites/sellacious/index.php(49): Joomla\CMS\Application\CMSApplication->execute()
+#10 {main}
+2019-04-22T10:04:05+00:00	CRITICAL ::1	error	Uncaught \Throwable of type Joomla\CMS\Router\Exception\RouteNotFoundException thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/components/com_sellacious/router.php(409): SellaciousRouter->parseCategoriesSegments(Array, Array)
+#1 /Users/codeacious3/Sites/sellacious/libraries/src/Router/SiteRouter.php(437): SellaciousRouter->parse(Array)
+#2 /Users/codeacious3/Sites/sellacious/libraries/src/Router/Router.php(482): Joomla\CMS\Router\SiteRouter->parseSefRoute(Object(Joomla\CMS\Uri\Uri))
+#3 /Users/codeacious3/Sites/sellacious/libraries/src/Router/Router.php(227): Joomla\CMS\Router\Router->_parseSefRoute(Object(Joomla\CMS\Uri\Uri))
+#4 /Users/codeacious3/Sites/sellacious/libraries/src/Router/SiteRouter.php(138): Joomla\CMS\Router\Router->parse(Object(Joomla\CMS\Uri\Uri))
+#5 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(1074): Joomla\CMS\Router\SiteRouter->parse(Object(Joomla\CMS\Uri\Uri))
+#6 /Users/codeacious3/Sites/sellacious/libraries/src/Application/SiteApplication.php(796): Joomla\CMS\Application\CMSApplication->route()
+#7 /Users/codeacious3/Sites/sellacious/libraries/src/Application/SiteApplication.php(218): Joomla\CMS\Application\SiteApplication->route()
+#8 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(196): Joomla\CMS\Application\SiteApplication->doExecute()
+#9 /Users/codeacious3/Sites/sellacious/index.php(49): Joomla\CMS\Application\CMSApplication->execute()
+#10 {main}
+2019-04-22T10:10:26+00:00	CRITICAL ::1	error	Uncaught \Throwable of type JException thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/libraries/legacy/error/error.php(277): JError::raise(1, 404, 'Category not fo...', NULL, true)
+#1 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/View/CategoryView.php(133): JError::raiseError(404, 'Category not fo...')
+#2 /Users/codeacious3/Sites/sellacious/components/com_content/views/category/view.html.php(75): Joomla\CMS\MVC\View\CategoryView->commonCategoryDisplay()
+#3 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(672): ContentViewCategory->display()
+#4 /Users/codeacious3/Sites/sellacious/components/com_content/controller.php(118): Joomla\CMS\MVC\Controller\BaseController->display(false, Array)
+#5 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(710): ContentController->display()
+#6 /Users/codeacious3/Sites/sellacious/components/com_content/content.php(43): Joomla\CMS\MVC\Controller\BaseController->execute('')
+#7 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#8 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#9 /Users/codeacious3/Sites/sellacious/libraries/src/Application/SiteApplication.php(194): Joomla\CMS\Component\ComponentHelper::renderComponent('com_content')
+#10 /Users/codeacious3/Sites/sellacious/libraries/src/Application/SiteApplication.php(233): Joomla\CMS\Application\SiteApplication->dispatch()
+#11 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(196): Joomla\CMS\Application\SiteApplication->doExecute()
+#12 /Users/codeacious3/Sites/sellacious/index.php(49): Joomla\CMS\Application\CMSApplication->execute()
+#13 {main}

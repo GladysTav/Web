@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="basic" label="COM_SELLACIOUS_TRANSACTION_FIELDSET_ADDFUND"
+		addfieldpath="/sellacious/components/com_sellacious/models/fields">
+		<field
+			name="reason"
+			type="hidden"
+			default="addfund.gateway"
+		/>
+		<field
+			name="user_id"
+			type="hidden"
+		/>
+		<field
+			name="payment_method_id"
+			type="hidden"
+		/>
+		<field
+			name="amount"
+			type="money"
+			label="COM_SELLACIOUS_TRANSACTION_FIELD_AMOUNT_LABEL"
+			description="COM_SELLACIOUS_TRANSACTION_FIELD_AMOUNT_DESC"
+			class="inputbox"
+			required="true"
+			validate="money"
+			filter="float"
+			sign="GTZ"
+			/>
+		<field
+			name="user_notes"
+			type="textarea"
+			label="COM_SELLACIOUS_TRANSACTION_FIELD_USER_NOTES_LABEL"
+			description="COM_SELLACIOUS_TRANSACTION_FIELD_USER_NOTES_DESC"
+			class="textarea"
+			required="true"
+			rows="3"
+			/>
+	</fieldset>
+</form>

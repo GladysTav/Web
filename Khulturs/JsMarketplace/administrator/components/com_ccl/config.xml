@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <fieldset label="COM_CCL" name="ccl">
+        <field name="after_login_route" type="text" label="COM_CCL_CONFIG_FORM_LBL_AFTER_LOGIN_ROUTE"
+               description="COM_CCL_CONFIG_FORM_DESC_AFTER_LOGIN_ROUTE" default="index.php"/>
+        <field name="note11" type="note" label="COM_CCL_CONFIG_AFTER_LOGIN_ROUTE_NOTE"/>
+        <field name="after_login_menu_item" type="menuitem" label="COM_CCL_CONFIG_FORM_LBL_AFTER_LOGIN_MENU_ITEM"/>
+        <field name="allow_registration" type="radio" class="btn-group btn-group-yesno" default="1"
+               label="COM_CCL_CONFIG_FORM_LBL_ALLOWED_REGISTRATION">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+    </fieldset>
+</config>

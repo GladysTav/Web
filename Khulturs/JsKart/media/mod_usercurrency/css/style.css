@@ -1,0 +1,45 @@
+/**
+ * @version     2.0.0
+ * @package     sellacious
+ *
+ * @copyright   Copyright (C) 2012-2020 Bhartiy Web Technologies. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @author      Izhar Aazmi <info@bhartiy.com> - http://www.bhartiy.com
+ */
+
+.mod_usercurrency_module {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.mod_usercurrency_module .mod_usercurrency_title {
+  display: inline-block;
+}
+
+.mod_usercurrency_module #mod_usercurrency_block {
+  display: inline-block;
+  margin: 0;
+}
+
+.mod_usercurrency_module #mod_usercurrency_block .mod_usercurrency {
+  position: relative;
+  width: auto;
+  z-index: 1001;
+}
+
+.mod_usercurrency_module .select2-container .select2-choice {
+  width: 75px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background-image: unset;
+  background-color: transparent;
+}
+.mod_usercurrency_module .mod_usercurrency .select2-container .select2-choice .select2-arrow {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background: transparent;
+  border-left: unset;
+}

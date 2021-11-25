@@ -1,0 +1,50 @@
+#
+#<?php die('Forbidden.'); ?>
+#Date: 2019-06-07 03:59:41 UTC
+#Software: Joomla Platform 13.1.0 Stable [ Curiosity ] 24-Apr-2013 00:00 GMT
+
+#Fields: datetime	priority clientip	category	message
+2019-06-07T03:59:41+00:00	CRITICAL ::1	error	Uncaught \Throwable of type Exception thrown. Stack trace: #0 /Users/codeacious3/Sites/lab-jsmarketplace/libraries/src/MVC/Controller/BaseController.php(621): Joomla\CMS\MVC\Controller\BaseController->getView('login', 'json', 'loginView', Array)
+#1 /Users/codeacious3/Sites/lab-jsmarketplace/sellacious/components/com_login/controller.php(42): Joomla\CMS\MVC\Controller\BaseController->display(false, NULL)
+#2 /Users/codeacious3/Sites/lab-jsmarketplace/libraries/src/MVC/Controller/BaseController.php(710): LoginController->display()
+#3 /Users/codeacious3/Sites/lab-jsmarketplace/sellacious/components/com_login/login.php(21): Joomla\CMS\MVC\Controller\BaseController->execute('')
+#4 /Users/codeacious3/Sites/lab-jsmarketplace/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#5 /Users/codeacious3/Sites/lab-jsmarketplace/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#6 /Users/codeacious3/Sites/lab-jsmarketplace/sellacious/includes/libraries/application.php(205): Joomla\CMS\Component\ComponentHelper::renderComponent('com_login')
+#7 /Users/codeacious3/Sites/lab-jsmarketplace/sellacious/includes/libraries/application.php(250): JApplicationSellacious->dispatch()
+#8 /Users/codeacious3/Sites/lab-jsmarketplace/libraries/src/Application/CMSApplication.php(196): JApplicationSellacious->doExecute()
+#9 /Users/codeacious3/Sites/lab-jsmarketplace/sellacious/index.php(43): Joomla\CMS\Application\CMSApplication->execute()
+#10 {main}
+2019-06-07T04:07:30+00:00	CRITICAL ::1	error	Uncaught \Throwable of type Exception thrown. Stack trace: #0 /Users/codeacious3/Sites/lab-jsmarketplace/libraries/src/MVC/Controller/BaseController.php(621): Joomla\CMS\MVC\Controller\BaseController->getView('login', 'json', 'loginView', Array)
+#1 /Users/codeacious3/Sites/lab-jsmarketplace/sellacious/components/com_login/controller.php(42): Joomla\CMS\MVC\Controller\BaseController->display(false, NULL)
+#2 /Users/codeacious3/Sites/lab-jsmarketplace/libraries/src/MVC/Controller/BaseController.php(710): LoginController->display()
+#3 /Users/codeacious3/Sites/lab-jsmarketplace/sellacious/components/com_login/login.php(21): Joomla\CMS\MVC\Controller\BaseController->execute('')
+#4 /Users/codeacious3/Sites/lab-jsmarketplace/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#5 /Users/codeacious3/Sites/lab-jsmarketplace/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#6 /Users/codeacious3/Sites/lab-jsmarketplace/sellacious/includes/libraries/application.php(205): Joomla\CMS\Component\ComponentHelper::renderComponent('com_login')
+#7 /Users/codeacious3/Sites/lab-jsmarketplace/sellacious/includes/libraries/application.php(250): JApplicationSellacious->dispatch()
+#8 /Users/codeacious3/Sites/lab-jsmarketplace/libraries/src/Application/CMSApplication.php(196): JApplicationSellacious->doExecute()
+#9 /Users/codeacious3/Sites/lab-jsmarketplace/sellacious/index.php(43): Joomla\CMS\Application\CMSApplication->execute()
+#10 {main}
+2019-06-07T04:13:26+00:00	CRITICAL ::1	error	Uncaught \Throwable of type Exception thrown. Stack trace: #0 /Users/codeacious3/Sites/lab-jsmarketplace/libraries/src/MVC/Controller/BaseController.php(621): Joomla\CMS\MVC\Controller\BaseController->getView('login', 'json', 'loginView', Array)
+#1 /Users/codeacious3/Sites/lab-jsmarketplace/sellacious/components/com_login/controller.php(42): Joomla\CMS\MVC\Controller\BaseController->display(false, NULL)
+#2 /Users/codeacious3/Sites/lab-jsmarketplace/libraries/src/MVC/Controller/BaseController.php(710): LoginController->display()
+#3 /Users/codeacious3/Sites/lab-jsmarketplace/sellacious/components/com_login/login.php(21): Joomla\CMS\MVC\Controller\BaseController->execute('')
+#4 /Users/codeacious3/Sites/lab-jsmarketplace/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#5 /Users/codeacious3/Sites/lab-jsmarketplace/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#6 /Users/codeacious3/Sites/lab-jsmarketplace/sellacious/includes/libraries/application.php(205): Joomla\CMS\Component\ComponentHelper::renderComponent('com_login')
+#7 /Users/codeacious3/Sites/lab-jsmarketplace/sellacious/includes/libraries/application.php(250): JApplicationSellacious->dispatch()
+#8 /Users/codeacious3/Sites/lab-jsmarketplace/libraries/src/Application/CMSApplication.php(196): JApplicationSellacious->doExecute()
+#9 /Users/codeacious3/Sites/lab-jsmarketplace/sellacious/index.php(43): Joomla\CMS\Application\CMSApplication->execute()
+#10 {main}
+2019-06-07T08:10:10+00:00	WARNING ::1	jerror	The user checking in does not match the user who checked out the item.
+2019-06-07T11:54:21+00:00	WARNING ::1	jerror	JUser: :_load: Unable to load user with ID: 174
+2019-06-07T11:54:21+00:00	WARNING ::1	jerror	JUser: :_load: Unable to load user with ID: 458
+2019-06-07T11:54:21+00:00	WARNING ::1	jerror	JUser: :_load: Unable to load user with ID: 491
+2019-06-07T11:54:21+00:00	WARNING ::1	jerror	JUser: :_load: Unable to load user with ID: 261
+2019-06-07T11:54:21+00:00	WARNING ::1	jerror	JUser: :_load: Unable to load user with ID: 160
+2019-06-07T12:43:49+00:00	WARNING ::1	jerror	JUser: :_load: Unable to load user with ID: 174
+2019-06-07T12:43:49+00:00	WARNING ::1	jerror	JUser: :_load: Unable to load user with ID: 458
+2019-06-07T12:43:49+00:00	WARNING ::1	jerror	JUser: :_load: Unable to load user with ID: 491
+2019-06-07T12:43:49+00:00	WARNING ::1	jerror	JUser: :_load: Unable to load user with ID: 261
+2019-06-07T12:43:49+00:00	WARNING ::1	jerror	JUser: :_load: Unable to load user with ID: 160

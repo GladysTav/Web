@@ -1,0 +1,43 @@
+/**
+ * @version     2.0.0
+ * @package     sellacious
+ *
+ * @copyright   Copyright (C) 2012-2020 Bhartiy Web Technologies. All rights reserved.
+ * @license     SPL Sellacious Private License; see http://www.sellacious.com/spl.html
+ * @author      Saurabh Sabharwal <info@bhartiy.com> - http://www.bhartiy.com
+ */
+
+.view-selector .view-option {
+	display: inline-block;
+	border: 1px solid transparent;
+	padding: 5px;
+	margin-right: 5px;
+	text-align: center;
+}
+
+.view-selector .view-option:hover {
+	border-color: #ccc;
+}
+
+.view-selector .view-option.selected {
+	border-color: #0091d9;
+}
+
+.view-selector .view-option.selected:before,
+.view-selector .view-option.selected:after {
+	content: unset;
+}
+
+.view-selector .view-option .view-preview {
+	display: block;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 75px;
+	width: 55px;
+}
+
+.view-selector .view-option .view-name {
+	display: inline-block;
+	margin-top: 5px;
+}

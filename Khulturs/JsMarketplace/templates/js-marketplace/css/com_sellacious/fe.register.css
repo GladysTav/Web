@@ -1,0 +1,171 @@
+#profile_accordion {
+    background: #fff;
+    padding: 10px 0 55px 0;
+}
+
+#profile_accordion .controls {
+    margin-bottom: 10px;
+}
+
+#profile_accordion .captcha-fieldset .controls {
+    margin-left: 0;
+}
+
+.accordion-box {
+    position: relative;
+    width: 100%;
+    height: 665px;
+}
+
+#profile_accordion .control-group {
+    border: 1px solid;
+    border-color: transparent;
+}
+
+#profile_accordion .controls .select2-container a {
+    font-size: 13px;
+    color: #777777;
+    padding: 10px 15px;
+    border: 1px solid #e5e5e5;
+    border-radius: 0px;
+    height: 32px;
+    background: #fcfcfc;
+    max-width: 100%;
+    line-height: 33px;
+}
+
+#profile_accordion fieldset {
+    width: 100%;
+}
+
+#profile_accordion fieldset.captcha-fieldset {
+    width: 70%;
+    float: right;
+}
+
+.captcha-fieldset .control-group {
+    width:100%;
+    float: left;
+}
+
+.captcha-fieldset .control-group.submit-bottom   {
+    width: auto;
+    float: right;
+    margin-top: -54px;
+}
+
+#profile_accordion .select2-container .select2-choice abbr {
+    right: 26px;
+    top: 9px;
+}
+
+#profile_accordion .select2-container .select2-choice > .select2-chosen {
+    line-height: 13px;
+}
+#profile_accordion .select2-container.medium-input {
+    width: 350px;
+}
+#register-tnc-modal p {
+    line-height: 1.6;
+}
+
+#profile_accordion .accordion-box .accordion-body {
+    width: calc(100% - 225px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fbfbfd;
+    height: 650px;
+    overflow: auto;
+    border-top: 3px solid #9696ac;
+    margin-right: 0;
+    -webkit-box-shadow: -2px 3px 2px 0 #e9e9e9;
+    -moz-box-shadow: -2px 3px 2px 0 #e9e9e9;
+    box-shadow: -2px 3px 2px 0 #e9e9e9;
+    padding: 0 15px;
+}
+
+#profile_accordion div.select2-container .select2-choice span.select2-arrow {
+    background: transparent;
+}
+
+#profile_accordion .accordion-group {
+    background: transparent;
+}
+
+#profile_accordion .register-form  .accordion-body{
+    margin-top: 0;
+    overflow: auto;
+}
+
+.captcha-fieldset a {
+    display: block;
+    height: 38px;
+    margin-left: 3px;
+    line-height: 30px;
+    margin-top: -42px !important;
+    color: #333536;
+    font-size: 15px;
+    font-weight: 500 !important;
+    text-align: left;
+}
+
+@media (max-width: 1220px) {
+    .captcha-fieldset .control-group:first-child {
+        width: 100%;
+        border: 1px solid blue;
+    }
+}
+
+@media (max-width: 972px) {
+    #profile_accordion .accordion-box  .accordion-body {
+        position: static;
+        margin-top: 0;
+        border-top: 0;
+        width: 100%;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none ;
+        box-shadow: none;
+        height: auto;
+    }
+    #profile_accordion form {
+            max-height: none;
+            height: auto;
+    }
+}
+
+.accordion-box .select2-container .select2-choice .select2-arrow b {
+    background-position: 2px 3px;
+}
+
+#register-tnc-modal {
+	top: 20px;
+	overflow: hidden;
+}
+
+#register-tnc-modal .modal-dialog {
+	margin-top: 0;
+}
+
+@media (max-width: 992px) {
+    .accordion .accordion-box {
+        height: unset;
+    }
+
+    #profile_accordion {
+        margin-top: 20px;
+    }
+    #profile_accordion fieldset.captcha-fieldset,
+    #profile_accordion .select2-container.medium-input {
+        width: 100%;
+    }
+    .captcha-fieldset a {
+        height: auto;
+    }
+    .tnc-ul .tnc-ul-li {
+        margin-left: 0 !important;
+    }
+    .captcha-fieldset .control-group.submit-bottom {
+        margin-top: 0;
+    }
+}

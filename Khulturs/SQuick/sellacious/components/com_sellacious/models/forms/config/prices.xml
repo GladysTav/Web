@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="com_sellacious">
+		<fieldset name="com_sellacious_price" label="COM_SELLACIOUS_CONFIG_FIELDSET_PRICE_LABEL">
+			<field
+				name="product_price_display_pages"
+				type="checkboxes"
+				label="COM_SELLACIOUS_CONFIG_FIELD_PRODUCT_PRICE_DISPLAY_PAGES_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_PRODUCT_PRICE_DISPLAY_PAGES_DESC"
+			>
+				<option value="categories">COM_SELLACIOUS_CONFIG_FIELD_PAGE_CHOICE_CATEGORIES</option>
+				<option value="products">COM_SELLACIOUS_CONFIG_FIELD_PAGE_CHOICE_PRODUCTS</option>
+				<option value="product">COM_SELLACIOUS_CONFIG_FIELD_PAGE_CHOICE_PRODUCT</option>
+				<option value="product_modal">COM_SELLACIOUS_CONFIG_FIELD_PAGE_CHOICE_PRODUCT_MODAL</option>
+			</field>
+			<field
+				name="pricing_types"
+				type="priceType"
+				label="COM_SELLACIOUS_CONFIG_FIELD_PRICING_TYPE_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_PRICING_TYPE_DESC"
+				multiple="true"
+				vertical="true"
+				buttons="no"
+			/>
+			<field
+				name="product_price_display"
+				type="list"
+				default="2"
+				label="COM_SELLACIOUS_CONFIG_FIELD_PRODUCT_PRICE_DISPLAY_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_PRODUCT_PRICE_DISPLAY_DESC"
+				showon="com_sellacious.pricing_types:basic[OR]com_sellacious.pricing_types:dynamic"
+			>
+				<option value="1">COM_SELLACIOUS_CONFIG_FIELD_PRODUCT_PRICE_DISPLAY_CHOICE_PRICE_ONLY</option>
+				<option value="2">COM_SELLACIOUS_CONFIG_FIELD_PRODUCT_PRICE_DISPLAY_CHOICE_WITH_LIST_PRICE</option>
+			</field>
+		</fieldset>
+	</fields>
+</form>

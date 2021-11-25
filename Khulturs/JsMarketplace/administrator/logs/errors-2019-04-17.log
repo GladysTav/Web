@@ -1,0 +1,163 @@
+#
+#<?php die('Forbidden.'); ?>
+#Date: 2019-04-17 04:00:11 UTC
+#Software: Joomla Platform 13.1.0 Stable [ Curiosity ] 24-Apr-2013 00:00 GMT
+
+#Fields: datetime	priority clientip	category	message
+2019-04-17T04:00:11+00:00	CRITICAL ::1	error	Uncaught \Throwable of type Exception thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(621): Joomla\CMS\MVC\Controller\BaseController->getView('login', 'json', 'loginView', Array)
+#1 /Users/codeacious3/Sites/sellacious/sellacious/components/com_login/controller.php(42): Joomla\CMS\MVC\Controller\BaseController->display(false, NULL)
+#2 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(710): LoginController->display()
+#3 /Users/codeacious3/Sites/sellacious/sellacious/components/com_login/login.php(21): Joomla\CMS\MVC\Controller\BaseController->execute('')
+#4 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#5 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#6 /Users/codeacious3/Sites/sellacious/sellacious/includes/libraries/application.php(205): Joomla\CMS\Component\ComponentHelper::renderComponent('com_login')
+#7 /Users/codeacious3/Sites/sellacious/sellacious/includes/libraries/application.php(250): JApplicationSellacious->dispatch()
+#8 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(196): JApplicationSellacious->doExecute()
+#9 /Users/codeacious3/Sites/sellacious/sellacious/index.php(43): Joomla\CMS\Application\CMSApplication->execute()
+#10 {main}
+2019-04-17T04:48:40+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-17T04:48:45+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-17T04:48:47+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-17T04:48:49+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-17T04:48:52+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-17T04:49:00+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-17T04:49:02+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-17T04:49:03+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-17T05:03:12+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-17T05:03:23+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-17T05:11:30+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-17T05:17:35+00:00	CRITICAL -	error	Uncaught \Throwable of type Error thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/sellacious/cli/sellacious_importer.php(156): SellaciousImporterCli->rebuildCache(NULL)
+#1 /Users/codeacious3/Sites/sellacious/sellacious/cli/sellacious_importer.php(79): SellaciousImporterCli->doImport()
+#2 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CliApplication.php(143): SellaciousImporterCli->doExecute()
+#3 /Users/codeacious3/Sites/sellacious/sellacious/cli/sellacious_importer.php(231): Joomla\CMS\Application\CliApplication->execute()
+#4 {main}
+2019-04-17T05:37:45+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-17T05:38:32+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-17T05:39:39+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.
+2019-04-17T05:39:40+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.
+2019-04-17T05:40:50+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.
+2019-04-17T06:12:22+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-17T06:14:27+00:00	CRITICAL ::1	error	Uncaught \Throwable of type Joomla\CMS\Component\Exception\MissingComponentException thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/libraries/src/Application/SiteApplication.php(194): Joomla\CMS\Component\ComponentHelper::renderComponent(NULL)
+#1 /Users/codeacious3/Sites/sellacious/libraries/src/Application/SiteApplication.php(233): Joomla\CMS\Application\SiteApplication->dispatch()
+#2 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(196): Joomla\CMS\Application\SiteApplication->doExecute()
+#3 /Users/codeacious3/Sites/sellacious/index.php(49): Joomla\CMS\Application\CMSApplication->execute()
+#4 {main}
+2019-04-17T06:14:31+00:00	CRITICAL ::1	error	Uncaught \Throwable of type Joomla\CMS\Component\Exception\MissingComponentException thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/libraries/src/Application/SiteApplication.php(194): Joomla\CMS\Component\ComponentHelper::renderComponent(NULL)
+#1 /Users/codeacious3/Sites/sellacious/libraries/src/Application/SiteApplication.php(233): Joomla\CMS\Application\SiteApplication->dispatch()
+#2 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(196): Joomla\CMS\Application\SiteApplication->doExecute()
+#3 /Users/codeacious3/Sites/sellacious/index.php(49): Joomla\CMS\Application\CMSApplication->execute()
+#4 {main}
+2019-04-17T06:19:07+00:00	WARNING ::1	jerror	Table 'pricing-type.#__sellacious_cache_specifications' doesn't exist
+Table 'pricing-type.#__sellacious_cache_specifications' doesn't exist
+2019-04-17T07:13:44+00:00	CRITICAL -	error	Uncaught \Throwable of type Error thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/sellacious/cli/sellacious_importer.php(156): SellaciousImporterCli->rebuildCache(NULL)
+#1 /Users/codeacious3/Sites/sellacious/sellacious/cli/sellacious_importer.php(79): SellaciousImporterCli->doImport()
+#2 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CliApplication.php(143): SellaciousImporterCli->doExecute()
+#3 /Users/codeacious3/Sites/sellacious/sellacious/cli/sellacious_importer.php(231): Joomla\CMS\Application\CliApplication->execute()
+#4 {main}
+2019-04-17T08:24:06+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-17T08:24:19+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-17T08:26:17+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-17T08:27:16+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-17T08:27:26+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-17T08:29:18+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-17T09:26:52+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-17T09:27:16+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-17T09:36:02+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-17T09:36:02+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-17T09:36:11+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-17T09:46:37+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-17T09:49:18+00:00	NOTICE ::1	jerror	The specified seller does not have an active listing for this product. The same product from another seller was selected for you automatically.
+2019-04-17T10:12:10+00:00	WARNING ::1	jerror	Currently there are no active seller listing for this product.
+2019-04-17T10:22:34+00:00	CRITICAL ::1	error	Uncaught \Throwable of type Exception thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(621): Joomla\CMS\MVC\Controller\BaseController->getView('products', 'json', 'sellaciousView', Array)
+#1 /Users/codeacious3/Sites/sellacious/components/com_sellacious/controller.php(50): Joomla\CMS\MVC\Controller\BaseController->display(false, false)
+#2 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(710): SellaciousController->display()
+#3 /Users/codeacious3/Sites/sellacious/components/com_sellacious/sellacious.php(28): Joomla\CMS\MVC\Controller\BaseController->execute('')
+#4 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#5 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#6 /Users/codeacious3/Sites/sellacious/libraries/src/Application/SiteApplication.php(194): Joomla\CMS\Component\ComponentHelper::renderComponent('com_sellacious')
+#7 /Users/codeacious3/Sites/sellacious/libraries/src/Application/SiteApplication.php(233): Joomla\CMS\Application\SiteApplication->dispatch()
+#8 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(196): Joomla\CMS\Application\SiteApplication->doExecute()
+#9 /Users/codeacious3/Sites/sellacious/index.php(49): Joomla\CMS\Application\CMSApplication->execute()
+#10 {main}
+2019-04-17T10:36:33+00:00	CRITICAL ::1	error	Uncaught \Throwable of type Exception thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(621): Joomla\CMS\MVC\Controller\BaseController->getView('products', 'json', 'sellaciousView', Array)
+#1 /Users/codeacious3/Sites/sellacious/components/com_sellacious/controller.php(50): Joomla\CMS\MVC\Controller\BaseController->display(false, false)
+#2 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(710): SellaciousController->display()
+#3 /Users/codeacious3/Sites/sellacious/components/com_sellacious/sellacious.php(28): Joomla\CMS\MVC\Controller\BaseController->execute('')
+#4 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#5 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#6 /Users/codeacious3/Sites/sellacious/libraries/src/Application/SiteApplication.php(194): Joomla\CMS\Component\ComponentHelper::renderComponent('com_sellacious')
+#7 /Users/codeacious3/Sites/sellacious/libraries/src/Application/SiteApplication.php(233): Joomla\CMS\Application\SiteApplication->dispatch()
+#8 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(196): Joomla\CMS\Application\SiteApplication->doExecute()
+#9 /Users/codeacious3/Sites/sellacious/index.php(49): Joomla\CMS\Application\CMSApplication->execute()
+#10 {main}
+2019-04-17T10:50:33+00:00	CRITICAL ::1	error	Uncaught \Throwable of type Exception thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(621): Joomla\CMS\MVC\Controller\BaseController->getView('products', 'json', 'sellaciousView', Array)
+#1 /Users/codeacious3/Sites/sellacious/components/com_sellacious/controller.php(50): Joomla\CMS\MVC\Controller\BaseController->display(false, false)
+#2 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(710): SellaciousController->display()
+#3 /Users/codeacious3/Sites/sellacious/components/com_sellacious/sellacious.php(28): Joomla\CMS\MVC\Controller\BaseController->execute('')
+#4 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#5 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#6 /Users/codeacious3/Sites/sellacious/libraries/src/Application/SiteApplication.php(194): Joomla\CMS\Component\ComponentHelper::renderComponent('com_sellacious')
+#7 /Users/codeacious3/Sites/sellacious/libraries/src/Application/SiteApplication.php(233): Joomla\CMS\Application\SiteApplication->dispatch()
+#8 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(196): Joomla\CMS\Application\SiteApplication->doExecute()
+#9 /Users/codeacious3/Sites/sellacious/index.php(49): Joomla\CMS\Application\CMSApplication->execute()
+#10 {main}
+2019-04-17T12:50:54+00:00	WARNING ::1	jerror	Unknown column 'a.apply_rule_on_list_price' in 'field list'
+2019-04-17T12:50:54+00:00	CRITICAL ::1	error	Uncaught \Throwable of type JDatabaseExceptionExecuting thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/libraries/joomla/database/driver.php(1695): JDatabaseDriverMysqli->execute()
+#1 /Users/codeacious3/Sites/sellacious/libraries/sellacious/helper/base.php(263): JDatabaseDriver->loadObjectList()
+#2 /Users/codeacious3/Sites/sellacious/libraries/sellacious/helper/shoprule.php(129): SellaciousHelperBase->__call('loadObjectList', Array)
+#3 /Users/codeacious3/Sites/sellacious/libraries/sellacious/helper/shoprule.php(174): SellaciousHelperShoprule->getRules()
+#4 /Users/codeacious3/Sites/sellacious/modules/mod_sellacious_latestproducts/tmpl/carousel.php(76): SellaciousHelperShoprule->toProduct(Object(stdClass), false, true)
+#5 /Users/codeacious3/Sites/sellacious/modules/mod_sellacious_latestproducts/mod_sellacious_latestproducts.php(105): require('/Users/codeacio...')
+#6 /Users/codeacious3/Sites/sellacious/libraries/src/Helper/ModuleHelper.php(200): include('/Users/codeacio...')
+#7 /Users/codeacious3/Sites/sellacious/libraries/src/Document/Renderer/Html/ModuleRenderer.php(98): Joomla\CMS\Helper\ModuleHelper::renderModule(Object(stdClass), Array)
+#8 /Users/codeacious3/Sites/sellacious/libraries/src/Document/Renderer/Html/ModulesRenderer.php(47): Joomla\CMS\Document\Renderer\Html\ModuleRenderer->render(Object(stdClass), Array, NULL)
+#9 /Users/codeacious3/Sites/sellacious/libraries/src/Document/HtmlDocument.php(491): Joomla\CMS\Document\Renderer\Html\ModulesRenderer->render('position-3', Array, NULL)
+#10 /Users/codeacious3/Sites/sellacious/libraries/src/Document/HtmlDocument.php(783): Joomla\CMS\Document\HtmlDocument->getBuffer('modules', 'position-3', Array)
+#11 /Users/codeacious3/Sites/sellacious/libraries/src/Document/HtmlDocument.php(557): Joomla\CMS\Document\HtmlDocument->_renderTemplate()
+#12 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(1044): Joomla\CMS\Document\HtmlDocument->render(false, Array)
+#13 /Users/codeacious3/Sites/sellacious/libraries/src/Application/SiteApplication.php(778): Joomla\CMS\Application\CMSApplication->render()
+#14 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(202): Joomla\CMS\Application\SiteApplication->render()
+#15 /Users/codeacious3/Sites/sellacious/index.php(49): Joomla\CMS\Application\CMSApplication->execute()
+#16 {main}
+2019-04-17T12:50:54+00:00	WARNING ::1	jerror	Unknown column 'a.apply_rule_on_list_price' in 'field list'
+2019-04-17T12:50:54+00:00	CRITICAL ::1	error	Uncaught \Throwable of type JDatabaseExceptionExecuting thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/libraries/joomla/database/driver.php(1695): JDatabaseDriverMysqli->execute()
+#1 /Users/codeacious3/Sites/sellacious/libraries/sellacious/helper/base.php(263): JDatabaseDriver->loadObjectList()
+#2 /Users/codeacious3/Sites/sellacious/libraries/sellacious/helper/shoprule.php(129): SellaciousHelperBase->__call('loadObjectList', Array)
+#3 /Users/codeacious3/Sites/sellacious/libraries/sellacious/helper/shoprule.php(174): SellaciousHelperShoprule->getRules()
+#4 /Users/codeacious3/Sites/sellacious/modules/mod_sellacious_latestproducts/tmpl/carousel.php(76): SellaciousHelperShoprule->toProduct(Object(stdClass), false, true)
+#5 /Users/codeacious3/Sites/sellacious/modules/mod_sellacious_latestproducts/mod_sellacious_latestproducts.php(105): require('/Users/codeacio...')
+#6 /Users/codeacious3/Sites/sellacious/libraries/src/Helper/ModuleHelper.php(200): include('/Users/codeacio...')
+#7 /Users/codeacious3/Sites/sellacious/libraries/src/Document/Renderer/Html/ModuleRenderer.php(98): Joomla\CMS\Helper\ModuleHelper::renderModule(Object(stdClass), Array)
+#8 /Users/codeacious3/Sites/sellacious/libraries/src/Document/Renderer/Html/ModulesRenderer.php(47): Joomla\CMS\Document\Renderer\Html\ModuleRenderer->render(Object(stdClass), Array, NULL)
+#9 /Users/codeacious3/Sites/sellacious/libraries/src/Document/HtmlDocument.php(491): Joomla\CMS\Document\Renderer\Html\ModulesRenderer->render('position-3', Array, NULL)
+#10 /Users/codeacious3/Sites/sellacious/libraries/src/Document/HtmlDocument.php(783): Joomla\CMS\Document\HtmlDocument->getBuffer('modules', 'position-3', Array)
+#11 /Users/codeacious3/Sites/sellacious/libraries/src/Document/HtmlDocument.php(557): Joomla\CMS\Document\HtmlDocument->_renderTemplate()
+#12 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(1044): Joomla\CMS\Document\HtmlDocument->render(false, Array)
+#13 /Users/codeacious3/Sites/sellacious/libraries/src/Application/SiteApplication.php(778): Joomla\CMS\Application\CMSApplication->render()
+#14 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(202): Joomla\CMS\Application\SiteApplication->render()
+#15 /Users/codeacious3/Sites/sellacious/index.php(49): Joomla\CMS\Application\CMSApplication->execute()
+#16 {main}
+2019-04-17T12:51:17+00:00	WARNING ::1	jerror	Unknown column 'a.apply_rule_on_list_price' in 'field list'
+2019-04-17T12:51:17+00:00	CRITICAL ::1	error	Uncaught \Throwable of type JDatabaseExceptionExecuting thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/libraries/joomla/database/driver.php(1695): JDatabaseDriverMysqli->execute()
+#1 /Users/codeacious3/Sites/sellacious/libraries/sellacious/helper/base.php(263): JDatabaseDriver->loadObjectList()
+#2 /Users/codeacious3/Sites/sellacious/libraries/sellacious/helper/shoprule.php(129): SellaciousHelperBase->__call('loadObjectList', Array)
+#3 /Users/codeacious3/Sites/sellacious/libraries/sellacious/helper/shoprule.php(174): SellaciousHelperShoprule->getRules()
+#4 /Users/codeacious3/Sites/sellacious/modules/mod_sellacious_latestproducts/tmpl/carousel.php(76): SellaciousHelperShoprule->toProduct(Object(stdClass), false, true)
+#5 /Users/codeacious3/Sites/sellacious/modules/mod_sellacious_latestproducts/mod_sellacious_latestproducts.php(105): require('/Users/codeacio...')
+#6 /Users/codeacious3/Sites/sellacious/libraries/src/Helper/ModuleHelper.php(200): include('/Users/codeacio...')
+#7 /Users/codeacious3/Sites/sellacious/libraries/src/Document/Renderer/Html/ModuleRenderer.php(98): Joomla\CMS\Helper\ModuleHelper::renderModule(Object(stdClass), Array)
+#8 /Users/codeacious3/Sites/sellacious/libraries/src/Document/Renderer/Html/ModulesRenderer.php(47): Joomla\CMS\Document\Renderer\Html\ModuleRenderer->render(Object(stdClass), Array, NULL)
+#9 /Users/codeacious3/Sites/sellacious/libraries/src/Document/HtmlDocument.php(491): Joomla\CMS\Document\Renderer\Html\ModulesRenderer->render('position-3', Array, NULL)
+#10 /Users/codeacious3/Sites/sellacious/libraries/src/Document/HtmlDocument.php(783): Joomla\CMS\Document\HtmlDocument->getBuffer('modules', 'position-3', Array)
+#11 /Users/codeacious3/Sites/sellacious/libraries/src/Document/HtmlDocument.php(557): Joomla\CMS\Document\HtmlDocument->_renderTemplate()
+#12 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(1044): Joomla\CMS\Document\HtmlDocument->render(false, Array)
+#13 /Users/codeacious3/Sites/sellacious/libraries/src/Application/SiteApplication.php(778): Joomla\CMS\Application\CMSApplication->render()
+#14 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(202): Joomla\CMS\Application\SiteApplication->render()
+#15 /Users/codeacious3/Sites/sellacious/index.php(49): Joomla\CMS\Application\CMSApplication->execute()
+#16 {main}
+2019-04-17T12:54:11+00:00	CRITICAL -	error	Uncaught \Throwable of type Error thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/sellacious/cli/sellacious_importer.php(156): SellaciousImporterCli->rebuildCache(NULL)
+#1 /Users/codeacious3/Sites/sellacious/sellacious/cli/sellacious_importer.php(79): SellaciousImporterCli->doImport()
+#2 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CliApplication.php(143): SellaciousImporterCli->doExecute()
+#3 /Users/codeacious3/Sites/sellacious/sellacious/cli/sellacious_importer.php(231): Joomla\CMS\Application\CliApplication->execute()
+#4 {main}
+2019-04-17T13:03:02+00:00	WARNING ::1	jerror	No seller category is selected for registration.

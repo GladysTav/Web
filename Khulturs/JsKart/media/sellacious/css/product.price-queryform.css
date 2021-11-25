@@ -1,0 +1,92 @@
+/**
+ * @version     2.0.0
+ * @package     sellacious
+ *
+ * @copyright   Copyright (C) 2012-2020 Bhartiy Web Technologies. All rights reserved.
+ * @license     SPL Sellacious Private License; see http://www.sellacious.com/spl.html
+ * @author      Saurabh Sabharwal <info@bhartiy.com> - http://www.bhartiy.com
+ */
+
+.product-query-form iframe {
+	width: 100%;
+	box-shadow: unset;
+	border: unset;
+	height:350px;
+}
+
+.product-query-form .ctech-modal-title {
+	font-weight: 600;
+}
+
+.product-query-form .ctech-modal-body {
+    padding: 5px;
+}
+
+.iframe-query-form input[type="text"] ,
+.iframe-query-form input[type="number"] {
+	padding:15px;
+	width:206px;
+}
+
+.iframe-query-form select ,
+.iframe-query-form .select2-container { 
+	width:206px;
+}
+
+.iframe-query-form .select2-container a {
+	padding: 0px 5px 5px 8px;
+}
+
+.iframe-query-form .input-group input[type="text"] {
+    display: block;
+}
+
+.iframe-query-form .select2-container .select2-choice {
+	height: 28px;
+}	
+
+.iframe-query-form .minicolors-theme-bootstrap ,
+.iframe-query-form select ,
+.iframe-query-form .select2-container ,
+.iframe-query-form textarea,
+.iframe-query-form input[type="text"] ,
+.iframe-query-form input[type="number"] ,
+.iframe-query-form fieldset{
+    margin-bottom: 13px;
+}
+
+.input-append .btn:last-child {
+	font-size:small;
+	padding: 6px 12px;
+}
+
+.iframe-query-form label {
+	margin-right: 10px;
+	min-width: 100px;
+}
+
+.iframe-query-form .minicolors-theme-bootstrap input[type="text"] {
+    padding-top: 13px;
+	padding-bottom: 13px;
+	padding-left: 25px;
+	margin-bottom: 0px;
+}
+
+.iframe-query-form .radio input[type="radio"] {
+	 float: none;
+	 margin-left: 0px;
+}
+
+.iframe-query-form .radio label {
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.iframe-query-form .ctech { 
+	display:flex;
+}
+
+.iframe-query-form input[type="checkbox"]#jform_query_6 {
+    margin-bottom: 13px;
+}
+ 

@@ -1,0 +1,13 @@
+/**
+ * @package
+ * Template Name - Js Mall
+ * @author Sellacious http://www.sellacious.com
+ * @copyright Copyright (c) 2016 - 2018 Sellacious
+ * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 or later
+*/
+#header {
+  background-image: -webkit-linear-gradient(left, #003e52 50%, #0d6d85 87%, #1a9cb7 100%);
+  background-image: linear-gradient(90deg, #003e52 50%, #0d6d85 87%, #1a9cb7 100%);
+}
+
+/*# sourceMappingURL=sella-preset.css.map */

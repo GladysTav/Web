@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="cat_specifications"
+	          label="PLG_CONTENT_SELLACIOUSCATSPECS_FIELDSET_CAT_SPECIFICATIONS_LABEL"
+	          addfieldpath="/plugins/content/sellaciouscatspecs/fields">
+		<fields name="params">
+			<field
+					type="fieldgroup"
+					label="PLG_CONTENT_SELLACIOUSCATSPECS_FIELD_SPECIFICATIONS_TITLE"
+			/>
+			<field
+					type="specs"
+					name="specs"
+					label=""
+			/>
+		</fields>
+	</fieldset>
+</form>

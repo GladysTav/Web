@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="system" method="upgrade">
+	<name>plg_system_sellaciouscattemplates</name>
+	<author>Bhavika Matariya</author>
+	<creationDate>March 03, 2020</creationDate>
+	<copyright>Copyright (C) 2016 Bhartiy Web Technologies. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@bhartiy.com</authorEmail>
+	<authorUrl>www.bhartiy.com</authorUrl>
+	<version>2.0.0-alpha5</version>
+	<description>PLG_SYSTEM_SELLACIOUSCATTEMPLATES_XML_DESCRIPTION</description>
+	<files>
+		<folder>forms</folder>
+		<folder>language</folder>
+		<filename plugin="sellaciouscattemplates">sellaciouscattemplates.php</filename>
+	</files>
+	<config>
+		<fields name="plg_system_sellaciouscattemplates">
+			<fieldset name="plg_system_sellaciouscattemplates"
+		          label="PLG_SYSTEM_SELLACIOUSCATTEMPLATES_FIELDSET_SPPB_TEMPLATE_LABEL"
+		          addfieldpath="/administrator/components/com_sppagebuilder/models/fields">
+				<field type="fieldgroup"
+				       label="PLG_SYSTEM_SELLACIOUSCATTEMPLATES_FIELD_CATEGORY_TEMPLATE_TITLE"
+				/>
+				<field type="radio"
+				       name="cat_redirect"
+				       label="PLG_SYSTEM_SELLACIOUSCATTEMPLATES_FIELD_REDIRECT_TO_TEMPLATE_TITLE"
+				       description="PLG_SYSTEM_SELLACIOUSCATTEMPLATES_FIELD_REDIRECT_TO_TEMPLATE_DESC"
+				       default="1">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field type="sql"
+				       name="cat_template"
+				       label="PLG_SYSTEM_SELLACIOUSCATTEMPLATES_FIELD_SELECT_TEMPLATE_TITLE"
+				       description="PLG_SYSTEM_SELLACIOUSCATTEMPLATES_FIELD_SELECT_TEMPLATE_DESC"
+				       query="SELECT id, title FROM #__sppagebuilder WHERE published = 1 AND extension_view = 'page'"
+				       key_field="id"
+				       value_field="title">
+					<option>Select</option>
+				</field>
+
+				<field type="fieldgroup"
+				       label="PLG_SYSTEM_SELLACIOUSCATTEMPLATES_FIELD_PRODUCT_TEMPLATE_TITLE"
+				/>
+				<field type="radio"
+				       name="product_redirect"
+				       label="PLG_SYSTEM_SELLACIOUSCATTEMPLATES_FIELD_REDIRECT_TO_TEMPLATE_TITLE"
+				       description="PLG_SYSTEM_SELLACIOUSCATTEMPLATES_FIELD_REDIRECT_TO_TEMPLATE_DESC"
+				       default="1">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field type="sql"
+				       name="product_template"
+				       label="PLG_SYSTEM_SELLACIOUSCATTEMPLATES_FIELD_SELECT_TEMPLATE_TITLE"
+				       description="PLG_SYSTEM_SELLACIOUSCATTEMPLATES_FIELD_SELECT_TEMPLATE_DESC"
+				       query="SELECT id, title FROM #__sppagebuilder WHERE published = 1 AND extension_view = 'page'"
+				       key_field="id"
+				       value_field="title">
+					<option>Select</option>
+				</field>
+				<field type="text"
+				       name="gallery_thumb_title"
+				       label="PLG_SYSTEM_SELLACIOUSCATTEMPLATES_FIELD_SELECT_GALLARY_THUMB_TITLE"
+				       description="PLG_SYSTEM_SELLACIOUSCATTEMPLATES_FIELD_SELECT_GALLARY_THUMB_DESC"
+				       class="inputbox"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

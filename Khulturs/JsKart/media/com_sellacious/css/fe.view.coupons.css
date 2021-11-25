@@ -1,0 +1,121 @@
+.coupon-code {
+    text-align: center;
+    border-right: 1px solid rgba(0, 0, 0, 0.125);
+    display: block;
+    height: 100%;
+    width: 100%;
+    font-size: 2em;
+}
+
+.coupon-code .code.active-code {
+    cursor: pointer;
+}
+
+.coupon-code .code {
+    position: relative;
+    top: 40%;
+}
+
+.card.expired {
+    background: repeating-linear-gradient( 45deg, #ffffff, #fefefe 10px, #efefef 15px );
+}
+
+.card-detail.ctech-col-md-8 {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.ctech-wrapper .card-text:last-child {
+    margin-bottom: 1rem;
+}
+
+.ctech-wrapper .ctech-row.coupon-detail {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.coupon-status {
+    font-size: 24px;
+    margin-top: 15px;
+    display: inline-block;
+    padding-right: 0 !important;
+    text-align: right;
+}
+
+.coupon-desc pre {
+    background: none;
+    border: none;
+    word-break: unset;
+}
+
+.coupon-modal .ctech-modal-body {
+    overflow-y: auto;
+    max-height: 450px;
+}
+
+.coupon-filters {
+    margin-bottom: 10px;
+}
+
+@media ( max-width: 767px) {
+    #stores-page .coupon-code {
+        height: 50px;
+        padding-bottom: 8px;
+    }
+}
+
+@media (max-width: 890px ) {
+    #stores-page .card-body .coupon-detail .coupon-status {
+        font-size: 17px;
+    }
+}
+
+@media ( max-width: 822px ) {
+    #stores-page .card-body .card-text small {
+        float: unset !important;
+        width:100%;
+        display: block;
+    }
+}
+
+@media (max-width: 350px) {
+    #stores-page .card-body .coupon-detail .coupon-status {
+        font-size: 14px;
+    }
+    #stores-page .card-body .coupon-detail .card-detail {
+        font-size: 14px;
+    }
+}
+
+#stores-page .coupon-description-container .coupon-desc-heading .toggle-description {
+    font-size: 13px;
+    padding: 7px;
+    display: inline-block;
+}
+
+#stores-page .coupon-description-container .coupon-desc-heading .toggle-description:after {
+    content: '\f107';
+    font-family: FontAwesome;
+    padding-left: 3px;
+}
+
+#stores-page .coupon-description-container .coupon-desc-heading .toggle-description.active:after {
+    content: '\f106';
+    font-family: FontAwesome;
+    padding-left: 3px;
+}
+
+#stores-page .coupon-description-container .coupon-desc-heading .toggle-description:hover,
+#stores-page .coupon-description-container .coupon-desc-heading .toggle-description:focus {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.coupon-description {
+    padding: 10px;
+    background: rgba(211, 211, 211, 0.09);
+}
+
+#stores-page .coupon-description-container .coupon-description > * {
+    margin-bottom: unset;
+}

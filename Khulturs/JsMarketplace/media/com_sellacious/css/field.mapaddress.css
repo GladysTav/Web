@@ -1,0 +1,78 @@
+.mapaddress {
+	height: calc(100vh - (35px + 35px ));
+	width: 30%;
+	position: fixed !important;
+	right: 0;
+	top: 35px;
+	bottom: 35px;
+	z-index: 11;
+	transform: translate3d(100%, 0px, 0px);
+	transition: all 0.5s ease-in-out;
+}
+
+.mapaddress.in {
+	transform: translate3d(0px, 0px, 0px);
+}
+
+.map-backdrop {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 10;
+	display: none;
+	background: rgba(0,0,0, 0.2);
+}
+
+.mapaddress.in ~ .map-backdrop {
+	display: block;
+}
+
+.map-input {
+	max-width: 350px;
+	float: left;
+	width: calc(100% - 100px) !important;
+	min-width: unset;
+}
+
+.trigger-map {
+	display: block;
+	float: left;
+	text-decoration: none;
+	cursor: pointer;
+	padding: 4px 7px;
+	border: 1px solid #ccc;
+	border-left: 0;
+	width: auto;
+}
+
+.trigger-map .fa {
+	margin-right: 4px;
+}
+
+.trigger-map:hover,
+.trigger-map:focus {
+	text-decoration: none;
+}
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+	.mapaddress {
+		width: 40%;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 991px) {
+	.mapaddress {
+		width: 50%;
+	}
+}
+
+@media (max-width: 600px) {
+	.mapaddress {
+		width: 65%;
+	}
+}

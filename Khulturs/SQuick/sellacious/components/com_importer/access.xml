@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<access component="com_importer">
+	<section name="component">
+		<actions name="importer" title="COM_IMPORTER_ACTIONS">
+			<action name="import.list" roles="staff" title="COM_IMPORTER_ACTION_IMPORT_LIST_LABEL" description="COM_IMPORTER_ACTION_IMPORT_LIST_DESC"/>
+			<action name="import.list.own" roles="staff,seller" title="COM_IMPORTER_ACTION_IMPORT_LIST_OWN_LABEL" description="COM_IMPORTER_ACTION_IMPORT_LIST_OWN_DESC"/>
+			<action name="importer.import" roles="staff,seller" title="COM_IMPORTER_ACTION_IMPORTER_IMPORT_LABEL" description="COM_IMPORTER_ACTION_IMPORTER_IMPORT_DESC"/>
+			<action name="import.delete" roles="staff" title="COM_IMPORTER_ACTION_IMPORT_DELETE_LABEL" description="COM_IMPORTER_ACTION_IMPORT_DELETE_DESC"/>
+			<action name="import.delete.own" roles="staff,seller" title="COM_IMPORTER_ACTION_IMPORT_DELETE_OWN_LABEL" description="COM_IMPORTER_ACTION_IMPORT_DELETE_OWN_DESC"/>
+			<action name="template.list" roles="staff" title="COM_IMPORTER_ACTION_TEMPLATE_LIST_LABEL" description="COM_IMPORTER_ACTION_TEMPLATE_LIST_DESC"/>
+			<action name="template.list.own" roles="staff,seller" title="COM_IMPORTER_ACTION_TEMPLATE_LIST_OWN_LABEL" description="COM_IMPORTER_ACTION_TEMPLATE_LIST_OWN_DESC"/>
+			<action name="template.create" roles="staff,seller" title="COM_IMPORTER_ACTION_TEMPLATE_CREATE_LABEL" description="COM_IMPORTER_ACTION_TEMPLATE_CREATE_DESC"/>
+			<action name="template.edit" roles="staff" title="COM_IMPORTER_ACTION_TEMPLATE_EDIT_LABEL" description="COM_IMPORTER_ACTION_TEMPLATE_EDIT_DESC"/>
+			<action name="template.copy" roles="staff" title="COM_IMPORTER_ACTION_TEMPLATE_COPY_LABEL" description="COM_IMPORTER_ACTION_TEMPLATE_COPY_DESC"/>
+			<action name="template.edit.own" roles="staff,seller" title="COM_IMPORTER_ACTION_TEMPLATE_EDIT_OWN_LABEL" description="COM_IMPORTER_ACTION_TEMPLATE_EDIT_OWN_DESC"/>
+			<action name="template.edit.state" roles="staff,seller" title="COM_IMPORTER_ACTION_TEMPLATE_EDIT_STATE_LABEL" description="COM_IMPORTER_ACTION_TEMPLATE_EDIT_STATE_DESC"/>
+			<action name="template.delete" roles="staff" title="COM_IMPORTER_ACTION_TEMPLATE_DELETE_LABEL" description="COM_IMPORTER_ACTION_TEMPLATE_DELETE_DESC"/>
+			<action name="template.delete.own" roles="staff,seller" title="COM_IMPORTER_ACTION_TEMPLATE_DELETE_OWN_LABEL" description="COM_IMPORTER_ACTION_TEMPLATE_DELETE_OWN_DESC"/>
+		</actions>
+	</section>
+</access>

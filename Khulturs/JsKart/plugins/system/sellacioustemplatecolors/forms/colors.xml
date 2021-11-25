@@ -1,0 +1,952 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="plg_system_sellacioustemplatecolors">
+		<fieldset name="com_sellacious_premium">
+			<fields name="colors">
+				<field type="fieldgroup"
+					   label="COM_SELLACIOUS_CONFIG_FIELDSET_SITE_COLORS" />
+				<field
+					name="ctech_primary_button_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_PRIMARY_BUTTON_COLOR_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_PRIMARY_BUTTON_COLOR_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-btn-primary"
+					hover="true">
+					<attribute label="Background color" property="background-color" default="#007bff" hover="#007bff"></attribute>
+					<attribute label="Border color" property="border-color" default="#007bff" hover="#007bff"></attribute>
+					<attribute label="Text color" property="color" default="#fff" hover="#fff"></attribute>
+					<template>
+						<![CDATA[
+							<button class="ctech-btn ctech-btn-primary ctech-btn-sm">Primary button</button>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_primary_text_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_PRIMARY_TEXT_COLOR_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_PRIMARY_TEXT_COLOR_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-text-primary"
+					hover="false">
+					<attribute label="Text color" property="color" default="#007bff"></attribute>
+					<template>
+						<![CDATA[
+							<span class="ctech-text-primary">Primary text</span>
+						]]>
+					</template>
+				</field>
+				<field
+					name="ctech_btn_outline_primary_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_BUTTON_OUTLINE_PRIMARY_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_BUTTON_OUTLINE_PRIMARY_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-btn-outline-primary"
+					hover="true">
+					<attribute label="Border color" property="border-color" default="#007bff" hover="#fff"></attribute>
+					<attribute label="Text color" property="color" default="#007bff" hover="#fff"></attribute>
+					<template>
+						<![CDATA[
+							<button class="ctech-btn ctech-btn-outline-primary ctech-btn-sm">Primary button outline</button>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_badge_primary_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_BADGE_PRIMARY_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_BADGE_PRIMARY_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-badge-primary"
+					hover="true">
+					<attribute label="Background color" property="background-color" default="#007bff" hover="#fff"></attribute>
+					<attribute label="Text color" property="color" default="#fff" hover="#007bff"></attribute>
+					<template>
+						<![CDATA[
+							<span class="ctech-badge ctech-badge-primary">Primary badge color</span>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_alert_primary_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_ALERT_PRIMARY_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_ALERT_PRIMARY_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-alert-primary"
+					hover="false">
+					<attribute label="Background color" property="background-color" default="#cce5ff"></attribute>
+					<attribute label="Border color" property="border-color" default="#b8daff"></attribute>
+					<attribute label="Text color" property="color" default="#007bff"></attribute>
+					<template>
+						<![CDATA[
+							<div class="ctech-alert ctech-alert-primary">Primary alert color</div>
+						]]>
+					</template>
+				</field>
+				<field
+					name="ctech_bg_primary_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_BG_PRIMARY_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_BG_PRIMARY_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-bg-primary">
+					<attribute label="Background color" property="background-color" default="#007bff"></attribute>
+					<attribute label="Text color" property="color" default="#fff" ></attribute>
+					<template>
+						<![CDATA[
+							<div class="ctech-bg-primary">Primary background color</div>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_secondary_button_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_SECONDARY_BUTTON_COLOR_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_SECONDARY_BUTTON_COLOR_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-btn-secondary"
+					hover="true">
+					<attribute label="Background color" property="background-color" default="#6c757d" hover="#6c757d"></attribute>
+					<attribute label="Border color" property="border-color" default="#6c757d" hover="#6c757d"></attribute>
+					<attribute label="Text color" property="color" default="#fff" hover="#fff"></attribute>
+					<template>
+						<![CDATA[
+							<button class="ctech-btn ctech-btn-secondary ctech-btn-sm">Secondary button</button>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_secondary_text_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_SECONDARY_TEXT_COLOR_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_SECONDARY_TEXT_COLOR_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-text-secondary"
+					hover="false">
+					<attribute label="Text color" property="color" default="#6c757d"></attribute>
+					<template>
+						<![CDATA[
+							<span class="ctech-text-secondary">Secondary text</span>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_btn_outline_secondary_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_BUTTON_OUTLINE_SECONDARY_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_BUTTON_OUTLINE_SECONDARY_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-btn-outline-secondary"
+					hover="true">
+					<attribute label="Border color" property="border-color" default="#6c757d" hover="#fff"></attribute>
+					<attribute label="Text color" property="color" default="#6c757d" hover="#fff"></attribute>
+					<template>
+						<![CDATA[
+							<button class="ctech-btn ctech-btn-outline-secondary ctech-btn-sm">Secondary button outline</button>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_badge_secondary_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_BADGE_SECONDARY_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_BADGE_SECONDARY_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-badge-secondary"
+					hover="true">
+					<attribute label="Background color" property="background-color" default="#6c757d" hover="#fff"></attribute>
+					<attribute label="Text color" property="color" default="#fff" hover="#6c757d"></attribute>
+					<template>
+						<![CDATA[
+							<span class="ctech-badge ctech-badge-secondary">Secondary badge color</span>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_alert_secondary_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_ALERT_SECONDARY_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_ALERT_SECONDARY_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-alert-secondary"
+					hover="false">
+					<attribute label="Background color" property="background-color" default="#e2e3e5"></attribute>
+					<attribute label="Border color" property="border-color" default="#d6d8db"></attribute>
+					<attribute label="Text color" property="color" default="#6c757d"></attribute>
+					<template>
+						<![CDATA[
+							<div class="ctech-alert ctech-alert-secondary">Secondary alert color</div>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_bg_secondary_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_BG_SECONDARY_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_BG_SECONDARY_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-bg-secondary"
+					>
+					<attribute label="Background color" property="background-color" default="#6c757d"></attribute>
+					<attribute label="Text color" property="color" default="#fff" ></attribute>
+				<template>
+						<![CDATA[
+							<div class="ctech-bg-secondary">Secondary background color</div>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_success_button_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_SUCCESS_BUTTON_COLOR_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_SUCCESS_BUTTON_COLOR_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-btn-success"
+					hover="true">
+					<attribute label="Background color" property="background-color" default="#28a745" hover="#28a745"></attribute>
+					<attribute label="Border color" property="border-color" default="#28a745" hover="#28a745"></attribute>
+					<attribute label="Text color" property="color" default="#fff" hover="#fff"></attribute>
+					<template>
+						<![CDATA[
+							<button class="ctech-btn ctech-btn-success ctech-btn-sm">Success button</button>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_success_text_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_SUCCESS_TEXT_COLOR_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_SUCCESS_TEXT_COLOR_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-text-success"
+					hover="false">
+					<attribute label="Text color" property="color" default="#28a745"></attribute>
+					<template>
+						<![CDATA[
+							<span class="ctech-text-success">Success text</span>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_btn_outline_success_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_BUTTON_OUTLINE_SUCCESS_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_BUTTON_OUTLINE_SUCCESS_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-btn-outline-success"
+					hover="true">
+					<attribute label="Border color" property="border-color" default="#28a745" hover="#fff"></attribute>
+					<attribute label="Text color" property="color" default="#28a745" hover="#fff"></attribute>
+					<template>
+						<![CDATA[
+							<button class="ctech-btn ctech-btn-outline-success ctech-btn-sm">Success button outline</button>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_badge_success_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_BADGE_SUCCESS_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_BADGE_SUCCESS_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-badge-success"
+					hover="true">
+					<attribute label="Background color" property="background-color" default="#28a745" hover="#fff"></attribute>
+					<attribute label="Text color" property="color" default="#fff" hover="#28a745"></attribute>
+					<template>
+						<![CDATA[
+							<span class="ctech-badge ctech-badge-success">Success badge color</span>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_alert_success_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_ALERT_SUCCESS_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_ALERT_SUCCESS_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-alert-success"
+					hover="false">
+					<attribute label="Background color" property="background-color" default="#d4edda"></attribute>
+					<attribute label="Border color" property="border-color" default="#c3e6cb"></attribute>
+					<attribute label="Text color" property="color" default="#28a745"></attribute>
+					<template>
+						<![CDATA[
+							<div class="ctech-alert ctech-alert-success">Success alert color</div>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_bg_success_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_BG_SUCCESS_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_BG_SUCCESS_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-bg-success"
+					>
+					<attribute label="Background color" property="background-color" default="#28A745" ></attribute>
+					<attribute label="Text color" property="color" default="#fff" ></attribute>
+					<template>
+						<![CDATA[
+							<div class="ctech-bg-success">Success background color</div>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_info_button_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_INFO_BUTTON_COLOR_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_INFO_BUTTON_COLOR_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-btn-info"
+					hover="true">
+					<attribute label="Background color" property="background-color" default="#17a2b8" hover="#17a2b8"></attribute>
+					<attribute label="Border color" property="border-color" default="#17a2b8" hover="#17a2b8"></attribute>
+					<attribute label="Text color" property="color" default="#fff" hover="#fff"></attribute>
+					<template>
+						<![CDATA[
+							<button class="ctech-btn ctech-btn-info ctech-btn-sm">Info button</button>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_info_text_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_INFO_TEXT_COLOR_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_INFO_TEXT_COLOR_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-text-info"
+					hover="false">
+					<attribute label="Text color" property="color" default="#17a2b8"></attribute>
+					<template>
+						<![CDATA[
+							<span class="ctech-text-info">Info text</span>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_btn_outline_info_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_BUTTON_OUTLINE_INFO_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_BUTTON_OUTLINE_INFO_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-btn-outline-info"
+					hover="true">
+					<attribute label="Border color" property="border-color" default="#17a2b8" hover="#fff"></attribute>
+					<attribute label="Text color" property="color" default="#17a2b8" hover="#fff"></attribute>
+					<template>
+						<![CDATA[
+							<button class="ctech-btn ctech-btn-outline-info ctech-btn-sm">Info button outline</button>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_badge_info_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_BADGE_INFO_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_BADGE_INFO_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-badge-info"
+					hover="true">
+					<attribute label="Background color" property="background-color" default="#17a2b8" hover="#fff"></attribute>
+					<attribute label="Text color" property="color" default="#fff" hover="#17a2b8"></attribute>
+					<template>
+						<![CDATA[
+							<span class="ctech-badge ctech-badge-info">Info badge color</span>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_alert_info_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_ALERT_INFO_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_ALERT_INFO_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-alert-info"
+					hover="false">
+					<attribute label="Background color" property="background-color" default="#d1ecf1"></attribute>
+					<attribute label="Border color" property="border-color" default="#bee5eb"></attribute>
+					<attribute label="Text color" property="color" default="#17a2b8"></attribute>
+					<template>
+						<![CDATA[
+							<div class="ctech-alert ctech-alert-info">Info alert color</div>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_bg_info_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_BG_INFO_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_BG_INFO_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-bg-info"
+					>
+					<attribute label="Background color" property="background-color" default="#17a2b8"></attribute>
+					<attribute label="Text color" property="color" default="#fff" ></attribute>
+					<template>
+						<![CDATA[
+							<div class="ctech-bg-info">Info background color</div>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_danger_button_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_DANGER_BUTTON_COLOR_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_DANGER_BUTTON_COLOR_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-btn-danger"
+					hover="true">
+					<attribute label="Background color" property="background-color" default="#dc3545" hover="#dc3545"></attribute>
+					<attribute label="Border color" property="border-color" default="#dc3545" hover="#dc3545"></attribute>
+					<attribute label="Text color" property="color" default="#fff" hover="#fff"></attribute>
+					<template>
+						<![CDATA[
+							<button class="ctech-btn ctech-btn-danger ctech-btn-sm">Danger button</button>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_danger_text_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_DANGER_TEXT_COLOR_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_DANGER_TEXT_COLOR_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-text-danger"
+					hover="false">
+					<attribute label="Text color" property="color" default="#dc3545"></attribute>
+					<template>
+						<![CDATA[
+							<span class="ctech-text-danger">Danger text</span>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_btn_outline_danger_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_BUTTON_OUTLINE_DANGER_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_BUTTON_OUTLINE_DANGER_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-btn-outline-danger"
+					hover="true">
+					<attribute label="Border color" property="border-color" default="#dc3545" hover="#fff"></attribute>
+					<attribute label="Text color" property="color" default="#dc3545" hover="#fff"></attribute>
+					<template>
+						<![CDATA[
+							<button class="ctech-btn ctech-btn-outline-danger ctech-btn-sm">Danger button outline</button>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_badge_danger_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_BADGE_DANGER_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_BADGE_DANGER_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-badge-danger"
+					hover="true">
+					<attribute label="Background color" property="background-color" default="#dc3545" hover="#fff"></attribute>
+					<attribute label="Text color" property="color" default="#fff" hover="#dc3545"></attribute>
+					<template>
+						<![CDATA[
+							<span class="ctech-badge ctech-badge-danger">Danger badge color</span>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_alert_danger_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_ALERT_DANGER_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_ALERT_DANGER_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-alert-danger"
+					hover="false">
+					<attribute label="Background color" property="background-color" default="#f8d7da"></attribute>
+					<attribute label="Border color" property="border-color" default="#f5c6cb"></attribute>
+					<attribute label="Text color" property="color" default="#dc3545"></attribute>
+					<template>
+						<![CDATA[
+							<div class="ctech-alert ctech-alert-danger">Danger alert color</div>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_bg_danger_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_BG_DANGER_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_BG_DANGER_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-bg-danger"
+					>
+					<attribute label="Background color" property="background-color" default="#dc3545"></attribute>
+					<attribute label="Text color" property="color" default="#fff" ></attribute>
+					<template>
+						<![CDATA[
+							<div class="ctech-bg-danger">Danger background color</div>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_warning_button_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_WARNING_BUTTON_COLOR_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_WARNING_BUTTON_COLOR_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-btn-warning"
+					hover="true">
+					<attribute label="Background color" property="background-color" default="#ffc107" hover="#ffc107"></attribute>
+					<attribute label="Border color" property="border-color" default="#ffc107" hover="#ffc107"></attribute>
+					<attribute label="Text color" property="color" default="#fff" hover="#fff"></attribute>
+					<template>
+						<![CDATA[
+							<button class="ctech-btn ctech-btn-warning ctech-btn-sm">Warning button</button>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_warning_text_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_WARNING_TEXT_COLOR_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_WARNING_TEXT_COLOR_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-text-warning"
+					hover="false">
+					<attribute label="Text color" property="color" default="#ffc107"></attribute>
+					<template>
+						<![CDATA[
+							<span class="ctech-text-warning">Warning text</span>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_btn_outline_warning_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_BUTTON_OUTLINE_WARNING_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_BUTTON_OUTLINE_WARNING_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-btn-outline-warning"
+					hover="true">
+					<attribute label="Border color" property="border-color" default="#ffc107" hover="#fff"></attribute>
+					<attribute label="Text color" property="color" default="#ffc107" hover="#fff"></attribute>
+					<template>
+						<![CDATA[
+							<button class="ctech-btn ctech-btn-outline-warning ctech-btn-sm">Warning button outline</button>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_badge_warning_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_BADGE_WARNING_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_BADGE_WARNING_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-badge-warning"
+					hover="true">
+					<attribute label="Background color" property="background-color" default="#ffc107" hover="#fff"></attribute>
+					<attribute label="Text color" property="color" default="#fff" hover="#ffc107"></attribute>
+					<template>
+						<![CDATA[
+							<span class="ctech-badge ctech-badge-warning">Warning badge color</span>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_alert_warning_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_ALERT_WARNING_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_ALERT_WARNING_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-alert-warning"
+					hover="false">
+					<attribute label="Background color" property="background-color" default="#fff3cd"></attribute>
+					<attribute label="Border color" property="border-color" default="#ffeeba"></attribute>
+					<attribute label="Text color" property="color" default="#ffc107"></attribute>
+					<template>
+						<![CDATA[
+							<div class="ctech-alert ctech-alert-warning">Warning alert color</div>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_bg_warning_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_BG_WARNING_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_BG_WARNING_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-bg-warning"
+					>
+					<attribute label="Background color" property="background-color" default="#ffc107" ></attribute>
+					<attribute label="Text color" property="color" default="#fff"></attribute>
+					<template>
+						<![CDATA[
+							<div class="ctech-bg-warning">Warning background color</div>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_light_button_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_LIGHT_BUTTON_COLOR_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_LIGHT_BUTTON_COLOR_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-btn-light"
+					hover="true">
+					<attribute label="Background color" property="background-color" default="#f8f9fa" hover="#f8f9fa"></attribute>
+					<attribute label="Border color" property="border-color" default="#f8f9fa" hover="#f8f9fa"></attribute>
+					<attribute label="Text color" property="color" default="#818182" hover="#818182"></attribute>
+					<template>
+						<![CDATA[
+							<button class="ctech-btn ctech-btn-light ctech-btn-sm">Light button</button>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_light_text_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_LIGHT_TEXT_COLOR_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_LIGHT_TEXT_COLOR_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-text-light"
+					hover="false">
+					<attribute label="Text color" property="color" default="#818182"></attribute>
+					<template>
+						<![CDATA[
+							<span class="ctech-text-light">Light text</span>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_btn_outline_light_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_BUTTON_OUTLINE_LIGHT_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_BUTTON_OUTLINE_LIGHT_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-btn-outline-light"
+					hover="true">
+					<attribute label="Border color" property="border-color" default="#818182" hover="#818182"></attribute>
+					<attribute label="Text color" property="color" default="#818182" hover="#818182"></attribute>
+					<template>
+						<![CDATA[
+							<button class="ctech-btn ctech-btn-outline-light ctech-btn-sm">Warning button outline</button>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_badge_light_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_BADGE_LIGHT_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_BADGE_LIGHT_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-badge-light"
+					hover="true">
+					<attribute label="Background color" property="background-color" default="#f8f9fa" hover="#818182"></attribute>
+					<attribute label="Text color" property="color" default="#818182" hover="#f8f9fa"></attribute>
+					<template>
+						<![CDATA[
+							<span class="ctech-badge ctech-badge-light">Light badge color</span>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_alert_light_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_ALERT_LIGHT_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_ALERT_LIGHT_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-alert-light"
+					hover="false">
+					<attribute label="Background color" property="background-color" default="#fefefe"></attribute>
+					<attribute label="Border color" property="border-color" default="#818182"></attribute>
+					<attribute label="Text color" property="color" default="#818182"></attribute>
+					<template>
+						<![CDATA[
+							<div class="ctech-alert ctech-alert-light">Light alert color</div>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_bg_light_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_BG_LIGHT_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_BG_LIGHT_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-bg-light"
+					>
+					<attribute label="Background color" property="background-color" default="#f8f9fa"></attribute>
+					<attribute label="Text color" property="color" default="#818182" ></attribute>
+					<template>
+						<![CDATA[
+							<div class="ctech-bg-light">Light background color</div>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_dark_button_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_DARK_BUTTON_COLOR_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_DARK_BUTTON_COLOR_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-btn-dark"
+					hover="true">
+					<attribute label="Background color" property="background-color" default="#fff" hover="#343a40"></attribute>
+					<attribute label="Border color" property="border-color" default="#818182" hover="#818182"></attribute>
+					<attribute label="Text color" property="color" default="#818182" hover="#fff"></attribute>
+					<template>
+						<![CDATA[
+							<button class="ctech-btn ctech-btn-dark ctech-btn-sm">Dark button</button>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_dark_text_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_DARK_TEXT_COLOR_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_DARK_TEXT_COLOR_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-text-dark"
+					hover="false">
+					<attribute label="Text color" property="color" default="#343a40"></attribute>
+					<template>
+						<![CDATA[
+							<span class="ctech-text-dark">Dark text</span>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_btn_outline_dark_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_BUTTON_OUTLINE_DARK_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_BUTTON_OUTLINE_DARK_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-btn-outline-dark"
+					hover="true">
+					<attribute label="Border color" property="border-color" default="#343a40" hover="#fff"></attribute>
+					<attribute label="Text color" property="color" default="#343a40" hover="#fff"></attribute>
+					<template>
+						<![CDATA[
+							<button class="ctech-btn ctech-btn-outline-dark ctech-btn-sm">Dark button outline</button>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_badge_dark_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_BADGE_DARK_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_BADGE_DARK_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-badge-dark"
+					hover="true">
+					<attribute label="Background color" property="background-color" default="#343a40" hover="#fff"></attribute>
+					<attribute label="Text color" property="color" default="#fff" hover="#343a40"></attribute>
+					<template>
+						<![CDATA[
+							<span class="ctech-badge ctech-badge-dark">Dark badge color</span>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_alert_dark_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_ALERT_DARK_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_ALERT_DARK_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-alert-dark"
+					hover="false">
+					<attribute label="Background color" property="background-color" default="#d6d8d9"></attribute>
+					<attribute label="Border color" property="border-color" default="#c6c8ca"></attribute>
+					<attribute label="Text color" property="color" default="#343a40"></attribute>
+					<template>
+						<![CDATA[
+							<div class="ctech-alert ctech-alert-dark">Dark alert color</div>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_bg_dark_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_BG_DARK_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_BG_DARK_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-bg-dark">
+					<attribute label="Background color" property="background-color" default="#343a40"></attribute>
+					<attribute label="Text color" property="color" default="#fff"></attribute>
+					<template>
+						<![CDATA[
+							<div class="ctech-bg-dark">Dark background color</div>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_rating_stars_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_RATING_STARS_COLOR_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_RATING_STARS_COLOR_DESC"
+					class="inputbox tiny-input premium-input"
+					selector="[class*='star']"
+					pseudo=".progress-bar"
+					pseudo_attribute="background-color"
+					hover="false">
+					<attribute label="Text color" property="color" default="#fd9000"></attribute>
+					<template>
+						<![CDATA[
+							<i class="fa fa-star-o"></i>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_tabs_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_TABS_COLOR_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_TABS_COLOR_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-nav-link"
+					hover="false">
+					<attribute label="Background color" property="background-color" default="#fffcfc"></attribute>
+					<template>
+						<![CDATA[
+							<ul class="ctech-nav ctech-nav-tabs">
+								<li class="ctech-nav-item"><a class="ctech-nav-link">Tab color</a></li>
+							</ul>
+						]]>
+					</template>
+				</field>
+
+				<field
+					name="ctech_active_tabs_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_ACTIVE_TABS_COLOR_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_ACTIVE_TABS_COLOR_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-nav-link.ctech-active"
+					hover="false">
+					<attribute label="Background color" property="background-color" default="#ffd5c1"></attribute>
+					<template>
+						<![CDATA[
+							<ul class="ctech-nav ctech-nav-tabs">
+								<li class="ctech-nav-item"><a class="ctech-nav-link ctech-active">Active tab color</a></li><br>
+							</ul>
+						]]>
+					</template>
+				</field>
+				<field
+					name="ctech_chat_list_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_MESSAGES_LIST_COLOR_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_MESSAGES_LIST_COLOR_DESC"
+					class="inputbox tiny-input premium-input"
+					selector="#messages_tabs .ctech-nav-link"
+					hover="false">
+					<attribute label="Background color" property="background-color" default="#fffcfc"></attribute>
+					<template>
+						<![CDATA[
+							<ul class="ctech-nav ctech-nav-tabs" id="messages_tabs">
+								<li class="ctech-nav-item"><a class="ctech-nav-link">Chat list color</a></li><br>
+							</ul>
+						]]>
+					</template>
+				</field>
+				<field
+					name="ctech_active_chat_list_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_MESSAGES_ACTIVE_COLOR_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_MESSAGES_ACTIVE_COLOR_DESC"
+					class="inputbox tiny-input premium-input"
+					selector="#messages_tabs .ctech-nav-link.ctech-active"
+					hover="false">
+					<attribute label="Background color" property="background-color" default="#ffd5c1"></attribute>
+					<template>
+						<![CDATA[
+							<ul class="ctech-nav ctech-nav-tabs" id="messages_tabs">
+								<li class="ctech-nav-item"><a class="ctech-nav-link ctech-active">Active chat list color</a></li><br>
+							</ul>
+						]]>
+					</template>
+				</field>
+				<field
+					name="ctech_my_chat_bubble_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_MY_BUBBLE_COLOR_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_MY_BUBBLE_COLOR_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-bg-me"
+					hover="false"
+					pseudo=".ctech-bg-me:after"
+					pseudo_attribute="border-bottom-color">
+					<attribute label="Background color" property="background-color" default="#d9edf7"/>
+					<template>
+						<![CDATA[
+							<div class="ctech-bg-me">My chat bubble</div>
+						]]>
+					</template>
+				</field>
+				<field
+					name="ctech_their_chat_bubble_color"
+					type="colorselector"
+					label="COM_SELLACIOUS_CONFIG_CTECH_THEIR_BUBBLE_COLOR_LABEL"
+					description="COM_SELLACIOUS_CONFIG_CTECH_THEIR_BUBBLE_COLOR_DESC"
+					class="inputbox tiny-input premium-input"
+					selector=".ctech-bg-them"
+					hover="false"
+					pseudo=".ctech-bg-them:after"
+					pseudo_attribute="border-bottom-color">
+					<attribute label="Background color" property="background-color" default="#dff0d8"/>
+					<template>
+						<![CDATA[
+							<div class="ctech-bg-them">Their chat bubble</div>
+						]]>
+					</template>
+				</field>
+			</fields>
+		</fieldset>
+	</fields>
+</form>

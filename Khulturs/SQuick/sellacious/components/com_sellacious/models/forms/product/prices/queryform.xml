@@ -1,0 +1,30 @@
+<form>
+	<fieldset name="prices" label="COM_SELLACIOUS_PRODUCT_FIELDSET_PRICES">
+		<fields name="seller">
+			<field
+				type="fieldgroup"
+				label="COM_SELLACIOUS_PRICE_HANDLER_FIELDGROUP_QUERYFORM_LABEL"
+			/>
+			<field
+				name="query_form_global"
+				type="formFields"
+				label="COM_SELLACIOUS_PRODUCT_FIELD_QUERY_FORM_GLOBAL_LABEL"
+				description="COM_SELLACIOUS_PRODUCT_FIELD_QUERY_FORM_GLOBAL_DESC"
+				class="inputbox w100p"
+				context="queryform"
+				multiple="true"
+				readonly="true"
+				global="true"
+			/>
+			<field
+				name="query_form"
+				type="formFields"
+				label="COM_SELLACIOUS_PRODUCT_FIELD_QUERY_FORM_LABEL"
+				description="COM_SELLACIOUS_PRODUCT_FIELD_QUERY_FORM_DESC"
+				class="inputbox w100p"
+				context="queryform"
+				multiple="true"
+			/>
+		</fields>
+	</fieldset>
+</form>

@@ -1,0 +1,11 @@
+#
+#<?php die('Forbidden.'); ?>
+#Date: 2020-04-11 10:38:14 UTC
+#Software: Joomla Platform 13.1.0 Stable [ Curiosity ] 24-Apr-2013 00:00 GMT
+
+#Fields: datetime	priority clientip	category	message
+2020-04-11T10:38:14+00:00	WARNING ::1	jerror	JUser: :_load: Unable to load user with ID: 327
+2020-04-11T10:38:14+00:00	WARNING ::1	jerror	JUser: :_load: Unable to load user with ID: 86
+2020-04-11T10:54:34+00:00	WARNING ::1	jerror	JUser: :_load: Unable to load user with ID: 327
+2020-04-11T10:54:34+00:00	WARNING ::1	jerror	JUser: :_load: Unable to load user with ID: 86
+2020-04-11T10:54:40+00:00	WARNING ::1	jerror	JUser: :_load: Unable to load user with ID: 327

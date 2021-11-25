@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="com_sellacious">
+		<fields name="sellacious_filters">
+			<fieldset name="mod_sellacious_filters" label="MOD_SELLACIOUS_FILTERS_CONFIG_FIELDSET_FILTER_OPTIONS_LABEL">
+				<field
+					name="sections"
+					type="sellacious.sortOptions"
+					label="MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_FILTER_SECTIONS_LABEL"
+					description="MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_FILTER_SECTIONS_DESC"
+				>
+					<column name="enabled" label="JENABLED">
+						<option value="search">MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_FILTER_SECTIONS_SEARCH_LABEL</option>
+						<option value="attributes">MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_FILTER_SECTIONS_ATTRIBUTES_LABEL</option>
+						<option value="category">MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_FILTER_SECTIONS_CATEGORY_LABEL</option>
+						<option value="free_shipping">MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_FILTER_SECTIONS_FREE_SHIPPING_LABEL</option>
+						<option value="item_condition">MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_FILTER_SECTIONS_ITEM_CONDITION_LABEL</option>
+						<option value="listing_type">MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_FILTER_SECTIONS_LISTING_TYPE_LABEL</option>
+						<option value="price">MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_FILTER_SECTIONS_PRICE_LABEL</option>
+						<option value="shippable_location">MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_FILTER_SECTIONS_SHIPPABLE_LOCATION_LABEL</option>
+						<option value="special_category">MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_FILTER_SECTIONS_SPECIAL_CATEGORY_LABEL</option>
+						<!--<option value="special_offer">MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_FILTER_SECTIONS_SPECIAL_OFFER_LABEL</option>-->
+						<option value="stock">MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_FILTER_SECTIONS_STOCK_LABEL</option>
+						<option value="store_availability">MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_FILTER_SECTIONS_STORE_AVAILABILITY_LABEL</option>
+						<option value="store_location">MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_FILTER_SECTIONS_STORE_LOCATION_LABEL</option>
+						<option value="store_name">MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_FILTER_SECTIONS_STORE_NAME_LABEL</option>
+					</column>
+					<column name="disabled" label="JDISABLED">
+					</column>
+				</field>
+				<field
+					name="categories_levels"
+					type="number"
+					label="MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_CATEGORIES_LEVELS_LABEL"
+					description="MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_CATEGORIES_LEVELS_DESC"
+					min="1"
+					default="3"
+					class="inputbox"
+				/>
+				<field
+					name="categories_limit"
+					type="number"
+					label="MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_CATEGORIES_LIMIT_LABEL"
+					description="MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_CATEGORIES_LIMIT_DESC"
+					min="1"
+					default="10"
+					class="inputbox"
+				/>
+				<field
+					name="categories_limit2"
+					type="number"
+					label="MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_CATEGORIES_LIMIT_L2_LABEL"
+					description="MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_CATEGORIES_LIMIT_L2_DESC"
+					min="1"
+					default="10"
+					class="inputbox"
+				/>
+				<field
+					name="special_categories_limit"
+					type="number"
+					label="MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_SPECIAL_CATEGORIES_LIMIT_LABEL"
+					description="MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_SPECIAL_CATEGORIES_LIMIT_DESC"
+					min="1"
+					default="10"
+					class="inputbox"
+				/>
+				<field
+					name="special_offer_limit"
+					type="number"
+					label="MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_SPECIAL_OFFER_LIMIT_LABEL"
+					description="MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_SPECIAL_OFFER_LIMIT_DESC"
+					min="1"
+					default="10"
+					class="inputbox"
+				/>
+				<field
+					name="shop_name_limit"
+					type="number"
+					label="MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_SHOP_NAME_LIMIT_LABEL"
+					description="MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_SHOP_NAME_LIMIT_DESC"
+					min="1"
+					default="10"
+					class="inputbox"
+				/>
+				<!--
+				<field
+					name="shippable_location_search_in"
+					type="checkboxes"
+					label="MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_SHIPPABLE_LOCATION_SEARCH_IN_LABEL"
+					description="MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_SHIPPABLE_LOCATION_SEARCH_IN_DESC"
+					default="country"
+				>
+					<option value="country">MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_STORE_LOCATION_CUSTOM_SEARCH_IN_COUNTRY</option>
+					<option value="state">MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_STORE_LOCATION_CUSTOM_SEARCH_IN_STATE</option>
+					<option value="city">MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_STORE_LOCATION_CUSTOM_SEARCH_IN_CITY</option>
+					<option value="zip">MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_STORE_LOCATION_CUSTOM_SEARCH_IN_ZIP</option>
+				</field>
+				<field
+					name="store_location_custom_search_in"
+					type="checkboxes"
+					label="MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_STORE_LOCATION_CUSTOM_SEARCH_IN_LABEL"
+					description="MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_STORE_LOCATION_CUSTOM_SEARCH_IN_DESC"
+					default="country"
+				>
+					<option value="country">MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_STORE_LOCATION_CUSTOM_SEARCH_IN_COUNTRY</option>
+					<option value="state">MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_STORE_LOCATION_CUSTOM_SEARCH_IN_STATE</option>
+					<option value="city">MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_STORE_LOCATION_CUSTOM_SEARCH_IN_CITY</option>
+					<option value="zip">MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_STORE_LOCATION_CUSTOM_SEARCH_IN_ZIP</option>
+				</field>
+				-->
+				<field
+					name="apply_filters_by"
+					type="radio"
+					label="MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_APPLY_FILTERS_BY_LABEL"
+					description="MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_APPLY_FILTERS_BY_DESC"
+					default="individual"
+				>
+					<option value="submit">MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_APPLY_FILTERS_BY_SUBMIT_BUTTON</option>
+					<option value="individual">MOD_SELLACIOUS_FILTERS_CONFIG_FIELD_APPLY_FILTERS_BY_INDIVIDUAL_FILTER</option>
+				</field>
+			</fieldset>
+		</fields>
+	</fields>
+</form>

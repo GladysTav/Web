@@ -1,5 +1,7 @@
 <?php
-// 3.0.7 MariaDB
+// 3.2.0 - txtProjects
+// 3.2.1 - defaultDBMS - HelpMySQLMariaDB
+
 $langues = array(
 	'langue' => 'English',
 	'locale' => 'english',
@@ -20,10 +22,13 @@ $langues = array(
 	'titrePage' => 'Tools',
 	'txtProjet' => 'Your Projects',
 	'txtNoProjet' => 'No projects yet.<br />To create a new one, just create a directory in \'www\'.',
+	'txtProjects' => 'These are your folders in %s<br />To use them as an http link, you must declare them as VirtualHost',
 	'txtAlias' => 'Your Aliases',
 	'txtNoAlias' => 'No Alias yet.<br />To create a new one, use the WAMPSERVER menu.',
 	'txtVhost' => 'Your VirtualHost',
 	'txtServerName' => 'The ServerName %s has syntax error in file %s',
+	'txtDocRoot' => 'The ServerName %s use DocumentRoot %s reserved to localhost',
+	'txtTLDdev' => 'The ServerName %s use TLD %s which is monopolized by web browsers. Use another TLD (.test for example)',
 	'txtServerNameIp' => 'IP %s for Servername %s is not valid in file %s',
 	'txtVhostNotClean' => 'The %s file has not been cleaned. There remain VirtualHost examples like: dummy-host.example.com',
 	'txtNoVhost' => 'No VirtualHost yet. Add one for each project in the file: wamp/bin/apache/apache%s/conf/extra/httpd-vhosts.conf',
@@ -40,6 +45,8 @@ $langues = array(
 	'portUsed' => 'Port defined for Apache: ',
 	'mysqlportUsed' => 'Port defined for MySQL: ',
 	'mariaportUsed' => 'Port defined for MariaDB: ',
+	'defaultDBMS' => 'default DBMS',
+	'HelpMySQLMariaDB' => 'How to use MySQL and/or MariaDB?<br>What is a default DBMS?<br>How to change the default DBMS?<br>Go to the related help: Right-click Wampmanager icon -> Help -> MariaDB - MySQL',
 	'nolocalhost' => 'It\'s a bad idea to add localhost in the url of launching projects. It is best to define VirtualHost in<br />wamp/bin/apache/apache%s/conf/extra/httpd-vhosts.conf<br />file and not add localhost in the url.',
 	);
 ?>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 lt8"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7 lt8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8 lt8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="UTF-8" />
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  -->
+        <title>Login </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Login and Registration Form with HTML5 and CSS3" />
+        <meta name="keywords" content="html5, css3, form, switch, animation, :target, pseudo-class" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
+    </head>
+    <body>
+
+    	<script type="text/javascript">
+			/*une ligne de texte ;
+		– un ensemble de paragraphes (on utilisera les balise HTML <P> ... </P>;
+		– une ligne de texte en gras (on utilisera les balises HTML ...
+		– le tableau suivant :
+		– une ligne de texte en gras sans utiliser des balises de formatage HTML comme
+		précédemment.*/
+
+			document.write('Voici une ligne de text.</br>')
+			document.write('<P>Les chaussettes de l\'archi-duchesse, sont-elles sèches, <b>archi sèches</b> ?</P><P>Oui, les chaussettes de l\'archi-duchesse sont sèches, archi-sèches.</P>')
+			document.write('<table border="1"><tr><td>Première case</td><td>Deuxième case</td><td>Troisième case</td></tr><tr><td>te voici</td><td>une seconde</td><td>ligne</td></tr></table>')
+			document.write('<span style="font-weight: bold;">Une ligne en gras.</span><br>')
+
+		/*Dans le cadre d’un script Javascript «en ligne», déclarez :
+– une variable numérique, et affichez sa valeur dans une ligne de texte ;
+– un variable contenant une chaîne de caractère, et affichez la chaîne associée dans une
+ligne de texte ;
+– une variable contenant une chaîne de caractère, et une variable numérique, et affichez
+les dans une ligne de texte ;
+Enfin, affichez un tableau dont le contenu des cases sera des variables que vous avez
+déclaré au préalable. */
+			document.write("<br><br>")
+			var num=15
+			document.write('Num = '+num+"<br>")
+			var str='Une chaine de caractères'
+			document.write('Une ligne contenant '+str+' ...<br>')
+			var conc=str.concat(' - ',num)
+			document.write('Fuuuusion : '+conc)
+			document.write('<table border="1"><tr><td>'+num+'</td><td>'+str+'</td></tr><tr><td colspan="2">'+conc+'</td></tr></table>')
+
+			/*Reprenez le script que vous avez écrit à la question précédente et incluez le dans une
+fonction.
+Ecrivez une fonction Javascript, prenant une variable contenant une chaîne de caractère en
+paramètre, et l’affichant dans la page.
+Ecrivez une fonction Javascript prenant quatre paramètres et les affichant respectivement
+dans les quatre cases d’un tableau :*/
+			document.write("<br><br>")
+function ft() {
+			var num=15
+			document.write('Num = '+num+"<br>")
+			var str='Une chaine de caractères'
+			document.write('Une ligne contenant '+str+' ...<br>')
+			var conc=str.concat(' - ',num)
+			document.write('Fuuuusion : '+conc)
+			document.write('<table border="1"><tr><td>'+num+'</td><td>'+str+'</td></tr><tr><td colspan="2">'+conc+'</td></tr></table>')
+}
+function cara(argument) {
+	document.write(argument)
+}
+cara('test')
+function tab(a1, a2, a3, a4) {
+	document.write('<table border="1"><tr><td>'+a1+'</td><td>'+a2+'</td></tr><tr><td>'+a3+'</td><td>'+a4+'</td></tr></table>')
+}
+tab(1,2,3,4)
+
+
+/*Créez un bouton dans une page WEB permettant l’affichage, quand on clique dessus, d’une
+boite alert contenant le texte que vous voulez (on utilisera l’événement onClick).
+Ecrivez une fonction Javascript utilisant une alert. Cette fonction sera appelée lorsque l’on
+passera au dessus d’un lien ou d’une image (on utilisera l’événement onmouseOver).
+Reprenez le code écrit à la question précédente en incluant un paramètre à la fonction. La
+valeur contenue par ce paramètre sera affichée dans la boite alert. */
+			document.write("<br><br>")
+			document.write('<form action="#"><input type="button" onclick="maFct()" value="Clique moi"></form><br>')
+			document.write('<a onmouseOver="maFct()" href="#">Passe par dessus..</a><br>')
+			document.write('<img src="../TPFormulaires/images/modif.png" onmouseOver="maFct()"><br>')
+			function maFct(){
+				alert('Nice !')
+			}
+
+			/*Ecrivez une fonction javascript contenant un variable, qui sera initialisée et une structure if
+qui teste la valeur de la variable : si la valeur de la variable est inférieure à 10, le script
+affichera inférieur à 10 dans le cas contraite le script affichera supérieur à 10*/
+			document.write("<br><br>")
+			function AlertRandom(){
+				var i = Math.floor(Math.random() * Math.floor(21));
+				if(i>10){
+					alert(i+" > 10")
+				}
+				else if(i<10){
+					alert(i+" < 10")
+				}
+				else{
+					alert(i+" = 10 !")
+				}
+			}
+			document.write('<form action="#"><input type="button" onclick="AlertRandom()" value="Random"></form><br>')
+
+			/*Ecrivez une fonction javascript permettant, à l’aide d’une boucle for, d’afficher tous les
+nombres de 1 à 10.
+Ecrivez une fonction Javascript comprenant deux boucles imbriquées for, une gérant les 
+lignes et une gérant les colonnes, permettant l’affichage dans une page WEB d’un tableau
+de 10 lignes sur 10 colonnes. Chaque cellule du tableau contiendra le numéro de ligne de la
+case ainsi que son numéro de colonne. 
+*/
+			document.write("<br><br>")
+			document.write('<form action="#"><input type="button" onclick="Tableau()" value="Tableau 10 lignes/10 colonnes"></form><br>')
+			document.write('<div id="maDiv"></div>')
+
+			function Tableau(){
+				var str ="";
+				str+='<table border="1">'
+				for (var i = 1; i <11; i++) {
+					str+='<tr>'
+					for (var a = 1; a <11; a++) {
+						str+='<td>'+i+" ; "+a+'</td>'
+					}
+					str+='</tr>'
+				}
+				str+='</table>'
+
+				document.getElementById('maDiv').innerHTML=str;
+			}
+
+
+
+
+		</script>
+	</body>
+</html>

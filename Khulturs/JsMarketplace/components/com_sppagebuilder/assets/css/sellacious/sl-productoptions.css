@@ -1,0 +1,100 @@
+/**
+ * @version     2.2.0
+ * @package     SP Page Builder Addons for Sellacious
+ *
+ * @copyright   Copyright (C) 2016. Bhartiy Web Technologies. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @author      Bhavika Matariya <info@bhartiy.com> - http://www.bhartiy.com
+ */
+
+.product-sellers {
+	padding: 15px;
+}
+
+.product-sellers .variant_row,
+.product-sellers .sellers_row {
+	padding: 10px 0;
+	margin: 0 0 10px;
+	background: #fbfbfb;
+}
+
+.product-sellers .variant_row:last-child,
+.product-sellers .sellers_row:last-child {
+	margin: 0;
+}
+
+.variants_info .product-thumb {
+	border: none;
+	max-width: 70px;
+	margin-right: 12px;
+	max-height: 80px;
+	overflow: hidden;
+	float: left;
+	box-shadow: 0 0 10px 0 #cccccc;
+	-moz-box-shadow: 0 0 10px 0 #cccccc;
+	-ms-box-shadow: 0 0 10px 0 #cccccc;
+	-webkit-box-shadow: 0 0 10px 0 #cccccc;
+	-o-box-shadow: 0 0 10px 0 #cccccc;
+}
+
+.variantdetail, .sellerdetails {
+	min-height: 90px;
+}
+
+.seller-info {
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 1px;
+}
+
+.varientprice, .seller-product-price {
+	text-align: center;
+	font-weight: bold;
+	font-size: 22px;
+	border-right: 1px dotted #dcdcdc;
+	padding-top: 30px;
+	min-height: 90px;
+	border-left: 1px dotted #dcdcdc;
+}
+
+.product-sellers .variant_row .btngrouparea .btn,
+.product-sellers .sellers_row .btngrouparea .btn {
+	width: 100%;
+	margin: 4px 0 3px;
+}
+
+@media (max-width: 991px) {
+	.variantdetail,
+	.sellerdetails {
+		border-right: none;
+		padding-right: 0;
+	}
+
+	.variants_info,
+	.sellerdetails {
+		padding: 5px 0 8px;
+		border-bottom: 1px dotted #ccc;
+		margin-bottom: 10px;
+	}
+
+	.varientprice,
+	.seller-product-price {
+		border-left: none;
+	}
+}
+
+@media (max-width: 600px) {
+	.col-xxs-12 {
+		width: 100% !important;
+	}
+
+	.varientprice, .seller-product-price {
+		text-align: left;
+		font-weight: bold;
+		font-size: 22px;
+		margin-top: 0;
+		border: none;
+		min-height: auto;
+		padding: 5px 10px 10px;
+	}
+}

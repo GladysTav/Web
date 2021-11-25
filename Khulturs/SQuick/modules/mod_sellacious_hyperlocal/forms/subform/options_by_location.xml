@@ -1,0 +1,33 @@
+<form>
+	<field
+		name="country_image"
+		type="media"
+		default=""
+		label="MOD_SELLACIOUS_HYPERLOCAL_COUNTRY_IMAGE_TITLE"
+		description="MOD_SELLACIOUS_HYPERLOCAL_COUNTRY_IMAGE_DESC"
+	/>
+	<field
+		name="location_country"
+		type="text"
+		label="MOD_SELLACIOUS_HYPERLOCAL_MENU_NAME_TITLE"
+		description="MOD_SELLACIOUS_HYPERLOCAL_MENU_NAME_DESC"
+	/>
+	<field
+		name="location_state"
+		type="text"
+		label="MOD_SELLACIOUS_HYPERLOCAL_MENU_STATE_TITLE"
+		description="MOD_SELLACIOUS_HYPERLOCAL_MENU_STATE_DESC"
+	/>
+	<field
+		name="location_city"
+		type="text"
+		label="MOD_SELLACIOUS_HYPERLOCAL_MENU_CITY_TITLE"
+		description="MOD_SELLACIOUS_HYPERLOCAL_MENU_CITY_DESC"
+	/>
+	<field
+		name="location_zip"
+		type="text"
+		label="MOD_SELLACIOUS_HYPERLOCAL_MENU_ZIP_TITLE"
+		description="MOD_SELLACIOUS_HYPERLOCAL_MENU_ZIP_DESC"
+	/>
+</form>

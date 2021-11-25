@@ -1,0 +1,477 @@
+[dir] .profile-tabs .ctech-nav-tabs,
+[dir] #seller-form .ctech-nav-tabs {
+	border: none;
+	margin: 0;
+}
+
+.profile-tabs .ctech-nav-item,
+#seller-form .ctech-nav-item {
+	width: 100%;
+}
+
+.profile-tabs .ctech-nav-link.ctech-active,
+#seller-form .ctech-nav-link.ctech-active {
+	color: #6b3517;
+}
+
+[dir] .profile-tabs .ctech-nav-link.ctech-active,
+[dir] #seller-form .ctech-nav-link.ctech-active {
+	background-color: #ffd5c1;
+}
+
+[dir] .profile-tabs .ctech-tab-content,
+[dir] #seller-form .ctech-tab-content {
+	background: #fbfbfd;
+	padding: 1.25rem;
+}
+
+[dir] .profile-tabs .ctech-tab-content .ctech-form-group,
+[dir] #seller-form .ctech-tab-content .ctech-form-group,
+[dir] .profile-tabs .ctech-tab-content .ctech-form-group .ctech-col-form-label label,
+[dir] #seller-form .ctech-tab-content .ctech-form-group .ctech-col-form-label label {
+	margin-bottom: 0;
+}
+
+.profile-tabs .ctech-form-group .ctech-col-form-label,
+#seller-form .ctech-form-group .ctech-col-form-label {
+	font-size: 14px;
+	font-weight: 400;
+	color: #5b5a5a;
+	width: 160px;
+}
+
+[dir=ltr] .profile-tabs .ctech-form-group .ctech-col-form-label,
+[dir=ltr] #seller-form .ctech-form-group .ctech-col-form-label {
+	text-align: left;
+	float: left;
+}
+
+[dir=rtl] .profile-tabs .ctech-form-group .ctech-col-form-label,
+[dir=rtl] #seller-form .ctech-form-group .ctech-col-form-label {
+	text-align: right;
+	float: right;
+}
+
+.profile-tabs .ctech-form-group .ctech-col-form-label + .ctech-col-form-input,
+#seller-form .ctech-form-group .ctech-col-form-label + .ctech-col-form-input {
+	width: calc(100% - 160px);
+}
+
+.profile-tabs .ctech-form-group .ctech-col-form-label + .ctech-col-form-value {
+	width: calc(100% - 160px);
+	padding-top: calc(0.375rem + 1px);
+	padding-bottom: calc(0.375rem + 1px);
+}
+
+[dir=ltr] .profile-tabs .ctech-form-group .ctech-col-form-label + .ctech-col-form-value {
+	float: left;
+}
+
+[dir=ltr] .profile-tabs .ctech-form-group .ctech-col-form-label + .ctech-col-form-input,
+[dir=ltr] #seller-form .ctech-form-group .ctech-col-form-label + .ctech-col-form-input {
+	float: left;
+}
+
+[dir=rtl] .profile-tabs .ctech-form-group .ctech-col-form-label + .ctech-col-form-input,
+[dir=rtl] #seller-form .ctech-form-group .ctech-col-form-label + .ctech-col-form-input {
+	float: right;
+}
+
+[dir=rtl] .profile-tabs .ctech-form-group .ctech-col-form-label + .ctech-col-form-value {
+	float: right;
+}
+
+.profile-tabs .ctech-tab-content .ctech-form-group input[type="text"],
+.profile-tabs .ctech-tab-content .ctech-form-group input[type="email"],
+.profile-tabs .ctech-tab-content .ctech-form-group input[type="password"],
+.profile-tabs .ctech-tab-content .ctech-form-group input[type="number"],
+.profile-tabs .ctech-tab-content .ctech-form-group input[type="tel"],
+.profile-tabs .ctech-tab-content .ctech-form-group textarea,
+#seller-form .ctech-tab-content .ctech-form-group input[type="text"],
+#seller-form .ctech-tab-content .ctech-form-group input[type="email"],
+#seller-form .ctech-tab-content .ctech-form-group input[type="password"],
+#seller-form .ctech-tab-content .ctech-form-group input[type="number"],
+#seller-form .ctech-tab-content .ctech-form-group input[type="tel"],
+#seller-form .ctech-tab-content .ctech-form-group textarea {
+	width: 100%;
+	font-size: 13px;
+	color: #777777;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+}
+
+[dir] .profile-tabs .ctech-tab-content .ctech-form-group input[type="text"],
+[dir] .profile-tabs .ctech-tab-content .ctech-form-group input[type="email"],
+[dir] .profile-tabs .ctech-tab-content .ctech-form-group input[type="password"],
+[dir] .profile-tabs .ctech-tab-content .ctech-form-group input[type="number"],
+[dir] .profile-tabs .ctech-tab-content .ctech-form-group input[type="tel"],
+[dir] .profile-tabs .ctech-tab-content .ctech-form-group textarea,
+[dir] #seller-form .ctech-tab-content .ctech-form-group input[type="text"],
+[dir] #seller-form .ctech-tab-content .ctech-form-group input[type="email"],
+[dir] #seller-form .ctech-tab-content .ctech-form-group input[type="password"],
+[dir] #seller-form .ctech-tab-content .ctech-form-group input[type="number"],
+[dir] #seller-form .ctech-tab-content .ctech-form-group input[type="tel"],
+[dir] #seller-form .ctech-tab-content .ctech-form-group textarea {
+	padding: 15px 10px;
+	border: 1px solid #e5e5e5;
+	border-radius: 0;
+	background: transparent;
+	box-shadow: none;
+	margin-bottom: 9px;
+}
+
+.profile-tabs .ctech-tab-content .ctech-form-group input[type="text"].small-input,
+#seller-form .ctech-tab-content .ctech-form-group input[type="text"].small-input {
+	width: 75px;
+}
+
+.profile-tabs .ctech-tab-content .ctech-col-form-input input.tiny-input,
+#seller-form .ctech-tab-content .ctech-col-form-input input.tiny-input {
+	width: 50px;
+}
+
+.profile-tabs .ctech-tab-content .ctech-col-form-input .select2-container.tiny-input,
+.profile-tabs .ctech-tab-content .ctech-col-form-input .select2-container.tiny-input .select2-choice,
+#seller-form .ctech-tab-content .ctech-col-form-input .select2-container.tiny-input,
+#seller-form .ctech-tab-content .ctech-col-form-input .select2-container.tiny-input .select2-choice {
+	width: 105px;
+	min-width: unset;
+}
+
+[dir] .profile-tabs .ctech-tab-content .ctech-col-form-input .select2-container.tiny-input,
+[dir] .profile-tabs .ctech-tab-content .ctech-col-form-input .select2-container.tiny-input .select2-choice,
+[dir] #seller-form .ctech-tab-content .ctech-col-form-input .select2-container.tiny-input,
+[dir] #seller-form .ctech-tab-content .ctech-col-form-input .select2-container.tiny-input .select2-choice {
+	margin-top: 0;
+}
+
+
+.profile-tabs .ctech-tab-content .ctech-form-group .select2-container.small-input,
+.profile-tabs .ctech-tab-content .ctech-form-group .select2-container.small-input .select2-choice,
+#seller-form .ctech-tab-content .ctech-form-group .select2-container.small-input,
+#seller-form .ctech-tab-content .ctech-form-group .select2-container.small-input .select2-choice {
+	width: 115px;
+	min-width: unset;
+}
+
+[dir=ltr] .profile-tabs .ctech-tab-content .ctech-form-group .input-group > input,
+[dir=ltr] .profile-tabs .ctech-tab-content .ctech-form-group .input-group > .select2-container,
+[dir=ltr] #seller-form .ctech-tab-content .ctech-form-group .input-group > input,
+[dir=ltr] #seller-form .ctech-tab-content .ctech-form-group .input-group > .select2-container {
+	float: left;
+}
+
+[dir=rtl] .profile-tabs .ctech-tab-content .ctech-form-group .input-group > input,
+[dir=rtl] .profile-tabs .ctech-tab-content .ctech-form-group .input-group > .select2-container,
+[dir=rtl] #seller-form .ctech-tab-content .ctech-form-group .input-group > input,
+[dir=rtl] #seller-form .ctech-tab-content .ctech-form-group .input-group > .select2-container {
+	float: right;
+}
+
+[dir] .profile-tabs .ctech-tab-content .ctech-form-group input[type="text"].select2-input,
+[dir] #seller-form .ctech-tab-content .ctech-form-group input[type="text"].select2-input {
+	margin-bottom: 0;
+	box-shadow: unset;
+	border: unset;
+}
+
+.profile-tabs .ctech-tab-content .ctech-form-group .select2-container-multi .select2-choices,
+#seller-form .ctech-tab-content .ctech-form-group .select2-container-multi .select2-choices {
+	color: #777777;
+}
+
+[dir] .profile-tabs .ctech-tab-content .ctech-form-group .select2-container-multi .select2-choices,
+[dir] #seller-form .ctech-tab-content .ctech-form-group .select2-container-multi .select2-choices {
+	border: 1px solid #e5e5e5;
+	background: unset;
+}
+
+[dir] .profile-tabs .ctech-tab-content .ctech-form-group .select2-container,
+[dir] .profile-tabs .ctech-tab-content .ctech-form-group .jff-uploader-wrapper,
+[dir] #seller-form .ctech-tab-content .ctech-form-group .select2-container,
+[dir] #seller-form .ctech-tab-content .ctech-form-group .jff-uploader-wrapper {
+	margin-bottom: 9px;
+}
+
+[dir] .profile-tabs .ctech-tab-content .ctech-form-group input[type="text"]:focus,
+[dir] .profile-tabs .ctech-tab-content .ctech-form-group input[type="email"]:focus,
+[dir] .profile-tabs .ctech-tab-content .ctech-form-group input[type="password"]:focus,
+[dir] .profile-tabs .ctech-tab-content .ctech-form-group input[type="number"]:focus,
+[dir] .profile-tabs .ctech-tab-content .ctech-form-group input[type="tel"]:focus,
+[dir] .profile-tabs .ctech-tab-content .ctech-form-group textarea:focus,
+[dir] #seller-form .ctech-tab-content .ctech-form-group input[type="text"]:focus,
+[dir] #seller-form .ctech-tab-content .ctech-form-group input[type="email"]:focus,
+[dir] #seller-form .ctech-tab-content .ctech-form-group input[type="password"]:focus,
+[dir] #seller-form .ctech-tab-content .ctech-form-group input[type="number"]:focus,
+[dir] #seller-form .ctech-tab-content .ctech-form-group input[type="tel"]:focus,
+[dir] #seller-form .ctech-tab-content .ctech-form-group textarea:focus {
+	border-color: #c7c1c1;
+}
+
+.profile-tabs .ctech-tab-content .ctech-form-group .select2-container .select2-choice,
+#seller-form .ctech-tab-content .ctech-form-group .select2-container .select2-choice {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	line-height: 1;
+	height: unset;
+	min-width: 150px;
+}
+
+[dir] .profile-tabs .ctech-tab-content .ctech-form-group .select2-container .select2-choice,
+[dir] #seller-form .ctech-tab-content .ctech-form-group .select2-container .select2-choice {
+	border: 1px solid #dfdfdf;
+	border-radius: 0;
+	background: transparent;
+	padding: 8.5px 10px;
+	min-height: 32px;
+}
+
+.profile-tabs .ctech-tab-content .ctech-form-group .select2-container .select2-arrow,
+#seller-form .ctech-tab-content .ctech-form-group .select2-container .select2-arrow {
+	width: 24px;
+}
+
+[dir] .profile-tabs .ctech-tab-content .ctech-form-group .select2-container .select2-arrow,
+[dir] #seller-form .ctech-tab-content .ctech-form-group .select2-container .select2-arrow {
+	background: #fff;
+	background-image: none;
+	border-radius: 0;
+}
+
+[dir=ltr] .profile-tabs .ctech-tab-content .ctech-form-group .select2-container .select2-arrow,
+[dir=ltr] #seller-form .ctech-tab-content .ctech-form-group .select2-container .select2-arrow {
+	border-left: 0;
+}
+
+[dir=rtl] .profile-tabs .ctech-tab-content .ctech-form-group .select2-container .select2-arrow,
+[dir=rtl] #seller-form .ctech-tab-content .ctech-form-group .select2-container .select2-arrow {
+	border-right: 0;
+}
+
+[dir] .profile-tabs .ctech-tab-content .ctech-form-group .select2-container .select2-arrow b,
+[dir] #seller-form .ctech-tab-content .ctech-form-group .select2-container .select2-arrow b {
+	background-position: 4px 4px;
+}
+
+.profile-tabs .ctech-aside-md,
+#seller-form .ctech-aside-md {
+	width: 65%;
+}
+
+[dir=ltr] .profile-tabs .ctech-aside-md,
+[dir=ltr] #seller-form .ctech-aside-md {
+	float: right;
+}
+
+[dir=rtl] .profile-tabs .ctech-aside-md,
+[dir=rtl] #seller-form .ctech-aside-md {
+	float: left;
+}
+
+.profile-tabs .ctech-tab-content .ctech-form-group .timings-wrapper .select2-container .select2-choice {
+	min-width: unset;
+}
+[dir] .profile-tabs .ctech-tab-content .ctech-form-group .timings-wrapper label.checkbox {
+	margin-bottom: 0;
+}
+
+.profile-tabs #profile_tabs_hyperlocal label {
+	display: inline-block;
+	font-weight: 400;
+	font-size: 13px;
+}
+.profile-tabs fieldset.btn-group.btn-group-yesno.radio .btn.active {
+	color: #fff !important;
+}
+[dir] .profile-tabs fieldset.btn-group.btn-group-yesno.radio .btn.active {
+	background: #007bff !important;
+	border-color: #007bff !important;
+}
+[dir=ltr] .profile-tabs fieldset.btn-group.btn-group-yesno.radio .btn.active {
+	box-shadow: 1px 0 1px 0 #007bff !important;
+}
+[dir=rtl] .profile-tabs fieldset.btn-group.btn-group-yesno.radio .btn.active {
+	box-shadow: -0.5px 0 1px 0 #007bff !important;
+}
+
+.profile-tabs .btn-group > .btn:not(:first-child),
+.btn-group > .btn-group:not(:first-child) > .btn {
+	color: #007bff !important;
+}
+
+[dir] .profile-tabs .btn-group > .btn:not(:first-child), [dir] .btn-group > .btn-group:not(:first-child) > .btn {
+	border: 1px solid !important;
+	background: transparent !important;
+}
+
+.profile-tabs .btn-group > .btn:not(:last-child):not(.dropdown-toggle) {
+	color: #007bff !important;
+}
+
+[dir] .profile-tabs .btn-group > .btn:not(:last-child):not(.dropdown-toggle) {
+	border: 1px solid !important;
+	background: transparent !important;
+}
+
+@media (max-width: 576px) {
+	.profile-tabs .ctech-aside-md {
+		width: 100%;
+		float: unset;
+	}
+	.profile-tabs .ctech-tab-content .ctech-form-group .timings-wrapper .select2-container {
+		width: 100% !important;
+		float: unset !important;
+	}
+}
+
+@media (max-width: 500px) {
+	.profile-tabs .ctech-form-group .ctech-col-form-label {
+		width: 100%;
+		float: unset;
+		line-height: 1;
+		padding-bottom: 0;
+	}
+	.profile-tabs .ctech-form-group .ctech-col-form-label + .ctech-col-form-input,
+	.profile-tabs .ctech-form-group .ctech-col-form-label + .ctech-col-form-value {
+		width: 100%;
+		float: unset;
+	}
+}
+
+.profile-tabs .ctech-tab-content legend {
+	font-size: 16px;
+	padding: 0 0 5px;
+}
+
+.profile-tabs .profile-buttons {
+	margin-bottom: 10px;
+}
+
+.profile-tabs .profile-avatar-container {
+	width: 100px;
+	float: right;
+}
+
+[dir=rtl] .profile-tabs .profile-avatar-container {
+	float: left;
+}
+
+.profile-tabs .profile-basic-container {
+	width: calc(100% - 100px);
+	float: left;
+	padding-right: 10px;
+}
+
+.profile-tabs .profile-avatar {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+	.profile-tabs .profile-avatar-container,
+	.profile-tabs .profile-basic-container {
+		width: 100%;
+		float: unset;
+	}
+}
+
+[dir=ltr] .profile-tabs .address-residential input[type="radio"] {
+	float: unset;
+	margin-left: unset;
+	margin-top: 10px;
+
+}[dir=rtl] .profile-tabs .address-residential input[type="radio"] {
+	float: unset;
+	margin-left: unset;
+}
+
+.profile-tabs .address-residential label {
+	margin-right: 12px;
+
+}
+
+@media (max-width: 500px) {
+	.profile-tabs .ctech-form-group .ctech-col-form-label + .ctech-col-form-input,
+	#seller-form .ctech-form-group .ctech-col-form-label + .ctech-col-form-input {
+		width: 100%;
+	}
+}
+
+#seller-form .ctech-nav-tabs .ctech-nav-item,
+.profile-tabs .ctech-nav-tabs .ctech-nav-item {
+	margin-bottom: unset;
+}
+
+#seller-form .ctech-wrapper.custom-attributes-container .ctech-form-group .ctech-col-form-input .minicolors-theme-bootstrap input {
+	width: 100px;
+	padding-left: 25px;
+}
+
+@media(max-width: 979px) and (min-width: 768px){
+	.profile-tabs .ctech-wrapper.custom-attributes-container .ctech-form-group .ctech-col-form-input .field-calendar .input-append input,
+	#seller-form .ctech-wrapper.custom-attributes-container .ctech-form-group .ctech-col-form-input .field-calendar .input-append input {
+		width: calc(100% - 42px);
+	}
+}
+
+@media(max-width: 730px) {
+	.profile-tabs .ctech-wrapper.custom-attributes-container .ctech-form-group .ctech-col-form-input .field-calendar .input-append input,
+	#seller-form .ctech-wrapper.custom-attributes-container .ctech-form-group .ctech-col-form-input .field-calendar .input-append input {
+		width: calc(100% - 42px);
+	}
+}
+
+.profile-tabs .ctech-wrapper.custom-attributes-container .ctech-form-group .ctech-col-form-input .input-group  a,
+#seller-form .ctech-wrapper.custom-attributes-container .ctech-form-group .ctech-col-form-input .input-group a {
+	margin-left: 3px;
+}
+
+@media(max-width: 979px) {
+	.profile-tabs .ctech-wrapper.custom-attributes-container .ctech-form-group .ctech-col-form-input .input-group,
+	#seller-form .ctech-wrapper.custom-attributes-container .ctech-form-group .ctech-col-form-input .input-group a {
+		display: block;
+	}
+	.profile-tabs .ctech-wrapper.custom-attributes-container .ctech-form-group .ctech-col-form-input .input-group a,
+	#seller-form .ctech-wrapper.custom-attributes-container .ctech-form-group .ctech-col-form-input .input-group a {
+		margin-left: unset;
+	}
+}
+
+@media(max-width: 767px) and (min-width: 745px) {
+	.profile-tabs .ctech-wrapper.custom-attributes-container .ctech-form-group .ctech-col-form-input .input-group a,
+	#seller-form .ctech-wrapper.custom-attributes-container .ctech-form-group .ctech-col-form-input .input-group a {
+		margin-left: 3px;
+	}
+}
+
+@media(max-width: 575px) and (min-width: 514px) {
+	.profile-tabs .ctech-wrapper.custom-attributes-container .ctech-form-group .ctech-col-form-input .input-group a,
+	#seller-form .ctech-wrapper.custom-attributes-container .ctech-form-group .ctech-col-form-input .input-group a {
+		margin-left: 3px;
+	}
+}
+
+@media(max-width: 500px) and (min-width: 321px) {
+	#seller-form .ctech-wrapper.custom-attributes-container .ctech-form-group .ctech-col-form-input .input-group a {
+		margin-left: 3px;
+	}
+}
+
+@media(max-width: 500px) and (min-width: 353px) {
+	.profile-tabs .ctech-wrapper.custom-attributes-container .ctech-form-group .ctech-col-form-input .input-group a {
+		margin-left: unset;
+	}
+}
+
+.calendar-container {
+	text-align: center;
+}
+
+.ctech-form-group .ctech-col-form-input .checkboxes .checkbox {
+	width: 100%;
+}

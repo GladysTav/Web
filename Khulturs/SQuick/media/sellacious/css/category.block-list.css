@@ -1,0 +1,27 @@
+/**
+ * @version     2.0.0
+ * @package     sellacious
+ *
+ * @copyright   Copyright (C) 2012-2020 Bhartiy Web Technologies. All rights reserved.
+ * @license     SPL Sellacious Private License; see http://www.sellacious.com/spl.html
+ * @author      Saurabh Sabharwal <info@bhartiy.com> - http://www.bhartiy.com
+ */
+
+.category-block-list {
+	display: block;
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+.category-block-list:last-of-type {
+	margin-bottom: 0;
+}
+
+.category-block-list .category-title {
+	font-size: 14px;
+}
+
+.category-block-list .category-title:before {
+	content: '\25CF';
+	padding-right: 5px;
+}

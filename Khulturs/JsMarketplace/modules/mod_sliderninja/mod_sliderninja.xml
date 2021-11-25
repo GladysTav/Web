@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+	<name>mod_slider_ninja</name>
+	<author>Asfaque Ali Ansari</author>
+	<creationDate>Aug 2016</creationDate>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@bhartiy.com</authorEmail>
+	<authorUrl>www.bhartiy.com</authorUrl>
+	<version>1.1.0</version>
+	<description>MOD_SLIDER_NINJA_DESC</description>
+
+	<files>
+		<filename>mod_sliderninja.xml</filename>
+		<filename module="mod_sliderninja">mod_sliderninja.php</filename>
+		<filename>helper.php</filename>
+		<folder>language</folder>
+		<folder>tmpl</folder>
+	</files>
+	<media folder="media" destination="mod_sliderninja">
+		<folder>css</folder>
+		<folder>js</folder>
+	</media>
+
+	<config>
+
+        <fields name="params">
+			<fieldset name="basic">
+
+				<field name="loadjquery"
+				       type="radio"
+				       class="btn-group btn-group-yesno"
+				       default="0"
+				       label="MOD_SLIDER_NINJA_JQUERY"
+				       description="MOD_SLIDER_NINJA_JQUERY_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="sliderclass"
+				       type="text"
+				       default=""
+				       label="MOD_SLIDER_NINJA_CSS_CLASS"
+				       description="MOD_SLIDER_NINJA_CSS_CLASS_DESC" />
+
+				<field name="navarrows"
+				       type="radio"
+				       class="btn-group btn-group-yesno"
+				       default="0"
+				       label="MOD_SLIDER_NINJA_DISPLAY_ARROW"
+				       description="MOD_SLIDER_NINJA_DISPLAY_ARROW_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="dotnav"
+				       type="radio"
+				       class="btn-group btn-group-yesno"
+				       default="0"
+				       label="MOD_SLIDER_NINJA_DISPLAY_DOT_NAV"
+				       description="MOD_SLIDER_NINJA_DISPLAY_DOT_NAV_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field name="autoplay"
+				       type="radio"
+				       class="btn-group btn-group-yesno"
+				       default="0"
+				       label="MOD_SLIDER_NINJA_ENABLE_AUTOPLAY"
+				       description="MOD_SLIDER_NINJA_ENABLE_AUTOPLAY_DESC">
+			        <option value="1">JYES</option>
+			        <option value="0">JNO</option>
+		        </field>
+
+				<field name="autoplayspeed"
+				       type="number"
+				       default="3000"
+				       label="MOD_SLIDER_NINJA_ENABLE_AUTOPLAY_SPEED"
+				       description="MOD_SLIDER_NINJA_ENABLE_AUTOPLAY_SPEED_DESC"
+				       showon="autoplay:1" />
+
+				<field name="enablecaption"
+				       type="radio"
+				       class="btn-group btn-group-yesno"
+				       default="0"
+				       label="MOD_SLIDER_NINJA_ENABLE_CAPTION"
+				       description="MOD_SLIDER_NINJA_ENABLE_CAPTION_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<!--####### Slide 1 options ###########-->
+				<field type="spacer" name="spacer1" label="&lt;hr/&gt; &lt;b&gt;Slide #1&lt;/b&gt;" />
+
+				<field name="enableitem1"
+				       type="radio"
+				       class="btn-group btn-group-yesno"
+				       default="0" label="MOD_SLIDER_NINJA_ENABLE_SLIDE_ITEM"
+				       description="MOD_SLIDER_NINJA_ENABLE_SLIDE_ITEM_DESC">
+			        <option value="1">JYES</option>
+			        <option value="0">JNO</option>
+		        </field>
+
+				<field name="slideimg1"
+				       type="media"
+				       default=""
+				       label="MOD_SLIDER_NINJA_UPLOAD_IMAGE"
+				       description="MOD_SLIDER_NINJA_UPLOAD_IMAGE_DESC"
+				       showon="enableitem1:1" />
+
+				<field name="title1"
+				       type="text"
+				       default=""
+				       label="MOD_SLIDER_NINJA_SLIDE_TITLE"
+				       description="MOD_SLIDER_NINJA_SLIDE_TITLE_DESC"
+				       showon="enablecaption:1[AND]enableitem1:1" />
+
+				<field name="description1"
+				       type="textarea"
+				       default=""
+				       label="MOD_SLIDER_NINJA_SLIDE_DESCRIPTION"
+				       description="MOD_SLIDER_NINJA_SLIDE_DESCRIPTION_DESC"
+				       rows="5"
+				       cols="5"
+				       showon="enablecaption:1[AND]enableitem1:1" />
+
+				<field name="enablebtn1"
+				       type="radio"
+				       class="btn-group btn-group-yesno"
+				       default="0"
+				       label="MOD_SLIDER_NINJA_ENABLE_LiNK"
+				       description="MOD_SLIDER_NINJA_ENABLE_LiNK_DESC"
+				       showon="enableitem1:1" >
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field name="btn1"
+				       type="text"
+				       default="Read More"
+				       label="MOD_SLIDER_NINJA_BUTTON_TEXT"
+				       description="MOD_SLIDER_NINJA_BUTTON_TEXT_DESC"
+				       showon="enablecaption:1[AND]enableitem1:1" />
+
+				<field name="btnlink1"
+				       type="text"
+				       default=""
+				       label="MOD_SLIDER_NINJA_BUTTON_LINK"
+				       description="MOD_SLIDER_NINJA_BUTTON_LINK_DESC"
+				       showon="enableitem1:1" />
+
+
+				<!--####### Slide 2 options ###########-->
+				<field type="spacer" name="spacer2" label="&lt;hr/&gt; &lt;b&gt;Slide #2&lt;/b&gt;" />
+
+				<field name="enableitem2"
+				       type="radio"
+				       class="btn-group btn-group-yesno"
+				       default="0" label="MOD_SLIDER_NINJA_ENABLE_SLIDE_ITEM"
+				       description="MOD_SLIDER_NINJA_ENABLE_SLIDE_ITEM_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field name="slideimg2"
+				       type="media"
+				       default=""
+				       label="MOD_SLIDER_NINJA_UPLOAD_IMAGE"
+				       description="MOD_SLIDER_NINJA_UPLOAD_IMAGE_DESC"
+				       showon="enableitem2:1" />
+
+
+				<field name="title2"
+				       type="text"
+				       default=""
+				       label="MOD_SLIDER_NINJA_SLIDE_TITLE"
+				       description="MOD_SLIDER_NINJA_SLIDE_TITLE_DESC"
+				       showon="enablecaption:1[AND]enableitem2:1" />
+
+				<field name="description2"
+				       type="textarea"
+				       default=""
+				       label="MOD_SLIDER_NINJA_SLIDE_DESCRIPTION"
+				       description="MOD_SLIDER_NINJA_SLIDE_DESCRIPTION_DESC"
+				       rows="5"
+				       cols="5"
+				       showon="enablecaption:1[AND]enableitem2:1" />
+
+				<field name="enablebtn2"
+				       type="radio"
+				       class="btn-group btn-group-yesno"
+				       default="0"
+				       label="MOD_SLIDER_NINJA_ENABLE_LiNK"
+				       description="MOD_SLIDER_NINJA_ENABLE_LiNK_DESC"
+				       showon="enableitem2:1" >
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field name="btn2"
+				       type="text"
+				       default="Read More"
+				       label="MOD_SLIDER_NINJA_BUTTON_TEXT"
+				       description="MOD_SLIDER_NINJA_BUTTON_TEXT_DESC"
+				       showon="enablecaption:1[AND]enableitem2:1" />
+
+				<field name="btnlink2"
+				       type="text"
+				       default=""
+				       label="MOD_SLIDER_NINJA_BUTTON_LINK"
+				       description="MOD_SLIDER_NINJA_BUTTON_LINK_DESC"
+				       showon="enableitem2:1" />
+
+				<!--####### Slide 3 options ###########-->
+				<field type="spacer" name="spacer3" label="&lt;hr/&gt; &lt;b&gt;Slide #3&lt;/b&gt;" />
+
+				<field name="enableitem3"
+				       type="radio"
+				       class="btn-group btn-group-yesno"
+				       default="0" label="MOD_SLIDER_NINJA_ENABLE_SLIDE_ITEM"
+				       description="MOD_SLIDER_NINJA_ENABLE_SLIDE_ITEM_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field name="slideimg3"
+				       type="media"
+				       default=""
+				       label="MOD_SLIDER_NINJA_UPLOAD_IMAGE"
+				       description="MOD_SLIDER_NINJA_UPLOAD_IMAGE_DESC"
+				       showon="enableitem3:1" />
+
+				<field name="title3"
+				       type="text"
+				       default=""
+				       label="MOD_SLIDER_NINJA_SLIDE_TITLE"
+				       description="MOD_SLIDER_NINJA_SLIDE_TITLE_DESC"
+				       showon="enablecaption:1[AND]enableitem3:1" />
+
+				<field name="description3"
+				       type="textarea"
+				       default=""
+				       label="MOD_SLIDER_NINJA_SLIDE_DESCRIPTION"
+				       description="MOD_SLIDER_NINJA_SLIDE_DESCRIPTION_DESC"
+				       rows="5"
+				       cols="5"
+				       showon="enablecaption:1[AND]enableitem3:1" />
+
+				<field name="enablebtn3"
+				       type="radio"
+				       class="btn-group btn-group-yesno"
+				       default="0"
+				       label="MOD_SLIDER_NINJA_ENABLE_LiNK"
+				       description="MOD_SLIDER_NINJA_ENABLE_LiNK_DESC"
+				       showon="enableitem3:1" >
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field name="btn3"
+				       type="text"
+				       default="Read More"
+				       label="MOD_SLIDER_NINJA_BUTTON_TEXT"
+				       description="MOD_SLIDER_NINJA_BUTTON_TEXT_DESC"
+				       showon="enablecaption:1[AND]enableitem3:1" />
+
+				<field name="btnlink3"
+				       type="text"
+				       default=""
+				       label="MOD_SLIDER_NINJA_BUTTON_LINK"
+				       description="MOD_SLIDER_NINJA_BUTTON_LINK_DESC"
+				       showon="enableitem3:1" />
+
+				<!--####### Slide 4 options ###########-->
+				<field type="spacer" name="spacer4" label="&lt;hr/&gt; &lt;b&gt;Slide #4&lt;/b&gt;" />
+
+				<field name="enableitem4"
+				       type="radio"
+				       class="btn-group btn-group-yesno"
+				       default="0" label="MOD_SLIDER_NINJA_ENABLE_SLIDE_ITEM"
+				       description="MOD_SLIDER_NINJA_ENABLE_SLIDE_ITEM_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field name="slideimg4"
+				       type="media"
+				       default=""
+				       label="MOD_SLIDER_NINJA_UPLOAD_IMAGE"
+				       description="MOD_SLIDER_NINJA_UPLOAD_IMAGE_DESC"
+				       showon="enableitem4:1" />
+
+				<field name="title4"
+				       type="text"
+				       default=""
+				       label="MOD_SLIDER_NINJA_SLIDE_TITLE"
+				       description="MOD_SLIDER_NINJA_SLIDE_TITLE_DESC"
+				       showon="enablecaption:1[AND]enableitem4:1" />
+
+				<field name="description4"
+				       type="textarea"
+				       default=""
+				       label="MOD_SLIDER_NINJA_SLIDE_DESCRIPTION"
+				       description="MOD_SLIDER_NINJA_SLIDE_DESCRIPTION_DESC"
+				       rows="5"
+				       cols="5"
+				       showon="enablecaption:1[AND]enableitem4:1" />
+
+				<field name="enablebtn4"
+				       type="radio"
+				       class="btn-group btn-group-yesno"
+				       default="0"
+				       label="MOD_SLIDER_NINJA_ENABLE_LiNK"
+				       description="MOD_SLIDER_NINJA_ENABLE_LiNK_DESC"
+				       showon="enableitem4:1" >
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field name="btn4"
+				       type="text"
+				       default="Read More"
+				       label="MOD_SLIDER_NINJA_BUTTON_TEXT"
+				       description="MOD_SLIDER_NINJA_BUTTON_TEXT_DESC"
+				       showon="enablecaption:1[AND]enableitem4:1" />
+
+				<field name="btnlink4"
+				       type="text"
+				       default=""
+				       label="MOD_SLIDER_NINJA_BUTTON_LINK"
+				       description="MOD_SLIDER_NINJA_BUTTON_LINK_DESC"
+				       showon="enableitem4:1" />
+
+				<!--####### Slide 5 options ###########-->
+				<field type="spacer" name="spacer5" label="&lt;hr/&gt; &lt;b&gt;Slide #5&lt;/b&gt;" />
+
+				<field name="enableitem5"
+				       type="radio"
+				       class="btn-group btn-group-yesno"
+				       default="0" label="MOD_SLIDER_NINJA_ENABLE_SLIDE_ITEM"
+				       description="MOD_SLIDER_NINJA_ENABLE_SLIDE_ITEM_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field name="slideimg5"
+				       type="media"
+				       default=""
+				       label="MOD_SLIDER_NINJA_UPLOAD_IMAGE"
+				       description="MOD_SLIDER_NINJA_UPLOAD_IMAGE_DESC"
+				       showon="enableitem5:1" />
+
+				<field name="title5"
+				       type="text"
+				       default=""
+				       label="MOD_SLIDER_NINJA_SLIDE_TITLE"
+				       description="MOD_SLIDER_NINJA_SLIDE_TITLE_DESC"
+				       showon="enablecaption:1[AND]enableitem5:1" />
+
+				<field name="description5"
+				       type="textarea"
+				       default=""
+				       label="MOD_SLIDER_NINJA_SLIDE_DESCRIPTION"
+				       description="MOD_SLIDER_NINJA_SLIDE_DESCRIPTION_DESC"
+				       rows="5"
+				       cols="5"
+				       showon="enablecaption:1[AND]enableitem5:1" />
+
+				<field name="enablebtn5"
+				       type="radio"
+				       class="btn-group btn-group-yesno"
+				       default="0"
+				       label="MOD_SLIDER_NINJA_ENABLE_LiNK"
+				       description="MOD_SLIDER_NINJA_ENABLE_LiNK_DESC"
+				       showon="enableitem5:1" >
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field name="btn5"
+				       type="text"
+				       default="Read More"
+				       label="MOD_SLIDER_NINJA_BUTTON_TEXT"
+				       description="MOD_SLIDER_NINJA_BUTTON_TEXT_DESC"
+				       showon="enablecaption:1[AND]enableitem5:1" />
+
+				<field name="btnlink5"
+				       type="text"
+				       default=""
+				       label="MOD_SLIDER_NINJA_BUTTON_LINK"
+				       description="MOD_SLIDER_NINJA_BUTTON_LINK_DESC"
+				       showon="enableitem5:1" />
+
+				<!--####### Slide 6 options ###########-->
+				<field type="spacer" name="spacer6" label="&lt;hr/&gt; &lt;b&gt;Slide #6&lt;/b&gt;" />
+
+				<field name="enableitem6"
+				       type="radio"
+				       class="btn-group btn-group-yesno"
+				       default="0" label="MOD_SLIDER_NINJA_ENABLE_SLIDE_ITEM"
+				       description="MOD_SLIDER_NINJA_ENABLE_SLIDE_ITEM_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field name="slideimg6"
+				       type="media"
+				       default=""
+				       label="MOD_SLIDER_NINJA_UPLOAD_IMAGE"
+				       description="MOD_SLIDER_NINJA_UPLOAD_IMAGE_DESC"
+				       showon="enableitem6:1" />
+
+				<field name="title6"
+				       type="text"
+				       default=""
+				       label="MOD_SLIDER_NINJA_SLIDE_TITLE"
+				       description="MOD_SLIDER_NINJA_SLIDE_TITLE_DESC"
+				       showon="enablecaption:1[AND]enableitem6:1" />
+
+				<field name="description6"
+				       type="textarea"
+				       default=""
+				       label="MOD_SLIDER_NINJA_SLIDE_DESCRIPTION"
+				       description="MOD_SLIDER_NINJA_SLIDE_DESCRIPTION_DESC"
+				       rows="5"
+				       cols="5"
+				       showon="enablecaption:1[AND]enableitem6:1" />
+
+				<field name="enablebtn6"
+				       type="radio"
+				       class="btn-group btn-group-yesno"
+				       default="0"
+				       label="MOD_SLIDER_NINJA_ENABLE_LINK"
+				       description="MOD_SLIDER_NINJA_ENABLE_LiNK_DESC"
+				       showon="enableitem6:1" >
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field name="btn6"
+				       type="text"
+				       default="Read More"
+				       label="MOD_SLIDER_NINJA_BUTTON_TEXT"
+				       description="MOD_SLIDER_NINJA_BUTTON_TEXT_DESC"
+				       showon="enablecaption:1[AND]enableitem6:1" />
+
+				<field name="btnlink6"
+				       type="text"
+				       default=""
+				       label="MOD_SLIDER_NINJA_BUTTON_LINK"
+				       description="MOD_SLIDER_NINJA_BUTTON_LINK_DESC"
+				       showon="enableitem6:1" />
+
+			</fieldset>
+
+		</fields>
+	</config>
+	<updateservers>
+		<server name="Slider Ninja" type="extension">http://sellacious.com/release/mod_slider_ninja.xml</server>
+	</updateservers>
+</extension>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" method="upgrade" client="site">
+    <name>MOD_CCL_NAME</name>
+    <creationDate>2017-01-16</creationDate>
+    <copyright>2016 Component Creator</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <author>Component Creator</author>
+    <authorEmail>info@component-creator.com</authorEmail>
+    <authorUrl>https://www.component-creator.com</authorUrl>
+    <version>1.0.9</version>
+    <description>MOD_CCL_DESCRIPTION</description>
+
+    <files>
+        <filename module="mod_ccl">mod_ccl.php</filename>
+        <filename>index.html</filename>
+        <folder>tmpl</folder>
+    </files>
+    <languages folder="languages">
+        <language tag="en-GB">en-GB/en-GB.mod_ccl.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_ccl.sys.ini</language>
+    </languages>
+</extension>

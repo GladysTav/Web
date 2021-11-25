@@ -1,0 +1,231 @@
+/**
+ * @version     1.0.1
+ * @package     Sellacious Offered Products Module
+ *
+ * @copyright   Copyright (C) 2017. Bhartiy Web Technologies. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @author      Bhavika Matariya <info@bhartiy.com> - http://www.bhartiy.com
+ */
+
+
+.mod-sellacious-offeredproducts .titlearea {
+	margin: 10px 0 25px;
+	text-align: center;
+}
+.mod-sellacious-offeredproducts .titlearea h3 {
+	margin: 0;
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.mod-sellacious-offeredproducts .product-box,
+.mod-sellacious-offeredproducts .main-product-wrap{
+	background: #f9f9f9;
+	margin: 8px;
+	border: 1px solid #dedede;
+}
+.mod-sellacious-offeredproducts .image-box {
+	float: left;
+	width: 75px;
+	height: 78px;
+	overflow: hidden;
+	background: #fff;
+	padding: 5px;
+	border-right: 1px solid #dedede;
+}
+.mod-sellacious-offeredproducts .image-box span.product-img {
+	display: block;
+	width: 65px;
+	height: 68px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.mod-sellacious-offeredproducts .productdetail {
+	width: calc(100% - 75px);
+	float: left;
+	padding: 8px 10px 5px;
+}
+.mod-sellacious-offeredproducts .productdetail h3.product-title {
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 16px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	margin: 0 0 5px;
+}
+.mod-sellacious-offeredproducts .productdetail h3.product-title a{
+	color: #333;
+}
+.mod-sellacious-offeredproducts .productdetail .price {
+	font-weight: bold;
+}
+.mod-sellacious-offeredproducts .productdetail .price span.oldprice {
+	color: #888;
+	font-weight: normal;
+	margin: 0 3px;
+}
+.mod-sellacious-offeredproducts .productdetail .offer {
+	line-height: 18px;
+	font-size: 12px;
+	color: #666;
+}
+
+
+
+.mod-sellacious-offeredproducts .main-product-wrap .image-box span.product-img {
+	width: 100%;
+	display: block;
+}
+.mod-sellacious-offeredproducts .mainproductdetail{
+	float: left;
+}
+.mod-sellacious-offeredproducts .mainproductdetail h3.product-title a{
+	color: #333;
+}
+.mod-sellacious-offeredproducts .mainproductdetail .price {
+	display: block;
+	font-weight: 600;
+	margin: 0 0 15px;
+	letter-spacing: 1px;
+}
+.mod-sellacious-offeredproducts .mainproductdetail .price span.oldprice {
+	color: #333;
+	font-weight: normal;
+	letter-spacing: 0;
+}
+
+
+/* === Style 1 === */
+.mod-sellacious-offeredproducts.style-1 .main-product-wrap .image-box {
+	min-width: 340px;
+	height: 366px;
+	padding: 20px
+}
+.mod-sellacious-offeredproducts.style-1 .main-product-wrap .image-box span.product-img {
+	height: 320px;
+}
+.mod-sellacious-offeredproducts.style-1 .mainproductdetail {
+	width: calc(100% - 340px);
+	padding: 20px;
+}
+.mod-sellacious-offeredproducts.style-1 .mainproductdetail h3.product-title {
+	font-size: 20px;
+	line-height: 1.3;
+	letter-spacing: 1px;
+	margin: 15px 0 25px;
+}
+.mod-sellacious-offeredproducts.style-1 .mainproductdetail .price {
+	font-size: 24px;
+}
+.mod-sellacious-offeredproducts.style-1 .mainproductdetail .price span.oldprice {
+	font-size: 18px;
+}
+.mod-sellacious-offeredproducts.style-1 .mainproductdetail .offer {
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+/* === Style 2 === */
+.mod-sellacious-offeredproducts.style-2 .main-product-wrap .image-box {
+	min-width: 280px;
+	height: 270px;
+	padding: 15px;
+}
+.mod-sellacious-offeredproducts.style-2 .main-product-wrap .image-box span.product-img {
+	height: 252px;
+}
+.mod-sellacious-offeredproducts.style-2 .mainproductdetail {
+	width: calc(100% - 280px);
+	padding: 15px;
+}
+.mod-sellacious-offeredproducts.style-2 .mainproductdetail h3.product-title {
+	font-size: 18px;
+	line-height: 1.2;
+	letter-spacing: 1px;
+	margin: 15px 0;
+}
+.mod-sellacious-offeredproducts.style-2 .mainproductdetail .price {
+	font-size: 20px;
+}
+.mod-sellacious-offeredproducts.style-2 .mainproductdetail .price span.oldprice {
+	font-size: 14px;
+}
+.mod-sellacious-offeredproducts.style-2 .mainproductdetail .offer {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+
+@media (max-width: 1200px){
+	.mod-sellacious-offeredproducts.style-1 .main-product-wrap .image-box {
+		min-width: 315px;
+	}
+	.mod-sellacious-offeredproducts.style-1 .mainproductdetail {
+		width: calc(100% - 315px);
+	}
+	.mod-sellacious-offeredproducts.style-1 .mainproductdetail h3.product-title {
+		font-size: 18px;
+	}
+	.mod-sellacious-offeredproducts.style-2 .main-product-wrap .image-box {
+		min-width: 232px;
+		padding: 10px;
+	}
+	.mod-sellacious-offeredproducts.style-2 .mainproductdetail {
+		width: calc(100% - 232px);
+		padding: 10px;
+	}
+	.mod-sellacious-offeredproducts.style-2 .mainproductdetail h3.product-title {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 991px){
+	.mod-sellacious-offeredproducts.style-1 .main-product-wrap .image-box,
+	.mod-sellacious-offeredproducts.style-2 .main-product-wrap .image-box{
+		min-width: 300px;
+		height: 300px;
+		padding: 10px;
+	}
+	.mod-sellacious-offeredproducts.style-1 .mainproductdetail,
+	.mod-sellacious-offeredproducts.style-2 .mainproductdetail{
+		width: calc(100% - 300px);
+		padding: 10px 15px;
+	}
+	.mod-sellacious-offeredproducts.style-1 .main-product-wrap .image-box span.product-img,
+	.mod-sellacious-offeredproducts.style-2 .main-product-wrap .image-box span.product-img{
+		height: 285px;
+	}
+	.mod-sellacious-offeredproducts.style-1 .mainproductdetail h3.product-title,
+	.mod-sellacious-offeredproducts.style-2 .mainproductdetail h3.product-title{
+		font-size: 18px;
+		line-height: 1.3;
+		margin: 10px 0;
+	}
+	.mod-sellacious-offeredproducts.style-1 .mainproductdetail .price,
+	.mod-sellacious-offeredproducts.style-2 .mainproductdetail .price{
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	.mod-sellacious-offeredproducts.style-1 .mainproductdetail .offer,
+	.mod-sellacious-offeredproducts.style-2 .mainproductdetail .offer{
+		font-size:16px;
+		margin-bottom: 10px;
+	}
+}
+@media (max-width: 600px){
+	.mod-sellacious-offeredproducts.style-1 .main-product-wrap .image-box,
+	.mod-sellacious-offeredproducts.style-2 .main-product-wrap .image-box{
+		float: none;
+		min-width: 100%;
+		border-bottom: 1px solid #dedede;
+		border-right: none;
+	}
+	.mod-sellacious-offeredproducts.style-1 .mainproductdetail,
+	.mod-sellacious-offeredproducts.style-2 .mainproductdetail{
+		width: 100%;
+		padding:20px;
+	}
+}

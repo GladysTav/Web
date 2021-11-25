@@ -1,0 +1,7 @@
+.jff-checkmatrix td, .jff-checkmatrix th {
+	padding: 5px;
+}
+
+.jff-checkmatrix label input[type=checkbox].checkbox+span.heading {
+	font-weight: bold !important;
+}

@@ -1,0 +1,26 @@
+#
+#<?php die('Forbidden.'); ?>
+#Date: 2019-02-26 04:32:56 UTC
+#Software: Joomla Platform 13.1.0 Stable [ Curiosity ] 24-Apr-2013 00:00 GMT
+
+#Fields: datetime	priority clientip	category	message
+2019-02-26T04:32:56+00:00	WARNING ::1	jerror	Unknown column 'a.discount_class' in 'where clause'
+2019-02-26T04:40:06+00:00	WARNING ::1	jerror	Unknown column 'a.discount_class' in 'where clause'
+2019-02-26T04:47:43+00:00	CRITICAL ::1	error	Uncaught \Throwable of type JException thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/libraries/legacy/error/error.php(277): JError::raise(1, 404, 'Article not fou...', NULL, true)
+#1 /Users/codeacious3/Sites/sellacious/components/com_content/models/article.php(155): JError::raiseError(404, 'Article not fou...')
+#2 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/View/HtmlView.php(425): ContentModelArticle->getItem()
+#3 /Users/codeacious3/Sites/sellacious/components/com_content/views/article/view.html.php(42): Joomla\CMS\MVC\View\HtmlView->get('Item')
+#4 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(672): ContentViewArticle->display()
+#5 /Users/codeacious3/Sites/sellacious/components/com_content/controller.php(118): Joomla\CMS\MVC\Controller\BaseController->display(true, Array)
+#6 /Users/codeacious3/Sites/sellacious/libraries/src/MVC/Controller/BaseController.php(710): ContentController->display()
+#7 /Users/codeacious3/Sites/sellacious/components/com_content/content.php(43): Joomla\CMS\MVC\Controller\BaseController->execute('')
+#8 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#9 /Users/codeacious3/Sites/sellacious/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#10 /Users/codeacious3/Sites/sellacious/libraries/src/Application/SiteApplication.php(194): Joomla\CMS\Component\ComponentHelper::renderComponent('com_content')
+#11 /Users/codeacious3/Sites/sellacious/libraries/src/Application/SiteApplication.php(233): Joomla\CMS\Application\SiteApplication->dispatch()
+#12 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CMSApplication.php(196): Joomla\CMS\Application\SiteApplication->doExecute()
+#13 /Users/codeacious3/Sites/sellacious/index.php(49): Joomla\CMS\Application\CMSApplication->execute()
+#14 {main}
+2019-02-26T05:15:52+00:00	WARNING ::1	jerror	Unknown column 'a.method_name' in 'field list'
+2019-02-26T05:18:32+00:00	WARNING ::1	jerror	Unknown column 'a.method_name' in 'field list'
+2019-02-26T10:36:33+00:00	WARNING ::1	jerror	Username and password do not match or you do not have an account yet.

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.7" method="upgrade">
+	<name>Sellacious Recently Viewed Package</name>
+	<packagename>sellacious_recentlyviewed</packagename>
+	<author>Aditya Chakraborty</author>
+	<creationDate>June 10, 2019</creationDate>
+	<authorEmail>info@bhartiy.com</authorEmail>
+	<authorUrl>www.bhartiy.com</authorUrl>
+	<copyright>Copyright (C) 2012-2019 Bhartiy Web Technologies. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>__DEPLOY_VERSION__</version>
+	<url>http://www.sellacious.com</url>
+	<packager>Bhartiy Web Technologies</packager>
+	<packagerurl>http://www.sellacious.com</packagerurl>
+	<description>Sellacious Recently Viewed Package</description>
+	<scriptfile>installer.php</scriptfile>
+	<files folder="extensions">
+		<file type="plugin" group="system" id="sellaciousrecent" isnew="true">plg_system_sellaciousrecent.zip</file>
+		<file type="module" id="mod_sellacious_recentlyviewedproducts" client="site">mod_sellacious_recentlyviewedproducts.zip</file>
+	</files>
+</extension>

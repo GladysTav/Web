@@ -1,0 +1,176 @@
+/**
+ * @version     1.6.0
+ * @package     Sellacious Finder for store Module
+ *
+ * @copyright   Copyright (C) 2012-2018 Bhartiy Web Technologies. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @author      chandni <info@bhartiy.com> - http://www.bhartiy.com
+ */
+
+.profile-box {
+    position: relative;
+    background-color: #fff;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.profile-box {
+    position: relative;
+    background-color: #fff;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.profile-box .profileImg-container {
+    float: left;
+    width: 72px;
+    height: 72px;
+    border-radius: 4px;
+    margin-right: 16px;
+    overflow: hidden;
+}
+.profile-box .fa {
+    font-size: 25px;
+    border: 1px solid #f26400;
+    padding: 20px;
+    background: #f26400;
+    color: #fff;
+    border-radius: 6px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.profile-box .userDetails-container {
+    float: left;
+}
+
+.profile-box h2 {
+    bottom: 4px;
+    padding: 0;
+    font: 600 18px/22px Roboto,Arial, Helvetica, sans-serif;
+    text-transform: none;
+    color: #333;
+    z-index: 2;
+    position: relative;
+    left: auto;
+    margin: 0 auto;
+    text-align: left;
+    right: auto;
+    margin-top: 14px;
+}
+
+.profile-box .profileImg-container {
+    float: left;
+    width: 72px;
+    height: 72px;
+    border-radius: 4px;
+    margin-right: 16px;
+    overflow: hidden;
+}
+
+.profile-box .profileImg-container img {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.my-menu ul  {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.wishlist_sec ul {
+    padding: 0 20px;
+}
+
+.my-menu ul ul li {
+    border-bottom: 1px solid #ffd8c1;
+}
+
+.my-menu ul li ul li.active a, .my-menu ul li ul li:hover a, .my-menu ul li.drop-menu .active-child a, .my-menu ul ul li:hover {
+    color: #333;
+    background: #ffebdf;
+}
+
+.my-menu ul li {
+    font: 14px/22px Open Sans;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.my-menu ul li:last-child a, .my-menu ul ul li:last-child {
+    border-bottom: 0;
+}
+
+.my-menu ul li  {
+    display: block;
+    padding: 10px 12px 10px 0;
+    border: 0;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.my-menu ul li  a,  .my-menu ul li {
+    color: #666;
+}
+
+.inner-side-menu-top  {
+    font-size: 15px;
+    line-height: 16px;
+    position: relative;
+    color: #333;
+    padding: 16px 20px 16px 16px;
+    display: block;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    -webkit-box-shadow: 0 1px 6px 0 rgba(0,0,0,.1);
+    -moz-box-shadow: 0 1px 6px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,.1);
+    font-family: Roboto,Arial, Helvetica, sans-serif;
+}
+
+.my-menu ul ul {
+    border: 1px solid #ffd8c1;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.my-menu ul ul li a {
+    padding-left: 18px;
+    font-weight: 400;
+    font-size: 13px;
+    display: block;
+    font-family: Roboto,Arial, Helvetica, sans-serif;
+}
+
+.myAccWishlist:hover, .sell-with-us:hover  {
+    background-color: #ffebdf;
+}
+
+/*.myaccount-wishlist .btn-add-cart.buy, .myaccount-wishlist .btn-quick-view, .myaccount-wishlist .product-compare, .myaccount-wishlist .edit-product {*/
+    /*position: absolute;*/
+    /*left: 50%;*/
+    /*right: 50%;*/
+    /*transform: translate(-50%,-50%);*/
+    /*width: 100px;*/
+    /*display: none;*/
+/*}*/
+
+/*.myaccount-wishlist .btn-add-cart.buy {*/
+    /*top: 60px;*/
+/*}*/
+
+/*.myaccount-wishlist .btn-quick-view {*/
+    /*top: 96px;*/
+/*}*/
+
+/*.myaccount-wishlist .product-compare {*/
+    /*top: 60px;*/
+/*}*/
+
+/*.myaccount-wishlist .edit-product {*/
+    /*top: 130px;*/
+/*}*/
+

@@ -1,0 +1,71 @@
+.radio-switch input {
+	display: none;
+}
+
+.radio-switch span {
+	line-height: 30px;
+	margin: 2px 0;
+	height: 18px;
+	width: 47px;
+	border-radius: 15px;
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+}
+
+.radio-switch.disabled span,
+.radio-switch.disabled span:before,
+.radio-switch.disabled input {
+	opacity: 0.6;
+	cursor: default;
+	pointer-events: none;
+}
+
+.radio-switch span:before {
+	background-color: #ddd;
+	width: 45px;
+	height: 18px;
+	border-radius: 48px;
+	content: ' ';
+	display: block;
+}
+
+.radio-switch span:after {
+	background-color: #ffffff;
+	height: 14px;
+	width: 14px;
+	line-height: 15px;
+	top: 2px;
+	bottom: 1px;
+	margin-left: 2px;
+	font-size: 0.8em;
+	text-align: center;
+	vertical-align: middle;
+	content: '';
+	display: inline-block;
+	position: absolute;
+	border-radius: 50%;
+	transition: all 100ms ease-in;
+	font-family: FontAwesome, sans-serif;
+	color: #2d7298;
+}
+
+.radio-switch > input:checked ~ span:before {
+	background-color: #2d7298;
+}
+
+.radio-switch > input:checked ~ span:after {
+	margin-left: 29px;
+	background-color: #fff;
+	content: '';
+	color: #ddd;
+}
+
+.premium-input .radio-switch span:after {
+	color: #f29e01;
+	background-color: #f29e01;
+}
+
+.premium-input .radio-switch > input:checked ~ span:after {
+	background-color: #f7c973;
+}

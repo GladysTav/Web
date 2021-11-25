@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="basic" label="COM_SELLACIOUS_PROFILE_FIELDSET_BASIC">
+		<field
+			name="id"
+			type="hidden"
+			default="0"
+			readonly="true"
+		/>
+		<field
+			name="media_type"
+			type="list"
+			label="COM_SELLACIOUS_PRODUCT_MEDIA_FIELD_MEDIA_TYPE_LABEL"
+			description="COM_SELLACIOUS_PRODUCT_MEDIA_FIELD_MEDIA_TYPE_DESC"
+			class="small-input"
+			filte="cmd"
+			default="upload"
+		>
+			<option value="upload">COM_SELLACIOUS_PRODUCT_MEDIA_FIELD_MEDIA_OPTION_UPLOAD</option>
+			<option value="link">COM_SELLACIOUS_PRODUCT_MEDIA_FIELD_MEDIA_OPTION_LINK</option>
+		</field>
+		<field
+			name="media"
+			type="uploader"
+			label="COM_SELLACIOUS_PRODUCT_MEDIA_FIELD_MEDIA_LABEL"
+			description="COM_SELLACIOUS_PRODUCT_MEDIA_FIELD_MEDIA_DESC"
+			tableName="eproduct_media"
+			context="media"
+			recordId="0"
+			uploadLimit="1"
+			maxSize="500 MB"
+			extensions=""
+			showPublish="false"
+			showRename="true"
+			showRemove="true"
+		/>
+		<field
+			name="media_url"
+			type="text"
+			label="COM_SELLACIOUS_PRODUCT_MEDIA_FIELD_MEDIA_URL_LABEL"
+			description="COM_SELLACIOUS_PRODUCT_MEDIA_FIELD_MEDIA_URL_DESC"
+			class="form-control"
+			filte="string"
+		/>
+
+		<field
+			name="sample_type"
+			type="list"
+			label="COM_SELLACIOUS_PRODUCT_MEDIA_FIELD_SAMPLE_TYPE_LABEL"
+			description="COM_SELLACIOUS_PRODUCT_MEDIA_FIELD_SAMPLE_TYPE_DESC"
+			class="small-input"
+			filte="cmd"
+			default="upload"
+		>
+			<option value="upload">COM_SELLACIOUS_PRODUCT_MEDIA_FIELD_MEDIA_OPTION_UPLOAD</option>
+			<option value="link">COM_SELLACIOUS_PRODUCT_MEDIA_FIELD_MEDIA_OPTION_LINK</option>
+		</field>
+		<field
+			name="sample"
+			type="uploader"
+			label="COM_SELLACIOUS_PRODUCT_MEDIA_FIELD_SAMPLE_LABEL"
+			description="COM_SELLACIOUS_PRODUCT_MEDIA_FIELD_SAMPLE_DESC"
+			tableName="eproduct_media"
+			context="sample"
+			recordId="0"
+			uploadLimit="1"
+			maxSize="500 MB"
+			extensions=""
+			showPublish="false"
+			showRename="true"
+			showRemove="true"
+		/>
+		<field
+			name="sample_url"
+			type="text"
+			label="COM_SELLACIOUS_PRODUCT_MEDIA_FIELD_SAMPLE_URL_LABEL"
+			description="COM_SELLACIOUS_PRODUCT_MEDIA_FIELD_SAMPLE_URL_DESC"
+			class="form-control"
+			filte="string"
+		/>
+
+		<field
+			name="files_group"
+			type="text"
+			label="COM_SELLACIOUS_PRODUCT_MEDIA_FIELD_FILES_GROUP_LABEL"
+			description="COM_SELLACIOUS_PRODUCT_MEDIA_FIELD_FILES_GROUP_DESC"
+			class="form-control medium-input"
+			filte="string"
+			default="files"
+		/>
+		<field
+			name="version"
+			type="text"
+			label="COM_SELLACIOUS_PRODUCT_MEDIA_FIELD_VERSION_LABEL"
+			description="COM_SELLACIOUS_PRODUCT_MEDIA_FIELD_VERSION_DESC"
+			class="form-control medium-input"
+			required="true"
+			filter="string"
+		/>
+		<field
+			name="released"
+			type="calendar"
+			label="COM_SELLACIOUS_PRODUCT_MEDIA_FIELD_RELEASED_LABEL"
+			description="COM_SELLACIOUS_PRODUCT_MEDIA_FIELD_RELEASED_DESC"
+			class="form-control calendar-input"
+			validate="datetime"
+			format="%Y-%m-%d"
+			default="now"
+		/>
+		<field
+			name="is_latest"
+			type="radio"
+			label="COM_SELLACIOUS_PRODUCT_MEDIA_FIELD_IS_LATEST_LABEL"
+			description="COM_SELLACIOUS_PRODUCT_MEDIA_FIELD_IS_LATEST_DESC"
+			class="btn-group btn-group-yesno"
+			default="0"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field
+			name="state"
+			type="radio"
+			label="COM_SELLACIOUS_PRODUCT_MEDIA_FIELD_STATE_LABEL"
+			description="COM_SELLACIOUS_PRODUCT_MEDIA_FIELD_STATE_DESC"
+			class="btn-group btn-group-yesno"
+			default="0"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field
+			name="hotlink"
+			type="radio"
+			label="COM_SELLACIOUS_PRODUCT_MEDIA_FIELD_HOTLINK_LABEL"
+			description="COM_SELLACIOUS_PRODUCT_MEDIA_FIELD_HOTLINK_DESC"
+			class="btn-group btn-group-yesno"
+			default="0"
+		>
+			<option value="0">COM_SELLACIOUS_PRODUCT_MEDIA_FIELD_HOTLINK_OPTION_NONE</option>
+			<option value="1">COM_SELLACIOUS_PRODUCT_MEDIA_FIELD_HOTLINK_OPTION_DIRECT</option>
+			<!--<option value="2">COM_SELLACIOUS_PRODUCT_MEDIA_FIELD_HOTLINK_OPTION_SECURED</option>-->
+		</field>
+		<field
+			name="tags"
+			type="TagsInputText"
+			label="COM_SELLACIOUS_PRODUCT_MEDIA_FIELD_TAGS_LABEL"
+			description="COM_SELLACIOUS_PRODUCT_MEDIA_FIELD_TAGS_DESC"
+			class="form-control medium-input"
+			filter="string"
+		/>
+		<field
+			name="notes"
+			type="textarea"
+			label="COM_SELLACIOUS_PRODUCT_MEDIA_FIELD_NOTES_LABEL"
+			description="COM_SELLACIOUS_PRODUCT_MEDIA_FIELD_NOTES_DESC"
+			class="form-control textarea"
+			rows="6"
+			filter="safehtml"
+		/>
+	</fieldset>
+</form>

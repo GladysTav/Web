@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="seller">
+		<fields name="params">
+			<fieldset name="social" label="COM_SELLACIOUS_USER_FIELDSET_SOCIAL">
+				<fields name="social_share_link">
+					<field
+						name="facebook"
+						type="text"
+						label="COM_SELLACIOUS_PROFILE_FIELD_FACEBOOK_SHARE_URL_LABEL"
+						description="COM_SELLACIOUS_PROFILE_FIELD_FACEBOOK_SHARE_URL_DESC"
+						class="inputbox medium-input"
+						validate="url"
+					/>
+					<field
+						name="twitter"
+						type="text"
+						label="COM_SELLACIOUS_PROFILE_FIELD_TWITTER_SHARE_URL_LABEL"
+						description="COM_SELLACIOUS_PROFILE_FIELD_TWITTER_SHARE_URL_DESC"
+						class="inputbox medium-input"
+						validate="url"
+					/>
+					<field
+						name="instagram"
+						type="text"
+						label="COM_SELLACIOUS_PROFILE_FIELD_INSTAGRAM_SHARE_URL_LABEL"
+						description="COM_SELLACIOUS_PROFILE_FIELD_INSTAGRAM_SHARE_URL_DESC"
+						class="inputbox medium-input"
+						validate="url"
+					/>
+					<field
+						name="linkedin"
+						type="text"
+						label="COM_SELLACIOUS_PROFILE_FIELD_LINKEDIN_SHARE_URL_LABEL"
+						description="COM_SELLACIOUS_PROFILE_FIELD_LINKEDIN_SHARE_URL_DESC"
+						class="inputbox medium-input"
+						validate="url"
+					/>
+				</fields>
+			</fieldset>
+		</fields>
+	</fields>
+</form>

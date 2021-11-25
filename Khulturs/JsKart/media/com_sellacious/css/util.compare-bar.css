@@ -1,0 +1,235 @@
+#compare-bar #compare-bar-toggle {
+	height: 55px;
+	width: 80px;
+	position: fixed;
+	z-index: 99;
+	top: 50%;
+	transition: 0.5s;
+	bottom: 50%;
+	color: #fff;
+	font-size: 18px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+[dir] #compare-bar #compare-bar-toggle {
+	padding: 18px 5px;
+	cursor: pointer;
+	text-align: center;
+}
+
+[dir=ltr] #compare-bar #compare-bar-toggle {
+	-webkit-box-shadow: 3px 3px 9px 0 #757575;
+	-moz-box-shadow: 3px 3px 9px 0 #757575;
+	box-shadow: 3px 3px 9px 0 #757575;
+	right: 0;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+}
+
+[dir=rtl] #compare-bar #compare-bar-toggle {
+	-webkit-box-shadow: -3px 3px 9px 0 #757575;
+	-moz-box-shadow: -3px 3px 9px 0 #757575;
+	box-shadow: -3px 3px 9px 0 #757575;
+	left: 0;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+
+#compare-bar-items {
+	height: 500px;
+	width: 350px;
+	position: fixed;
+	z-index: 9999;
+	top: 50%;
+	overflow-x: hidden;
+	transition: 0.5s;
+	-webkit-box-shadow: 0 0 10px 0 #ababab;
+	-moz-box-shadow: 0 0 10px 0 #ababab;
+	bottom: 50%;
+	overflow-y: auto;
+	display: none;
+}
+
+[dir] #compare-bar-items {
+	background-color: #ffffff;
+	box-shadow: 0 0 10px 0 #ababab;
+	transform: translate(0, -50%);
+	padding: 10px;
+}
+
+[dir=ltr] #compare-bar-items {
+	right: 0;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+
+[dir=rtl] #compare-bar-items {
+	left: 0;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+.tbl-compare .bar_item,
+.tbl-compare .bar_noitem {
+	position: relative;
+	width: 50%;
+	height: 230px;
+}
+
+[dir] .tbl-compare .bar_item, [dir] .tbl-compare .bar_noitem {
+	background: #f5f5f5;
+	border: 1px solid #ffffff;
+	padding: 5px;
+}
+
+[dir=ltr] .tbl-compare .bar_item, [dir=ltr] .tbl-compare .bar_noitem {
+	float: left;
+}
+
+[dir=rtl] .tbl-compare .bar_item, [dir=rtl] .tbl-compare .bar_noitem {
+	float: right;
+}
+
+.compare-item .compare-item-image {
+	width: 145px;
+	height: 170px;
+	display: inline-block;
+}
+
+[dir] .compare-item .compare-item-image {
+	padding: 5px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.compare-item .compare-item-title {
+	font-size: 12px;
+	line-height: 18px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: normal;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+[dir] .compare-item .compare-item-title {
+	margin-bottom: 5px;
+}
+
+[dir=ltr] .compare-item .compare-item-title {
+	text-shadow: 0.2px 0.2px #979696;
+}
+
+[dir=rtl] .compare-item .compare-item-title {
+	text-shadow: -0.2px 0.2px #979696;
+}
+
+.compare-item .compare-item-title a {
+	color: #2c2e36;
+	text-decoration: none;
+}
+
+.compare-item .compare-remove {
+	position: absolute;
+	top: 10px;
+}
+
+[dir] .compare-item .compare-remove {
+	padding: 0 4px;
+}
+
+[dir=ltr] .compare-item .compare-remove {
+	right: 10px;
+}
+
+[dir=rtl] .compare-item .compare-remove {
+	left: 10px;
+}
+
+[dir] .bar_noitem {
+	text-align: center;
+	padding: 75px 25px !important;
+}
+
+.compare-item-none .fa {
+	color: rgba(51, 51, 51, 0.2);
+	font-size: 50px;
+	display: block;
+}
+
+[dir] .compare-item-none .fa {
+	margin-bottom: 10px;
+}
+
+.compare-item-none span {
+	color:rgba(51, 51, 51, 0.4);
+}
+
+#compare-bar-items .compare-submit {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+[dir=ltr] #compare-bar-items .compare-submit {
+	left: 0;
+}
+
+[dir=rtl] #compare-bar-items .compare-submit {
+	right: 0;
+}
+#compare-bar-items .tbl-compare {
+	max-height: 405px;
+	overflow-y: auto;
+}
+
+#compare-bar-items .compare-bar-header h4 {
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #2c2e36;
+}
+
+[dir] #compare-bar-items .compare-bar-header h4 {
+	margin: 10px 0;
+	border-bottom: 1px solid #dddddd;
+	padding-bottom: 5px;
+}
+
+.compare-backdrop {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	z-index: 999;
+	display: none;
+}
+
+[dir] .compare-backdrop {
+	background: rgba(0, 0, 0, 0.41);
+}
+
+[dir=ltr] .compare-backdrop {
+	left: 0;
+	right: 0;
+}
+
+[dir=rtl] .compare-backdrop {
+	right: 0;
+	left: 0;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+	#compare-bar #compare-bar-toggle {
+		width: 55px;
+		height: 45px;
+		padding: 13px 5px !important;
+	}
+	.fa-balance-scale:before {
+		font-size: 16px;
+	}
+}

@@ -1,0 +1,94 @@
+/**
+ * @version     2.0.0
+ * @package     sellacious
+ *
+ * @copyright   Copyright (C) 2012-2020 Bhartiy Web Technologies. All rights reserved.
+ * @license     SPL Sellacious Private License; see http://www.sellacious.com/spl.html
+ * @author      Saurabh Sabharwal <info@bhartiy.com> - http://www.bhartiy.com
+ */
+
+.address-fields {
+	background: #f7f7f7;
+	border: 1px solid #9c9c9c;
+	border-radius: 4px;
+	padding: 2px 2px;
+	display: inline-block;
+}
+
+.address-fields input.noborder {
+	background: transparent;
+	border-color: transparent;
+	box-shadow: unset;
+	border-width: 1px;
+	padding: 4px 5px;
+	width: 100px;
+	margin: 0 3px
+}
+
+.address-fields input.noborder:hover,
+.address-fields input.noborder:focus {
+	border-color: #ccc;
+	background-color: #fff;
+	border-style: solid;
+	transition: 300ms;
+}
+
+.address-fields .address-field {
+	padding: 4px 8px;
+	border-radius: 4px;
+	border: 1px dashed #9c9c9c;
+	margin: 3px;
+	background: #ffffff;
+	position: relative;
+}
+
+.address-fields .address-field:before {
+	content: "\f047";
+	font: normal normal normal 14px/1 FontAwesome;
+	display: inline-block;
+	border-right: 1px solid #9c9c9c;
+	padding-right: 5px;
+	cursor: all-scroll;
+}
+
+.address-fields .address-field .address-field-editor {
+	background-color: #fff;
+	padding: 5px;
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.address-fields .address-field .address-field-editor label {
+	margin-right: 5px;
+}
+
+.address-fields .address-field .address-field-editor .select2-container {
+	display: inline-block;
+	width: 100px !important;
+}
+
+.address-fields .address-field .address-field-editor input[type="number"] {
+	padding: 4px 5px;
+	margin: 0;
+	width: 50px !important;
+	display: inline-block;
+}
+
+.address-fields .address-field .field-label {
+	width: 80px;
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.address-fields .address-field .btn-group input[type="radio"] {
+	display: none;
+}
+
+.address-fields .address-field .field-context {
+	display: flex;
+	margin: 4px 0;
+}
+
+.address-fields .address-field .field-context .context-option {
+	width: 100%;
+}

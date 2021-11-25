@@ -1,0 +1,112 @@
+.store-block-default .store-wrap {
+	width: 100%;
+	position: relative;
+}
+
+[dir] .store-block-default .store-wrap {
+	cursor: default;
+}
+
+[dir=ltr] .store-block-default .store-wrap {
+	float: left;
+}
+
+[dir=rtl] .store-block-default .store-wrap {
+	float: right;
+}
+
+.store-block-default .store-wrap .store-box {
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+[dir] .store-block-default .store-wrap .store-box {
+	background-color: #ffffff;
+	border: 1px solid #e2e2e2;
+	cursor: default;
+}
+
+.store-block-default .store-wrap .store-box .image-box {
+	vertical-align: middle;
+	height: 220px;
+	overflow: hidden;
+	position: relative;
+}
+
+[dir] .store-block-default .store-wrap .store-box .image-box {
+	background: #ffffff;
+	border: 3px solid #ffffff;
+	text-align: center;
+	height: 130px;
+}
+
+.store-block-default .store-wrap .store-box .image-box a {
+	display: block;
+}
+
+.store-block-default .store-wrap .store-box .image-box .store-image {
+	display: inline-block;
+	transition: all 0s linear 0.25s;
+	-moz-transition: all 0s linear 0.25s;
+	-ms-transition: all 0s linear 0.25s;
+	-webkit-transition: all 0s linear 0.25s;
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.store-block-default .store-wrap .store-box:hover .image-box .store-image {
+	opacity: 0.4;
+}
+
+[dir] .store-block-default .store-wrap .store-box .store-info-box {
+	padding: 10px;
+	text-align: center;
+	border-top: 1px solid #e2e2e2;
+}
+
+.store-block-default .store-wrap .store-box .store-title {
+	font-size: 14px;
+	line-height: 20px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	font-weight: bold;
+}
+
+.store-block-default .store-wrap .store-box .store-title a,
+.store-block-default .store-wrap .store-box .store-title a:hover {
+	color: #222222;
+	text-decoration: none;
+}
+
+.store-block-default .store-wrap .store-box .image-box {
+	height: 100px;
+}
+
+.store-block-default {
+	margin-bottom: 15px;
+}
+
+#content .store-blocks-container .store-list-block {
+	padding-right: 8px;
+	padding-left: 8px;
+}
+
+[dir=ltr] #stores-page .store-wrap .remove-from-fav {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	font-size: 16px;
+}
+
+[dir=rtl] #stores-page .store-wrap .remove-from-fav {
+	position: absolute;
+	top: 5px;
+	left: 15px;
+	font-size: 16px;
+}

@@ -1,0 +1,599 @@
+.reg-seller-cont, .profile-user-cont {
+    /*margin: 50px 0;*/
+    /*background: #fff;*/
+    /*padding:10px 0;*/
+    background: #fff;
+    padding: 10px 0;
+    min-height: 920px;
+    overflow: hidden;
+}
+
+.reg-seller-heading {
+    margin: 20px;
+}
+
+.reg-seller-heading h2, .profile-user-cont h2  {
+    border-bottom: 1px solid #e8e8e8;
+    font: 22px/24px PTSans-bold;
+    color: #333;
+    margin: 0;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.message-seller {
+    margin: 0 20px ;
+}
+.message-seller {
+    font-size: 16px;
+    color: #666;
+}
+
+.message-seller .fa {
+    color: #f26400;
+    font-size: 16px;
+}
+
+#seller_accordion .control-group .controls input,
+#profile_accordion .control-group .controls input,
+#profile_accordion_hyperlocal .select2-container-multi .select2-choices,
+#seller_accordion select, #profile_accordion select, #profile_accordion textarea,
+#seller_accordion textarea,
+#seller_accordion .controls .select2-container {
+    min-height: 10px;
+    margin-bottom: 10px !important;
+	background: transparent;
+}
+
+.controls .address-residential {
+	margin-top: 10px !important;
+}
+
+#seller_accordion .control-group .controls input[type="radio"],
+#profile_accordion .control-group .controls input[type="radio"] {
+	margin-bottom: 0 !important;
+	-webkit-appearance: radio;
+	min-height: unset;
+	height: unset;
+	margin-right: 4px;
+}
+#seller_accordion .control-group .controls input[type="radio"]:focus,
+#profile_accordion .control-group .controls input[type="radio"]:focus {
+	box-shadow: unset;
+}
+#seller_accordion .controls input[type="checkbox"] {
+    -webkit-appearance: checkbox;
+    height: unset;
+    min-height: unset;
+    margin-bottom: unset !important;
+    margin-top: 8px !important;
+}
+
+#profile_accordion_hyperlocal .select2-container-multi .select2-choices {
+    margin-bottom: 0 !important;
+}
+#profile_accordion form, #seller_accordion form {
+    padding: 0 20px;
+    position: relative;
+    max-height: 1800px;
+    height: 810px;
+}
+#seller_accordion .control-group .control-label label, #profile_accordion .control-group .control-label label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #5b5a5a;
+}
+
+#seller_accordion .accordion-group, #profile_accordion .accordion-group {
+    position: static;
+}
+#seller_accordion .accordion-body {
+    margin-top: 0;
+}
+#seller_accordion .accordion-body, #profile_accordion .accordion-body {
+    width: calc(100% - 260px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fbfbfd;
+    height: 700px;
+    overflow: auto;
+    margin-right: 15px;
+}
+
+#profile_accordion .accordion-body, #seller_accordion .accordion-body {
+    margin-top: 53px;
+}
+
+#profile_accordion .controls input, #seller_accordion .controls input {
+    color: #000000;
+    border: 1px solid #eff0f4;
+    background: #ffffffb8;
+}
+
+#profile_accordion, #seller_accordion {
+    line-height: 1;
+}
+
+#profile_accordion_hyperlocal strong {
+    font-weight: 500;
+}
+
+#profile_accordion_hyperlocal .select2-choices {
+    background-image: none;
+}
+#profile_accordion .timings-table select {
+    border: 1px solid #cbc8c8;
+}
+#profile_accordion_hyperlocal .timings-table.table.table-noborder th {
+    min-width: 100px !important;
+}
+#profile_accordion_hyperlocal .select2-container.select2-container-multi.select2-dropdown-open .select2-choices {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+#profile_accordion select, #seller_accordion select{
+    max-width: 300px;
+    height: 40px;
+    font-size: 13px;
+    padding: 8px;
+    border: 1px solid #e5e5e5;
+    border-radius: 0px;
+    background: #fcfcfc;
+    width: 100%;
+}
+
+.select2-container-multi .select2-choices {
+    background-image: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+#profile_accordion .accordion-group, #seller_accordion .accordion-group {
+    margin-bottom: 6px;
+    border: 0;
+}
+
+#profile_accordion .accordion-heading, #seller_accordion .accordion-heading {
+    margin-bottom: 0;
+    background-color: #fcfcfc;
+    border-bottom: 0;
+    font-size: 14px;
+    position: relative;
+    min-height: 40px;
+    width: 195px;
+    box-shadow: 0 0 2px 0 #d1d1d1;
+}
+
+#profile_accordion .accordion-heading.active-heading, #seller_accordion .accordion-heading.active-heading  {
+   background-color : #ffd5c1 ;
+}
+
+#profile_accordion .accordion-heading.active-heading .accordion-toggle, #seller_accordion .accordion-heading.active-heading  {
+    color: #6b3517;
+}
+
+#profile_accordion .submit-bottom, #seller_accordion .submit-bottom {
+    margin-right: 30px;
+}
+
+
+.box-bottom {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 68%;
+    border-radius: 2px;
+}
+
+.top-submit {
+    margin: 10px 0;
+}
+
+#profile_accordion .accordion-toggle, #seller_accordion  .accordion-toggle {
+    padding: 0;
+    display: inline;
+    width: 100%;
+    color: #434345;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    font-size: 13px;
+    line-height: 40px;
+    text-transform: initial;
+}
+#profile_accordion .accordion-heading.active-heading:before, #profile_accordion  .accordion-heading.active-heading:before {
+    background: #ff6800;
+    color: #fff;
+}
+
+#profile_accordion .accordion-heading:before, #seller_accordion  .accordion-heading:before {
+    background-color: #eff0f4;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 23px;
+    color: #7d85a3;
+    font-size: 15px;
+    font-weight: 400;
+    margin-right: 10px;
+    letter-spacing: 1px;
+    font-family: FontAwesome;
+    margin-left: 10px;
+    content: '\f105';
+}
+
+#profile_accordion .accordion-inner, #seller_accordion .accordion-inner {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem 0;
+    /*border-top: 1px solid #eff0f4;*/
+}
+
+#profile_accordion fieldset, #seller_accordion fieldset {
+    width: 89%;
+    margin: 0 auto;
+}
+
+#seller_accordion fieldset.captcha-fieldset {
+    width: 100%;
+}
+ #profile_accordion_hyperlocal .alert.alert-info:before, #seller_accordion .alert.alert-info:before {
+     content: '\f05a';
+     font-family: FontAwesome;
+     margin-right: 10px;
+     font-size: 12px;
+ }
+
+#profile_accordion_hyperlocal .alert.alert-info, #seller_accordion .alert.alert-info {
+    color: #0885a1;
+    background-color: #e9fbff;
+    border-color: #d3f8ff;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+#profile_accordion .select2-container-multi .select2-choices, #seller_accordion .select2-container-multi .select2-choices {
+    border: 0;
+}
+
+#profile_accordion #profile_accordion_hyperlocal fieldset legend{
+    margin-left: -15px;
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #f3f3f3;
+    padding-bottom: 5px;
+}
+#profile_accordion #profile_accordion_hyperlocal fieldset legend strong {
+    font-weight: 400;
+}
+
+#profile_accordion #profile_accordion_hyperlocal small {
+    font-size: 70%;
+    color: #777;
+}
+
+#profile_accordion table.timings-table label.checkbox {
+    margin: 0;
+    vertical-align: middle;
+    line-height: 20px;
+    font-size: 14px;
+    color: #227395;
+    font-family: 'Kanit', sans-serif;
+}
+
+#profile_accordion .checkmark-checkbox {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+#profile_accordion table.timings-table tr td:nth-child(1), #profile_accordion table.timings-table tr td:nth-child(2), #profile_accordion table.timings-table tr th:nth-child(1), #profile_accordion table.timings-table tr th:nth-child(2)  {
+     background: rgb(250, 253, 255);
+ }
+
+
+/*#profile_accordion table.timings-table tr td:nth-child(1), #profile_accordion table.timings-table tr td:nth-child(2) {*/
+    /*line-height: 6;*/
+/*}*/
+
+#profile_accordion table.timings-table.table td {
+    vertical-align: text-bottom;
+}
+
+#profile_accordion table.timings-table tr th:nth-child(2), #profile_accordion table.timings-table tr td:nth-child(2) {
+    -webkit-box-shadow: 2px 1px 1px 0 #33333314  ;
+    -moz-box-shadow: 2px 1px 1px 0 #33333314 ;
+    box-shadow: 2px 1px 1px 0 #33333314 ;
+}
+#profile_accordion table.timings-table tr th:nth-child(3), #profile_accordion table.timings-table tr td:nth-child(3) {
+    text-align: center;
+    padding: 5px;
+}
+#profile_accordion table.timings-table tr strong {
+    font-size: 16px;
+}
+#profile_accordion table.timings-table tr .fa {
+    margin-right: 5px;
+    font-size: 16px;
+}
+#profile_accordion table.timings-table td {
+    border: 1px solid #e7eef2;
+}
+
+#profile_accordion table.timings-table  th {
+    line-height: 26px;
+}
+
+#profile_accordion #profile_accordion_hyperlocal  .timings-table select {
+    border: 1px solid #00779e47;
+    width: 400px;
+    border-radius: 0;
+    background: #00779e47;
+    color: #035068;
+    max-width: 150px;
+    margin-left: 20px;
+    padding: 0 0 0 15px;
+    margin-bottom: 3px !important;
+    -webkit-box-shadow: -1px 2px 2px 0 #c6c6c6b5;
+    -moz-box-shadow: -1px 2px 2px 0 #c6c6c6b5 ;
+    box-shadow: -1px 2px 2px 0 #c6c6c6b5 ;
+}
+
+#profile_accordion .timings-table select:focus {
+    -webkit-box-shadow: -1px 2px 2px 0 #c6c6c6b5;
+    -moz-box-shadow: -1px 2px 2px 0 #c6c6c6b5 ;
+    box-shadow: -1px 2px 2px 0 #c6c6c6b5 ;
+    outline: none;
+}
+
+#profile_accordion #profile_accordion_hyperlocal label {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+/* Yes No toggle Button UI */
+
+.control-group:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+#profile_accordion fieldset.btn-group.btn-group-toggle.radio {
+    display: inline-block;
+    float: right;
+}
+
+#profile_accordion fieldset.radio.btn-group.btn-group-yesno  label {
+    padding-left: 0;
+    display: inline;
+    margin: 20px 0 ;
+    border: 1px solid;
+}
+
+#profile_accordion fieldset.radio.btn-group.btn-group-yesno > .btn:not(:last-child):not(.dropdown-toggle)  {
+    border: 1px solid !important;
+    background: transparent !important;
+    color: #ff6800 !important;
+    border-radius: 20px 0 0 20px !important;
+}
+
+#profile_accordion .btn-group > .btn:not(:first-child), .btn-group > .btn-group:not(:first-child) > .btn {
+    border-radius: 0 20px 20px 0 !important;
+    border: 1px solid !important;
+    background: transparent !important;
+    color: #ff6800 !important;
+    border-left: 0 !important;
+}
+
+#profile_accordion fieldset.btn-group.btn-group-toggle.radio .btn.active {
+    background: #ff5800 !important;
+    border-color: #ff6800 !important;;
+    color: #fff !important;;
+    box-shadow: 0.5px 0px 1px 0 #784929 !important;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    #profile_accordion table.timings-table td, #profile_accordion table.timings-table th {width:100% !important;}
+}
+
+
+#profile_accordion .captcha {
+    padding-left: 0;
+}
+.manage {
+    color: #ff6800;
+    font-size: 13px;
+}
+
+.captcha-fieldset  a{
+    display: block;
+    height: 38px;
+    margin-left: 0;
+    line-height: 30px;
+    margin-top: -42px !important;
+}
+
+@media (max-width:972px) {
+    #profile_accordion .accordion-heading, #seller_accordion .accordion-heading, #seller_accordion .accordion-body, #profile_accordion .accordion-body  {
+        width: 100%;
+    }
+    #seller_accordion .accordion-body, #profile_accordion .accordion-body {
+        position: static;
+        margin-top: 0;
+        border-top: 0;
+    }
+    .box-bottom {
+        position: static;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+@media (max-width:1199px) {
+    #seller_accordion .accordion-body, #profile_accordion .accordion-body {
+        height: auto;
+    }
+
+    .reg-seller-cont, .profile-user-cont {
+        min-height: auto;
+    }
+}
+@media (min-width: 992px)  and (max-width: 1199px) {
+    .col-lg-9.col-sm-12.register_seller_box {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+}
+@media (min-width:992px) {
+    #profile_accordion #profile_accordion_hyperlocal .timings-table select {
+        border: 1px solid #00779e47;
+        width: 80px;
+        border-radius: 0;
+        background: #00779e47;
+        color: #035068;
+        max-width: 150px;
+        margin-left: 20px;
+        padding: 0 0 0 15px;
+        -webkit-box-shadow: -1px 2px 2px 0 #c6c6c6b5;
+        -moz-box-shadow: -1px 2px 2px 0 #c6c6c6b5;
+        box-shadow: -1px 2px 2px 0 #c6c6c6b5;
+    }
+
+    #profile_accordion select, #seller_accordion select {
+        max-width: 300px;
+        height: 35px;
+        font-size: 13px;
+        padding: 8px;
+        border: 1px solid #e5e5e5;
+        border-radius: 0px;
+        background: #fcfcfc;
+        width: 100%;
+    }
+}
+
+#seller_accordion .select2-container .select2-choice abbr {
+    right: 26px;
+    top: 9px;
+}
+#seller_accordion .select2-container .select2-choice > .select2-chosen {
+    line-height: 13px;
+}
+
+#seller_accordion .controls .select2-container a {
+    font-size: 13px;
+    color: #777777;
+    padding: 10px 15px;
+    border: 1px solid #e5e5e5;
+    border-radius: 0px;
+    height: 32px;
+    background: #fcfcfc;
+    max-width: 100%;
+    line-height: 33px;
+}
+#seller_accordion .controls .select2-container {
+    width: 350px;
+}
+input.small-input {
+    width: 80px;
+}
+
+.accordion .select2-container-multi .select2-choices {
+    padding: 0;
+    background-color: transparent;
+}
+
+.accordion .select2-container input {
+    height: 32px !important;
+    min-height: unset !important;
+}
+
+.accordion .select2-container .select2-chosen {
+    height: 32px;
+    line-height: 32px;
+}
+
+.accordion .select2-container .select2-choice {
+    height: 32px;
+}
+
+.accordion .copy-all-button {
+    padding: 1px 4px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+}
+
+#profile_accordion .accordion .copy-all-button .fa {
+    margin-right: 0;
+}
+
+.timings-wrapper .timings-table th,
+.timings-wrapper .timings-table td {
+    padding: 5px 15px
+}
+
+#profile_accordion fieldset.btn-group-toggle {
+    width: auto;
+    text-align: right;
+}
+
+#profile_accordion .select2-container.medium-input {
+    width: 180px;
+}
+
+.copy-button-td {
+    position: relative;
+}
+
+.select2-drop {
+    z-index: 9999 !important;
+}
+
+.controls .select2-container .select2-choices input[type="text"] {
+    margin-bottom: 0 !important;
+}
+
+.controls input[type="number"] {
+    min-height: unset !important;
+    margin-bottom: 0 !important;
+    width: 100px !important;
+    margin-right: 10px !important;
+}
+#seller_accordion .controls input, #profile_accordion .controls input {
+    margin-bottom: unset !important;
+}
+
+@media (max-width: 992px) {
+    #seller_accordion .select2-container.medium-input {
+        width: 100%;
+    }
+    .captcha-fieldset a {
+        height: auto;
+    }
+    .tnc-ul .tnc-ul-li {
+        margin-left: 0 !important;
+    }
+    .captcha-fieldset .control-group.submit-bottom {
+        margin-top: 0;
+    }
+    .accordion .accordion-box {
+        height: unset;
+    }
+    #seller_accordion form  {
+        height: unset;
+        max-height: unset;
+    }
+}

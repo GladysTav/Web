@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" method="upgrade">
+	<name>MOD_SELLACIOUS_HYPERLOCAL</name>
+	<author>Izhar Aazmi</author>
+	<creationDate>April 07, 2020</creationDate>
+	<copyright>Copyright (C) 2012-2020 Bhartiy Web Technologies. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@bhartiy.com</authorEmail>
+	<authorUrl>www.bhartiy.com</authorUrl>
+	<version>2.0.0-beta1</version>
+	<description>MOD_SELLACIOUS_HYPERLOCAL_DESC</description>
+	<files>
+		<folder>forms</folder>
+		<folder>language</folder>
+		<folder>libraries</folder>
+		<folder>tmpl</folder>
+		<filename module="mod_sellacious_hyperlocal">mod_sellacious_hyperlocal.php</filename>
+		<filename>config.xml</filename>
+		<filename>helper.php</filename>
+		<filename>observer.php</filename>
+	</files>
+	<media folder="media" destination="mod_sellacious_hyperlocal">
+		<folder>css</folder>
+		<folder>js</folder>
+	</media>
+	<config>
+		<params>
+			<fieldset name="basic" label="MOD_SELLACIOUS_HYPERLOCAL_FIELDSET_STYLE">
+				<field
+					name="display_layout"
+					type="modulelayout"
+					label="MOD_SELLACIOUS_HYPERLOCAL_DISPLAY_LAYOUT_LABEL"
+					description="MOD_SELLACIOUS_HYPERLOCAL_DISPLAY_LAYOUT_DESC"
+					class="inputbox w100p"
+				/>
+
+				<field
+					name="display_location_via"
+					type="radio"
+					label="MOD_SELLACIOUS_HYPERLOCAL_DISPLAY_LOCATION_VIA_LABEL"
+					description="MOD_SELLACIOUS_HYPERLOCAL_DISPLAY_LOCATION_VIA_DESC"
+					class="btn-group btn-group-yesno"
+					default="latitude_longitude"
+					showon="display_layout!:_:default"
+				>
+					<option value="latitude_longitude">Coordinates</option>
+					<option value="location">Location</option>
+				</field>
+
+				<field
+					name="show_location_by"
+					type="list"
+					label="MOD_SELLACIOUS_HYPERLOCAL_SHOW_LOCATION_BY_LABEL"
+					description="MOD_SELLACIOUS_HYPERLOCAL_SHOW_LOCATION_BY_LABEL_DESC"
+					default="state"
+					showon="display_layout:_:style1[AND]display_location_via:location">
+					<option value="country">MOD_SELLACIOUS_HYPERLOCAL_SHOW_LOCATION_BY_COUNTRY_LABEL</option>
+					<option value="state">MOD_SELLACIOUS_HYPERLOCAL_SHOW_LOCATION_BY_STATE_LABEL</option>
+					<option value="city">MOD_SELLACIOUS_HYPERLOCAL_SHOW_LOCATION_BY_CITY_LABEL</option>
+					<option value="zip">MOD_SELLACIOUS_HYPERLOCAL_SHOW_LOCATION_BY_ZIP_LABEL</option>
+				</field>
+
+				<field
+					name="location_choices_loc"
+					type="subform"
+					label="MOD_SELLACIOUS_HYPERLOCAL_SELECT_TITLE"
+					description="MOD_SELLACIOUS_HYPERLOCAL_SELECT_DESC"
+					formsource="modules/mod_sellacious_hyperlocal/forms/subform/options_by_location.xml"
+					layout="joomla.form.field.subform.repeatable"
+					multiple="true"
+					buttons="add,remove"
+					showon="display_layout!:_:default[AND]display_location_via:location"
+				/>
+
+				<field
+					name="location_choices_lat"
+					type="subform"
+					label="MOD_SELLACIOUS_HYPERLOCAL_SELECT_TITLE"
+					description="MOD_SELLACIOUS_HYPERLOCAL_SELECT_DESC"
+					formsource="modules/mod_sellacious_hyperlocal/forms/subform/options_by_latitude.xml"
+					layout="joomla.form.field.subform.repeatable"
+					multiple="true"
+					buttons="add,remove"
+					showon="display_layout!:_:default[AND]display_location_via:latitude_longitude"
+				/>
+			</fieldset>
+		</params>
+	</config>
+</extension>

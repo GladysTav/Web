@@ -1,0 +1,19 @@
+#
+#<?php die('Forbidden.'); ?>
+#Date: 2019-03-18 08:31:38 UTC
+#Software: Joomla Platform 13.1.0 Stable [ Curiosity ] 24-Apr-2013 00:00 GMT
+
+#Fields: datetime	priority clientip	category	message
+2019-03-18T08:31:38+00:00	CRITICAL -	error	Uncaught \Throwable of type JDatabaseExceptionConnecting thrown. Stack trace: #0 /Users/codeacious3/Sites/sellacious/libraries/joomla/database/driver/mysqli.php(439): JDatabaseDriverMysqli->connect()
+#1 /Users/codeacious3/Sites/sellacious/libraries/src/Table/Table.php(245): JDatabaseDriverMysqli->getTableColumns('#__extensions', false)
+#2 /Users/codeacious3/Sites/sellacious/libraries/src/Table/Table.php(164): Joomla\CMS\Table\Table->getFields()
+#3 /Users/codeacious3/Sites/sellacious/libraries/src/Table/Extension.php(32): Joomla\CMS\Table\Table->__construct('#__extensions', Array, Object(JDatabaseDriverMysqli))
+#4 /Users/codeacious3/Sites/sellacious/libraries/src/Table/Table.php(312): Joomla\CMS\Table\Extension->__construct(Object(JDatabaseDriverMysqli))
+#5 /Users/codeacious3/Sites/sellacious/libraries/sellacious/helper/helper.php(206): Joomla\CMS\Table\Table::getInstance('Extension')
+#6 /Users/codeacious3/Sites/sellacious/libraries/sellacious/helper/helper.php(168): SellaciousHelper->detectVersion()
+#7 /Users/codeacious3/Sites/sellacious/libraries/sellacious/loader.php(24): SellaciousHelper::getInstance()
+#8 /Users/codeacious3/Sites/sellacious/libraries/loader.php(226): include_once('/Users/codeacio...')
+#9 /Users/codeacious3/Sites/sellacious/sellacious/cli/application.php(36): JLoader::import('sellacious.load...')
+#10 /Users/codeacious3/Sites/sellacious/libraries/src/Application/CliApplication.php(119): SellaciousCliApplication->__construct()
+#11 /Users/codeacious3/Sites/sellacious/sellacious/cli/sellacious_cache.php(148): Joomla\CMS\Application\CliApplication::getInstance('SellaciousCache...')
+#12 {main}

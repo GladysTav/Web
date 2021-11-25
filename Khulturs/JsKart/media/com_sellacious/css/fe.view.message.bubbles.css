@@ -1,0 +1,155 @@
+.chat {
+    width: 100%;
+    float: left;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    color: #434651;
+}
+
+.chat-header {
+    padding: 8px;
+    border-bottom: 2px solid white;
+}
+
+.chat-about {
+    float: left;
+    padding-left: 10px;
+    margin-top: 6px;
+}
+
+.chat-with {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.chat-history {
+    padding: 10px 20px 10px;
+    border-bottom: 2px solid white;
+    overflow-y: auto;
+    height: 300px;
+}
+
+.chat-history ul {
+    list-style: none;
+}
+
+.message-data {
+    margin-bottom: 10px;
+}
+
+.message-data-time {
+    padding-left: 6px;
+}
+
+.message {
+    color: #000;
+    padding: 10px 10px 1px 10px;
+    font-size: 15px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    max-width: 85%;
+    position: relative;
+    clear: both;
+    min-width: 100px !important;
+    display: inline-block;
+}
+
+.message:after {
+    bottom: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: #28a745;
+    border-width: 10px;
+}
+
+.my-message:after {
+    right: 9px;
+    border-bottom-color: #007bff;
+}
+
+.their-message:after {
+    left: 9px
+}
+
+.chat-message {
+    padding: 10px;
+}
+
+.chat-message textarea {
+    width: 100%;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    resize: none;
+}
+
+.chat .chat-message .btn-send {
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.ctech-wrapper .message p {
+    margin-bottom: 0;
+}
+
+.message-body {
+    width: auto;
+    margin-bottom: 0.4rem;
+}
+
+.chat .chat-header img.user-avatar {
+    height: 50px;
+    width: 50px;
+    float: left;
+    border-radius: 100%;
+}
+
+.chat-history ul li {
+    overflow: hidden;
+}
+
+.message-body .product-external-link {
+    line-height:3px;
+    position: absolute;
+    top: 3px;
+    right: 6px;
+    color: #FFFFFF;
+    padding:2px 2px;
+}
+
+.message-body .product-external-link:hover {
+    color: #FFFFFF;
+}
+
+.chat-history .loading-messages i {
+    font-size: 24px;
+}
+
+.chat-history .no-more-messages {
+    margin-bottom: 10px;
+}
+
+.message-system {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.message-system a {
+    color: #fff;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 130px;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: top;
+}

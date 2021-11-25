@@ -1,0 +1,208 @@
+/**
+ * @version     2.1.4
+ * @package     SP Page Builder Addons for Sellacious
+ *
+ * @copyright   Copyright (C) 2016. Bhartiy Web Technologies. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @author      Bhavika Matariya <info@bhartiy.com> - http://www.bhartiy.com
+ */
+.mfp-bg {
+	z-index: 99991;
+}
+
+.mfp-wrap {
+	z-index: 99992;
+}
+
+.sl-gallery .sppb-sl-product-gallery {
+	margin-bottom: 30px;
+	background: #f5f5f5;
+}
+
+.sl-gallery .sppb-sl-product-gallery > h3 {
+	margin: 0;
+	padding: 15px;
+	background: #ffffff;
+	box-shadow: 0 3px 16px -1px #dddddd;
+	-moz-box-shadow: 0 3px 16px -1px #dddddd;
+	-webkit-box-shadow: 0 3px 16px -1px #dddddd;
+	-ms-box-shadow: 0 3px 16px -1px #dddddd;
+	-o-box-shadow: 0 3px 16px -1px #dddddd;
+	font-size: 16px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	position: relative;
+	z-index: 999;
+}
+
+.sl-gallery .sppb-sl-product-galleryinner {
+	padding: 12px 10px;
+	text-align: center;
+}
+
+.sl-gallery .sppb-sl-product-gallery-main {
+	position: relative;
+}
+
+.sl-gallery .sl-product-slides a {
+	display: block;
+}
+
+.sl-gallery .sl-product-slides a img {
+	opacity: 0;
+	position: absolute;
+	visibility: hidden;
+}
+
+.sl-gallery .sl-product-slides span.product-img {
+	background-repeat: no-repeat;
+	height: 360px;
+	background-size: contain;
+	display: block;
+	background-position: center;
+	background-color: #ffffff;
+}
+
+.sl-gallery .sl-product-slides span.product-img .fa {
+	font-size: 60px;
+	line-height: 70px;
+	color: #ffffff;
+	background: rgba(0, 0, 0, 0.35);
+	display: block;
+	height: 100%;
+	padding-top: 140px;
+	opacity: 0;
+	transition: all 0.25s linear 0s;
+	-webkit-transition: all 0.25s linear 0s;
+	-ms-transition: all 0.25s linear 0s;
+	-moz-transition: all 0.25s linear 0s;
+	-o-transition: all 0.25s linear 0s;
+}
+
+.sl-gallery .sl-product-slides a:focus {
+	outline: none;
+}
+
+.sl-gallery .sppb-sl-product-gallery-main:hover span.product-img .fa {
+	opacity: 1;
+}
+
+.sl-gallery .image-sl-dot-nav {
+	margin-top: -24px;
+}
+
+.sl-gallery .image-sl-dot-nav .sl-dot {
+	width: 12px;
+	height: 12px;
+	padding: 0;
+	display: inline-block;
+	border-radius: 100%;
+	margin: 0 2px;
+}
+
+.sl-gallery .image-sl-nav-btn a.next,
+.sl-gallery .image-sl-nav-btn a.prev {
+	position: absolute;
+	bottom: 0;
+	font-size: 30px;
+	line-height: 36px;
+	background: #222222;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	display: block;
+	cursor: pointer;
+	opacity: 0;
+	color: #ffffff;
+	margin: 0 20px;
+	transition: all 0.25s linear 0s;
+	-webkit-transition: all 0.25s linear 0s;
+	-ms-transition: all 0.25s linear 0s;
+	-moz-transition: all 0.25s linear 0s;
+	-o-transition: all 0.25s linear 0s;
+}
+
+.sl-gallery .image-sl-nav-btn a.next {
+	right: 0;
+}
+
+.sl-gallery .image-sl-nav-btn a.prev {
+	left: 0;
+}
+
+.sl-gallery .sppb-sl-product-gallery-main:hover .image-sl-nav-btn a,
+.sl-gallery .sppb-sl-product-gallery-main:focus .image-sl-nav-btn a {
+	margin: 0;
+	opacity: 1;
+}
+
+.sl-gallery .sl-product-small-thumbs a {
+	display: inline-block;
+	margin: 0 5px;
+	padding: 5px 0;
+}
+
+.sl-gallery .sl-product-small-thumbs img {
+	width: 40px;
+	height: 40px;
+	box-shadow: 0px 3px 12px 3px #c5c5c5;
+	-moz-box-shadow: 0px 3px 12px 3px #c5c5c5;
+	-ms-box-shadow: 0px 3px 12px 3px #c5c5c5;
+	-webkit-box-shadow: 0px 3px 12px 3px #c5c5c5;
+	-o-box-shadow: 0px 3px 12px 3px #c5c5c5;
+}
+
+.sl-gallery .sppb-sl-product-gallery-thumbs {
+	position: relative;
+	margin: 16px 0 0px;
+}
+
+.sl-gallery .sppb-sl-product-gallery-thumbs .sl-slides-container {
+	max-width: 80%;
+	margin: auto;
+}
+
+.sl-gallery .sppb-sl-product-gallery-thumbs .sl-slides-container .sl-product-thumb {
+	display: block;
+	max-width: 100px;
+	background: #ffffff;
+	min-width: 60px;
+	overflow: hidden;
+	box-shadow: 0px 2px 10px -1px #d6d6d6;
+	-moz-box-shadow: 0px 2px 10px -1px #d6d6d6;
+	-webkit-box-shadow: 0px 2px 10px -1px #d6d6d6;
+	-ms-box-shadow: 0px 2px 10px -1px #d6d6d6;
+	-o-box-shadow: 0px 2px 10px -1px #d6d6d6;
+	margin: 0 5px;
+}
+
+.sl-gallery .sppb-sl-product-gallery-thumbs .sl-slides-container .sl-product-thumb a {
+	display: block;
+}
+
+.sl-gallery .sppb-sl-product-gallery-thumbs .sl-slides-container .sl-product-thumb img {
+	height: 60px;
+	max-width: none;
+	margin: auto;
+	width: auto;
+}
+
+.sppb-sl-product-gallery-thumbs .sl-leftarrow,
+.sppb-sl-product-gallery-thumbs .sl-rightarrow {
+	font-size: 24px;
+	line-height: 34px;
+	position: absolute;
+	top: 15px;
+	display: block;
+	width: 30px;
+	cursor: pointer;
+}
+
+.sppb-sl-product-gallery-thumbs .sl-leftarrow {
+	left: 0;
+}
+
+.sppb-sl-product-gallery-thumbs .sl-rightarrow {
+	right: 0;
+}

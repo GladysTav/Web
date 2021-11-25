@@ -1,0 +1,122 @@
+/**
+ * @version     1.7.3
+ * @package     Sellacious Finder Module
+ *
+ * @copyright   Copyright (C) 2012-2019 Bhartiy Web Technologies. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @author      Izhar Aazmi <info@bhartiy.com> - http://www.bhartiy.com
+ */
+
+
+.sellafinder-search {
+	margin-bottom: 10px;
+}
+
+
+.sella-search .sellainputarea {
+width: 100%;
+height: 45px;
+}
+
+.sellafinder-search .sellainputarea  input[type].inputbox {
+	min-height: 45px;
+}
+
+.sella-search.finder-default .inputbox.input-fullwidth {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	padding: 13px 19px;
+	font-family: Roboto-Regular,Helvetica,sans-serif;
+	font-size: 14px;
+	line-height: 1;
+	letter-spacing: 0;
+	color: #212121;
+	border: none;
+	outline: none;
+	background: #fff;
+	-webkit-box-shadow: 1px 1px 9px 1px rgba(0,0,0,.12), 0 2px 2px 0 rgba(0,0,0,.24);
+	box-shadow: 1px 1px 9px 1px rgba(0,0,0,.12), 0 2px 2px 0 rgba(0,0,0,.24);
+	border-radius: 2px;
+}
+
+.sella-search .findersubmit.btn-right {
+	height: 100%;
+	width: 84px;
+	-webkit-border-radius: 0 2px 2px 0;
+	-moz-border-radius: 0 2px 2px 0;
+	border-radius: 0 2px 2px 0;
+	background-color:#f57224;
+}
+
+.sella-search .findersubmit {
+	font-size: 16px;
+}
+
+/*Search tabbar*/
+.search-tab-box {
+	position: relative;
+	overflow: hidden;
+	height: 72px;
+	z-index: 99;
+}
+
+.search-tab-box .sellainputarea {
+	position: absolute;
+	top:0;
+	line-height: .47rem;
+	box-sizing: border-box;
+	width: auto;
+	min-height: 72px;
+	background-color: #fff;
+	margin: .12rem .1rem;
+	right: 0;
+	box-shadow: 0 0 2px 0 rgba(0,0,0,.12), 0 2px 2px 0 rgba(0,0,0,.24);
+}
+
+.header-home-page-background {
+	background: #333;;
+}
+
+.search-tab-box .sella-search .findersubmit.btn-right {
+	background-color: transparent;
+	position: absolute;
+	color: #333;
+	right: 8px;
+	font-size: 18px
+}
+
+@media (max-width:1199px) {
+
+	.search-tab-box .sellainputarea {
+		position: absolute;
+		top: 0;
+		line-height: .47rem;
+		box-sizing: border-box;
+		width: 100%;
+		min-height: 72px;
+		background-color: #fff;
+		margin: 0 auto;
+		right: unset;
+		box-shadow: 0 0 2px 0 rgba(0,0,0,.12), 0 2px 2px 0 rgba(0,0,0,.24);
+	}
+
+}
+
+@media (max-width: 400px) {
+	.sellafinder-search .sellainputarea input[type].inputbox,
+	.sella-search .findersubmit.btn-right,
+	.search-tab-box .sellainputarea {
+		height: 35px;
+		min-height: unset;
+	}
+}
+
+
+

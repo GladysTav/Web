@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="package" version="3.0" method="upgrade" overwrite="true">
+    <name>Component Creator Login</name>
+    <creationDate>2016-12-16</creationDate>
+    <copyright>2016 Component Creator</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <author>Component Creator</author>
+    <authorEmail>info@component-creator.com</authorEmail>
+    <authorUrl>https://www.component-creator.com</authorUrl>
+    <version>1.0.9</version>
+    <scriptfile>script.php</scriptfile>
+    <packagename>ccl</packagename>
+    <files folder="packages">
+        <file type="component" id="com_ccl">com_ccl.zip</file>
+        <file type="plugin" id="facebook" group="authentication">plg_authentication_facebook.zip</file>
+        <file type="plugin" id="google" group="authentication">plg_authentication_google.zip</file>
+        <file type="module" id="mod_ccl">mod_ccl.zip</file>
+        <file type="plugin" id="cclogin" group="user">plg_user_cclogin.zip</file>
+        <file type="plugin" id="cclogin" group="system">plg_system_cclogin.zip</file>
+    </files>
+<updateservers><server type="extension" priority="1" name="pkg_ccl">https://www.component-creator.com/component/releases/updateServer/pkg_ccl</server></updateservers></extension>

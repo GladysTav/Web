@@ -1,0 +1,90 @@
+/*Sellacious Shopping Cart Custom CSS*/
+
+.mod-sellacious-cart {
+	padding-top: 8px !important;
+}
+
+/*Sellacious finder Custom CSS*/
+.sella-search.finder-dropdown .searchactionbtn {
+	padding-top: 15px;
+}
+
+/*Main menu Icon size*/
+.custom-icon .fa {
+	font-size: 18px;
+}
+
+/*My Account Module Custom Css*/
+.my-account ul > li {
+	list-style: none;
+	margin-left: -40px;
+}
+
+.my-account-child {
+	margin-top: -15px;
+}
+
+.my-account ul > li > a {
+	font-size: 14px;
+	line-height: 1;
+	display: inline-block;
+	padding: 8px 0;
+	cursor: pointer;
+}
+
+/*Offcanvas Custom CSS*/
+.offcanvas-menu .offcanvas-inner .login-greeting {
+	padding-top: 15px;
+	margin-bottom: -10px;
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+.login-greeting {
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+.offcanvas-menu .mobile-login {
+	display: none !important;
+}
+
+.offcanvas-menu .sella-list-item {
+	padding: 5px !important;
+	border: 1px solid rgba(0,0,0,.125);
+}
+
+.offcanvas-menu .sella-list {
+	padding-top: 20px !important;
+}
+
+.offcanvas-menu .offcanvas-inner .sella-list-item {
+	font-size: 12px !important;
+}
+
+input.sella-logout {
+	display: none !important;
+}
+
+.offcanvas-menu .offcanvas-inner .sp-module:not(:last-child) {
+	margin-bottom: 0px;
+}
+
+.offcanvas-menu .sella-container {
+	margin-top: 20px;
+}
+
+.offcanvas-menu a.mobile-logout {
+	width: fit-content;
+	padding: 7px 20px !important;
+}
+
+/*Others Custom CSS*/
+.password-group .input-group {
+	display: flex;
+}
+
+#sp-left .sp-module,
+#sp-right .sp-module {
+	padding: 0px !important;
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="params">
+		<fieldset name="params" label="COM_SELLACIOUS_FIELDSET_ADDITIONAL">
+			<field
+				name="maxlength"
+				type="number"
+				label="PLG_SELLACIOUS_FIELDTYPEFORMS_ATTRIBUTE_MAXLENGTH_LABEL"
+				description="PLG_SELLACIOUS_FIELDTYPEFORMS_ATTRIBUTE_MAXLENGTH_DESC"
+				message="PLG_SELLACIOUS_FIELDTYPEFORMS_ATTRIBUTE_MAXLENGTH_MSG"
+				min="0"
+				default="100"
+				class="inputbox"
+			/>
+			<field
+				name="readonly"
+				type="radioswitch"
+				label="PLG_SELLACIOUS_FIELDTYPEFORMS_ATTRIBUTE_READ_ONLY_LABEL"
+				description="PLG_SELLACIOUS_FIELDTYPEFORMS_ATTRIBUTE_READ_ONLY_DESC"
+				default="false"
+				>
+				<option value="true">JYes</option>
+				<option value="false">JNo</option>
+			</field>
+			<field
+				name="disabled"
+				type="radioswitch"
+				label="PLG_SELLACIOUS_FIELDTYPEFORMS_ATTRIBUTE_DISABLED_LABEL"
+				description="PLG_SELLACIOUS_FIELDTYPEFORMS_ATTRIBUTE_DISABLED_DESC"
+				default="false"
+				>
+				<option value="true">JYes</option>
+				<option value="false">JNo</option>
+			</field>
+			<field
+				name="default"
+				type="text"
+				label="PLG_SELLACIOUS_FIELDTYPEFORMS_ATTRIBUTE_DEFAULT_LABEL"
+				description="PLG_SELLACIOUS_FIELDTYPEFORMS_ATTRIBUTE_DEFAULT_DESC"
+				class="inputbox"
+			/>
+			<field
+				name="filter"
+				type="formFilters"
+				label="PLG_SELLACIOUS_FIELDTYPEFORMS_ATTRIBUTE_CONTENT_FILTER_LABEL"
+				description="PLG_SELLACIOUS_FIELDTYPEFORMS_ATTRIBUTE_CONTENT_FILTER_DESC"
+				filters="WORD,ALNUM,CMD,STRING,BASE64,HTML,RAW"
+				class="w100p"
+			/>
+<!--
+ 			<field
+				name="ranges"
+				type="textfilterrange"
+				label="PLG_SELLACIOUS_FIELDTYPEFORMS_ATTRIBUTE_RANGE_LABEL"
+				formskip="true"
+				description="PLG_SELLACIOUS_FIELDTYPEFORMS_ATTRIBUTE_RANGE_DESC"
+			/>
+ -->
+		</fieldset>
+	</fields>
+</form>

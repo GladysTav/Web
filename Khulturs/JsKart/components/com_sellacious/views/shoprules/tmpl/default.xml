@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_SELLACIOUS_SYS_SHOPRULES_VIEW_DEFAULT_TITLE">
+		<message>
+			<![CDATA[COM_SELLACIOUS_SYS_SHOPRULES_VIEW_DEFAULT_DESC]]>
+		</message>
+	</layout>
+	<fields name="request">
+		<fieldset name="request">
+			<field
+				name="type"
+				type="list"
+				label="COM_SELLACIOUS_FIELD_REQUEST_SHOPRULE_TYPE_LABEL"
+				description="COM_SELLACIOUS_FIELD_REQUEST_SHOPRULE_TYPE_DESC"
+				default="discount"
+				required="true"
+			>
+				<option value="tax">COM_SELLACIOUS_SHOPRULE_TYPE_TAX</option>
+				<option value="discount">COM_SELLACIOUS_SHOPRULE_TYPE_OFFER</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>

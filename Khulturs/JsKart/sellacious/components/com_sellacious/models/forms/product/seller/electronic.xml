@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="seller" label="COM_SELLACIOUS_PRODUCT_FIELDSET_SELLER">
+		<fields name="seller">
+			<field
+				type="fieldgroup"
+				label="COM_SELLACIOUS_PRODUCT_FIELD_EPRODUCT_GROUP_LABEL"
+				description="COM_SELLACIOUS_PRODUCT_FIELD_EPRODUCT_GROUP_DESC"
+			/>
+			<field
+				name="eproduct"
+				type="productmedia"
+				label="COM_SELLACIOUS_PRODUCT_FIELD_EPRODUCT_LABEL"
+				description="COM_SELLACIOUS_PRODUCT_FIELD_EPRODUCT_DESC"
+				class="inputbox"
+				record_id=""
+				filter="unset"
+			/>
+			<field
+				name="delivery_mode"
+				type="hidden"
+				label="COM_SELLACIOUS_PRODUCT_FIELD_EPRODUCT_DELIVERY_LABEL"
+				description="COM_SELLACIOUS_PRODUCT_FIELD_EPRODUCT_DELIVERY_DESC"
+				class="inputbox"
+				default="download"
+			>
+				<option value="none">JNONE</option>
+				<option value="download">COM_SELLACIOUS_PRODUCT_FIELD_EPRODUCT_DELIVERY_DOWNLOAD</option>
+				<!-- <option value="app">COM_SELLACIOUS_PRODUCT_FIELD_EPRODUCT_DELIVERY_APP</option>
+				<option value="both">COM_SELLACIOUS_PRODUCT_FIELD_EPRODUCT_DELIVERY_BOTH</option> -->
+			</field>
+			<field
+				name="license"
+				type="license"
+				label="COM_SELLACIOUS_PRODUCT_FIELD_LICENSE_LABEL"
+				description="COM_SELLACIOUS_PRODUCT_FIELD_LICENSE_DESC"
+				class="small-input"
+			>
+				<option value="">JNONE</option>
+			</field>
+			<field
+				name="download_limit"
+				type="number"
+				label="COM_SELLACIOUS_PRODUCT_FIELD_DOWNLOAD_LIMIT_LABEL"
+				description="COM_SELLACIOUS_PRODUCT_FIELD_DOWNLOAD_LIMIT_DESC"
+				class="inputbox"
+				min="0"
+			/>
+			<field
+				name="download_period"
+				type="TimeInterval"
+				label="COM_SELLACIOUS_PRODUCT_FIELD_DOWNLOAD_PERIOD_LABEL"
+				description="COM_SELLACIOUS_PRODUCT_FIELD_DOWNLOAD_PERIOD_DESC"
+				class="inputbox"
+				periods="day,week,month,year"
+			/>
+			<field
+				name="license_count"
+				type="number"
+				label="COM_SELLACIOUS_PRODUCT_FIELD_LICENSE_COUNT_LABEL"
+				description="COM_SELLACIOUS_PRODUCT_FIELD_LICENSE_COUNT_DESC"
+				class="inputbox"
+				default="1"
+				min="0"
+			/>
+			<field
+				name="preview_url"
+				type="text"
+				label="COM_SELLACIOUS_PRODUCT_FIELD_PREVIEW_URL_LABEL"
+				description="COM_SELLACIOUS_PRODUCT_FIELD_PREVIEW_URL_DESC"
+				class="inputbox medium-input"
+			/>
+			<field
+				name="preview_mode"
+				type="radio"
+				label="COM_SELLACIOUS_PRODUCT_FIELD_PREVIEW_MODE_LABEL"
+				description="COM_SELLACIOUS_PRODUCT_FIELD_PREVIEW_MODE_DESC"
+				class="inputbox"
+			>
+				<option value="">COM_SELLACIOUS_PRODUCT_FIELD_PREVIEW_MODE_OPTION_NONE</option>
+				<option value="modal">COM_SELLACIOUS_PRODUCT_FIELD_PREVIEW_MODE_OPTION_MODAL</option>
+				<option value="_blank">COM_SELLACIOUS_PRODUCT_FIELD_PREVIEW_MODE_OPTION_BLANK</option>
+				<option value="_top">COM_SELLACIOUS_PRODUCT_FIELD_PREVIEW_MODE_OPTION_TOP</option>
+			</field>
+		</fields>
+	</fieldset>
+</form>

@@ -1,0 +1,127 @@
+/**
+ * @version     2.0.0
+ * @package     sellacious
+ *
+ * @copyright   Copyright (C) 2012-2020 Bhartiy Web Technologies. All rights reserved.
+ * @license     SPL Sellacious Private License; see http://www.sellacious.com/spl.html
+ * @author      Saurabh Sabharwal <info@bhartiy.com> - http://www.bhartiy.com
+ */
+
+.product-block-travelkit {
+	position: relative;
+	background: #fff;
+}
+
+[dir] .product-block-travelkit {
+	padding: 5px;
+	background: #fff;
+}
+
+[dir] .product-block-travelkit .product-block-wrap {
+	padding: 4px;
+}
+
+.product-block-travelkit .product-block-wrap .product-images-container {
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.product-block-travelkit .image-box span {
+	height: 150px;
+	width: 100%;
+	display: block;
+	transition: 0.3s ease-in-out;
+}
+
+[dir] .product-block-travelkit .image-box span {
+	background-color: #fff;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+[dir] .product-block-travelkit .product-block-wrap .product-images-container .spl-cat-badge {
+	max-height: 35px;
+	max-width: 35px;
+	position: absolute;
+	top: 2px;
+}
+
+[dir=ltr] .product-block-travelkit .product-block-wrap .product-images-container .spl-cat-badge,
+[dir=rtl] .wishlist-products-container .product-block-travelkit .product-block-wrap .product-images-container .spl-cat-badge {
+	right: 2px;
+	left: unset;
+}
+
+[dir=rtl] .product-block-travelkit .product-block-wrap .product-images-container .spl-cat-badge,
+[dir=ltr] .wishlist-products-container .product-block-travelkit .product-block-wrap .product-images-container .spl-cat-badge {
+	left: 2px;
+	right: unset;
+}
+
+.product-block-travelkit .product-block-wrap .spl-badge-text {
+	position: absolute;
+	top: 8px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	max-width: 50px;
+}
+
+.product-block-travelkit .product-title {
+	text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	position: relative;
+}
+
+.product-block-travelkit .rating-price-row .price-container .product-price-container {
+	font-size: 13px;
+	line-height: 30px;
+	margin: 0;
+}
+
+.product-block-travelkit .product-information {
+	text-align: center;
+}
+
+.product-block-travelkit .product-title a {
+	line-height: 18px;
+	color: #000;
+	font-size: 16px;
+}
+
+.product-block-travelkit .product-block-wrap .wishlist-remove-product {
+	position: absolute;
+	top: 15px;
+	font-size: 16px;
+}
+
+[dir=ltr] .product-block-travelkit .product-block-wrap .wishlist-remove-product {
+	right: 15px;
+}
+
+[dir=rtl] .product-block-travelkit .product-block-wrap .wishlist-remove-product {
+	left: 15px;
+}
+
+.product-block-travelkit .rating-price-row {
+	display: flex;
+}
+
+/*.product-block-travelkit .rating-price-row .rating-container,
+.product-block-travelkit .rating-price-row .price-container {
+	flex: 1;
+	width: 100%;
+}*/
+
+.product-block-travelkit .rating-price-row .rating-container .rating-stars [class*="star"]:before {
+	font-size: 13px;
+}
+
+.product-blocks-container .product-list-block.product-block-travelkit .product-info .rating-price-row .price-container .product-price {
+	text-align: right;
+	font-size: 15px;
+	margin: 0;
+}

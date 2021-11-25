@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="basic" label="COM_SELLACIOUS_SHOPRULE_FIELDSET_BASIC">
+		<field
+			name="id"
+			type="hidden"
+			default="0"
+		/>
+		<field
+			name="seller_uid"
+			type="productsellers"
+			label="COM_SELLACIOUS_SHOPRULE_FIELD_SELLER_LABEL"
+			description="COM_SELLACIOUS_SHOPRULE_FIELD_SELLER_DESC"
+			onchange="Joomla.submitform('shoprule.setSeller');"
+			default=""
+			class="small-input"
+		>
+			<option value="0" class="red">COM_SELLACIOUS_SHOPRULE_FIELD_SELLER_OPTION_SITE_WIDE</option>
+		</field>
+		<field
+			name="type"
+			type="list"
+			label="COM_SELLACIOUS_SHOPRULE_FIELD_TYPE_LABEL"
+			description="COM_SELLACIOUS_SHOPRULE_FIELD_TYPE_DESC"
+			required="true"
+			class="small-input"
+			onchange="Joomla.submitbutton('shoprule.setType')"
+			default=""
+		>
+			<option value="">COM_SELLACIOUS_SHOPRULE_OPTION_CHOOSE</option>
+			<option value="tax">COM_SELLACIOUS_SHOPRULE_TYPE_TAX</option>
+			<option value="discount">COM_SELLACIOUS_SHOPRULE_TYPE_OFFER</option>
+			<!--<option value="shipping">Shipping</option>
+			<option value="packaging">Packaging</option>-->
+		</field>
+		<field
+			name="title"
+			type="text"
+			label="COM_SELLACIOUS_SHOPRULE_FIELD_TITLE_LABEL"
+			description="COM_SELLACIOUS_SHOPRULE_FIELD_TITLE_DESC"
+			class="inputbox"
+			size="40"
+			required="true"
+		 />
+		<field
+			name="alias"
+			type="text"
+			label="COM_SELLACIOUS_SHOPRULE_FIELD_ALIAS_LABEL"
+			description="COM_SELLACIOUS_SHOPRULE_FIELD_ALIAS_DESC"
+			class="inputbox"
+			size="40"
+		/>
+		<field
+			name="parent_id"
+			type="shopruleParent"
+			label="COM_SELLACIOUS_SHOPRULE_FIELD_PARENT_LABEL"
+			description="COM_SELLACIOUS_SHOPRULE_FIELD_PARENT_DESC"
+			class="small-input"
+		>
+			<option value="1">COM_SELLACIOUS_OPTION_NO_PARENT</option>
+		</field>
+		<field
+			name="state"
+			type="radioswitch"
+			label="COM_SELLACIOUS_SHOPRULE_FIELD_STATUS_LABEL"
+			description="COM_SELLACIOUS_SHOPRULE_FIELD_STATUS_DESC"
+			required="true"
+			default="1"
+		>
+			<option value="1">COM_SELLACIOUS_SHOPRULE_OPTION_ACTIVE</option>
+			<option value="0">COM_SELLACIOUS_SHOPRULE_OPTION_INACTIVE</option>
+		</field>
+		<field
+			name="filterable"
+			type="radioswitch"
+			label="COM_SELLACIOUS_SHOPRULE_FIELD_FILTERABLE_LABEL"
+			description="COM_SELLACIOUS_SHOPRULE_FIELD_FILTERABLE_DESC"
+			default="1"
+		>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+<!--
+		<field
+			name="value_base"
+			type="radio"
+			label="COM_SELLACIOUS_SHOPRULE_FIELD_VALUE_BASE_LABEL"
+			description="COM_SELLACIOUS_SHOPRULE_FIELD_VALUE_BASE_DESC"
+			required="true"
+			default="1"
+		>
+			<option value="0">Base Price</option>
+			<option value="1">Aggregate Price</option>
+		</field>
+-->
+		<field
+			name="method_name"
+			type="shopruleMethod"
+			label="COM_SELLACIOUS_SHOPRULE_FIELD_METHOD_LABEL"
+			description="COM_SELLACIOUS_SHOPRULE_FIELD_METHOD_DESC"
+			onchange="this.form.submit();"
+			required="true"
+			class="w100p"
+			default="*"
+		>
+			<option value="*">COM_SELLACIOUS_SHOPRULE_METHOD_BASIC</option>
+		</field>
+		<field
+			name="amount"
+			type="rates"
+			label="COM_SELLACIOUS_SHOPRULE_FIELD_AMOUNT_LABEL"
+			description="COM_SELLACIOUS_SHOPRULE_FIELD_AMOUNT_DESC"
+			size="16"
+			required="true"
+			validate="rates"
+			currency="global"
+			sign="GEZ"
+		/>
+		<field
+			name="sum_method"
+			type="radio"
+			label="COM_SELLACIOUS_SHOPRULE_FIELD_SUM_METHOD_LABEL"
+			description="COM_SELLACIOUS_SHOPRULE_FIELD_SUM_METHOD_DESC"
+			required="true"
+			default="1"
+			onchange="this.form.submit();"
+		>
+			<option value="1">COM_SELLACIOUS_SHOPRULE_FIELD_SUM_METHOD_CART</option>
+			<option value="2">COM_SELLACIOUS_SHOPRULE_FIELD_SUM_METHOD_ITEM</option>
+			<option value="3">COM_SELLACIOUS_SHOPRULE_FIELD_SUM_METHOD_SHIPPING</option>
+		</field>
+		<field
+			name="apply_on_all_products"
+			type="radio"
+			label="COM_SELLACIOUS_SHOPRULE_FIELD_APPLY_ON_ALL_PRODUCTS_LABEL"
+			description="COM_SELLACIOUS_SHOPRULE_FIELD_APPLY_ON_ALL_PRODUCTS_DESC"
+			onchange="Joomla.submitform('shoprule.setSeller');"
+			default="0"
+			showon="sum_method:2"
+		>
+			<option value="1">COM_SELLACIOUS_SHOPRULE_FIELD_APPLY_ON_ALL_PRODUCTS</option>
+			<option value="0">COM_SELLACIOUS_SHOPRULE_FIELD_APPLY_ON_SELECTED_PRODUCTS</option>
+		</field>
+		<field
+			name="tax_class_groups"
+			type="ShopRuleClassGroups"
+			class_type="tax"
+			label="COM_SELLACIOUS_PRODUCT_FIELD_TAX_CLASS_GROUPS_LABEL"
+			description="COM_SELLACIOUS_PRODUCT_FIELD_TAX_CLASS_GROUPS_DESC"
+			class="w100p"
+		/>
+		<field
+			name="discount_class_groups"
+			type="ShopRuleClassGroups"
+			class_type="discount"
+			label="COM_SELLACIOUS_PRODUCT_FIELD_DISCOUNT_CLASS_GROUPS_LABEL"
+			description="COM_SELLACIOUS_PRODUCT_FIELD_DISCOUNT_CLASS_GROUPS_DESC"
+			class="w100p"
+		/>
+		<field
+			name="apply_rule_on_price_display"
+			type="radioswitch"
+			label="COM_SELLACIOUS_SHOPRULE_FIELD_APPLY_RULE_ON_PRICE_DISPLAY_LABEL"
+			description="COM_SELLACIOUS_SHOPRULE_FIELD_APPLY_RULE_ON_PRICE_DISPLAY_DESC"
+			default="0"
+			showon="sum_method:2"
+		>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field
+			name="apply_rule_on_list_price"
+			type="radioswitch"
+			label="COM_SELLACIOUS_SHOPRULE_FIELD_APPLY_RULE_ON_LIST_PRICE_LABEL"
+			description="COM_SELLACIOUS_SHOPRULE_FIELD_APPLY_RULE_ON_LIST_PRICE_DESC"
+			default="0"
+			showon="apply_rule_on_price_display:1"
+		>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field
+			name="publish_up"
+			type="calendar"
+			label="COM_SELLACIOUS_SHOPRULE_FIELD_STARTDATE_LABEL"
+			description="COM_SELLACIOUS_SHOPRULE_FIELD_STARTDATE_DESC"
+			class="inputbox calendar-input"
+			validate="datetime"
+			format="%Y-%m-%d"
+		 />
+		<field
+			name="publish_down"
+			type="calendar"
+			label="COM_SELLACIOUS_SHOPRULE_FIELD_ENDDATE_LABEL"
+			description="COM_SELLACIOUS_SHOPRULE_FIELD_ENDDATE_DESC"
+			class="inputbox calendar-input"
+			format="%Y-%m-%d"
+			validate="datetime"
+			after="publish_up"
+		 />
+		<!-- created by field is required for currency detection -->
+		<field
+			name="created_by"
+			type="hidden"
+			filter="unset"
+			/>
+		<fields name="slabs">
+			<field
+				name="quantity_slabs"
+				type="shopruleSlabs"
+				label="COM_SELLACIOUS_SHOPRULE_FIELD_QUANTITY_SLABS_LABEL"
+				description="COM_SELLACIOUS_SHOPRULE_FIELD_QUANTITY_SLABS_DESC"
+				percentage_allowed="true"
+				round_to_digits="0"
+				precision="0"
+				rows_limit="100"
+				rate_column="amount"
+			/>
+			<field
+				name="price_slabs"
+				type="shopruleSlabs"
+				label="COM_SELLACIOUS_SHOPRULE_FIELD_PRICE_SLABS_LABEL"
+				description="COM_SELLACIOUS_SHOPRULE_FIELD_PRICE_SLABS_DESC"
+				percentage_allowed="true"
+				precision="2"
+				rows_limit="100"
+				rate_column="amount"
+			/>
+		</fields>
+	</fieldset>
+	<fieldset name="terms" label="COM_SELLACIOUS_SHOPRULE_FIELDSET_TERMS">
+		<field
+			name="terms"
+			type="editor"
+			label="COM_SELLACIOUS_SHOPRULE_FIELD_TERMS_LABEL"
+			description="COM_SELLACIOUS_SHOPRULE_FIELD_TERMS_DESC"
+			class="textarea w75p"
+			filter="raw"
+			height="250"
+		/>
+	</fieldset>
+	<fieldset name="method" label="COM_SELLACIOUS_SHOPRULE_FIELDSET_METHOD">
+	</fieldset>
+	<fields name="params">
+		<fieldset name="filters" label="COM_SELLACIOUS_FIELDSET_FILTERS">
+			<field
+				type="fieldgroup"
+				name="note"
+				label=""
+				description="COM_SELLACIOUS_SHOPRULE_FIELD_FILTER_NOTE_DESC"
+			/>
+		</fieldset>
+	</fields>
+	<fieldset name="translations" label="COM_SELLACIOUS_SHOPRULE_FIELDSET_TRANSLATIONS">
+		<fields name="translations">
+		</fields>
+	</fieldset>
+</form>

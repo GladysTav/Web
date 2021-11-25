@@ -1,0 +1,19 @@
+<form>
+	<fieldset name="prices" label="COM_SELLACIOUS_PRODUCT_FIELDSET_PRICES">
+		<fields name="seller">
+			<field
+				type="fieldgroup"
+				label="COM_SELLACIOUS_PRICE_HANDLER_FIELDGROUP_CALL_LABEL"
+			/>
+			<field
+				name="phone"
+				type="text"
+				label="COM_SELLACIOUS_PRODUCT_FIELD_SELLER_CALL_US_PHONE_LABEL"
+				description="COM_SELLACIOUS_PRODUCT_FIELD_SELLER_CALL_US_PHONE_DESC"
+				class="input-disabled"
+				disabled="true"
+				filter="unset"
+			/>
+		</fields>
+	</fieldset>
+</form>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+	<name>mod_sellacious_contact</name>
+	<author>Saurabh Sabharwal</author>
+	<creationDate>July 19, 2019</creationDate>
+	<copyright>Copyright (C) 2012-2019 Bhartiy Web Technologies. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@bhartiy.com</authorEmail>
+	<authorUrl>www.bhartiy.com</authorUrl>
+	<version>1.7.4-alpha2</version>
+	<description>MOD_SELLACIOUS_CONTACT_DESC</description>
+
+	<files>
+		<filename module="mod_sellacious_contact">mod_sellacious_contact.php</filename>
+		<folder>language</folder>
+		<folder>tmpl</folder>
+	</files>
+	<media folder="media" destination="mod_sellacious_contact">
+		<folder>css</folder>
+	</media>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="class_sfx" type="text" default=""
+				       label="MOD_SELLACIOUS_CONTACT_SHOW_MODULE_CLASS_SUFFIX_LABEL"
+				       description="MOD_SELLACIOUS_CONTACT_SHOW_MODULE_CLASS_SUFFIX_DESC" />
+				<field
+					name="text_color"
+					type="color"
+					label="MOD_SELLACIOUS_CONTACT_TEXT_COLOR_LABEL"
+					description="MOD_SELLACIOUS_CONTACT_TEXT_COLOR_DESC"
+					default="#000000"
+				/>
+				<field
+					name="icon_color"
+					type="color"
+					label="MOD_SELLACIOUS_CONTACT_ICON_COLOR_LABEL"
+					description="MOD_SELLACIOUS_CONTACT_ICON_COLOR_DESC"
+					default="#000000"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+		<server type="extension" name="Sellacious Updates - mod_sellacious_contact">http://sellacious.com/release/updates/v1.6/mod_sellacious_contact.xml</server>
+	</updateservers>
+</extension>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.1" method="upgrade" client="sellacious">
+	<name>com_sellaciouscoq</name>
+	<author>Aditya Chakraborty</author>
+	<creationDate>April 08, 2020</creationDate>
+	<copyright>Copyright (C) 2012-2020 Bhartiy Web Technologies. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@bhartiy.com</authorEmail>
+	<authorUrl>www.bhartiy.com</authorUrl>
+	<version>2.0.0-beta1</version>
+	<scriptfile>script.php</scriptfile>
+	<description>COM_SELLACIOUSCOQ_XML_DESCRIPTION</description>
+	<sellacious>
+		<files folder="sellacious">
+			<folder>language</folder>
+			<folder>libraries</folder>
+			<filename>sellaciouscoq.php</filename>
+			<filename>controller.php</filename>
+			<filename>observer.php</filename>
+		</files>
+	</sellacious>
+	<administration>
+		<files folder="administrator">
+			<folder>language</folder>
+		</files>
+	</administration>
+</extension>

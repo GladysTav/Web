@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="seller">
+		<fieldset name="seller" label="COM_SELLACIOUS_PRODUCT_FIELDSET_SELLER">
+			<field
+				name="disable_stock"
+				type="radioswitch"
+				label="COM_SELLACIOUS_PRODUCT_FIELD_DISABLE_STOCK_LABEL"
+				description="COM_SELLACIOUS_PRODUCT_FIELD_DISABLE_STOCK_DESC"
+				class="inputbox"
+				default="0"
+				trueValue="0"
+				falseValue="1"
+			/>
+			<field
+				name="stock"
+				type="number"
+				min="0"
+				default="10"
+				label="COM_SELLACIOUS_PRODUCT_FIELD_STOCK_LABEL"
+				description="COM_SELLACIOUS_PRODUCT_FIELD_STOCK_DESC"
+				class="inputbox tiny-input"
+				showon="seller.disable_stock:0"
+			/>
+			<field
+				name="over_stock"
+				type="number"
+				min="0"
+				default="0"
+				label="COM_SELLACIOUS_PRODUCT_FIELD_OVER_STOCK_LABEL"
+				description="COM_SELLACIOUS_PRODUCT_FIELD_OVER_STOCK_DESC"
+				class="inputbox tiny-input"
+				showon="seller.disable_stock:0"
+			/>
+		</fieldset>
+
+		<fieldset name="location_tab" label="COM_SELLACIOUS_PRODUCT_FIELD_LOCATION_GROUP_LABEL">
+			<field
+				name="product_address"
+				type="text"
+				label="COM_SELLACIOUS_PRODUCT_FIELD_ADDRESS_LABEL"
+				description="COM_SELLACIOUS_PRODUCT_FIELD_ADDRESS_DESC"
+				class="inputbox medium-input map-input"
+				autocomplete="off"
+				coordinates="seller.product_location"
+			/>
+			<field
+				name="product_location"
+				type="text"
+				label="COM_SELLACIOUS_PRODUCT_FIELD_LOCATION_LABEL"
+				description="COM_SELLACIOUS_PRODUCT_FIELD_LOCATION_DESC"
+				hint="e.g. 27.89088, 78.098658"
+				class="inputbox medium-input"
+				filter="string"
+			/>
+			<field
+				name="loc_country"
+				type="text"
+				label="COM_SELLACIOUS_PRODUCT_FIELD_LOCATION_COUNTRY_LABEL"
+				description="COM_SELLACIOUS_PRODUCT_FIELD_LOCATION_COUNTRY_DESC"
+				class="inputbox medium-input"
+			/>
+			<field
+				name="loc_state"
+				type="text"
+				label="COM_SELLACIOUS_PRODUCT_FIELD_LOCATION_STATE_LABEL"
+				description="COM_SELLACIOUS_PRODUCT_FIELD_LOCATION_STATE_DESC"
+				class="inputbox medium-input"
+			/>
+			<field
+				name="loc_district"
+				type="text"
+				label="COM_SELLACIOUS_PRODUCT_FIELD_LOCATION_DISTRICT_LABEL"
+				description="COM_SELLACIOUS_PRODUCT_FIELD_LOCATION_DISTRICT_DESC"
+				class="inputbox medium-input"
+			/>
+			<field
+				name="loc_city"
+				type="text"
+				label="COM_SELLACIOUS_PRODUCT_FIELD_LOCATION_CITY_LABEL"
+				description="COM_SELLACIOUS_PRODUCT_FIELD_LOCATION_CITY_DESC"
+				class="inputbox medium-input"
+			/>
+			<field
+				name="loc_locality"
+				type="text"
+				label="COM_SELLACIOUS_PRODUCT_FIELD_LOCATION_LOCALITY_LABEL"
+				description="COM_SELLACIOUS_PRODUCT_FIELD_LOCATION_LOCALITY_DESC"
+				class="inputbox medium-input"
+			/>
+			<field
+				name="loc_sublocality"
+				type="text"
+				label="COM_SELLACIOUS_PRODUCT_FIELD_LOCATION_SUBLOCALITY_LABEL"
+				description="COM_SELLACIOUS_PRODUCT_FIELD_LOCATION_SUBLOCALITY_DESC"
+				class="inputbox medium-input"
+			/>
+			<field
+				name="loc_zip"
+				type="text"
+				label="COM_SELLACIOUS_PRODUCT_FIELD_LOCATION_ZIP_LABEL"
+				description="COM_SELLACIOUS_PRODUCT_FIELD_LOCATION_ZIP_DESC"
+				class="inputbox medium-input"
+			/>
+		</fieldset>
+	</fields>
+</form>

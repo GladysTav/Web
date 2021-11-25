@@ -1,0 +1,109 @@
+.order-table th, .order-table td {
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 1.4;
+}[dir] .order-table th, [dir] .order-table td {
+	border: 1px solid #dedede;
+	padding: 4px;
+}
+
+.order-table > thead > tr > th {
+	color: #000;
+}
+
+[dir] .order-table > thead > tr > th {
+	background: #e4e0bf;
+	border: 1px solid #ffffff;
+}
+
+[dir] .order-table table td {
+	background: #ffffff;
+}
+
+.button-mini {
+	color: #404040;
+	text-decoration: none;
+	font-size: 10px;
+	line-height: 1.1;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+[dir] .button-mini {
+	padding: 2px 5px;
+	border: 1px solid #ffc363;
+	background: #fcf8e3;
+	cursor: pointer;
+}
+
+.button-mini:hover,
+.button-mini:active,
+.button-mini:focus {
+	color: #000;
+	text-decoration: none;
+}
+
+[dir] .button-mini:hover, [dir] .button-mini:active, [dir] .button-mini:focus {
+	background: #fff000;
+}
+
+div.pagination {
+	height: 20px !important;
+}
+
+[dir] div.pagination {
+	margin: 10px 2px 2px 2px !important;
+	padding: 5px 0 !important;
+}
+
+.limit {
+	width: 160px;
+	font-size: 13px;
+}
+
+.limit #limit {
+	width: 80px;
+	line-height: 1.1;
+}
+
+[dir] .limit #limit {
+	padding: 2px !important;
+}
+
+[dir=ltr] .limit #limit {
+	margin: 0 -2px 0 12px !important;
+}
+
+[dir=rtl] .limit #limit {
+	margin: 0 12px 0 -2px !important;
+}
+
+.text-italic {
+	font-style: italic;
+}
+
+div[id^="payment-form"] {
+	width: 680px !important;
+}
+
+[dir=ltr] div[id^="payment-form"] {
+	text-align: left !important;
+	margin-left: -340px !important;
+}
+
+[dir=rtl] div[id^="payment-form"] {
+	text-align: right !important;
+	margin-right: -340px !important;
+}
+
+[dir] #payment-methods .accordion-heading {
+	background: #edecee;
+}
+
+#payment-methods a.accordion-toggle,
+#payment-methods a.accordion-toggle:hover,
+#payment-methods a.accordion-toggle:active,
+#payment-methods a.accordion-toggle:focus {
+	color: #000000;
+	text-decoration: none;
+}

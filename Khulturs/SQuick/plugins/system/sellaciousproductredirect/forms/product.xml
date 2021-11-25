@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="basic" label="PLG_SYSTEM_SELLACIOUSPRODUCTREDIRECT">
+		<fields name="basic">
+			<fields name="params">
+				<field
+					name="custom_url_type"
+					type="list"
+					label="PLG_SYSTEM_SELLACIOUSPRODUCTREDIRECT_PRODUCT_FIELD_CUSTOM_URL_TYPE_LABEL"
+					description="PLG_SYSTEM_SELLACIOUSPRODUCTREDIRECT_PRODUCT_FIELD_CUSTOM_URL_TYPE_DESC"
+					class="inputbox small-input"
+					default="0">
+					<option value="0">PLG_SYSTEM_SELLACIOUSPRODUCTREDIRECT_PRODUCT_FIELD_CUSTOM_URL_DEFAULT</option>
+					<option value="1">PLG_SYSTEM_SELLACIOUSPRODUCTREDIRECT_PRODUCT_FIELD_CUSTOM_URL_LINK</option>
+					<option value="2">PLG_SYSTEM_SELLACIOUSPRODUCTREDIRECT_PRODUCT_FIELD_CUSTOM_URL_MENU</option>
+				</field>
+				<field
+					name="custom_product_url"
+					type="text"
+					label="PLG_SYSTEM_SELLACIOUSPRODUCTREDIRECT_PRODUCT_FIELD_CUSTOM_PRODUCT_URL_LABEL"
+					description="PLG_SYSTEM_SELLACIOUSPRODUCTREDIRECT_PRODUCT_FIELD_CUSTOM_PRODUCT_URL_DESC"
+					class="medium-input form-control"
+					validate="url"
+				/>
+				<field
+					name="custom_product_menu"
+					type="menuitem"
+					addfieldpath="administrator/components/com_menus/models/fields"
+					label="PLG_SYSTEM_SELLACIOUSPRODUCTREDIRECT_PRODUCT_FIELD_CUSTOM_PRODUCT_MENU_LABEL"
+					description="PLG_SYSTEM_SELLACIOUSPRODUCTREDIRECT_PRODUCT_FIELD_CUSTOM_PRODUCT_MENU_DESC"
+					clientid="0"
+					class="medium-input"
+				>
+					<option value="0">PLG_SYSTEM_SELLACIOUSPRODUCTREDIRECT_PRODUCT_FIELD_CUSTOM_PRODUCT_MENU_SELECT</option>
+				</field>
+				<field
+					name="custom_url_append_query"
+					type="text"
+					label="PLG_SYSTEM_SELLACIOUSPRODUCTREDIRECT_PRODUCT_FIELD_CUSTOM_URL_APPEND_QUERY_LABEL"
+					description="PLG_SYSTEM_SELLACIOUSPRODUCTREDIRECT_PRODUCT_FIELD_CUSTOM_URL_APPEND_QUERY_DESC"
+					class="medium-input form-control"
+					default=""
+				/>
+			</fields>
+		</fields>
+	</fieldset>
+</form>

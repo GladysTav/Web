@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<access>
+	<section name="component">
+		<actions name="important" title="COM_SELLACIOUS_ACTIONS_CRUCIAL">
+			<action name="app.admin" title="COM_SELLACIOUS_ACTION_APP_ADMIN_LABEL" description="COM_SELLACIOUS_ACTION_APP_ADMIN_DESC"/>
+			<action name="app.manage" roles="staff" title="COM_SELLACIOUS_ACTION_APP_MANAGE_LABEL" description="COM_SELLACIOUS_ACTION_APP_MANAGE_DESC"/>
+			<action name="config.edit" title="COM_SELLACIOUS_ACTION_CONFIG_EDIT_LABEL" description="COM_SELLACIOUS_ACTION_CONFIG_EDIT_DESC"/>
+			<action name="permissions.edit" title="COM_SELLACIOUS_ACTION_PERMISSIONS_EDIT_LABEL" description="COM_SELLACIOUS_ACTION_PERMISSIONS_EDIT_DESC"/>
+			<action name="app.login" roles="staff,seller" title="COM_SELLACIOUS_ACTION_APP_LOGIN_LABEL" description="COM_SELLACIOUS_ACTION_APP_LOGIN_DESC"/>
+			<action name="app.login.offline" roles="staff" title="COM_SELLACIOUS_ACTION_APP_LOGIN_OFFLINE_LABEL" description="COM_SELLACIOUS_ACTION_APP_LOGIN_OFFLINE_DESC"/>
+		</actions>
+	</section>
+</access>

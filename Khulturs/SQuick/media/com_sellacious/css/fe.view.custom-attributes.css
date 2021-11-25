@@ -1,0 +1,189 @@
+.ctech-wrapper.custom-attributes-container .ctech-form-group .ctech-col-form-input .input-group {
+	display: flex;
+}
+
+.ctech-wrapper.custom-attributes-container .ctech-form-group .ctech-col-form-input .input-group input {
+	width: 100px;
+	height: 32px;
+}
+
+.ctech-wrapper.custom-attributes-container .ctech-form-group .ctech-col-form-input .input-group select {
+	width: calc(100% - 100px);
+	max-width: 200px;
+	height: 32px;
+	margin-left: 3px;
+	margin-top: unset;
+	margin-bottom: unset;
+}
+
+.ctech-wrapper.custom-attributes-container button {
+	height: 32px;
+}
+
+.ctech-wrapper.custom-attributes-container .ctech-form-group .ctech-col-form-input .checkboxes .checkbox {
+	display: block;
+}
+
+[dir] .ctech-wrapper.custom-attributes-container .ctech-form-group .ctech-col-form-input .minicolors input {
+	width: 100px;
+}
+
+.ctech-wrapper.custom-attributes-container .ctech-form-group .ctech-col-form-input input[type="number"] {
+	width: 100px;
+}
+
+.ctech-wrapper.custom-attributes-container .ctech-form-group .ctech-col-form-input > select ,
+.ctech-wrapper.custom-attributes-container .ctech-form-group .ctech-col-form-input > input[type="text"] {
+	width: 160px;
+}
+
+.ctech-wrapper.custom-attributes-container legend {
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+@media(max-width: 460px) {
+	.ctech-wrapper.custom-attributes-container .ctech-form-group .ctech-col-form-input,
+	.ctech-wrapper.custom-attributes-container .ctech-form-group .ctech-col-form-label {
+		width: 100%;
+		float: unset;
+	}
+}
+
+.ctech-wrapper.custom-attributes-container .ctech-form-group {
+	margin-bottom: 5px;
+}
+
+.ctech-wrapper.custom-attributes-container .ctech-form-group .ctech-col-form-input > [type="checkbox"] {
+	margin-top: 3px;
+}
+
+.ctech-wrapper.custom-attributes-container .ctech-form-group .ctech-col-form-input {
+	margin-top: 9px;
+}
+
+.ctech-wrapper.custom-attributes-container .ctech-form-group .ctech-col-form-input .minicolors input {
+	padding-left: 25px;
+}
+
+@media(max-width: 500px) and (min-width: 461px) {
+	.ctech-wrapper.custom-attributes-container button {
+		padding: 4px 8px;
+	}
+}
+
+@media(max-width: 340px) {
+	.ctech-wrapper.custom-attributes-container button {
+		padding: 4px 8px;
+	}
+}
+
+.ctech-wrapper.custom-attributes-container .ctech-form-group .ctech-col-form-input input,
+.ctech-wrapper.custom-attributes-container .ctech-form-group .ctech-col-form-input select {
+	background-color: transparent;
+}
+
+.ctech-wrapper.custom-attributes-container .datepicker ~ button,
+.ctech-wrapper.custom-attributes-container .field-calendar button {
+	font-size: small;
+}
+
+.ctech-wrapper.custom-attributes-container .minicolors-theme-bootstrap .minicolors-panel {
+	padding: unset;
+}
+
+.ctech-wrapper.custom-attributes-container .minicolors-theme-bootstrap .minicolors-grid {
+	top: unset;
+	left: unset;
+}
+
+.ctech-wrapper.custom-attributes-container .minicolors-theme-bootstrap .minicolors-slider, .minicolors-theme-bootstrap .minicolors-opacity-slider {
+	top: unset;
+	margin-left: unset;
+}
+
+#checkoutform-container .ctech-form-group .ctech-col-form-input .calendar,
+.shipment-table .ctech-form-group .ctech-col-form-input .calendar,
+.payment-method .ctech-form-group .ctech-col-form-input .calendar {
+	z-index: 12;
+}
+
+#queryForm .ctech-form-group .ctech-col-form-input .btn {
+	font-size: small;
+}
+
+[dir] fieldset.radio > input[type="radio"] {
+	width: 20px;
+	display: block;
+}
+
+[dir] fieldset.radio > label {
+	width: calc(100% - 55px);
+	display: block;
+	float: left;
+}
+
+[dir=ltr] .modal .ctech-wrapper .ctech-form-group .ctech-col-form-input fieldset.radio > input[type="radio"],
+[dir=ltr].profile-tabs .ctech-wrapper .ctech-form-group .ctech-col-form-input fieldset.radio > input[type="radio"] {
+	width: 20px;
+	display: block;
+	margin-left: unset;
+	margin-top: 10px;
+}
+[dir=rtl] .modal .ctech-wrapper .ctech-form-group .ctech-col-form-input fieldset.radio > input[type="radio"],
+[dir=rtl].profile-tabs .ctech-wrapper .ctech-form-group .ctech-col-form-input fieldset.radio > input[type="radio"] {
+	width: 20px;
+	display: block;
+	margin-left: unset;
+}
+
+.modal .ctech-wrapper .ctech-form-group .ctech-col-form-input fieldset.radio > label {
+	width: calc(100% - 22px);
+	display: block;
+	float: left;
+}
+
+[dir=ltr] .profile-tabs .ctech-wrapper .ctech-form-group .ctech-col-form-input fieldset.radio > label {
+	width: calc(100% - 35px);
+	display: block;
+	float: right;
+	margin-right: 12px;
+	margin-top: -15px;
+}
+[dir=rtl] .profile-tabs .ctech-wrapper .ctech-form-group .ctech-col-form-input fieldset.radio > label {
+	width: calc(100% - 35px);
+	display: block;
+	float: right;
+	margin-right: 12px;
+}
+
+@media (max-width: 769px) {
+	.shipment-table .ctech-form-group .ctech-col-form-input fieldset.radio > label {
+		width: calc(100% - 2px);
+	}
+}
+
+[dir=rtl] #checkoutform-container .custom-attributes-container .ctech-form-group .ctech-col-form-input fieldset > input[type="radio"] {
+	width: 20px;
+	display: block;
+	float: right;
+	margin: 3px 0 0 5px;
+}
+
+[dir=ltr] .query-for-price .ctech-form-group .ctech-col-form-input fieldset.radio > input[type="radio"] {
+	width: 20px;
+	display: block;
+	float: left;
+	margin-bottom: 5px;
+}
+
+[dir=rtl] .query-for-price .ctech-form-group .ctech-col-form-input fieldset.radio > input[type="radio"] {
+	width: 20px;
+	display: block;
+	float: right;
+	margin-bottom: 5px;
+}
+
+[dir=rtl] .profile-tabs .ctech-wrapper .ctech-form-group .ctech-col-form-input fieldset.radio > input[type="radio"] {
+	float: right;
+}

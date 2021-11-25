@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="authentication" method="upgrade">
+	<name>plg_authentication_sellacious</name>
+	<author>Izhar Aazmi</author>
+	<creationDate>April 07, 2020</creationDate>
+	<copyright>(C) 2012-2020 Bhartiy Web Technologies. All rights reserved.</copyright>
+	<license>GNU/GPL V2+</license>
+	<authorEmail>info@bhartiy.com</authorEmail>
+	<authorUrl>www.bhartiy.com</authorUrl>
+	<version>2.0.0-beta1</version>
+	<description>PLG_AUTHENTICATION_SELLACIOUS_DESCRIPTION</description>
+	<files>
+		<filename plugin="sellacious">sellacious.php</filename>
+		<folder>language</folder>
+	</files>
+</extension>

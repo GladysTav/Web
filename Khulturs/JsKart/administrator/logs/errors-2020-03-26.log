@@ -1,0 +1,38 @@
+#
+#<?php die('Forbidden.'); ?>
+#Date: 2020-03-26 12:22:12 UTC
+#Software: Joomla Platform 13.1.0 Stable [ Curiosity ] 24-Apr-2013 00:00 GMT
+
+#Fields: datetime	priority clientip	category	message
+2020-03-26T12:22:12+00:00	WARNING ::1	jerror	Username and password do not match or you do not have an account yet.
+2020-03-26T12:43:01+00:00	WARNING ::1	jerror	JUser: :_load: Unable to load user with ID: 86
+2020-03-26T12:43:01+00:00	WARNING ::1	jerror	JUser: :_load: Unable to load user with ID: 320
+2020-03-26T12:43:42+00:00	WARNING ::1	jerror	JUser: :_load: Unable to load user with ID: 86
+2020-03-26T12:46:33+00:00	WARNING ::1	jerror	JUser: :_load: Unable to load user with ID: 86
+2020-03-26T12:47:11+00:00	WARNING ::1	jerror	JUser: :_load: Unable to load user with ID: 86
+2020-03-26T12:47:32+00:00	WARNING ::1	jerror	JUser: :_load: Unable to load user with ID: 86
+2020-03-26T12:47:54+00:00	WARNING ::1	jerror	JUser: :_load: Unable to load user with ID: 86
+2020-03-26T12:50:14+00:00	WARNING ::1	jerror	JUser: :_load: Unable to load user with ID: 86
+2020-03-26T12:50:15+00:00	WARNING ::1	jerror	JUser: :_load: Unable to load user with ID: 320
+2020-03-26T12:57:33+00:00	CRITICAL ::1	error	Uncaught \Throwable of type JException thrown. Stack trace: #0 /Users/codeacious3/Sites/jskartv2/libraries/legacy/error/error.php(277): JError::raise(1, 404, 'Page not found', NULL, true)
+#1 /Users/codeacious3/Sites/jskartv2/components/com_sppagebuilder/controller.php(35): JError::raiseError(404, 'Page not found')
+#2 /Users/codeacious3/Sites/jskartv2/libraries/src/MVC/Controller/BaseController.php(710): SppagebuilderController->display()
+#3 /Users/codeacious3/Sites/jskartv2/components/com_sppagebuilder/sppagebuilder.php(23): Joomla\CMS\MVC\Controller\BaseController->execute('')
+#4 /Users/codeacious3/Sites/jskartv2/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#5 /Users/codeacious3/Sites/jskartv2/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#6 /Users/codeacious3/Sites/jskartv2/libraries/src/Application/SiteApplication.php(194): Joomla\CMS\Component\ComponentHelper::renderComponent('com_sppagebuild...')
+#7 /Users/codeacious3/Sites/jskartv2/libraries/src/Application/SiteApplication.php(233): Joomla\CMS\Application\SiteApplication->dispatch()
+#8 /Users/codeacious3/Sites/jskartv2/libraries/src/Application/CMSApplication.php(196): Joomla\CMS\Application\SiteApplication->doExecute()
+#9 /Users/codeacious3/Sites/jskartv2/index.php(49): Joomla\CMS\Application\CMSApplication->execute()
+#10 {main}
+2020-03-26T12:57:47+00:00	CRITICAL ::1	error	Uncaught \Throwable of type JException thrown. Stack trace: #0 /Users/codeacious3/Sites/jskartv2/libraries/legacy/error/error.php(277): JError::raise(1, 404, 'Page not found', NULL, true)
+#1 /Users/codeacious3/Sites/jskartv2/components/com_sppagebuilder/controller.php(35): JError::raiseError(404, 'Page not found')
+#2 /Users/codeacious3/Sites/jskartv2/libraries/src/MVC/Controller/BaseController.php(710): SppagebuilderController->display()
+#3 /Users/codeacious3/Sites/jskartv2/components/com_sppagebuilder/sppagebuilder.php(23): Joomla\CMS\MVC\Controller\BaseController->execute('')
+#4 /Users/codeacious3/Sites/jskartv2/libraries/src/Component/ComponentHelper.php(402): require_once('/Users/codeacio...')
+#5 /Users/codeacious3/Sites/jskartv2/libraries/src/Component/ComponentHelper.php(377): Joomla\CMS\Component\ComponentHelper::executeComponent('/Users/codeacio...')
+#6 /Users/codeacious3/Sites/jskartv2/libraries/src/Application/SiteApplication.php(194): Joomla\CMS\Component\ComponentHelper::renderComponent('com_sppagebuild...')
+#7 /Users/codeacious3/Sites/jskartv2/libraries/src/Application/SiteApplication.php(233): Joomla\CMS\Application\SiteApplication->dispatch()
+#8 /Users/codeacious3/Sites/jskartv2/libraries/src/Application/CMSApplication.php(196): Joomla\CMS\Application\SiteApplication->doExecute()
+#9 /Users/codeacious3/Sites/jskartv2/index.php(49): Joomla\CMS\Application\CMSApplication->execute()
+#10 {main}

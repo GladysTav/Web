@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+	<name>mod_sellacious_navigator</name>
+	<author>Saurabh Sabharwal</author>
+	<creationDate>January 04, 2019</creationDate>
+	<copyright>Copyright (C) 2012-2019 Bhartiy Web Technologies. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>saurabh@codeacious.tech</authorEmail>
+	<authorUrl>www.bhartiy.com</authorUrl>
+	<version>1.6.1-alpha3</version>
+	<description>MOD_SELLACIOUS_NAVIGATOR_DESC</description>
+
+	<files>
+		<filename module="mod_sellacious_navigator">mod_sellacious_navigator.php</filename>
+		<folder>language</folder>
+		<folder>tmpl</folder>
+	</files>
+	<media folder="media" destination="mod_sellacious_navigator">
+		<folder>css</folder>
+		<folder>js</folder>
+	</media>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="class_sfx" type="text" default=""
+						label="MOD_SELLACIOUS_NAVIGATOR_SHOW_MODULE_CLASS_SUFFIX_LABEL"
+						description="MOD_SELLACIOUS_NAVIGATOR_SHOW_MODULE_CLASS_SUFFIX_DESC" />
+				<field
+					name="navigator_style"
+					type="list"
+					label="MOD_SELLACIOUS_NAVIGATOR_HEADING_TYPE_LABEL"
+					description="MOD_SELLACIOUS_NAVIGATOR_HEADING_TYPE_DESC"
+					class="inputbox w100p"
+					default="0">
+					<option value="0">Small</option>
+					<option value="1">Full width</option>
+					<option value="2">Fixed top</option>
+					<option value="3">Fixed top-centered</option>
+				</field>
+				<field
+					name="menu_items"
+					type="subform"
+					label="MOD_SELLACIOUS_NAVIGATOR_CREATE_MENU_TITLE"
+					description="MOD_SELLACIOUS_NAVIGATOR_CREATE_MENU_DESC"
+					formsource="modules/mod_sellacious_navigator/menu.xml"
+					layout="joomla.form.field.subform.repeatable"
+					multiple="true"
+					buttons="add,remove"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+		<server type="extension" name="Sellacious Updates - mod_sellacious_navigator">http://sellacious.com/release/updates/v1.6/mod_sellacious_navigator.xml</server>
+	</updateservers>
+</extension>

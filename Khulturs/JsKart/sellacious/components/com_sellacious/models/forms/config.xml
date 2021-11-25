@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="com_sellacious">
+		<fieldset name="com_sellacious"
+		          label="COM_SELLACIOUS_CONFIG_FIELDSET_GLOBAL_LABEL">
+			<field
+				name="multi_seller"
+				label="COM_SELLACIOUS_CONFIG_MULTI_SELLER_LABEL"
+				description="COM_SELLACIOUS_CONFIG_MULTI_SELLER_DESC"
+				type="list"
+				default="1"
+				class="inputbox">
+				<option value="0">JDISABLED</option>
+				<option value="1">COM_SELLACIOUS_CONFIG_MULTI_SELLER_CHOICE_LIST_COMBINED</option>
+				<option value="2">COM_SELLACIOUS_CONFIG_MULTI_SELLER_CHOICE_LIST_SEPARATE</option>
+			</field>
+			<field
+				name="multi_variant"
+				type="list"
+				default="1"
+				label="COM_SELLACIOUS_CONFIG_FIELD_MULTI_VARIANT_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_MULTI_VARIANT_DESC">
+				<option value="0">JDISABLED</option>
+				<option value="1">COM_SELLACIOUS_CONFIG_MULTI_VARIANT_CHOICE_LIST_COMBINED</option>
+				<option value="2">COM_SELLACIOUS_CONFIG_MULTI_VARIANT_CHOICE_LIST_SEPARATE</option>
+			</field>
+			<field
+				name="allowed_product_type"
+				type="radio"
+				default="both"
+				label="COM_SELLACIOUS_CONFIG_FIELD_ALLOWED_PRODUCT_TYPE_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_ALLOWED_PRODUCT_TYPE_DESC">
+				<option value="physical">COM_SELLACIOUS_CONFIG_FIELD_ALLOWED_PRODUCT_TYPE_OPTION_PHYSICAL</option>
+				<option value="electronic">COM_SELLACIOUS_CONFIG_FIELD_ALLOWED_PRODUCT_TYPE_OPTION_ELECTRONIC</option>
+				<option value="both">COM_SELLACIOUS_CONFIG_FIELD_ALLOWED_PRODUCT_TYPE_OPTION_BOTH</option>
+			</field>
+			<field
+				name="default_product_type"
+				type="productType"
+				label="COM_SELLACIOUS_CONFIG_FIELD_DEFAULT_PRODUCT_TYPE_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_DEFAULT_PRODUCT_TYPE_DESC"
+				default="physical"
+				class="medium-input"
+			/>
+			<field
+				name="productmedia_extensions"
+				type="tagsinputText"
+				label="COM_SELLACIOUS_CONFIG_EPRODUCT_FILE_TYPE_LABEL"
+				description="COM_SELLACIOUS_CONFIG_EPRODUCT_FILE_TYPE_DESC"
+				class="inputbox"
+				default=""
+			/>
+			<field
+				name="allowed_product_package"
+				type="radioswitch"
+				default="1"
+				label="COM_SELLACIOUS_CONFIG_FIELD_ALLOWED_PRODUCT_PACKAGE_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_ALLOWED_PRODUCT_PACKAGE_DESC">
+			</field>
+			<field
+				name="allow_duplicate_location"
+				type="radioswitch"
+				default="0"
+				label="COM_SELLACIOUS_CONFIG_FIELD_ALLOW_DUPLICATE_LOCATION_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_ALLOW_DUPLICATE_LOCATION_DESC">
+			</field>
+			<field
+				name="product_category_required"
+				type="radioswitch"
+				default="0"
+				label="COM_SELLACIOUS_CONFIG_FIELD_PRODUCT_CATEGORY_REQUIRED_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_PRODUCT_CATEGORY_REQUIRED_DESC">
+			</field>
+			<field
+				name="product_category_limit"
+				type="radio"
+				default="0"
+				label="COM_SELLACIOUS_CONFIG_FIELD_PRODUCT_CATEGORY_LIMIT_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_PRODUCT_CATEGORY_LIMIT_DESC">
+				<option value="0">COM_SELLACIOUS_CONFIG_FIELD_PRODUCT_CATEGORY_LIMIT_UNLIMITED</option>
+				<option value="1">COM_SELLACIOUS_CONFIG_FIELD_PRODUCT_CATEGORY_LIMIT_SINGLE</option>
+				<option value="2">COM_SELLACIOUS_CONFIG_FIELD_PRODUCT_CATEGORY_LIMIT_DEFINE</option>
+			</field>
+			<field
+				name="product_category_limit_value"
+				type="number"
+				min="2"
+				max="1000"
+				default="2"
+				label="COM_SELLACIOUS_CONFIG_FIELD_PRODUCT_CATEGORY_LIMIT_VALUE_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_PRODUCT_CATEGORY_LIMIT_VALUE_DESC"
+				class="inputbox"
+				showon="product_category_limit:2"
+			/>
+			<field
+				name="product_rating"
+				type="radioswitch"
+				label="COM_SELLACIOUS_CONFIG_FIELD_PRODUCT_RATING_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_PRODUCT_RATING_DESC"
+				default="1"
+			>
+			</field>
+			<field
+				name="cart_modal"
+				type="radioswitch"
+				label="COM_SELLACIOUS_CONFIG_FIELD_CART_MODAL_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_CART_MODAL_DESC"
+				default="1"
+			>
+			</field>
+			<field
+				name="product_questions"
+				type="radioswitch"
+				default="1"
+				label="COM_SELLACIOUS_CONFIG_FIELD_PRODUCT_QUESTIONS_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_PRODUCT_QUESTIONS_DESC">
+			</field>
+			<field
+				name="allow_guest_questions"
+				type="radioswitch"
+				label="COM_SELLACIOUS_CONFIG_ALLOW_GUEST_ASK_QUESTION_LABEL"
+				description="COM_SELLACIOUS_CONFIG_ALLOW_GUEST_ASK_QUESTION_DESC"
+				default="1"
+			>
+			</field>
+			<field
+				name="hide_questions_captcha_guest"
+				type="radioswitch"
+				label="COM_SELLACIOUS_CONFIG_HIDE_QUESTIONS_CAPTCHA_GUEST_LABEL"
+				description="COM_SELLACIOUS_CONFIG_HIDE_QUESTIONS_CAPTCHA_GUEST_DESC"
+				default="0"
+			>
+			</field>
+			<field
+				name="hide_questions_captcha_registered"
+				type="radioswitch"
+				label="COM_SELLACIOUS_CONFIG_HIDE_QUESTIONS_CAPTCHA_REGISTERED_LABEL"
+				description="COM_SELLACIOUS_CONFIG_HIDE_QUESTIONS_CAPTCHA_REGISTERED_DESC"
+				default="0"
+			>
+			</field>
+			<field
+				name="product_detail_page"
+				type="radioswitch"
+				default="1"
+				label="COM_SELLACIOUS_CONFIG_FIELD_PRODUCT_DETAIL_PAGE_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_PRODUCT_DETAIL_PAGE_DESC">
+			</field>
+			<field
+				name="product_compare"
+				type="radioswitch"
+				default="1"
+				label="COM_SELLACIOUS_CONFIG_FIELD_PRODUCT_COMPARE_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_PRODUCT_COMPARE_DESC">
+			</field>
+			<field
+				name="compare_limit"
+				type="number"
+				min="2"
+				max="1000"
+				default="3"
+				label="COM_SELLACIOUS_CONFIG_FIELD_COMPARE_LIMIT_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_COMPARE_LIMIT_DESC"
+				class="inputbox"
+				showon="product_compare:1"
+			/>
+			<field
+				name="redirect"
+				type="text"
+				label="COM_SELLACIOUS_CONFIG_FIELD_REDIRECT_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_REDIRECT_DESC"
+				class="inputbox medium-input"
+			/>
+			<field
+				name="product_wishlist"
+				type="radioswitch"
+				default="1"
+				label="COM_SELLACIOUS_CONFIG_FIELD_PRODUCT_WISHLIST_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_PRODUCT_WISHLIST_DESC">
+			</field>
+			<!--
+			<field
+				name="form_captcha"
+				type="radio"
+				label="COM_SELLACIOUS_CONFIG_FIELD_FORM_CAPTCHA_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_FORM_CAPTCHA_DESC"
+				default="1"
+				>
+				<option value="0">JDISABLED</option>
+				<option value="1">JENABLED</option>
+			</field>
+			<field
+				name="configure_captcha"
+				type="radio"
+				label="COM_SELLACIOUS_CONFIG_FIELD_CONFIGURE_CAPTCHA_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_CONFIGURE_CAPTCHA_DESC"
+				default="1"
+				>
+				<option>Click here to configure</option>
+			</field>
+			-->
+			<field
+				name="contact_spam_protection"
+				type="radio"
+				label="COM_SELLACIOUS_CONFIG_FIELD_CONTACT_SPAM_PROTECTION_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_CONTACT_SPAM_PROTECTION_DESC"
+				default="1"
+			>
+				<option value="0">COM_SELLACIOUS_CONFIG_FIELD_CONTACT_SPAM_PROTECTION_CHOICE_TEXT</option>
+				<option value="1">COM_SELLACIOUS_CONFIG_FIELD_CONTACT_SPAM_PROTECTION_CHOICE_IMAGE</option>
+			</field>
+			<field
+				name="product_filter_position"
+				type="radio"
+				label="COM_SELLACIOUS_CONFIG_FIELD_PRODUCT_FILTER_POSITION_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_PRODUCT_FILTER_POSITION_DESC"
+				default="left"
+			>
+				<option value="left">COM_SELLACIOUS_OPTION_LEFT_OF_PAGE</option>
+				<option value="right">COM_SELLACIOUS_OPTION_RIGHT_OF_PAGE</option>
+			</field>
+			<field
+				name="financial_year_start"
+				label="COM_SELLACIOUS_CONFIG_FINANCIAL_YEAR_START_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FINANCIAL_YEAR_START_DESC"
+				type="list"
+				class="small-input"
+				default="1"
+			>
+				<option value=""></option>
+				<option value="1">JANUARY</option>
+				<option value="2">FEBRUARY</option>
+				<option value="3">MARCH</option>
+				<option value="4">APRIL</option>
+				<option value="5">MAY</option>
+				<option value="6">JUNE</option>
+				<option value="7">JULY</option>
+				<option value="8">AUGUST</option>
+				<option value="9">SEPTEMBER</option>
+				<option value="10">OCTOBER</option>
+				<option value="11">NOVEMBER</option>
+				<option value="12">DECEMBER</option>
+			</field>
+			<field
+				name="forex_api"
+				type="list"
+				label="COM_SELLACIOUS_CONFIG_FOREX_API_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FOREX_API_DESC"
+				default="Sellacious"
+			>
+				<option value="Sellacious">Sellacious</option>
+				<option value="Fixer">Fixer.IO</option>
+				<option value="CurrencyLayer">Currency Layer</option>
+				<option value="CurrencyConverter">Currency Converter</option>
+				<option value="ExchangeRates">Exchange Rates</option>
+			</field>
+			<field
+				name="forex_update_interval"
+				type="TimeInterval"
+				label="COM_SELLACIOUS_CONFIG_FOREX_UPDATE_INTERVAL_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FOREX_UPDATE_INTERVAL_DESC"
+				periods="minute,hour,day"
+				default="{&quot;l&quot;:1,&quot;p&quot;:&quot;day&quot;}"
+				required="true"
+			/>
+			<field
+				name="fixer_access_key"
+				type="text"
+				label="COM_SELLACIOUS_CONFIG_FOREX_FIXER_ACCESS_KEY_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FOREX_FIXER_ACCESS_KEY_DESC"
+				class="inputbox medium-input"
+				showon="com_sellacious.forex_api:Fixer"
+			/>
+			<field
+				name="currency_layer_access_key"
+				type="text"
+				label="COM_SELLACIOUS_CONFIG_FOREX_CURRENCY_LAYER_ACCESS_KEY_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FOREX_CURRENCY_LAYER_ACCESS_KEY_DESC"
+				class="inputbox medium-input"
+				showon="com_sellacious.forex_api:CurrencyLayer"
+			/>
+			<field
+				name="currency_converter_api_mode"
+				type="radio"
+				default="free"
+				label="COM_SELLACIOUS_CONFIG_FOREX_CURRENCY_CONVERTER_API_MODE_LABEL"
+				showon="com_sellacious.forex_api:CurrencyConverter"
+				description="COM_SELLACIOUS_CONFIG_FOREX_CURRENCY_CONVERTER_API_MODE_DESC">
+				<option value="free">COM_SELLACIOUS_CONFIG_FOREX_CURRENCY_CONVERTER_API_FREE</option>
+				<option value="premium">COM_SELLACIOUS_CONFIG_FOREX_CURRENCY_CONVERTER_API_PREMIUM</option>
+			</field>
+			<field
+				name="currency_converter_access_key"
+				type="text"
+				label="COM_SELLACIOUS_CONFIG_FOREX_CURRENCY_CONVERTER_ACCESS_KEY_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FOREX_CURRENCY_CONVERTER_ACCESS_KEY_DESC"
+				class="inputbox medium-input"
+				showon="com_sellacious.forex_api:CurrencyConverter"
+			/>
+			<field
+				name="development"
+				type="hidden"
+				label="Development Mode"
+			>
+				<option value="0">JDISABLED</option>
+				<option value="1">JENABLED</option>
+			</field>
+			<field
+				name="send_mail_product_creation"
+				type="radioswitch"
+				default="1"
+				label="COM_SELLACIOUS_CONFIG_FIELD_SEND_MAIL_PRODUCT_CREATION_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_SEND_MAIL_PRODUCT_CREATION_DESC">
+			</field>
+			<field
+				name="use_shoprule_import"
+				type="radioswitch"
+				default="0"
+				label="COM_SELLACIOUS_CONFIG_FIELD_USE_SHOPRULE_IMPORT_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_USE_SHOPRULE_IMPORT_DESC">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field
+				name="csv_import_location_field"
+				type="list"
+				default="iso_code"
+				label="COM_SELLACIOUS_CONFIG_FIELD_CSV_IMPORT_LOCATION_FIELD_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_CSV_IMPORT_LOCATION_FIELD_DESC">
+				<option value="iso_code">COM_SELLACIOUS_CONFIG_FIELD_VALUE_ISO_CODE</option>
+				<option value="title">COM_SELLACIOUS_CONFIG_FIELD_VALUE_TITLE</option>
+				<option value="id">COM_SELLACIOUS_CONFIG_FIELD_VALUE_ID</option>
+			</field>
+		</fieldset>
+		<fieldset name="support_mode" label="COM_SELLACIOUS_CONFIG_FIELDSET_SUPPORT_MODE_LABEL">
+			<fields name="support_mode">
+				<field
+					type="fieldgroup"
+					label="COM_SELLACIOUS_CONFIG_FIELD_SUPPORT_MODE_GROUP_LABEL"
+					description="COM_SELLACIOUS_CONFIG_FIELD_SUPPORT_MODE_GROUP_DESC"
+				/>
+				<field
+					name="enable"
+					type="radioswitch"
+					default="0"
+					label="COM_SELLACIOUS_CONFIG_FIELD_SUPPORT_MODE_ENABLE_LABEL"
+					description="COM_SELLACIOUS_CONFIG_FIELD_SUPPORT_MODE_ENABLE_DESC">
+				</field>
+				<field
+					name="passwd"
+					type="text"
+					label="COM_SELLACIOUS_CONFIG_FIELD_SUPPORT_MODE_PASSWORD_LABEL"
+					description="COM_SELLACIOUS_CONFIG_FIELD_SUPPORT_MODE_PASSWORD_DESC"
+					class="inputbox medium-input"
+				/>
+				<field
+					name="userid"
+					type="sellacious.superAdmin"
+					label="COM_SELLACIOUS_CONFIG_FIELD_SUPPORT_MODE_USER_LABEL"
+					description="COM_SELLACIOUS_CONFIG_FIELD_SUPPORT_MODE_USER_DESC"
+					class="inputbox medium-input"
+					optional="true"
+				/>
+			</fields>
+		</fieldset>
+		<fieldset name="communication" label="COM_SELLACIOUS_CONFIG_FIELDSET_COMMUNICATION_LABEL">
+
+		</fieldset>
+		<fieldset name="extensions" label="COM_SELLACIOUS_CONFIG_FIELDSET_LANGUAGE_LABEL" width="12">
+			<field
+				type="fieldgroup"
+				label="COM_SELLACIOUS_CONFIG_FIELD_LANGUAGE_EXTENSIONS_GROUP_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_LANGUAGE_EXTENSIONS_GROUP_DESC"
+			/>
+			<field
+				name="extensions_group"
+				type="extensionGroup"
+				label="COM_SELLACIOUS_CONFIG_FIELD_EXTENSIONS_GROUP_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_EXTENSIONS_GROUP_DESC"
+			/>
+		</fieldset>
+	</fields>
+	<fields name="jconfig">
+		<fieldset name="com_sellacious"
+		          label="COM_SELLACIOUS_CONFIG_FIELDSET_GLOBAL_LABEL">
+			<field
+				name="editor"
+				type="plugins"
+				label="COM_SELLACIOUS_CONFIG_FIELD_DEFAULT_EDITOR_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_DEFAULT_EDITOR_DESC"
+				folder="editors"
+				default="tinymce"
+				filter="cmd"
+				class="small-input"
+			/>
+			<field
+				name="list_limit"
+				type="list"
+				label="COM_SELLACIOUS_CONFIG_FIELD_DEFAULT_LIST_LIMIT_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_DEFAULT_LIST_LIMIT_DESC"
+				default="20"
+				filter="integer"
+				class="tiny-input"
+			>
+				<option value="5">J5</option>
+				<option value="10">J10</option>
+				<option value="15">J15</option>
+				<option value="20">J20</option>
+				<option value="25">J25</option>
+				<option value="30">J30</option>
+				<option value="50">J50</option>
+				<option value="100">J100</option>
+				<option value="200">J200</option>
+				<option value="500">J500</option>
+			</field>
+			<field
+				type="fieldgroup"
+				label="COM_SELLACIOUS_CONFIG_FIELDSET_LAYOUT_SUBSET_SITE_OFFLINE_SETTINGS_LABEL"
+			/>
+			<field
+				name="display_offline_message"
+				label="COM_SELLACIOUS_CONFIG_FIELD_DISPLAY_OFFLINE_MESSAGE_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_DISPLAY_OFFLINE_MESSAGE_DESC"
+				type="list"
+				class="small-input"
+				default="1"
+				filter="integer"
+			>
+				<option value="0">JHIDE</option>
+				<option value="1">COM_SELLACIOUS_CONFIG_FIELD_VALUE_DISPLAY_OFFLINE_MESSAGE_CUSTOM</option>
+				<option value="2">COM_SELLACIOUS_CONFIG_FIELD_VALUE_DISPLAY_OFFLINE_MESSAGE_LANGUAGE</option>
+			</field>
+			<field
+				name="offline_message"
+				type="textarea"
+				label="COM_SELLACIOUS_CONFIG_FIELD_OFFLINE_MESSAGE_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_OFFLINE_MESSAGE_DESC"
+				showon="display_offline_message:1"
+				filter="safehtml"
+				cols="40"
+				rows="2"
+			/>
+		</fieldset>
+	</fields>
+</form>

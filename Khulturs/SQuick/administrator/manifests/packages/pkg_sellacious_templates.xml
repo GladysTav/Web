@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.7" method="upgrade">
+	<name>Sellacious Templates Package</name>
+	<packagename>sellacious_templates</packagename>
+	<author>Aditya Chakraborty</author>
+	<creationDate>April 08, 2020</creationDate>
+	<authorEmail>info@bhartiy.com</authorEmail>
+	<authorUrl>www.bhartiy.com</authorUrl>
+	<copyright>Copyright (C) 2012-2020 Bhartiy Web Technologies. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>2.0.0-beta1</version>
+	<url>http://www.sellacious.com</url>
+	<packager>Bhartiy Web Technologies</packager>
+	<packagerurl>http://www.sellacious.com</packagerurl>
+	<description>Sellacious Templates Package</description>
+	<scriptfile>installer.php</scriptfile>
+	<files folder="extensions">
+		<file type="plugin" group="system" id="sellacioustemplateorder">plg_system_sellacioustemplateorder.zip</file>
+		<file type="component" id="com_sellacioustemplates">com_sellacioustemplates.zip</file>
+	</files>
+</extension>

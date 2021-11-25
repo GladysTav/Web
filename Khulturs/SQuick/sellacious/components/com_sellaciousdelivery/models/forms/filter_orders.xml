@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="filter">
+		<field
+			name="search"
+			type="text"
+			label="COM_SELLACIOUS_SEARCH_IN_PROFILES"
+			hint="JSEARCH_FILTER"
+			class="js-stools-search-string inputbox"
+		/>
+		<field
+			name="seller_uid"
+			type="productsellers"
+			default="current"
+			class="inputbox filter-seller"
+			onchange="this.form.submit();"
+		>
+			<option value="">COM_SELLACIOUS_PRODUCT_OPTION_CHOOSE_SELLER</option>
+		</field>
+		<field
+			name="status"
+			type="OrderStatus"
+			class="inputbox"
+			onchange="this.form.submit();"
+			context="order.physical,order.package"
+			show_context="true"
+		>
+			<option value="">COM_SELLACIOUS_ORDER_OPTION_CHOOSE_STATUS</option>
+		</field>
+	</fields>
+	<fields name="list">
+		<field
+			name="delivery_due"
+			type="radio"
+			default=""
+		>
+			<option value="">COM_SELLACIOUSDELIVERY_ORDER_DELIVERY_DUE_OPTION_ALL</option>
+			<option value="today">COM_SELLACIOUSDELIVERY_ORDER_DELIVERY_DUE_OPTION_TODAY</option>
+			<option value="hours_6">COM_SELLACIOUSDELIVERY_ORDER_DELIVERY_DUE_OPTION_HOURS_6</option>
+			<option value="select_date">COM_SELLACIOUSDELIVERY_ORDER_DELIVERY_DUE_OPTION_SELECT_DATE</option>
+		</field>
+		<field
+			name="delivery_due_date"
+			type="calendar"
+			label=""
+			description=""
+			class="inputbox calendar-input"
+			size="30"
+			validate="datetime"
+			format="%Y-%m-%d"
+			filter="server_utc"
+			onchange="this.form.submit();"
+		/>
+		<field
+			name="currency"
+			type="list"
+			default="current"
+			class="inputbox currency-select"
+			onchange="this.form.submit();"
+		>
+			<option value="original">COM_SELLACIOUS_ORDERS_DISPLAY_CURRENCY_ORIGINAL</option>
+			<option value="current">COM_SELLACIOUS_ORDERS_DISPLAY_CURRENCY_USER</option>
+			<option value="global">COM_SELLACIOUS_ORDERS_DISPLAY_CURRENCY_SHOP</option>
+		</field>
+		<field
+			name="fullordering"
+			type="groupedList"
+			label="JGLOBAL_SORT_BY"
+			description="JGLOBAL_SORT_BY"
+			onchange="this.form.submit();"
+			default="ods.slot_from_time DESC"
+			class="inputbox"
+		>
+			<option value="">JGLOBAL_SORT_BY</option>
+			<group name="ASC" label="COM_SELLACIOUS_SORT_ASCENDING">
+				<option value="a.id ASC">COM_SELLACIOUSDELIVERY_ORDERS_HEADING_ID</option>
+				<option value="a.order_number ASC">COM_SELLACIOUSDELIVERY_ORDERS_HEADING_ORDER_NUMBER</option>
+				<option value="oi.product_title ASC">COM_SELLACIOUSDELIVERY_ORDERS_HEADING_PRODUCT_TITLE</option>
+				<option value="a.quantity ASC">COM_SELLACIOUSDELIVERY_ORDERS_HEADING_PRODUCT_QUANTITY</option>
+				<option value="a.customer_name ASC">COM_SELLACIOUSDELIVERY_ORDERS_HEADING_CUSTOMER_NAME</option>
+				<option value="a.created ASC">COM_SELLACIOUSDELIVERY_ORDERS_HEADING_DATE</option>
+				<option value="ss.title ASC">COM_SELLACIOUSDELIVERY_ORDERS_HEADING_STATUS</option>
+				<option value="ods.slot_from_time ASC">COM_SELLACIOUSDELIVERY_ORDERS_HEADING_DELIVERY_DATE</option>
+				<option value="a.sub_total ASC">COM_SELLACIOUSDELIVERY_ORDERS_HEADING_TOTAL</option>
+			</group>
+			<group name="DESC" label="COM_SELLACIOUS_SORT_DESCENDING">
+				<option value="a.id DESC">COM_SELLACIOUSDELIVERY_ORDERS_HEADING_ID</option>
+				<option value="a.order_number DESC">COM_SELLACIOUSDELIVERY_ORDERS_HEADING_ORDER_NUMBER</option>
+				<option value="oi.product_title DESC">COM_SELLACIOUSDELIVERY_ORDERS_HEADING_PRODUCT_TITLE</option>
+				<option value="a.customer_name DESC">COM_SELLACIOUSDELIVERY_ORDERS_HEADING_CUSTOMER_NAME</option>
+				<option value="a.created DESC">COM_SELLACIOUSDELIVERY_ORDERS_HEADING_DATE</option>
+				<option value="ss.title DESC">COM_SELLACIOUSDELIVERY_ORDERS_HEADING_STATUS</option>
+				<option value="ods.slot_from_time DESC">COM_SELLACIOUSDELIVERY_ORDERS_HEADING_DELIVERY_DATE</option>
+				<option value="a.sub_total DESC">COM_SELLACIOUSDELIVERY_ORDERS_HEADING_TOTAL</option>
+			</group>
+		</field>
+		<field
+			name="limit"
+			type="limitbox"
+			class="inputbox input-mini"
+			default="20"
+			label="JGLOBAL_LIST_LIMIT"
+			description="JGLOBAL_LIST_LIMIT_DESC"
+			onchange="this.form.submit();"
+		/>
+	</fields>
+</form>

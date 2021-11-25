@@ -1,0 +1,228 @@
+.invalid {
+	color: #f00;
+}
+
+.invalid:not(label) {
+	border: 1px solid red;
+	display: block;
+}
+
+.manage {
+	color: #ff6800;
+	font-size: 13px;
+}
+
+.manage-group li {
+	padding: 0 10px 0 10px ;
+}
+
+.manage-group li:first-child {
+	border-right: 1px solid #ddd;
+}
+
+.all_info_user {
+	/*margin: 50px 0;*/
+	background: #fff;
+	padding: 10px 0;
+}
+
+.all_info_user_heading {
+	margin: 20px;
+}
+
+.all_info_user_heading h2 {
+	border-bottom: 1px solid #e8e8e8;
+	font: 22px/24px PTSans-bold;
+	color: #333;
+	margin: 0;
+	padding-bottom: 10px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.all_info_user .profile {
+	margin: 0 20px;
+}
+
+.profile fieldset legend {
+    padding-bottom: 9px;
+    font-weight: 500;
+    color: #8b8b8b;
+    font-size: 16px;
+    margin-bottom: 16px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.profile .control-group {
+	margin-top: 20px;
+	-webkit-margin-top-collapse: separate;
+}
+
+.profile .control-group .controls {
+    font-size: 14px;
+    color: #424242;
+    margin-bottom: 10px;
+}
+
+.profile fieldset {
+    margin: 17.5px 0;
+    border-bottom: 1px solid #eff0f4;
+    padding-bottom: 17.5px;
+}
+.profile fieldset:last-child {
+    border-bottom: 0;
+}
+
+.profile .control-group {
+	width: 33.3%;
+	float: left;
+}
+
+.address_name {
+    font-size: 15px;
+    transform: scale(1,1.05);
+    font-weight: 500;
+    font-family: 'Kanit', sans-serif;
+    line-height: 40px;
+}
+
+#address-text > span {
+	padding-left: 4px;
+}
+
+.address-row button {
+	margin: 2px;
+}
+
+.gl-input {
+	max-width: 800px;
+	min-width: 350px;
+}
+
+#jform_avatar_wrapper #jform_avatar.inputbox.hidden {
+	display: none !important;
+}
+
+#jform_avatar_wrapper #jform_avatar ~ ul.jff-fileplus-list {
+	margin-top: -28px;
+	list-style: none;
+}
+
+.users_profile_basic .control-label {
+	padding: 0;
+}
+
+#profile_accordion a.jff-fileplus-add {
+	height: auto;
+}
+
+#profile_accordion input[type="file"].hidden {
+	display: none;
+}
+form.form-horizontal div.control-label {
+	padding-top: 5px;
+	color: #777777;
+}
+
+#jform_seller_hyperlocal_shipping_distance input  {
+	max-width: 100%;
+	text-align: center;
+	margin-right: 5px !important;
+}
+
+#jform_seller_hyperlocal_shipping_distance #jformsellerhyperlocalshipping_distanceu {
+	max-width: 100%;
+	background: transparent;
+	padding: 20px;
+	font-size: 14px;
+}
+
+.hyper-settings > label {
+	display: inline-block;
+	font-weight: bold;
+	font-size: 115%;
+}
+
+table.timings-table select, table.timings-table input[type='text'] {
+	width: 100%;
+	max-width: 100px;
+}
+
+table.timings-table label.checkbox {
+	margin: 0;
+	vertical-align: middle;
+}
+
+ul.media-list.media-list-generic > li {
+	clear: left;
+	margin: 4px;
+	border: 1px solid #bbe4bf;
+	border-radius: 4px;
+	padding: 2px 14px 2px 2px;
+	background: #eef9e7;
+	cursor: auto;
+	font-weight: bold;
+}
+
+ul.media-list.media-list-generic a:hover {
+	text-decoration: none;
+}
+
+.media-list.media-list-image img {
+	float: left;
+	margin: 2px;
+	border: 1px solid #aaaaaa;
+	padding: 2px;
+	height: 38px;
+}
+
+.profile .control-label {
+	margin-top: -5px;
+	color: #666;
+}
+.o-hidden {
+	overflow: hidden;
+}
+
+.profile .control-label label {
+    text-align: left;
+    margin-bottom: 2px;
+}
+
+@media only screen and (max-width: 370px) {
+
+	#jform_seller_hyperlocal_shipping_location_type label {
+		display: block;
+		margin-bottom: 5px;
+		border-radius: 4px;
+	}
+}
+
+@media only screen and (max-width: 1199px) {
+	#profile_accordion,  .col-sm-9.order_pro_box {
+		margin-top: 80px;
+	}
+	.col-sm-9.register_seller_box, .col-sm-9.order_pro_box {
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+	}
+
+@media only screen and (max-width: 662px) {
+    .profile .control-group {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .profile .control-group {
+        width: 100%;
+        float: left;
+    }
+}
+
+.timings-table .select2-container {
+	width: 100px;
+}

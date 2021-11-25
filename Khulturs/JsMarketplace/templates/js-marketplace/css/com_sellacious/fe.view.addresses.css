@@ -1,0 +1,225 @@
+#address-items {
+	vertical-align: text-top;
+	margin: 0;
+	clear: both;
+	border-spacing: 5px;
+}
+
+#address-items .remove-address, #address-items .editaddress {
+	padding: 0;
+	background: transparent;
+	box-shadow: none;
+	border: 0;
+	font-size: 14px;
+	margin-right: 20px;
+}
+
+#address-items .remove-address .fa {
+	color: red;
+	font-weight: 600;
+}
+
+#address-items .editaddress .fa  {
+	color: #f26400;
+	font-weight: 600;
+}
+
+#addresses .address-item {
+	text-align: left;
+	display: inline-block;
+	width: 100%;
+	padding: 8px;
+	overflow: hidden;
+	float: left;
+	width: 50%;
+	min-height: 227px;
+	position: relative;
+}
+
+
+.append-addbutton {
+	position: absolute;
+	right: 50%;
+	transform: translate(0%,-50%);
+	left: 0;
+	right: 0;
+	top: 50%;
+	text-align: center;
+}
+
+.append-addbutton.btn-add-address {
+	font-size: 43px;
+	color: #cac6c6;
+}
+.append-addbutton:hover {
+	color: #f26400;
+}
+
+.address-item .address-action {
+	width: 20%;
+	float: left
+}
+.address_name {
+	font-size: 15px;
+	transform: scale(1,1.05);
+	font-weight: 500;
+	font-family: 'Kanit', sans-serif;
+	line-height: 40px;
+}
+
+span.address_mobile,
+span.address_company,
+span.address_po_box,
+span.address_address,
+span.address_landmark,
+span.address_district,
+span.address_country {
+	display: block;
+}
+
+.cart_address_box {
+	display: none;
+}
+
+.address-form .address-residential.radio input[type="radio"] {
+	margin: 2px 0 0 -20px;
+}
+
+#address-editor .control-label {
+	text-align: left;
+	width: 130px;
+}
+
+#address-editor .controls {
+	margin-left: 130px;
+	padding-right: 6px;
+	margin-right: 6px;
+	text-align: left;
+}
+
+#address-editor .modal-body {
+	padding: 15px;
+}
+
+.sella-modal-body .address-form {
+	padding: 20px;
+}
+
+.sella-modal-body .address-form .controls {
+	margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+	#address-editor .control-group {
+		margin-bottom: 2px;
+	}
+
+	#address-editor .control-label {
+		text-align: left;
+		width: 100%;
+	}
+
+	#address-editor .controls {
+		margin-left: 0;
+		padding-right: 6px;
+		margin-right: 6px;
+	}
+}
+
+.address-content {
+	min-height: 200px;
+}
+
+div[id^="address-form"] table {
+	text-align: left;
+}
+
+div[id^="address-form"] table th,
+div[id^="address-form"] table td {
+	padding: 4px 0;
+}
+
+div[id^="address-form"] input[type="text"],
+div[id^="address-form"] input[type="email"],
+div[id^="address-form"] input[type="tel"],
+div[id^="address-form"] textarea,
+li.select2-search-field,
+li.select2-search-field > input {
+	width: 100%;
+}
+
+div[id^="address-form"] textarea {
+	min-height: 80px;
+}
+
+div[id^="address-form"] .control-label {
+	text-align: left;
+}
+
+.margin-top-10 {
+	margin-top: 10px;
+}
+
+.margin-5 {
+	margin: 5px;
+}
+
+.invalid {
+	color: #e40000 !important;
+}
+
+input.invalid, select.invalid, textarea.invalid {
+	border: 1px solid #e40000 !important;
+	color: #000000;
+}
+
+#address-viewer {
+	text-align: left;
+	padding: 0;
+}
+
+#address-billing-text, #address-shipping-text {
+	margin-bottom: 10px;
+	padding: 0;
+}
+
+#address-viewer .address_label {
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+	background: #efefef;
+	color: #000000;
+	padding: 3px;
+}
+
+#address-viewer .btn-edit {
+	margin-top: -30px;
+	z-index: 700;
+}
+
+.star, .tbd {
+	color: red !important;
+}
+
+div.select2-container .select2-choice span.select2-arrow {
+	border-left: 1px solid #dfdfdf;
+}
+
+div.select2-container .select2-choice {
+	border: 1px solid #dfdfdf;
+}
+
+div.select2-drop, div.select2-drop-active {
+	border: 1px solid #ddd;
+}
+
+fieldset.radio label {
+	float: left;
+	display: inline;
+	min-width: 120px;
+}
+
+.btn-add-address {
+	color: #ff6800;
+	font-size: 13px;
+}

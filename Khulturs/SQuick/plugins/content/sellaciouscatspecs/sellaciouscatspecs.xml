@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="content" method="upgrade">
+	<name>plg_content_sellaciouscatspecs</name>
+	<author>Bhavika Matariya</author>
+	<creationDate>March 03, 2020</creationDate>
+	<copyright>Copyright (C) 2016 Bhartiy Web Technologies. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@bhartiy.com</authorEmail>
+	<authorUrl>www.bhartiy.com</authorUrl>
+	<version>2.0.0-alpha5</version>
+	<description>PLG_CONTENT_SELLACIOUSCATSPECS_XML_DESCRIPTION</description>
+	<files>
+		<folder>fields</folder>
+		<folder>forms</folder>
+		<folder>language</folder>
+		<filename plugin="sellaciouscatspecs">sellaciouscatspecs.php</filename>
+	</files>
+	<config>
+	</config>
+</extension>

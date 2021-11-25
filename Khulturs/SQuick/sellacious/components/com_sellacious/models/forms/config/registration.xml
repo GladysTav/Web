@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="com_sellacious">
+		<fieldset name="com_sellacious_registration"
+			label="COM_SELLACIOUS_CONFIG_FIELDSET_REGISTRATION_LABEL">
+			<!-- user creation related config below -->
+			<field
+				name="require_activation_cart_aio"
+				type="radioswitch"
+				label="COM_SELLACIOUS_CONFIG_FIELD_REQUIRE_ACTIVATION_CART_AIO_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_REQUIRE_ACTIVATION_CART_AIO_DESC"
+				default="0"
+			>
+			</field>
+			<field
+				name="profile_fieldset_order"
+				label="COM_SELLACIOUS_CONFIG_PROFILE_FIELDSET_ORDER_LABEL"
+				description="COM_SELLACIOUS_CONFIG_PROFILE_FIELDSET_ORDER_DESC"
+				type="sortableList"
+			>
+				<option value="basic">COM_SELLACIOUS_PROFILE_FIELDSET_BASIC</option>
+				<option value="client">COM_SELLACIOUS_PROFILE_FIELDSET_CLIENT</option>
+				<option value="seller">COM_SELLACIOUS_PROFILE_FIELDSET_SELLER</option>
+				<!--<option value="staff">COM_SELLACIOUS_PROFILE_FIELDSET_STAFF</option>-->
+				<!--<option value="manufacturer">COM_SELLACIOUS_PROFILE_FIELDSET_MANUFACTURER</option>-->
+				<option value="address">COM_SELLACIOUS_PROFILE_FIELDSET_ADDRESS</option>
+				<option value="custom">COM_SELLACIOUS_PROFILE_FIELDSET_CUSTOM</option>
+			</field>
+			<field
+				name="login_methods"
+				type="checkboxes"
+				label="COM_SELLACIOUS_CONFIG_FIELD_LOGIN_METHODS_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_LOGIN_METHODS_DESC"
+				vertical="true"
+			>
+				<option value="email-pw">COM_SELLACIOUS_CONFIG_FIELD_LOGIN_METHODS_OPTION_EMAIL_PW</option>
+				<option value="email-otp">COM_SELLACIOUS_CONFIG_FIELD_LOGIN_METHODS_OPTION_EMAIL_OTP</option>
+				<option value="mobile-pw">COM_SELLACIOUS_CONFIG_FIELD_LOGIN_METHODS_OPTION_MOBILE_PW</option>
+				<option value="mobile-otp">COM_SELLACIOUS_CONFIG_FIELD_LOGIN_METHODS_OPTION_MOBILE_OTP</option>
+			</field>
+			<field
+				name="otp_length"
+				type="number"
+				label="COM_SELLACIOUS_CONFIG_FIELD_OTP_LENGTH_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_OTP_LENGTH_DESC"
+				default="6"
+			>
+			</field>
+			<field
+				name="otp_validity"
+				type="number"
+				label="COM_SELLACIOUS_CONFIG_FIELD_OTP_VALIDITY_LABEL"
+				description="COM_SELLACIOUS_CONFIG_FIELD_OTP_VALIDITY_DESC"
+				default="30"
+			>
+			</field>
+		</fieldset>
+	</fields>
+</form>

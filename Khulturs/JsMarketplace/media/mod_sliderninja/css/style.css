@@ -1,0 +1,127 @@
+/**
+ * @version     1.1.0
+ * @package     Slider Ninja
+ *
+ * @copyright   Copyright (C) 2017. Bhartiy Web Technologies. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @author      Asfaque Ali Ansari <info@bhartiy.com> - http://www.bhartiy.com
+ */
+
+.sliderninja .slideimg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 446px;
+}
+.sliderninja .overlay {
+    background-color: inherit;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.sliderninja .slidecaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px 50px;
+}
+.sliderninja .slidecaption .slidercaptioninner {
+    height: 100%;
+    display: table;
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.sliderninja .slidecaption .slidercaptioninner .slidercaptiontext{
+    display: table-cell;
+    vertical-align: middle;
+}
+.sliderninja h2.slidetitle {
+    color: #fff;
+    font-size: 42px;
+    line-height: 46px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+.sliderninja .slidedescription {
+    color: #f1f1f1;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+.sliderninja .owl-dots {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+.sliderninja .owl-dots .owl-dot {
+    width: 12px;
+    height: 12px;
+    background: rgba(255,255,255,0.6);
+    border-radius: 100%;
+    display: inline-block;
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+.sliderninja .owl-dots .owl-dot.active {
+    background: rgba(255,255,255,1);
+}
+.sliderninja .owl-prev,
+.sliderninja .owl-next {
+    position: absolute;
+    top: calc(50% - 20px);
+    height: 40px;
+    background: #222;
+    width: 40px;
+    color: #fff;
+    font-size: 28px;
+    text-align: center;
+    line-height: 38px;
+    cursor: pointer;
+}
+.sliderninja .owl-prev{
+    left: 0;
+}
+.sliderninja .owl-next {
+    right: 0;
+}
+@media (max-width: 1200px) and (min-width: 992px){
+    .sliderninja .slideimg {
+	    min-height: 385px;
+    }
+}
+@media (max-width: 767px) {
+    .sliderninja .slideimg {
+        min-height: 480px;
+    }
+    .sliderninja h2.slidetitle{
+        font-size: 36px;
+        line-height: 42px;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 480px) {
+    .sliderninja .slidecaption .slidercaptioninner{
+        width: 100%;
+    }
+    .sliderninja .slideimg {
+        min-height: 440px;
+    }
+    .sliderninja h2.slidetitle{
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .sliderninja .slidedescription{
+        font-size: 16px;
+        letter-spacing: 2px;
+        line-height: 18px;
+    }
+}

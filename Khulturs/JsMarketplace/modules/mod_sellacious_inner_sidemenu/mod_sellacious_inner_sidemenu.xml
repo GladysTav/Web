@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+    <name>mod_sellacious_inner_sidemenu</name>
+    <author>Chandni</author>
+    <creationDate>Dec 2018</creationDate>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>info@bhartiy.com</authorEmail>
+    <authorUrl>www.bhartiy.com</authorUrl>
+    <version>1.1.0</version>
+    <description>MOD_SELLACIOUS_INNER_SIDEMENU_DESC</description>
+
+    <files>
+        <filename>mod_sellacious_inner_sidemenu.xml</filename>
+        <filename module="mod_backlink">mod_sellacious_inner_sidemenu.php</filename>
+        <filename>helper.php</filename>
+        <folder>language</folder>
+        <folder>tmpl</folder>
+    </files>
+    <media folder="media" destination="mod_sellacious_inner_sidemenu">
+        <folder>css</folder>
+    </media>
+
+
+    <updateservers>
+        <server name="mod_sellacious_inner_sidemenu" type="extension">http://sellacious.com/release/mod_sellacious_inner_sidemenu.xml</server>
+    </updateservers>
+</extension>

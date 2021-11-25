@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.4" method="upgrade">
+	<name>SellaciousSPPagebuilderAddons Package</name>
+	<author>Bhartiy Web Technologies</author>
+	<creationDate>May 21, 2018</creationDate>
+	<packagename>sellacious_addons</packagename>
+	<version>2.2.0</version>
+	<url>http://bhartiy.com</url>
+	<packager>Bhartiy Web Technologies</packager>
+	<packagerurl>http://bhartiy.com</packagerurl>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<description><![CDATA[
+		<div align="center">
+            <div align="left" style="background-color: #dff0d8; border: 1px solid #d6e9c6; border-radius: 2px; color: #3c763d; padding: 20px;">
+                <h3 style="margin: 0 0 20px; font-size: 24px;">Thank you for installing Sellacious SP Pagebuilder Addons</h3>
+                <p>Sellacious is a powerful joomla extension to create eCommerce and Marketplace easily.
+                    We have followed best practices to keep the interface easy and detailed. Hope you'll love it!</p>
+                <div class="btn-actions">
+                    <a href="http://sellacious.com/page-builder/setting-up-sp-sellacious-add-ons.html" target="_blank" title="Document" class="primary">Documentation</a>
+                    <a href="http://sellacious.com/community-support.html" target="_blank" title="Forum">Support</a>
+                    <a href="http://sellacious.com/sellacious-templates.html" target="_blank" title="Demo">Our Templates</a>
+                </div>
+                <p>Sellacious is free to use, However you can subscribe to our awesome support plans.
+                    <a href="http://sellacious.com/pricing.html" target="_blank">Upgrade options</a></p>
+                <p style="font-size: 12px;">Copyright 2012 - 2017 <a href="http://sellacious.com" title="Sellacious">sellacious.com</a>.</p>
+            </div>
+        </div>
+        <style>
+            .btn-actions {margin: 30px 0;}.btn-actions a {background: #fff; border: 1px solid #ddd; border-radius: 2px; color: #666;
+            box-shadow: 0 -2px 0 rgba(0,0,0,0.1) inset; font-size: 16px; letter-spacing: 1px; padding: 8px 20px 9px; margin: 0 5px 0 0;
+            text-decoration: none; transition: all 0.35s;}.btn-actions a.primary {background-color: #2e7d32; border-color: #2e7d32; color: #fff;}
+            .btn-actions a:hover, .btn-actions a:focus {background: #01579b; border-color: #01579b; color: #fff;}
+        </style>
+	]]></description>
+	<scriptfile>installer.php</scriptfile>
+	<blockChildUninstall>1</blockChildUninstall>
+	<folder>sppagebuilder</folder>
+	<files folder="extensions">
+		<file type="plugin" id="sellaciouscattemplates" group="system">plg_system_sellaciouscattemplates.zip</file>
+		<file type="plugin" id="sellaciouscatspecs" group="content">plg_content_sellaciouscatspecs.zip</file>
+	</files>
+	<updateservers>
+		<server type="extension" name="SellaciousSPPagebuilderAddons Package Updates">http://sellacious.com/release/pkg_sellacious_addons.xml</server>
+	</updateservers>
+</extension>

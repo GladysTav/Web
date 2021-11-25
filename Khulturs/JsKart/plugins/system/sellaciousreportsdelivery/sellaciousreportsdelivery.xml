@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="system" method="upgrade">
+	<name>PLG_SYSTEM_SELLACIOUSREPORTSDELIVERY</name>
+	<author>Aditya Chakraborty</author>
+	<creationDate>April 07, 2020</creationDate>
+	<copyright>(C) 2012-2020 Bhartiy Web Technologies. All rights reserved.</copyright>
+	<license>GNU/GPL V2+</license>
+	<authorEmail>info@bhartiy.com</authorEmail>
+	<authorUrl>www.bhartiy.com</authorUrl>
+	<version>2.0.0-beta1</version>
+	<description>PLG_SYSTEM_SELLACIOUSREPORTSDELIVERY_DESC</description>
+	<files>
+		<filename plugin="sellaciousreportsdelivery">sellaciousreportsdelivery.php</filename>
+		<folder>language</folder>
+		<folder>libraries</folder>
+		<folder>manifests</folder>
+		<folder>forms</folder>
+	</files>
+	<config>
+	</config>
+</extension>

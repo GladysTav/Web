@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.2" type="plugin" group="editors" method="upgrade">
+	<name>PLG_EDITORS_CKINLINEEDITOR4</name>
+	<version>1.7.4-alpha2</version>
+	<creationDate>July 19, 2019</creationDate>
+	<author>Izhar Aazmi</author>
+	<authorEmail>info@bhartiy.com</authorEmail>
+	<authorUrl>www.bhartiy.com</authorUrl>
+	<copyright>Copyright (C) 2012-2019 Bhartiy Web Technologies. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<description>PLG_EDITORS_CKINLINEEDITOR4_XML_DESCRIPTION</description>
+
+	<files>
+		<filename plugin="ckinlineeditor4">ckinlineeditor4.php</filename>
+		<folder>language</folder>
+		<folder>tmpl</folder>
+	</files>
+
+	<config>
+		<fields name="params">
+		</fields>
+	</config>
+</extension>

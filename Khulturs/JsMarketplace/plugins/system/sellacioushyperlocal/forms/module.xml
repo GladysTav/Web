@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="params">
+		<fieldset name="basic" addfieldpath="components/com_sellacious/models/fields">
+			<field name="hyperlocal"
+			       type="spacer"
+			       label="PLG_SYSTEM_SELLACIOUSHYPERLOCAL_FIELD_SPACER_HYPERLOCAL_SETTINGS_LABEL"
+			/>
+			<field name="display_delivery_slots"
+			       type="radio"
+			       class="btn-group btn-group-yesno"
+			       label="PLG_SYSTEM_SELLACIOUSHYPERLOCAL_FIELD_DISPLAY_DELIVERY_SLOTS_LABEL"
+			       description="PLG_SYSTEM_SELLACIOUSHYPERLOCAL_FIELD_DISPLAY_DELIVERY_SLOTS_DESC"
+			       default="1">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+		</fieldset>
+	</fields>
+</form>

@@ -1,5 +1,7 @@
 <?php
-// 3.0.7 - MariaDB
+// 3.2.0 - txtProjects
+// 3.2.1 - defaultDBMS - HelpMySQLMariaDB
+
 $langues = array(
 	'langue' => 'Français',
 	'locale' => 'french',
@@ -20,9 +22,12 @@ $langues = array(
 	'titrePage' => 'Outils',
 	'txtProjet' => 'Vos Projets',
 	'txtServerName' => 'Le ServerName %s comporte des erreurs de syntaxe dans le fichier %s',
+	'txtDocRoot' => 'Le ServerName %s utilise le DocumentRoot %s réservé à localhost',
+	'txtTLDdev' => 'Le ServerName %s utilise le TLD %s qui est accaparé par les navigateurs internet. Utilisez un autre TLD (.test par exemple)',
 	'txtServerNameIp' => 'L\'IP %s du Servername %s n\'est pas valide dans le fichier %s',
 	'txtVhostNotClean' => 'Le fichier %s n\'a pas été nettoyé. Il reste des exemples de VirtualHost comme : dummy-host.example.com',
 	'txtNoProjet' => 'Aucun projet.<br /> Pour en ajouter un nouveau, créez simplement un répertoire dans \'www\'.',
+	'txtProjects' => 'Ce sont vos dossiers dans %s<br />Pour les utiliser comme lien http, il faut les déclarer en tant que VirtualHost',
 	'txtAlias' => 'Vos Alias',
 	'txtNoAlias' => 'Aucun alias.<br /> Pour en ajouter un nouveau, utilisez le menu de WAMPSERVER.',
 	'txtVhost' => 'Vos VirtualHost',
@@ -40,6 +45,8 @@ $langues = array(
 	'portUsed' => 'Port défini pour Apache : ',
 	'mysqlportUsed' => 'Port défini pour MySQL : ',
 	'mariaportUsed' => 'Port défini pour MariaDB : ',
+	'defaultDBMS' => 'SGBD par défaut',
+	'HelpMySQLMariaDB' => 'Comment utiliser MySQL et/ou MariaDB ?<br>Qu\'est-ce qu\'un SGBD par défaut ?<br>Comment changer de SGDB par défaut ?<br>Aller voir l\'aide afférente : Clic-Droit icône Wampmanager -> Aide -> MariaDB - MySQL',
 	'nolocalhost' => 'C\'est une mauvaise idée d\'ajouter localhost dans les url de lancement des projets. Il est préférable de définir des VirtualHost dans le fichier<br />wamp/bin/apache/apache%s/conf/extra/httpd-vhosts.conf<br />et de ne pas ajouter localhost dans les url.',
 	);
 ?>
